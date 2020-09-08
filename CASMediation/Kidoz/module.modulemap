@@ -1,0 +1,3 @@
+module CASKidoz {
+    header "CASKidozBridge.h"
+}

@@ -1,0 +1,11 @@
+framework module CleverAdsSolutions {
+  umbrella header "CleverAdsSolutions.h"
+
+  export *
+  module * { export * }
+}
+
+module CleverAdsSolutions.Swift {
+    header "CleverAdsSolutions-Swift.h"
+    requires objc
+}

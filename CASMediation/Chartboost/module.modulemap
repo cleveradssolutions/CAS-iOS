@@ -1,0 +1,3 @@
+module CASChartboost {
+    header "CASChartboostBridge.h"
+}

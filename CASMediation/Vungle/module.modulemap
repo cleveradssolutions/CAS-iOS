@@ -1,0 +1,3 @@
+module CASVungle {
+    header "CASVungleBridge.h"
+}
