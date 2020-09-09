@@ -26,8 +26,12 @@
  11.5. [Show fullscreen Ad](#show-fullscreen-ad)  
  12.  [Adding App-ads.txt file of our partners (Optional)](#step-12-adding-app-ads-txt-file-of-our-partners)  
  13.  [Mediation partners](#mediation-partners)  
- 14.  [Support](#support)  
- 15.  [License](#license)
+ 14.  [GitHub issue tracker](#github-issue-tracker)
+ 15.  [Support](#support)  
+ 16.  [License](#license)
+
+>  The Integration Demo application demonstrate how to integrate the CAS Mediation in your app.
+>  [CAS-iOS-Examples repository](https://github.com/cleveradssolutions/CAS-iOS-Examples)
 
 ## Step 1 Add the CAS Framework to Your Xcode Project
 The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). Open your project's Podfile and add this line to your app's target:
@@ -41,7 +45,7 @@ pod install --repo-update
 If you're new to CocoaPods, see their [official documentation](https://guides.cocoapods.org/using/using-cocoapods) for info on how to create and use Podfiles
 
 ## Step 2 Add Cross Promotion Framework
-**Optional step.**
+**Optional step.**  
 Cross promotion is an app marketing strategy in which app developers promote one of their titles on another one of their titles. Cross promoting is especially effective for developers with large portfolios of games as a means to move users across titles and use the opportunity to scale each of their apps. This is most commonly used by hyper-casual publishers who have relatively low retention, and use cross promotion to keep users within their app portfolio.
 
 Start your cross promotion campaign with CAS [here](https://cleveradssolutions.com).
@@ -144,7 +148,7 @@ Add your AdMob App ID to your app's `Info.plist` file by adding a `GADApplicatio
 **Note:** If you haven't created an CAS account and registered an app yet, now's a great time to do so. In a real app, it is important that you use your actual AdMob app ID, not the one listed above. If you're just looking to experiment with the SDK in a Hello World app, though, you can use the sample App ID shown above.  
 
 ## Step 8 Add the CAS default settings file
-**Optional step.**
+**Optional step.**  
 Follow the [link](http://psvpromo.psvgamestudio.com/cas-settings.php) to download a `cas_settings.json` file.
 
 Drop the `cas_settings.json` to any folder in your project. However, only the **main bundle** resources is supported.  
@@ -274,7 +278,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ```
 CAS.create can be called for different identifiers to create different managers. 
 
-Optional. Subscribe listener to Ad Loading response:  
+**Optional.** Subscribe listener to Ad Loading response:  
 ```swift
 class AdLoadDelegate: CASLoadDelegate{
     init(manager:CASMediationManager){
@@ -524,6 +528,9 @@ We have made it easier for you to include CAS list of entries so that don’t ha
 * [InMobi](https://www.inmobi.com)  
 * [Facebook Audience](https://www.facebook.com/business/marketing/audience-network)  
 * [Yandex Ad](https://yandex.ru/dev/mobile-ads)  
+
+## GitHub issue tracker
+To file bugs, make feature requests, or suggest improvements for the iOS SDK, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
 
 ## Support
 Site: [https://cleveradssolutions.com](https://cleveradssolutions.com)
