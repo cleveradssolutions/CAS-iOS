@@ -49,7 +49,7 @@
             if consent != .undefined {
                 data.set("gdpr.consent", value: consent == .accepted)
             }
-            let doNotSell = wrapper.settings.getDoNotSell()
+            let doNotSell = wrapper.settings.getCCPAStatus()
             if doNotSell != .undefined {
                 data.set("privacy.consent", value: doNotSell == .optInSale)
             }

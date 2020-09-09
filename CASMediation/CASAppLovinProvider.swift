@@ -52,12 +52,12 @@
             if consent != .undefined {
                 onChangedState(gdpr: consent)
             }
-            let doNotSell = wrapper.settings.getDoNotSell()
+            let doNotSell = wrapper.settings.getCCPAStatus()
             if doNotSell != .undefined {
                 onChangedState(ccpa: doNotSell)
             }
             let audience = wrapper.settings.getTaggedAudience()
-            if audience != .mixed {
+            if audience != .undefined {
                 onChangedTagged(audience: audience)
             }
 

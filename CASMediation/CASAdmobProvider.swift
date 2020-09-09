@@ -35,7 +35,7 @@
             let instance = GADMobileAds.sharedInstance()
             let config = instance.requestConfiguration
             applyPrivacyLimits(config, wrapper.settings.getTaggedAudience())
-            onChangedState(ccpa: wrapper.settings.getDoNotSell())
+            onChangedState(ccpa: wrapper.settings.getCCPAStatus())
 
             if wrapper.settings.getTestDeviceIDs().count > 0 {
                 config.testDeviceIdentifiers = wrapper.settings.getTestDeviceIDs()

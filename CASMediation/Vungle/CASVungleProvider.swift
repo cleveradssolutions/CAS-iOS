@@ -138,7 +138,7 @@ extension CASVungleProvider: VungleSDKDelegate {
         // Initialization has succeeded and SDK is ready to load an ad or play one if there
         // is one pre-cached already
         if let it = listener {
-            let ccpa = it.settings.getDoNotSell()
+            let ccpa = it.settings.getCCPAStatus()
             if ccpa != .undefined {
                 onChangedState(ccpa: ccpa)
             }
@@ -154,7 +154,7 @@ extension CASVungleProvider: VungleSDKDelegate {
 
     func vungleSDKFailedToInitializeWithError(_ error: Error) {
         if let it = listener {
-            let ccpa = it.settings.getDoNotSell()
+            let ccpa = it.settings.getCCPAStatus()
             if ccpa != .undefined {
                 onChangedState(ccpa: ccpa)
             }

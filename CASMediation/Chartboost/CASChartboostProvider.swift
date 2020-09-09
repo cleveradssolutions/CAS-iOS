@@ -61,7 +61,7 @@ final class CASChartboostProvider: CASProvider {
         if gdpr != .undefined {
             onChangedState(gdpr: gdpr)
         }
-        let ccpa = wrapper.settings.getDoNotSell()
+        let ccpa = wrapper.settings.getCCPAStatus()
         if ccpa != .undefined {
             onChangedState(ccpa: ccpa)
         }

@@ -269,7 +269,7 @@ SWIFT_PROTOCOL("_TtP18CleverAdsSolutions19CASAnalyticsHandler_")
 @end
 
 typedef SWIFT_ENUM(NSInteger, CASAudience, closed) {
-  CASAudienceMixed = 0,
+  CASAudienceUndefined = 0,
   CASAudienceChildren = 1,
   CASAudienceNotChildren = 2,
 };
@@ -484,13 +484,13 @@ SWIFT_CLASS("_TtC18CleverAdsSolutions19CASMediationManager")
 
 @interface CASMediationManager (SWIFT_EXTENSION(CleverAdsSolutions))
 /// Current banner ad size
-/// We recommended set once immediately after [CAS.initialize].
-/// If [AdsSettings.loadingMode] == [LoadingManagerMode.Manual]
+/// We recommended set once immediately after [CAS.crete].
+/// If [CASSettings.loadingMode] == [CASLoadingManagerMode.Manual]
 /// then please call [CASBannerView.loadNextAd] after banner size changed.
 - (CASSize * _Nonnull)getBannerSize SWIFT_WARN_UNUSED_RESULT;
 /// Current banner ad size
-/// We recommended set once immediately after [CAS.initialize].
-/// If [AdsSettings.loadingMode] == [LoadingManagerMode.Manual]
+/// We recommended set once immediately after [CAS.create].
+/// If [CASSettings.loadingMode] == [CASLoadingManagerMode.Manual]
 /// then please call [CASBannerView.loadNextAd] after banner size changed.
 - (void)setBannerWithSize:(CASSize * _Nonnull)size;
 /// Hide all [AdType.Banner] from the screen.
@@ -558,9 +558,9 @@ SWIFT_CLASS("_TtC18CleverAdsSolutions11CASSettings")
 - (void)updateUserWithConsent:(enum CASConsentStatus)consent;
 /// Whether or not user has opted out of the sale of their personal information.
 /// Default .undefined
-- (enum CASCCPAStatus)getDoNotSell SWIFT_WARN_UNUSED_RESULT;
+- (enum CASCCPAStatus)getCCPAStatus SWIFT_WARN_UNUSED_RESULT;
 /// Whether or not user has opted out of the sale of their personal information.
-- (void)updateDoNotSell:(enum CASCCPAStatus)doNotSell;
+- (void)updateCCPAWithStatus:(enum CASCCPAStatus)status;
 /// Is enabled forces sdk to filter ads with violence, drugs, etc
 /// Default: nill
 - (enum CASAudience)getTaggedAudience SWIFT_WARN_UNUSED_RESULT;
@@ -929,7 +929,7 @@ SWIFT_PROTOCOL("_TtP18CleverAdsSolutions19CASAnalyticsHandler_")
 @end
 
 typedef SWIFT_ENUM(NSInteger, CASAudience, closed) {
-  CASAudienceMixed = 0,
+  CASAudienceUndefined = 0,
   CASAudienceChildren = 1,
   CASAudienceNotChildren = 2,
 };
@@ -1144,13 +1144,13 @@ SWIFT_CLASS("_TtC18CleverAdsSolutions19CASMediationManager")
 
 @interface CASMediationManager (SWIFT_EXTENSION(CleverAdsSolutions))
 /// Current banner ad size
-/// We recommended set once immediately after [CAS.initialize].
-/// If [AdsSettings.loadingMode] == [LoadingManagerMode.Manual]
+/// We recommended set once immediately after [CAS.crete].
+/// If [CASSettings.loadingMode] == [CASLoadingManagerMode.Manual]
 /// then please call [CASBannerView.loadNextAd] after banner size changed.
 - (CASSize * _Nonnull)getBannerSize SWIFT_WARN_UNUSED_RESULT;
 /// Current banner ad size
-/// We recommended set once immediately after [CAS.initialize].
-/// If [AdsSettings.loadingMode] == [LoadingManagerMode.Manual]
+/// We recommended set once immediately after [CAS.create].
+/// If [CASSettings.loadingMode] == [CASLoadingManagerMode.Manual]
 /// then please call [CASBannerView.loadNextAd] after banner size changed.
 - (void)setBannerWithSize:(CASSize * _Nonnull)size;
 /// Hide all [AdType.Banner] from the screen.
@@ -1218,9 +1218,9 @@ SWIFT_CLASS("_TtC18CleverAdsSolutions11CASSettings")
 - (void)updateUserWithConsent:(enum CASConsentStatus)consent;
 /// Whether or not user has opted out of the sale of their personal information.
 /// Default .undefined
-- (enum CASCCPAStatus)getDoNotSell SWIFT_WARN_UNUSED_RESULT;
+- (enum CASCCPAStatus)getCCPAStatus SWIFT_WARN_UNUSED_RESULT;
 /// Whether or not user has opted out of the sale of their personal information.
-- (void)updateDoNotSell:(enum CASCCPAStatus)doNotSell;
+- (void)updateCCPAWithStatus:(enum CASCCPAStatus)status;
 /// Is enabled forces sdk to filter ads with violence, drugs, etc
 /// Default: nill
 - (enum CASAudience)getTaggedAudience SWIFT_WARN_UNUSED_RESULT;

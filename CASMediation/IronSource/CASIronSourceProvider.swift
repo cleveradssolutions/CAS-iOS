@@ -62,7 +62,7 @@ final class CASIronSourceProvider: NSObject, CASProvider {
         IronSource.setISDemandOnlyRewardedVideoDelegate(self)
 
         onChangedDebugMode(wrapper.settings.isDebugMode())
-        let ccpa = wrapper.settings.getDoNotSell()
+        let ccpa = wrapper.settings.getCCPAStatus()
         if ccpa != .undefined {
             onChangedState(ccpa: ccpa) // Before Init
         }

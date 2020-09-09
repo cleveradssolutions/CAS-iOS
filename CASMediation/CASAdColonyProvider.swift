@@ -77,7 +77,7 @@
             appOptions.setPrivacyFrameworkOfType(ADC_GDPR, isRequired: consent != .undefined)
             appOptions.setPrivacyConsentString((consent == .accepted) ? "1" : "0", forType: ADC_GDPR)
 
-            let doNotSell = wrapper.settings.getDoNotSell()
+            let doNotSell = wrapper.settings.getCCPAStatus()
             appOptions.setPrivacyFrameworkOfType(ADC_CCPA, isRequired: doNotSell != .undefined)
             appOptions.setPrivacyConsentString((doNotSell == .optInSale) ? "1" : "0", forType: ADC_CCPA)
 

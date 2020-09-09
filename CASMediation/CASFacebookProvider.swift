@@ -57,7 +57,7 @@
             }
 
             wrapper.settings.appendOptionChanged(delegate: self)
-            onChangedState(ccpa: wrapper.settings.getDoNotSell())
+            onChangedState(ccpa: wrapper.settings.getCCPAStatus())
             let audience = wrapper.settings.getTaggedAudience()
             if audience == .children {
                 onChangedTagged(audience: audience)

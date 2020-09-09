@@ -208,7 +208,7 @@
 
         private func load(banner: IMBanner) {
             let childTag = adSettings.getTaggedAudience()
-            if childTag != .mixed {
+            if childTag != .undefined {
                 banner.extras = ["coppa": childTag == .children ? "1" : "0"]
             }
 
@@ -307,7 +307,7 @@
             }
 
             let childTag = adSettings.getTaggedAudience()
-            if childTag != .mixed {
+            if childTag != .undefined {
                 inter.extras = ["coppa": childTag == .children ? "1" : "0"]
             }
 
