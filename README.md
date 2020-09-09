@@ -6,7 +6,7 @@
 
 # Table of contents
  1.  [Add the CAS Framework to Your Xcode Project](#step-1-add-the-cas-framework-to-your-xcode-project)  
- 2.  [Add Cross Promotion Framework](#step-2-add-cross-promotion-framework)  
+ 2.  [Add Cross Promotion Framework (Optional)](#step-2-add-cross-promotion-framework)  
  3.  [Configuring App Transport Security](#step-3-configuring-app-transport-security)  
  4.  [Configuring SK Ad Networks](#step-4-configuring-sk-ad-networks)  
  5.  [Configuring Privacy Controls](#step-5-configuring-privacy-controls)  
@@ -41,6 +41,7 @@ pod install --repo-update
 If you're new to CocoaPods, see their [official documentation](https://guides.cocoapods.org/using/using-cocoapods) for info on how to create and use Podfiles
 
 ## Step 2 Add Cross Promotion Framework
+**Optional step.**
 Cross promotion is an app marketing strategy in which app developers promote one of their titles on another one of their titles. Cross promoting is especially effective for developers with large portfolios of games as a means to move users across titles and use the opportunity to scale each of their apps. This is most commonly used by hyper-casual publishers who have relatively low retention, and use cross promotion to keep users within their app portfolio.
 
 Start your cross promotion campaign with CAS [here](https://cleveradssolutions.com).
