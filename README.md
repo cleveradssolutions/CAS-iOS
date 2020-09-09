@@ -84,7 +84,7 @@ To use SKAdnetwork, app developers must define which networks have permission to
 Going forward, fewer campaigns can rely on the IDFA to track ad campaign performance. Supporting SKAdnetwork will increase the number of eligible campaigns that may serve on your app which will increase demand and therefore eCPMs
 
 To enable this functionality, you will need to update the SKAdNetworkItems key with an additional dictionary in your Info.plist.
-[View the latest list in XML format](SKAdNetwork.xml)
+[View the latest list in XML format](SKAdNetworkItems.xml)
 
 ## Step 5 Configuring Privacy Controls
 #### Request App Tracking Transparency authorization
