@@ -6,6 +6,11 @@
         <string>cstr6suwn9.skadnetwork</string>
     </dict>
     <dict>
+        <!-- Mediation Vungle -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>GTA9LK7P23.skadnetwork</string>
+    </dict>
+    <dict>
         <!-- Mediation AdColony -->
         <key>SKAdNetworkIdentifier</key>
         <string>4PFYVQ9L8R.skadnetwork</string>
@@ -219,5 +224,25 @@
         <!--  Mintegral  -->
         <key>SKAdNetworkIdentifier</key>
         <string>KBD757YWX3.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Adikteev SA  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>YDX93A7ASS.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Chartboost Partner  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>737z793b9f.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Chartboost Partner  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>CJ5566H2GA.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Chartboost Partner  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>W9Q455WK68.skadnetwork</string>
     </dict>
 </array>
