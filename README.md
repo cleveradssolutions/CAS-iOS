@@ -156,7 +156,7 @@ Drop the `cas_settings.json` to any folder in your project. However, only the **
 ## Step 9 Privacy Laws
 This documentation is provided for compliance with various privacy laws. If you are collecting consent from your users, you can make use of APIs discussed below to inform CAS and all downstream consumers of this information.  
 
-A detailed article on the use of user data can be found in the [Privacy Policy](/../../wiki/Privacy-Policy).
+A detailed article on the use of user data can be found in the [Privacy Policy](https://github.com/cleveradssolutions/CAS-Android/wiki/Privacy-Policy).
 
 ### GDPR Managing Consent
 This documentation is provided for compliance with the European Union's [General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679). In order to pass GDPR consent from your users, you should make use of the APIs and methods discussed below to inform CAS and all downstream consumers of this information.  
