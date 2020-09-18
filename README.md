@@ -1,7 +1,7 @@
 # CleverAdsSolutions-iOS SDK Integration 
 
 ## Note
-- XCode 11 and up
+- XCode 12 and up
 - Works on iOS 10 and above.
 
 # Table of contents
