@@ -5,7 +5,7 @@
 //  Copyright © 2020 Clever Ads Solutions. All rights reserved.
 //
 
-#if canImport(AdColony)
+#if canImport(AppLovinSDK)
     import AppLovinSDK
     import CleverAdsSolutions
     import Foundation
@@ -64,7 +64,7 @@
             let settings = ALSdkSettings()
             settings.muted = wrapper.settings.isMutedAdSounds()
             // Lot of debug informaion
-            //settings.isVerboseLogging = wrapper.settings.isDebugMode()
+            // settings.isVerboseLogging = wrapper.settings.isDebugMode()
 
             if !wrapper.settings.getTestDeviceIDs().isEmpty {
                 settings.testDeviceAdvertisingIdentifiers = wrapper.settings.getTestDeviceIDs()
@@ -116,7 +116,7 @@
 
         func onChangedDebugMode(_ debug: Bool) {
             // Lot of debug info
-            //sdk?.settings.isVerboseLogging = debug
+            // sdk?.settings.isVerboseLogging = debug
         }
 
         func onChangedMuteAdSounds(_ muted: Bool) {
@@ -207,8 +207,13 @@
         }
 
         override func requestAd() throws {
-            if !validateSize() {
-                return
+            if loadedSize != size || loadedSizeIndex < 0 {
+                let result = findClosestSize([CGSize(width: 320, height: 50),
+                                              CGSize(width: 728, height: 90)])
+                // CGSize(300, 250) AppLovin not longer support MREC size
+                if result < 0 {
+                    return
+                }
             }
 
             if isAdReady() {
@@ -230,7 +235,6 @@
             switch loadedSizeIndex {
             case 0: return ALAdSize.banner
             case 1: return ALAdSize.leader
-            case 2: return ALAdSize.mrec // Not supported Zones. Work only Null zone
             default:
                 onAdWrongSize()
                 return nil

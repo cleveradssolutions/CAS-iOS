@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CleverAdsSolutions-SDK"
-  s.version      = "1.5.0"
+  s.version      = "1.5.1"
   s.summary      = "Clever Ads Solutions iOS framework"
   s.homepage     = "https://cleveradssolutions.com"
   s.license      = { :type => "Commercial", :file => "LICENSE.md" }
@@ -28,17 +28,17 @@ Pod::Spec.new do |s|
   s.subspec 'Full' do |full|
     full.dependency 'CleverAdsSolutions-SDK/General', "#{s.version}"
     full.dependency 'Google-Mobile-Ads-SDK', '7.65.0'
-    full.dependency 'VungleSDK-iOS', '6.7.1'
+    full.dependency 'VungleSDK-iOS', '6.8.0'
     full.dependency 'IronSourceSDK', '7.0.1.0'
     full.dependency 'AdColony', '4.3.1'
-    full.dependency 'AppLovinSDK', '6.13.5'
+    full.dependency 'AppLovinSDK', '6.14.3'
     full.dependency 'FBAudienceNetwork', '5.10.1'
     full.dependency 'InMobiSDK/Core', '9.0.7'
-    full.dependency 'YandexMobileAds', '2.18.0'
+    full.dependency 'YandexMobileAds', '2.19.0'
     full.dependency 'StartAppSDK', '4.5.0'
     full.dependency 'SuperAwesome', '7.2.13'
     full.dependency 'UnityAds', '3.4.8'
-    full.dependency 'ChartboostSDK', '8.2.1'
+    full.dependency 'ChartboostSDK', '8.3.1'
   end
 
 end
