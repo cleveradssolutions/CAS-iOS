@@ -36,7 +36,7 @@
 ## Step 1 Add the CAS Framework to Your Xcode Project
 The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). Open your project's Podfile and add this line to your app's target:
 ```
-pod 'CleverAdsSolutions-SDK', :git => 'https://github.com/cleveradssolutions/CAS-iOS.git', :tag => '1.5.0'
+pod 'CleverAdsSolutions-SDK', :git => 'https://github.com/cleveradssolutions/CAS-iOS.git', :tag => '1.5.1'
 ```
 Then from the command line run:
 ```
@@ -52,7 +52,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```
-pod 'CleverAdsSolutions-Promo', :git => 'https://github.com/cleveradssolutions/CAS-iOS.git', :tag => '1.5.0'
+pod 'CleverAdsSolutions-Promo', :git => 'https://github.com/cleveradssolutions/CAS-iOS.git', :tag => '1.5.1'
 ```
 Then from the command line run:
 ```
@@ -260,7 +260,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Configure CAS.settings before initialize
         manager = CAS.create(
-          // CAS manager (Placement) identifier or null when matches the app package.
+          // CAS manager (Placement) identifier.
           managerID: own_identifier, 
           // Optional set active Ad Types: '[AdTypeFlags.Banner, AdTypeFlags.Interstitial]' for example.
           // Ad types can be enabled manually after initialize by CASMediationManager.setEnabled
