@@ -6,7 +6,8 @@ Pod::Spec.new do |s|
   s.license             = { :type => "Commercial", :file => "LICENSE.md" }
   s.author              = { "CleverAdsSolutions" => "support@cleveradssolutions.com" }
   s.source              = { :git => "https://github.com/cleveradssolutions/CAS-iOS.git", :tag => "#{s.version}" }
-  s.platform            = :ios, '10.0'
+  s.platform            = :ios
+  s.ios.deployment_target = '10.0'
   s.swift_versions      = ['4.2', '5.0']
   s.requires_arc        = true
   s.static_framework    = true
