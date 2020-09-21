@@ -6,13 +6,13 @@ Pod::Spec.new do |s|
   s.license      = { :type => "Commercial", :file => "LICENSE.md" }
   s.author       = { "CleverAdsSolutions" => "support@cleveradssolutions.com" }
   s.source       = { :git => "https://github.com/cleveradssolutions/CAS-iOS.git", :tag => "#{s.version}" }
-  s.ios.deployment_target = "10.0"
-  s.swift_versions        = ['4.2', '5.0']
+  s.platform = :ios, '10.0'
+  s.swift_versions = ['4.2', '5.0']
   s.requires_arc = true
   s.xcconfig     = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/CleverAdsSolutions-SDK/CASMediation/**',
                      'OTHER_LDFLAGS' => '-ObjC' }
   s.static_framework = true
-  s.default_subspec  = 'Full'
+  s.default_subspec  = 'General'
 
   s.subspec 'Base' do |b|
     b.vendored_frameworks = 'CASBase/CleverAdsSolutions.framework'
@@ -23,22 +23,18 @@ Pod::Spec.new do |s|
     g.private_header_files = 'CASMediation/**/*.h'
     g.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
     g.vendored_libraries = 'libs/libKidozSDK.a' # Kidoz version 1.3.5
-  end
-
-  s.subspec 'Full' do |full|
-    full.dependency 'CleverAdsSolutions-SDK/General', "#{s.version}"
-    full.dependency 'Google-Mobile-Ads-SDK', '7.65.0'
-    full.dependency 'VungleSDK-iOS', '6.8.0'
-    full.dependency 'IronSourceSDK', '7.0.1.0'
-    full.dependency 'AdColony', '4.4.0'
-    full.dependency 'AppLovinSDK', '6.14.3'
-    full.dependency 'FBAudienceNetwork', '5.10.1'
-    full.dependency 'InMobiSDK/Core', '9.0.7'
-    full.dependency 'YandexMobileAds', '2.19.0'
-    full.dependency 'StartAppSDK', '4.5.0'
-    full.dependency 'SuperAwesome', '7.2.13'
-    full.dependency 'UnityAds', '3.4.8'
-    full.dependency 'ChartboostSDK', '8.3.1'
+    g.dependency 'Google-Mobile-Ads-SDK', '7.65.0'
+    g.dependency 'VungleSDK-iOS', '6.8.0'
+    g.dependency 'IronSourceSDK', '7.0.1.0'
+    g.dependency 'AdColony', '4.4.0'
+    g.dependency 'AppLovinSDK', '6.14.3'
+    g.dependency 'FBAudienceNetwork', '5.10.1'
+    g.dependency 'InMobiSDK/Core', '9.0.7'
+    g.dependency 'YandexMobileAds', '2.19.0'
+    g.dependency 'StartAppSDK', '4.5.0'
+    g.dependency 'SuperAwesome', '7.2.13'
+    g.dependency 'UnityAds', '3.4.8'
+    g.dependency 'ChartboostSDK', '8.3.1'
   end
 
 end
