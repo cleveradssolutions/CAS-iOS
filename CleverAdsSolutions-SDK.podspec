@@ -1,40 +1,35 @@
 Pod::Spec.new do |s|
-  s.name         = "CleverAdsSolutions-SDK"
-  s.version      = "1.5.1.1"
-  s.summary      = "Clever Ads Solutions iOS framework"
-  s.homepage     = "https://cleveradssolutions.com"
-  s.license      = { :type => "Commercial", :file => "LICENSE.md" }
-  s.author       = { "CleverAdsSolutions" => "support@cleveradssolutions.com" }
-  s.source       = { :git => "https://github.com/cleveradssolutions/CAS-iOS.git", :tag => "#{s.version}" }
-  s.platform = :ios, '10.0'
-  s.swift_versions = ['4.2', '5.0']
-  s.requires_arc = true
-  s.xcconfig     = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/CleverAdsSolutions-SDK/CASMediation/**',
-                     'OTHER_LDFLAGS' => '-ObjC' }
-  s.static_framework = true
-  s.default_subspec  = 'General'
-
-  s.subspec 'Base' do |b|
-    b.vendored_frameworks = 'CASBase/CleverAdsSolutions.framework'
-  end
-
-  s.subspec 'General' do |g|
-    g.source_files  = 'CASMediation/**/*'
-    g.private_header_files = 'CASMediation/**/*.h'
-    g.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    g.vendored_libraries = 'libs/libKidozSDK.a' # Kidoz version 1.3.5
-    g.dependency 'Google-Mobile-Ads-SDK', '7.65.0'
-    g.dependency 'VungleSDK-iOS', '6.8.0'
-    g.dependency 'IronSourceSDK', '7.0.1.0'
-    g.dependency 'AdColony', '4.4.0'
-    g.dependency 'AppLovinSDK', '6.14.3'
-    g.dependency 'FBAudienceNetwork', '5.10.1'
-    g.dependency 'InMobiSDK/Core', '9.0.7'
-    g.dependency 'YandexMobileAds', '2.19.0'
-    g.dependency 'StartAppSDK', '4.5.0'
-    g.dependency 'SuperAwesome', '7.2.13'
-    g.dependency 'UnityAds', '3.4.8'
-    g.dependency 'ChartboostSDK', '8.3.1'
-  end
+  s.name                = "CleverAdsSolutions-SDK"
+  s.version             = "1.5.2"
+  s.summary             = "Clever Ads Solutions iOS framework"
+  s.homepage            = "https://cleveradssolutions.com"
+  s.license             = { :type => "Commercial", :file => "LICENSE.md" }
+  s.author              = { "CleverAdsSolutions" => "support@cleveradssolutions.com" }
+  s.source              = { :git => "https://github.com/cleveradssolutions/CAS-iOS.git", :tag => "#{s.version}" }
+  s.platform            = :ios, '10.0'
+  s.swift_versions      = ['4.2', '5.0']
+  s.requires_arc        = true
+  s.static_framework    = true
+  s.xcconfig            = { 
+    'OTHER_LDFLAGS' => '-ObjC',
+    'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/**'
+  }
+  s.source_files         = 'CASMediation/**/*.{h,m,swift}'
+  s.private_header_files = 'CASMediation/**/*.h'
+  s.preserve_paths       = 'CASMediation/**/module.modulemap'
+  s.vendored_frameworks  = 'CASBase/CleverAdsSolutions.framework'
+  s.vendored_libraries   = 'libs/libKidozSDK.a' # Kidoz version 1.3.5
+  s.dependency 'Google-Mobile-Ads-SDK', '7.65.0'
+  s.dependency 'VungleSDK-iOS', '6.8.0'
+  s.dependency 'IronSourceSDK', '7.0.1.0'
+  s.dependency 'AdColony', '4.4.0'
+  s.dependency 'AppLovinSDK', '6.14.3'
+  s.dependency 'FBAudienceNetwork', '5.10.1'
+  s.dependency 'InMobiSDK/Core', '9.0.7'
+  s.dependency 'YandexMobileAds', '2.19.0'
+  s.dependency 'StartAppSDK', '4.5.0'
+  s.dependency 'SuperAwesome', '7.2.13'
+  s.dependency 'UnityAds', '3.4.8'
+  s.dependency 'ChartboostSDK', '8.3.1'
 
 end
