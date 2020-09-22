@@ -34,11 +34,18 @@
 >  [CAS-iOS-Examples repository](https://github.com/cleveradssolutions/CAS-iOS-Examples)
 
 ## Step 1 Add the CAS Framework to Your Xcode Project
-The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). Open your project's Podfile and add this line to your app's target:
+The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). 
+1. Open your project's Podfile. 
+2. Add the following lines to the beginning of podfile:
 ```
-pod 'CleverAdsSolutions-SDK', :git => 'https://github.com/cleveradssolutions/CAS-iOS.git', :tag => '1.5.1'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
-Then from the command line run:
+3. Add this line to your app's target:
+```
+pod 'CleverAdsSolutions-SDK', '1.5.2'
+```
+4. Then from the command line run:
 ```
 pod install --repo-update
 ```
@@ -52,7 +59,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```
-pod 'CleverAdsSolutions-Promo', :git => 'https://github.com/cleveradssolutions/CAS-iOS.git', :tag => '1.5.1'
+pod 'CleverAdsSolutions-Promo', '1.5.2'
 ```
 Then from the command line run:
 ```
@@ -189,7 +196,7 @@ CAS.settings.updateCCPA(status: .optInSale)
 ```
 By default, user consent management is passed on to media networks. For reset state:
 ```swift
-CAS.settings.updateCCPA(status: .optInSale)
+CAS.settings.updateCCPA(status: .undefined)
 ```
 
 ###  COPPA and EEA Compliance
