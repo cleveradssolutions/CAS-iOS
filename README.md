@@ -21,7 +21,7 @@
  11.  [Implement our Ad Units](#step-11-implement-our-ad-units)  
  11.1. [Banner Ad](#banner-ad)  
  11.2. [Ad Size](#ad-size)  
- 11.3. [Ad Callback](#ad-callback)  
+ 11.3. [Ad events](#ad-events)  
  11.4. [Check Ad Availability](#check-ad-availability)  
  11.5. [Show fullscreen Ad](#show-fullscreen-ad)  
  12.  [Adding App-ads.txt file of our partners (Optional)](#step-12-adding-app-ads-txt-file-of-our-partners)  
@@ -264,6 +264,8 @@ CAS.settings.setLoading(mode: .optimal)
 class AppDelegate: UIResponder, UIApplicationDelegate {
 /* Class body ... */
 
+    var manager: CASMediationManager?
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Configure CAS.settings before initialize
         manager = CAS.create(
@@ -418,7 +420,12 @@ manager = CAS.create(..., onInit: { success, error in
 } )
 ```
 
-### AdCallback
+### Ad events
+Through the use of CASCallback, you can listen for lifecycle events, such as when an ad is closed or the user leaves the app.  
+
+To register for ad events, set the delegate property on CASBannerView to an object for banner or set argument on show ad, that implements the CASCallback protocol. Generally, the class that implements banner ads also acts as the delegate class, in which case, the delegate property can be set to self.  
+
+Each of the methods in CASCallback is marked as optional, so you only need to implement the methods you want. This example implements each method and logs a message to the console:
 ```swift
 /// Executed when the ad is displayed.
 /// - Parameter ad: Information of displayed ad
