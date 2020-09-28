@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		X6wF22S5I6Cnc7kuCznEazI7d+Q=
+		</data>
 		<key>Headers/CleverAdsSolutions-Swift.h</key>
 		<data>
 		RyvX6SxG84pZoCuffhIlbVL3iZ8=
@@ -16,25 +20,33 @@
 		<data>
 		9S/CiEeZcIRCtkD4WAELzwfeRbw=
 		</data>
+		<key>Modules/.DS_Store</key>
+		<data>
+		HOnGUjdnEm6J+IkXaA6pIVIhvRI=
+		</data>
+		<key>Modules/CleverAdsSolutions.swiftmodule/.DS_Store</key>
+		<data>
+		WMNTv9XvSuNpCJlmVLVVsquP3Go=
+		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm.swiftsourceinfo</key>
 		<data>
-		ZuI89w+iUGRALdl8QIIm9+rZNQE=
+		ZFseSw2Fib/9JGEGUBp4G9ubOxk=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		hLhC2EwWM7694Ikpe9Zh40hP/Rs=
+		sSSqMkqYzVtPMRMEirIU5+kI+eM=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		hLhC2EwWM7694Ikpe9Zh40hP/Rs=
+		sSSqMkqYzVtPMRMEirIU5+kI+eM=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<data>
-		ZuI89w+iUGRALdl8QIIm9+rZNQE=
+		ZFseSw2Fib/9JGEGUBp4G9ubOxk=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<data>
-		ZuI89w+iUGRALdl8QIIm9+rZNQE=
+		ZFseSw2Fib/9JGEGUBp4G9ubOxk=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -42,7 +54,7 @@
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm.swiftmodule</key>
 		<data>
-		M24PdlX8ZiSqmbGTAR5Yc82BWhs=
+		QYjslMBANC/CWZ0+GquTdPhDSqo=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -50,7 +62,7 @@
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		S8rCL/TceYzt0iiP1IOmwq858Dg=
+		khMgJzcti7OrdKYDKXpZK1vH9G0=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -58,7 +70,7 @@
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		S8rCL/TceYzt0iiP1IOmwq858Dg=
+		khMgJzcti7OrdKYDKXpZK1vH9G0=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -66,7 +78,7 @@
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		M24PdlX8ZiSqmbGTAR5Yc82BWhs=
+		QYjslMBANC/CWZ0+GquTdPhDSqo=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -74,7 +86,7 @@
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		M24PdlX8ZiSqmbGTAR5Yc82BWhs=
+		QYjslMBANC/CWZ0+GquTdPhDSqo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,55 +121,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZuI89w+iUGRALdl8QIIm9+rZNQE=
+			ZFseSw2Fib/9JGEGUBp4G9ubOxk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pPvmM5m3Ece0/K96gq7EcUA/84tuSvFLFNPoxX18MKs=
+			tB7suVAYcHWgsVsWFNRazKs8zXHvY13wlWWHue3eCBc=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hLhC2EwWM7694Ikpe9Zh40hP/Rs=
+			sSSqMkqYzVtPMRMEirIU5+kI+eM=
 			</data>
 			<key>hash2</key>
 			<data>
-			d3Q5M8frEW1g+dmhwcN1rPhzRHFEXDMETG6+KxFUums=
+			S4IPqGCRheiohbracvTczzrmgKO8w4AwTCs6qVe+V/0=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hLhC2EwWM7694Ikpe9Zh40hP/Rs=
+			sSSqMkqYzVtPMRMEirIU5+kI+eM=
 			</data>
 			<key>hash2</key>
 			<data>
-			d3Q5M8frEW1g+dmhwcN1rPhzRHFEXDMETG6+KxFUums=
+			S4IPqGCRheiohbracvTczzrmgKO8w4AwTCs6qVe+V/0=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZuI89w+iUGRALdl8QIIm9+rZNQE=
+			ZFseSw2Fib/9JGEGUBp4G9ubOxk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pPvmM5m3Ece0/K96gq7EcUA/84tuSvFLFNPoxX18MKs=
+			tB7suVAYcHWgsVsWFNRazKs8zXHvY13wlWWHue3eCBc=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZuI89w+iUGRALdl8QIIm9+rZNQE=
+			ZFseSw2Fib/9JGEGUBp4G9ubOxk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pPvmM5m3Ece0/K96gq7EcUA/84tuSvFLFNPoxX18MKs=
+			tB7suVAYcHWgsVsWFNRazKs8zXHvY13wlWWHue3eCBc=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm.swiftdoc</key>
@@ -175,11 +187,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M24PdlX8ZiSqmbGTAR5Yc82BWhs=
+			QYjslMBANC/CWZ0+GquTdPhDSqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			JYwWWJvgvaWvD6aRdK1pOJD3qY6myANxFU9r+xzxcUA=
+			l6fCSZkULczcI15WfhkoaML5gHVI2XpgJTlqyguQ92w=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -197,11 +209,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S8rCL/TceYzt0iiP1IOmwq858Dg=
+			khMgJzcti7OrdKYDKXpZK1vH9G0=
 			</data>
 			<key>hash2</key>
 			<data>
-			BRzba4FvYj6Gttq81tQjVUCpciKIxsv7TOSnVy5cv+s=
+			1Ht8TFGMIYtXrIs6Nm+UxxyUN583PAeVDN8cCv8XM58=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64.swiftdoc</key>
@@ -219,11 +231,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S8rCL/TceYzt0iiP1IOmwq858Dg=
+			khMgJzcti7OrdKYDKXpZK1vH9G0=
 			</data>
 			<key>hash2</key>
 			<data>
-			BRzba4FvYj6Gttq81tQjVUCpciKIxsv7TOSnVy5cv+s=
+			1Ht8TFGMIYtXrIs6Nm+UxxyUN583PAeVDN8cCv8XM58=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -241,11 +253,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M24PdlX8ZiSqmbGTAR5Yc82BWhs=
+			QYjslMBANC/CWZ0+GquTdPhDSqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			JYwWWJvgvaWvD6aRdK1pOJD3qY6myANxFU9r+xzxcUA=
+			l6fCSZkULczcI15WfhkoaML5gHVI2XpgJTlqyguQ92w=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7.swiftdoc</key>
@@ -263,11 +275,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M24PdlX8ZiSqmbGTAR5Yc82BWhs=
+			QYjslMBANC/CWZ0+GquTdPhDSqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			JYwWWJvgvaWvD6aRdK1pOJD3qY6myANxFU9r+xzxcUA=
+			l6fCSZkULczcI15WfhkoaML5gHVI2XpgJTlqyguQ92w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
