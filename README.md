@@ -112,15 +112,10 @@ To display the App Tracking Transparency authorization request for accessing the
 <string>This identifier will be used to deliver personalized ads to you.</string>
 ```
 Some examples include:
-```xml
-<string>Your data will be used to provide you a better and personalized ad experience.</string>
-```
-```xml
-<string>We try to show ads for apps and products that will be most interesting to you based on the apps you use.</string>
-```
-```xml
-<string>We try to show ads for apps and products that will be most interesting to you based on the apps you use, the device you are on, and the country you are in.</string>
-```
+- Your data will be used to provide you a better and personalized ad experience.
+- We try to show ads for apps and products that will be most interesting to you based on the apps you use.
+- We try to show ads for apps and products that will be most interesting to you based on the apps you use, the device you are on, and the country you are in.  
+
 For more information, see [Apple's developer documentation](https://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription) or [Google Ads documentation](https://developers.google.com/admob/ios/ios14#request).
 
 Important: CAS does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.  
