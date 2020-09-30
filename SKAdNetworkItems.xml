@@ -270,4 +270,9 @@
         <key>SKAdNetworkIdentifier</key>
         <string>cg4yq2srnc.skadnetwork</string>
     </dict>
+    <dict>
+        <!--  Vungle Partner  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>N9X2A789QT.skadnetwork</string>
+    </dict>
 </array>
