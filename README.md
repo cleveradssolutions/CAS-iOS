@@ -1,7 +1,9 @@
 # CleverAdsSolutions-iOS SDK Integration 
 
-[![CAS SDK](https://img.shields.io/badge/CAS%20SDK-1.5.3-blue)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
-[![CAS Promo](https://img.shields.io/badge/CAS%20Promo-1.5.3-blue)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-Promo)
+[![SDK](https://img.shields.io/badge/SDK-1.5.3-blue)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
+[![Promo](https://img.shields.io/badge/Promo-1.5.3-blue)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-Promo)
+[![App-ads.txt](https://img.shields.io/badge/App--ads.txt-Sep%2017%2C%202020-orange)](https://cleveradssolutions.com/app-ads.txt)
+[![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Sep%2030%2C%202020-orange)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
 
 ## Note
 - XCode 12 and up
