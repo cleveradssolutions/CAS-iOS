@@ -1,5 +1,8 @@
 # CleverAdsSolutions-iOS SDK Integration 
 
+[![CAS SDK](https://img.shields.io/badge/CAS%20SDK-1.5.3-blue)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
+[![CAS Promo](https://img.shields.io/badge/CAS%20Promo-1.5.3-blue)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-Promo)
+
 ## Note
 - XCode 12 and up
 - Works on iOS 10 and above.
