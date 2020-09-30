@@ -11,17 +11,17 @@
         <string>GTA9LK7P23.skadnetwork</string>
     </dict>
     <dict>
-        <!-- Mediation AdColony -->
+        <!-- Adcolony RTBD -->
         <key>SKAdNetworkIdentifier</key>
         <string>4PFYVQ9L8R.skadnetwork</string>
     </dict>
     <dict>
-        <!-- Mediation AdColony -->
+        <!-- Appier DSP -->
         <key>SKAdNetworkIdentifier</key>
         <string>V72QYCH5UU.skadnetwork</string>
     </dict>
     <dict>
-        <!-- Mediation AdColony -->
+        <!-- Sift RTBD -->
         <key>SKAdNetworkIdentifier</key>
         <string>KLF5C3L5U5.skadnetwork</string>
     </dict>
@@ -41,14 +41,9 @@
         <string>t38b2kh725.skadnetwork</string>
     </dict>
     <dict>
-        <!--Moloco-->
+        <!-- Moloco RTBD KR -->
         <key>SKAdNetworkIdentifier</key>
         <string>9T245VHMPL.skadnetwork</string>
-    </dict>
-    <dict>
-        <!--Appreciate-->
-        <key>SKAdNetworkIdentifier</key>
-        <string>mlmmfzh3r3.skadnetwork</string>
     </dict>
     <dict>
         <!--PubNative-->
@@ -61,12 +56,12 @@
         <string>YCLNXRL5PM.skadnetwork</string>
     </dict>
     <dict>
-        <!--Criteo-->
+        <!-- Criteo RTBD USA -->
         <key>SKAdNetworkIdentifier</key>
         <string>hs6bdukanm.skadnetwork</string>
     </dict>
     <dict>
-        <!--Crossinstall-->
+        <!-- CrossInstall (Twitter) -->
         <key>SKAdNetworkIdentifier</key>
         <string>prcb7njmu6.skadnetwork</string>
     </dict>
@@ -146,7 +141,7 @@
         <string>c6k4g5qg8m.skadnetwork</string>
     </dict>
     <dict>
-        <!--  mkhoj Solutions Private Limited  -->
+        <!--  InMobi DSP  -->
         <key>SKAdNetworkIdentifier</key>
         <string>WZMMZ9FP6W.skadnetwork</string>
     </dict>
@@ -241,8 +236,38 @@
         <string>CJ5566H2GA.skadnetwork</string>
     </dict>
     <dict>
-        <!--  Chartboost Partner  -->
+        <!--  Hybrid  -->
         <key>SKAdNetworkIdentifier</key>
         <string>W9Q455WK68.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  TheTradeDesk_RTBD  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>uw77j35x4d.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Blis RTBD  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>ggvn48r87g.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Appreciate RTBD  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>mlmmfzh3r3.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  StartApp RTBD  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>5l3tpt7t6e.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  MediaSmart RTBD  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>7rz58n8ntl.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Adtheorent_RTBD  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>cg4yq2srnc.skadnetwork</string>
     </dict>
 </array>
