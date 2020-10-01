@@ -1,5 +1,10 @@
 # CleverAdsSolutions-iOS SDK Integration 
 
+[![SDK](https://img.shields.io/badge/SDK-1.5.3-blue)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
+[![Promo](https://img.shields.io/badge/Promo-1.5.3-blue)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-Promo)
+[![App-ads.txt](https://img.shields.io/badge/App--ads.txt-Sep%2017%2C%202020-orange)](https://cleveradssolutions.com/app-ads.txt)
+[![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Sep%2030%2C%202020-orange)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
+
 ## Note
 - XCode 12 and up
 - Works on iOS 10 and above.
@@ -107,15 +112,10 @@ To display the App Tracking Transparency authorization request for accessing the
 <string>This identifier will be used to deliver personalized ads to you.</string>
 ```
 Some examples include:
-```xml
-<string>Your data will be used to provide you a better and personalized ad experience.</string>
-```
-```xml
-<string>We try to show ads for apps and products that will be most interesting to you based on the apps you use.</string>
-```
-```xml
-<string>We try to show ads for apps and products that will be most interesting to you based on the apps you use, the device you are on, and the country you are in.</string>
-```
+- Your data will be used to provide you a better and personalized ad experience.
+- We try to show ads for apps and products that will be most interesting to you based on the apps you use.
+- We try to show ads for apps and products that will be most interesting to you based on the apps you use, the device you are on, and the country you are in.  
+
 For more information, see [Apple's developer documentation](https://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription) or [Google Ads documentation](https://developers.google.com/admob/ios/ios14#request).
 
 Important: CAS does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.  
