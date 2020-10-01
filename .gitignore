@@ -4,6 +4,8 @@
 *.xcworkspace
 *.xcodeproj
 /CASMediation/Info.plist
+/CleverAdsSolutions-Promo.podspec
+/CleverAdsSolutions-SDK.podspec
 
 ## Build generated
 DerivedData/

@@ -58,8 +58,11 @@
             wrapper.settings.appendOptionChanged(delegate: self)
 
             UnityAds.add(self)
-            UnityAds.initialize(wrapper.appID, testMode: wrapper.isDemoAdMode, enablePerPlacementLoad: true)
-            wrapper.onInitialized(success: true, "")
+            UnityAds.initialize(wrapper.appID,
+                                testMode: wrapper.isDemoAdMode,
+                                enablePerPlacementLoad: true,
+                                initializationDelegate: self)
+            
         }
 
         func initBanner(with info: CASMediationInfo) throws -> CASBannerAgent {
@@ -83,6 +86,18 @@
             )
         }
     }
+
+extension CASUnityAdsProvider:UnityAdsInitializationDelegate{
+    func initializationComplete() {
+        wrapper?.onInitialized(success: true, "")
+    }
+    
+    func initializationFailed(_ error: UnityAdsInitializationError, withMessage message: String) {
+        wrapper?.onInitialized(success: false, message)
+    }
+    
+    
+}
 
     extension CASUnityAdsProvider: CASOptionsListener {
         func onChangedState(gdpr: CASConsentStatus) {

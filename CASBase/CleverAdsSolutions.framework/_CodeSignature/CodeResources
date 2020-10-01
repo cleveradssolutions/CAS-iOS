@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		X6wF22S5I6Cnc7kuCznEazI7d+Q=
-		</data>
 		<key>Headers/CleverAdsSolutions-Swift.h</key>
 		<data>
-		RyvX6SxG84pZoCuffhIlbVL3iZ8=
+		5ecldyc9JsFS3pykQFMjAw4bOF8=
 		</data>
 		<key>Headers/CleverAdsSolutions.h</key>
 		<data>
@@ -18,75 +14,67 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9S/CiEeZcIRCtkD4WAELzwfeRbw=
-		</data>
-		<key>Modules/.DS_Store</key>
-		<data>
-		HOnGUjdnEm6J+IkXaA6pIVIhvRI=
-		</data>
-		<key>Modules/CleverAdsSolutions.swiftmodule/.DS_Store</key>
-		<data>
-		WMNTv9XvSuNpCJlmVLVVsquP3Go=
+		fIOudMfqgvZGvLzdq2SZ8+RSJJ0=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm.swiftsourceinfo</key>
 		<data>
-		ZFseSw2Fib/9JGEGUBp4G9ubOxk=
+		swyex0bhUKhV5YIoHgHYQeU4jtk=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		sSSqMkqYzVtPMRMEirIU5+kI+eM=
+		ZNTryQFH0WqxPl8W1lpbhY6u3Ak=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		sSSqMkqYzVtPMRMEirIU5+kI+eM=
+		ZNTryQFH0WqxPl8W1lpbhY6u3Ak=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<data>
-		ZFseSw2Fib/9JGEGUBp4G9ubOxk=
+		swyex0bhUKhV5YIoHgHYQeU4jtk=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<data>
-		ZFseSw2Fib/9JGEGUBp4G9ubOxk=
+		swyex0bhUKhV5YIoHgHYQeU4jtk=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm.swiftdoc</key>
 		<data>
-		zqTUyMcAdWg/maLcQZ/mAMENn0g=
+		YLDc2IUdHklY2iLiSqArl2TNSJk=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm.swiftmodule</key>
 		<data>
-		QYjslMBANC/CWZ0+GquTdPhDSqo=
+		EtSzZl9J5yYzOWX/1xMCMc2xg+w=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		WvjKgMzAoDijNuaM2FSY1ngRH44=
+		FlfUsS39Ky3gInixWQvkNdW8d0s=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		khMgJzcti7OrdKYDKXpZK1vH9G0=
+		jp6bCTxfMAb+cQe2+U6rlqZBqNg=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		WvjKgMzAoDijNuaM2FSY1ngRH44=
+		FlfUsS39Ky3gInixWQvkNdW8d0s=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		khMgJzcti7OrdKYDKXpZK1vH9G0=
+		jp6bCTxfMAb+cQe2+U6rlqZBqNg=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		zqTUyMcAdWg/maLcQZ/mAMENn0g=
+		YLDc2IUdHklY2iLiSqArl2TNSJk=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		QYjslMBANC/CWZ0+GquTdPhDSqo=
+		EtSzZl9J5yYzOWX/1xMCMc2xg+w=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		zqTUyMcAdWg/maLcQZ/mAMENn0g=
+		YLDc2IUdHklY2iLiSqArl2TNSJk=
 		</data>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		QYjslMBANC/CWZ0+GquTdPhDSqo=
+		EtSzZl9J5yYzOWX/1xMCMc2xg+w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,11 +87,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RyvX6SxG84pZoCuffhIlbVL3iZ8=
+			5ecldyc9JsFS3pykQFMjAw4bOF8=
 			</data>
 			<key>hash2</key>
 			<data>
-			oItyfHvVD67DnVrHa0haMSxi8yqISTB0Q5BIAkae+U0=
+			NcIy295hTEaCDbqmKvCX0+2X1JVtSeTOLb62LHMpmz0=
 			</data>
 		</dict>
 		<key>Headers/CleverAdsSolutions.h</key>
@@ -121,165 +109,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZFseSw2Fib/9JGEGUBp4G9ubOxk=
+			swyex0bhUKhV5YIoHgHYQeU4jtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			tB7suVAYcHWgsVsWFNRazKs8zXHvY13wlWWHue3eCBc=
+			xvaRQxQFQYhYtSw9wOmTGsQnXQLNQN4JxA4CouPmPKA=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sSSqMkqYzVtPMRMEirIU5+kI+eM=
+			ZNTryQFH0WqxPl8W1lpbhY6u3Ak=
 			</data>
 			<key>hash2</key>
 			<data>
-			S4IPqGCRheiohbracvTczzrmgKO8w4AwTCs6qVe+V/0=
+			ignEu2onpYVGMKKx3M0zsjCpIzu3XeSLaXOGihFCyeU=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sSSqMkqYzVtPMRMEirIU5+kI+eM=
+			ZNTryQFH0WqxPl8W1lpbhY6u3Ak=
 			</data>
 			<key>hash2</key>
 			<data>
-			S4IPqGCRheiohbracvTczzrmgKO8w4AwTCs6qVe+V/0=
+			ignEu2onpYVGMKKx3M0zsjCpIzu3XeSLaXOGihFCyeU=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZFseSw2Fib/9JGEGUBp4G9ubOxk=
+			swyex0bhUKhV5YIoHgHYQeU4jtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			tB7suVAYcHWgsVsWFNRazKs8zXHvY13wlWWHue3eCBc=
+			xvaRQxQFQYhYtSw9wOmTGsQnXQLNQN4JxA4CouPmPKA=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZFseSw2Fib/9JGEGUBp4G9ubOxk=
+			swyex0bhUKhV5YIoHgHYQeU4jtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			tB7suVAYcHWgsVsWFNRazKs8zXHvY13wlWWHue3eCBc=
+			xvaRQxQFQYhYtSw9wOmTGsQnXQLNQN4JxA4CouPmPKA=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zqTUyMcAdWg/maLcQZ/mAMENn0g=
+			YLDc2IUdHklY2iLiSqArl2TNSJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6u/TodPPENnwWakzXpnd1TPrHHrBVKm1MeAkpnzf6yc=
+			jU/4HzFPfaUoGl8elKQUZC6I6mfX6ABkkUEej1GAbJ0=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QYjslMBANC/CWZ0+GquTdPhDSqo=
+			EtSzZl9J5yYzOWX/1xMCMc2xg+w=
 			</data>
 			<key>hash2</key>
 			<data>
-			l6fCSZkULczcI15WfhkoaML5gHVI2XpgJTlqyguQ92w=
+			k7F3jT/ABfGQaQTrf8hP9b5ltrcKTxh0MS1x8y1dyoQ=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WvjKgMzAoDijNuaM2FSY1ngRH44=
+			FlfUsS39Ky3gInixWQvkNdW8d0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			xqJVLZjCxBInyJFGqtONUOj0OsqcZmDolCuBDmh9Amg=
+			5+Ng3OcEYgnI4OkyiQ6yro/Q/4BETL49DOxRNrK0ulg=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			khMgJzcti7OrdKYDKXpZK1vH9G0=
+			jp6bCTxfMAb+cQe2+U6rlqZBqNg=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Ht8TFGMIYtXrIs6Nm+UxxyUN583PAeVDN8cCv8XM58=
+			hks60tyOUIgpxIF5fWqT6HlFpsj2RTH7RyRVZIS1lGU=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WvjKgMzAoDijNuaM2FSY1ngRH44=
+			FlfUsS39Ky3gInixWQvkNdW8d0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			xqJVLZjCxBInyJFGqtONUOj0OsqcZmDolCuBDmh9Amg=
+			5+Ng3OcEYgnI4OkyiQ6yro/Q/4BETL49DOxRNrK0ulg=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			khMgJzcti7OrdKYDKXpZK1vH9G0=
+			jp6bCTxfMAb+cQe2+U6rlqZBqNg=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Ht8TFGMIYtXrIs6Nm+UxxyUN583PAeVDN8cCv8XM58=
+			hks60tyOUIgpxIF5fWqT6HlFpsj2RTH7RyRVZIS1lGU=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zqTUyMcAdWg/maLcQZ/mAMENn0g=
+			YLDc2IUdHklY2iLiSqArl2TNSJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6u/TodPPENnwWakzXpnd1TPrHHrBVKm1MeAkpnzf6yc=
+			jU/4HzFPfaUoGl8elKQUZC6I6mfX6ABkkUEej1GAbJ0=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QYjslMBANC/CWZ0+GquTdPhDSqo=
+			EtSzZl9J5yYzOWX/1xMCMc2xg+w=
 			</data>
 			<key>hash2</key>
 			<data>
-			l6fCSZkULczcI15WfhkoaML5gHVI2XpgJTlqyguQ92w=
+			k7F3jT/ABfGQaQTrf8hP9b5ltrcKTxh0MS1x8y1dyoQ=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zqTUyMcAdWg/maLcQZ/mAMENn0g=
+			YLDc2IUdHklY2iLiSqArl2TNSJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6u/TodPPENnwWakzXpnd1TPrHHrBVKm1MeAkpnzf6yc=
+			jU/4HzFPfaUoGl8elKQUZC6I6mfX6ABkkUEej1GAbJ0=
 			</data>
 		</dict>
 		<key>Modules/CleverAdsSolutions.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QYjslMBANC/CWZ0+GquTdPhDSqo=
+			EtSzZl9J5yYzOWX/1xMCMc2xg+w=
 			</data>
 			<key>hash2</key>
 			<data>
-			l6fCSZkULczcI15WfhkoaML5gHVI2XpgJTlqyguQ92w=
+			k7F3jT/ABfGQaQTrf8hP9b5ltrcKTxh0MS1x8y1dyoQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

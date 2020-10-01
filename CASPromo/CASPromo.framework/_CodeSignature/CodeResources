@@ -10,11 +10,11 @@
 		</data>
 		<key>CASPromoInterstitialAd.storyboardc/Bwc-h6-iTR-view-yhI-K0-Q5T.nib/objects-11.0+.nib</key>
 		<data>
-		pIaF9PtSvUZOITBDLZajaApaW1s=
+		jI3Lzvo++8I3tzzYu79nhWkOO0g=
 		</data>
 		<key>CASPromoInterstitialAd.storyboardc/Bwc-h6-iTR-view-yhI-K0-Q5T.nib/runtime.nib</key>
 		<data>
-		jwjVJ8jrhz6uhOxnEeNIMiDrZvs=
+		a275+ooezEQgFgy2Ev/lv8zyoA0=
 		</data>
 		<key>CASPromoInterstitialAd.storyboardc/Info.plist</key>
 		<data>
@@ -22,15 +22,15 @@
 		</data>
 		<key>CASPromoInterstitialAd.storyboardc/InterstitialAdActivity.nib/objects-11.0+.nib</key>
 		<data>
-		cHSthf2bfIRmKlW1BkX7TpcQgYk=
+		n994iYc9UngQ9kq8aBJNeu+FBKo=
 		</data>
 		<key>CASPromoInterstitialAd.storyboardc/InterstitialAdActivity.nib/runtime.nib</key>
 		<data>
-		UenaL5fXH0iLW6D/+kozM2enVU8=
+		ct9WzHVAIY5+B1iICkET9+OzOKU=
 		</data>
 		<key>CASPromoTargetView.nib</key>
 		<data>
-		ouTPbXPNsmK+JatiCVrjW63xhDw=
+		Uiw1R7oBXEZrMp/f9Rm7Iwjr7QA=
 		</data>
 		<key>Headers/CASPromo-Swift.h</key>
 		<data>
@@ -42,67 +42,67 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6s48fYQZh9E2HFkZf5YKjmiaiqk=
+		JEPyvgp3rd9L3AJu6WPEAsrTezo=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/Project/arm.swiftsourceinfo</key>
 		<data>
-		+w706LSFuzR6sCPrdZwjj/WgAPI=
+		iESLbGuD2uYvviqnrCr4p5+h/48=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		XBwFlBAm4xWj14Pw6ygZM42wGx4=
+		DflLuoPpP6Qhe3nXSHDYT0x7RMw=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		XBwFlBAm4xWj14Pw6ygZM42wGx4=
+		DflLuoPpP6Qhe3nXSHDYT0x7RMw=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<data>
-		+w706LSFuzR6sCPrdZwjj/WgAPI=
+		iESLbGuD2uYvviqnrCr4p5+h/48=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<data>
-		+w706LSFuzR6sCPrdZwjj/WgAPI=
+		iESLbGuD2uYvviqnrCr4p5+h/48=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/arm.swiftdoc</key>
 		<data>
-		PagoIyn5OOqd5o9HWnnrl/fGk1I=
+		eupwS3YZ7aVLIkshIsZGWjLUwYo=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/arm.swiftmodule</key>
 		<data>
-		mJMarH8rlcQz/BtHByUlYk9q7FI=
+		IJC+5juXmaWveCUhuN1vkhdZMtk=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		8pgxA200pstJBMGf2gMOywY8jys=
+		xTmPuuVwY5Q3G2zBe9UE0Ww4W1w=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/a5yalPVFhQIRA0t0ylT21aL9zc=
+		poMdLXcxcB1GzcK1/29PzPF/bdY=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		8pgxA200pstJBMGf2gMOywY8jys=
+		xTmPuuVwY5Q3G2zBe9UE0Ww4W1w=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		/a5yalPVFhQIRA0t0ylT21aL9zc=
+		poMdLXcxcB1GzcK1/29PzPF/bdY=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		PagoIyn5OOqd5o9HWnnrl/fGk1I=
+		eupwS3YZ7aVLIkshIsZGWjLUwYo=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		mJMarH8rlcQz/BtHByUlYk9q7FI=
+		IJC+5juXmaWveCUhuN1vkhdZMtk=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		PagoIyn5OOqd5o9HWnnrl/fGk1I=
+		eupwS3YZ7aVLIkshIsZGWjLUwYo=
 		</data>
 		<key>Modules/CASPromo.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		mJMarH8rlcQz/BtHByUlYk9q7FI=
+		IJC+5juXmaWveCUhuN1vkhdZMtk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,22 +126,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pIaF9PtSvUZOITBDLZajaApaW1s=
+			jI3Lzvo++8I3tzzYu79nhWkOO0g=
 			</data>
 			<key>hash2</key>
 			<data>
-			2b9+Ox9ItF7WvT4z6UN2z9pK9uCtsURHepQUKIMVDPY=
+			QkLgS2QG0UWC4xkOFkkPzbnezgwSQso2BYzWBJfdcgw=
 			</data>
 		</dict>
 		<key>CASPromoInterstitialAd.storyboardc/Bwc-h6-iTR-view-yhI-K0-Q5T.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jwjVJ8jrhz6uhOxnEeNIMiDrZvs=
+			a275+ooezEQgFgy2Ev/lv8zyoA0=
 			</data>
 			<key>hash2</key>
 			<data>
-			/5swqhyNWxYsPbiihAewrNLpg7EGIAUvK4ygt112kZE=
+			wdS3/kU6N1cnu8JZ4mT2Oj9199oIpH1C9h7U3Vv9rxw=
 			</data>
 		</dict>
 		<key>CASPromoInterstitialAd.storyboardc/Info.plist</key>
@@ -159,33 +159,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cHSthf2bfIRmKlW1BkX7TpcQgYk=
+			n994iYc9UngQ9kq8aBJNeu+FBKo=
 			</data>
 			<key>hash2</key>
 			<data>
-			POTYjIpjUteCz3v07/RH7xWbUAWAd9dlfhyfnQQLHHk=
+			RnNdSSYzRpogRVQdrGEhnGmEXOQaWtVhQmnbU7VSphs=
 			</data>
 		</dict>
 		<key>CASPromoInterstitialAd.storyboardc/InterstitialAdActivity.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UenaL5fXH0iLW6D/+kozM2enVU8=
+			ct9WzHVAIY5+B1iICkET9+OzOKU=
 			</data>
 			<key>hash2</key>
 			<data>
-			uUKTmbLusFxbmjJqxUedXB7ER6UYcuqIDR/Q0sVMODU=
+			zqp5OZXrWkPshuA6RgGrt8FLtfhdgvZS9ximVGte7M4=
 			</data>
 		</dict>
 		<key>CASPromoTargetView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ouTPbXPNsmK+JatiCVrjW63xhDw=
+			Uiw1R7oBXEZrMp/f9Rm7Iwjr7QA=
 			</data>
 			<key>hash2</key>
 			<data>
-			+E9Bn64t93pJxTcbq4ThSJoA4Oe9VK6SSB+JTE/qcvU=
+			wMum0L9JhnujUAKBvNo4B3fcvBS36E33LeaGLbQHpg4=
 			</data>
 		</dict>
 		<key>Headers/CASPromo-Swift.h</key>
@@ -214,165 +214,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+w706LSFuzR6sCPrdZwjj/WgAPI=
+			iESLbGuD2uYvviqnrCr4p5+h/48=
 			</data>
 			<key>hash2</key>
 			<data>
-			oMdbiaX4w2suJWpISgnFXwD1dasxFTmz3Lv3H9gj1bU=
+			kdJM9sGK0u2lbLMVRfcCcov8pXvLKTqTKV6h3z1z7tQ=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XBwFlBAm4xWj14Pw6ygZM42wGx4=
+			DflLuoPpP6Qhe3nXSHDYT0x7RMw=
 			</data>
 			<key>hash2</key>
 			<data>
-			iVh7ZaeemeJ2dZoB5R5Qyn4eHZy2fcL7gZRb4MSFw8I=
+			feiR7nTqePFnPjlQxLO8Mqfz26aDERzNhFowCs8HW5k=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XBwFlBAm4xWj14Pw6ygZM42wGx4=
+			DflLuoPpP6Qhe3nXSHDYT0x7RMw=
 			</data>
 			<key>hash2</key>
 			<data>
-			iVh7ZaeemeJ2dZoB5R5Qyn4eHZy2fcL7gZRb4MSFw8I=
+			feiR7nTqePFnPjlQxLO8Mqfz26aDERzNhFowCs8HW5k=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+w706LSFuzR6sCPrdZwjj/WgAPI=
+			iESLbGuD2uYvviqnrCr4p5+h/48=
 			</data>
 			<key>hash2</key>
 			<data>
-			oMdbiaX4w2suJWpISgnFXwD1dasxFTmz3Lv3H9gj1bU=
+			kdJM9sGK0u2lbLMVRfcCcov8pXvLKTqTKV6h3z1z7tQ=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+w706LSFuzR6sCPrdZwjj/WgAPI=
+			iESLbGuD2uYvviqnrCr4p5+h/48=
 			</data>
 			<key>hash2</key>
 			<data>
-			oMdbiaX4w2suJWpISgnFXwD1dasxFTmz3Lv3H9gj1bU=
+			kdJM9sGK0u2lbLMVRfcCcov8pXvLKTqTKV6h3z1z7tQ=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PagoIyn5OOqd5o9HWnnrl/fGk1I=
+			eupwS3YZ7aVLIkshIsZGWjLUwYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			/eAWEQ3oU9NnyAod9ZhzrEG9ykRUnDSTtUeZGTG27ao=
+			0vVZ9/oQXrUCvyypDiB/alItBTQZvr9ETQvJaOSjM9I=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mJMarH8rlcQz/BtHByUlYk9q7FI=
+			IJC+5juXmaWveCUhuN1vkhdZMtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			eJjplIuTkNIxoXzQaQgkfkzKFcJF2YDDenUoK7A6mBc=
+			n6DK6NVG2h0qeKcDeTdMj1sV7kXh95DLN3peW9/nS2Q=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8pgxA200pstJBMGf2gMOywY8jys=
+			xTmPuuVwY5Q3G2zBe9UE0Ww4W1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			mnAoW9xkT4vJVZ+VMZ+n7aU2Zp+rl9SbdN18gS6ws6A=
+			54AzaIBrkbrgdLVwl31uk/3XH3gHS49LIQtc7jGybww=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/a5yalPVFhQIRA0t0ylT21aL9zc=
+			poMdLXcxcB1GzcK1/29PzPF/bdY=
 			</data>
 			<key>hash2</key>
 			<data>
-			zbTgrHrYvniCOOqxf/foQIiwh4kigWRprUpUf49WjWg=
+			VlfyxdtD+TF57+9lVp3exaTaHuOKm3yOS3uYsmtEerE=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8pgxA200pstJBMGf2gMOywY8jys=
+			xTmPuuVwY5Q3G2zBe9UE0Ww4W1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			mnAoW9xkT4vJVZ+VMZ+n7aU2Zp+rl9SbdN18gS6ws6A=
+			54AzaIBrkbrgdLVwl31uk/3XH3gHS49LIQtc7jGybww=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/a5yalPVFhQIRA0t0ylT21aL9zc=
+			poMdLXcxcB1GzcK1/29PzPF/bdY=
 			</data>
 			<key>hash2</key>
 			<data>
-			zbTgrHrYvniCOOqxf/foQIiwh4kigWRprUpUf49WjWg=
+			VlfyxdtD+TF57+9lVp3exaTaHuOKm3yOS3uYsmtEerE=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PagoIyn5OOqd5o9HWnnrl/fGk1I=
+			eupwS3YZ7aVLIkshIsZGWjLUwYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			/eAWEQ3oU9NnyAod9ZhzrEG9ykRUnDSTtUeZGTG27ao=
+			0vVZ9/oQXrUCvyypDiB/alItBTQZvr9ETQvJaOSjM9I=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mJMarH8rlcQz/BtHByUlYk9q7FI=
+			IJC+5juXmaWveCUhuN1vkhdZMtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			eJjplIuTkNIxoXzQaQgkfkzKFcJF2YDDenUoK7A6mBc=
+			n6DK6NVG2h0qeKcDeTdMj1sV7kXh95DLN3peW9/nS2Q=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PagoIyn5OOqd5o9HWnnrl/fGk1I=
+			eupwS3YZ7aVLIkshIsZGWjLUwYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			/eAWEQ3oU9NnyAod9ZhzrEG9ykRUnDSTtUeZGTG27ao=
+			0vVZ9/oQXrUCvyypDiB/alItBTQZvr9ETQvJaOSjM9I=
 			</data>
 		</dict>
 		<key>Modules/CASPromo.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mJMarH8rlcQz/BtHByUlYk9q7FI=
+			IJC+5juXmaWveCUhuN1vkhdZMtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			eJjplIuTkNIxoXzQaQgkfkzKFcJF2YDDenUoK7A6mBc=
+			n6DK6NVG2h0qeKcDeTdMj1sV7kXh95DLN3peW9/nS2Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

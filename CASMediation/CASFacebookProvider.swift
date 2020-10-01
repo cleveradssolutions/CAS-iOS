@@ -6,6 +6,7 @@
 //
 
 #if canImport(FBAudienceNetwork)
+    import AppTrackingTransparency
     import CleverAdsSolutions
     import FBAudienceNetwork
     import Foundation
@@ -70,6 +71,10 @@
 
             if !wrapper.settings.getTestDeviceIDs().isEmpty {
                 FBAdSettings.addTestDevices(wrapper.settings.getTestDeviceIDs())
+            }
+
+            if #available(iOS 14, *) {
+                FBAdSettings.setAdvertiserTrackingEnabled(ATTrackingManager.trackingAuthorizationStatus == .authorized)
             }
 
             let settings = FBAdInitSettings(placementIDs: Array(allPlacements),
