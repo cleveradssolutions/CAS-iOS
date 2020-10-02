@@ -1,3 +1,0 @@
-module CASStartApp {
-    header "CASStartAppBridge.h"
-}

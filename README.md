@@ -35,8 +35,14 @@
  15.  [Support](#support)  
  16.  [License](#license)
 
->  The Integration Demo application demonstrate how to integrate the CAS Mediation in your app.
->  [CAS-iOS-Examples repository](https://github.com/cleveradssolutions/CAS-iOS-Examples)
+#### The Integration Demo application demonstrate how to integrate the CAS Mediation in your app.
+Each iOS example app on this repository includes a Podfile and a Podfile.lock. The Podfile.lock tracks the version of each Pod specified in the Podfile that was used to build the release of the iOS example apps.  
+
+1. Run `pod install` in the same directory as the Podfile.
+2. [Optional] Run `pod update` to get the latest version of the SDK.
+3. Open the `.xcworkspace` file with Xcode and run the app.
+
+See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on installing and updating pods.
 
 ## Step 1 Add the CAS Framework to Your Xcode Project
 The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). 

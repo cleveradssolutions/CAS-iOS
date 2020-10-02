@@ -1,3 +1,0 @@
-module CASIronSource {
-    header "CASIronSourceBridge.h"
-}

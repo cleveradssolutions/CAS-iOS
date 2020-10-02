@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>CFBundleDevelopmentRegion</key>
+		<string>$(DEVELOPMENT_LANGUAGE)</string>
+		<key>CFBundleExecutable</key>
+		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIdentifier</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>$(PRODUCT_NAME)</string>
+		<key>CFBundlePackageType</key>
+		<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0</string>
+		<key>CFBundleVersion</key>
+		<string>1</string>
+		<key>LSRequiresIPhoneOS</key>
+		<true />
+		<key>UIApplicationSceneManifest</key>
+		<dict>
+			<key>UIApplicationSupportsMultipleScenes</key>
+			<false />
+			<key>UISceneConfigurations</key>
+			<dict>
+				<key>UIWindowSceneSessionRoleApplication</key>
+				<array>
+					<dict>
+						<key>UISceneConfigurationName</key>
+						<string>Default Configuration</string>
+						<key>UISceneDelegateClassName</key>
+						<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+						<key>UISceneStoryboardFile</key>
+						<string>Main</string>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		<key>UIMainStoryboardFile</key>
+		<string>Main</string>
+		<key>NSUserTrackingUsageDescription</key>
+		<string>This identifier will be used to deliver personalized ads to you.</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>Some ad content may require access to the photo library.</string>
+		<key>NSCameraUsageDescription</key>
+		<string>Some ad content may access camera to take picture.</string>
+		<key>NSMotionUsageDescription</key>
+		<string>Some ad content may require access to accelerometer for interactive ad experience.</string>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>fb</string>
+			<string>instagram</string>
+			<string>tumblr</string>
+			<string>twitter</string>
+		</array>
+		<key>GADApplicationIdentifier</key>
+		<string>ca-app-pub-3940256099942544~1458002511</string>
+		<key>UIRequiredDeviceCapabilities</key>
+		<array>
+			<string>armv7</string>
+		</array>
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>UISupportedInterfaceOrientations~ipad</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationPortraitUpsideDown</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>NSAppTransportSecurity</key>
+		<dict>
+			<key>NSAllowsArbitraryLoads</key>
+			<true />
+			<key>NSAllowsArbitraryLoadsForMedia</key>
+			<true />
+			<key>NSAllowsArbitraryLoadsInWebContent</key>
+			<true />
+		</dict>
+		<key>SKAdNetworkItems</key>
+		<array>
+			<dict>
+				<!-- Mediation Google Ads -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>cstr6suwn9.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- Mediation Vungle -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>GTA9LK7P23.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- Adcolony RTBD -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>4PFYVQ9L8R.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- Appier DSP -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>V72QYCH5UU.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- Sift RTBD -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>KLF5C3L5U5.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- Mediation AppLovin -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>ludvb6z3bs.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--Remerge-->
+				<key>SKAdNetworkIdentifier</key>
+				<string>2U9PT9HC89.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--Lifestreet-->
+				<key>SKAdNetworkIdentifier</key>
+				<string>t38b2kh725.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- Moloco RTBD KR -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>9T245VHMPL.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--PubNative-->
+				<key>SKAdNetworkIdentifier</key>
+				<string>TL55SBB4FM.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--Jampp-->
+				<key>SKAdNetworkIdentifier</key>
+				<string>YCLNXRL5PM.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- Criteo RTBD USA -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>hs6bdukanm.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- CrossInstall (Twitter) -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>prcb7njmu6.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- Mediation IronSource -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>SU67R6K2V3.skadnetwork</string>
+			</dict>
+			<dict>
+				<!-- Mediation Unity Ads -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>3RD42EKR43.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  ScaleMonk Inc.  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>av6w8kgt66.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Spyke Media GmbH  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>44n7hlldy6.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Adikteev SA  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>ydx93a7ass.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Bidmachine  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>wg4vff78zm.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  BYTEMOD PTE. LTD-global  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>22mmun2rn5.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Criteo SA (Manage.com)  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>9RD848Q2BZ.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Smadex SL  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>ppxm28t8ap.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Snap Inc.  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>424M5254LK.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  LoopMe Ltd  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>5lm9lj6jb7.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  ADTIMING TECHNOLOGY PTE. LTD.  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>488r3q3dtq.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  DATASEAT LTD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>M8DBW4SV7C.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Persona.ly LTD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>44jx6755aq.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Beeswax  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>c6k4g5qg8m.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  InMobi DSP  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>WZMMZ9FP6W.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Chartboost, Inc.  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>F38H382JLK.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Kidoz Ltd.  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>v79kvwwj4g.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Sabio Mobile Inc.  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>GLQZH8VGBY.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  BYTEMOD PTE. LTD-CN  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>238da6jt44.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Aarki, Inc.  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>4FZDC2EVR5.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  SPOTAD LTD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>f73kdq92p3.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Realtime Technologies GmbH  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>4468km3ulz.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Centro Inc.  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>3sh42y64q3.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Unity Technologies  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>bvpn9ufa9b.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Liftoff Mobile, Inc.  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>7UG5ZH24HU.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  RTBHouse Pte LTD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>8s468mfl3y.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Maiden Marketing Pvt Ltd.   -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>zmvfpc5aq8.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Apptimus LTD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>lr83yxwka7.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Unity Technologies  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>4DZT52R2T5.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Mintegral  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>KBD757YWX3.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Adikteev SA  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>YDX93A7ASS.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Chartboost Partner  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>737z793b9f.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Chartboost Partner  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>CJ5566H2GA.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Hybrid  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>W9Q455WK68.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  TheTradeDesk_RTBD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>uw77j35x4d.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Blis RTBD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>ggvn48r87g.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Appreciate RTBD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>mlmmfzh3r3.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  StartApp RTBD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>5l3tpt7t6e.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  MediaSmart RTBD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>7rz58n8ntl.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Adtheorent_RTBD  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>cg4yq2srnc.skadnetwork</string>
+			</dict>
+			<dict>
+				<!--  Vungle Partner  -->
+				<key>SKAdNetworkIdentifier</key>
+				<string>N9X2A789QT.skadnetwork</string>
+			</dict>
+		</array>
+	</dict>
+</plist>
