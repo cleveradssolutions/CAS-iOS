@@ -5,6 +5,6 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'CASSample' do
-  pod 'CleverAdsSolutions-SDK', '> 1.6.0'
-  pod 'CleverAdsSolutions-Promo', '> 1.6.0'
+  pod 'CleverAdsSolutions-SDK', '>= 1.6.0'
+  pod 'CleverAdsSolutions-Promo', '>= 1.6.0'
 end

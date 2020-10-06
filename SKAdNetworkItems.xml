@@ -275,4 +275,19 @@
         <key>SKAdNetworkIdentifier</key>
         <string>N9X2A789QT.skadnetwork</string>
     </dict>
+    <dict>
+        <!--  REVX TECHNOLOGY PRIVATE LIMITED  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>5a6flpkh64.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  AdColony Partner  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>EJVT5QM6AK.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  AdColony Partner  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>MTKV5XTK9E.skadnetwork</string>
+    </dict>
 </array>

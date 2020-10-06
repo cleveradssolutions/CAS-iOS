@@ -3,7 +3,7 @@
 [![SDK](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CAS.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
 [![Promo](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CASPromo.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-Promo)
 [![App-ads.txt](https://img.shields.io/endpoint?url=https://cleveradssolutions.com/AppAdsTxtShiled.json)](https://cleveradssolutions.com/app-ads.txt)
-[![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Sep%2030%2C%202020-orange)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
+[![![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Oct%2005%2C%202020-orange)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
 
 ## Note
 - XCode 12 and up
@@ -54,7 +54,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```
-pod 'CleverAdsSolutions-SDK', '1.6.0'
+pod 'CleverAdsSolutions-SDK', '1.6.1'
 ```
 4. Then from the command line run:
 ```
@@ -70,7 +70,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```
-pod 'CleverAdsSolutions-Promo', '1.6.0'
+pod 'CleverAdsSolutions-Promo', '1.6.1'
 ```
 Then from the command line run:
 ```
