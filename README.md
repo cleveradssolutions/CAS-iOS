@@ -3,7 +3,7 @@
 [![SDK](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CAS.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
 [![Promo](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CASPromo.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-Promo)
 [![App-ads.txt](https://img.shields.io/endpoint?url=https://cleveradssolutions.com/AppAdsTxtShiled.json)](https://cleveradssolutions.com/app-ads.txt)
-[![![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Oct%2016%2C%202020-orange)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
+[![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Oct%2016%2C%202020-orange)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
 
 ## Note
 - XCode 12 and up
