@@ -290,4 +290,9 @@
         <key>SKAdNetworkIdentifier</key>
         <string>MTKV5XTK9E.skadnetwork</string>
     </dict>
+    <dict>
+        <!-- InMobi Partner  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>p78axxw29g.skadnetwork</string>
+    </dict>
 </array>
