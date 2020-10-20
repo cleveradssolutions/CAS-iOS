@@ -43,8 +43,6 @@ class ViewController: UIViewController, CASLoadDelegate {
 //            ])
 //        }
 
-        bannerView.adPostion = CASPosition.bottomCenter
-
         bannerDelegate.lastInfo = lastBannerLabel
         interDelegate.lastInfo = lastInterstitialLabel
         rewardDelegate.lastInfo = lastRewardedInfo
