@@ -176,15 +176,24 @@ This documentation is provided for compliance with the European Union's [General
 **Passing Consent** to CAS API, use this functions:  
 User consents to behavioral targeting in compliance with GDPR.
 ```swift
-CAS.settings.updateUser(consent: .accepted)
+Swift: CAS.settings.updateUser(consent: .accepted)
+```
+```objc
+Objc: [CAS.settings updateUserWithConsent: CASConsentStatusAccepted];
 ```
 User does not consent to behavioral targeting in compliance with GDPR.
 ```swift
-CAS.settings.updateUser(consent: .denied)
+Swift: CAS.settings.updateUser(consent: .denied)
+```
+```objc
+Objc: [CAS.settings updateUserWithConsent: CASConsentStatusDenied];
 ```
 By default, user consent management is passed on to media networks. For reset state:
 ```swift
-CAS.settings.updateUser(consent: .undefined)
+Swift: CAS.settings.updateUser(consent: .undefined)
+```
+```objc
+Objc: [CAS.settings updateUserWithConsent: CASConsentStatusUndefined];
 ```
 
 ### CCPA Compliance
@@ -193,15 +202,24 @@ This documentation is provided for compliance with the California Consumer Priva
 **Passing consent to the sale personal information**
 User does not consent to the sale of his or her personal information in compliance with CCPA.
 ```swift
-CAS.settings.updateCCPA(status: .optOutSale)
+Swift: CAS.settings.updateCCPA(status: .optOutSale)
+```
+```objc
+Objc: [CAS.settings updateCCPAWithStatus: CASCCPAStatusOptOutSale];
 ```
 User consents to the sale of his or her personal information in compliance with CCPA.
 ```swift
-CAS.settings.updateCCPA(status: .optInSale)
+Swift: CAS.settings.updateCCPA(status: .optInSale)
+```
+```objc
+Objc: [CAS.settings updateCCPAWithStatus: CASCCPAStatusOptInSale];
 ```
 By default, user consent management is passed on to media networks. For reset state:
 ```swift
-CAS.settings.updateCCPA(status: .undefined)
+Swift: CAS.settings.updateCCPA(status: .undefined)
+```
+```objc
+Objc: [CAS.settings updateCCPAWithStatus: CASCCPAStatusUndefined];
 ```
 
 ###  COPPA and EEA Compliance
@@ -211,15 +229,24 @@ You can mark your ad requests to receive treatment for users in the European Eco
 
 Call `CASAudience.children` indicate that user want get content treated as child-directed for purposes of COPPA or receive treatment for users in the European Economic Area (EEA) under the age of consent. 
 ```swift
-CAS.settings.setTagged(audience: .children)
+Swift: CAS.settings.setTagged(audience: .children)
+```
+```objc
+Objc: [CAS.settings setTaggedWithAudience: CASAudienceChildren];
 ```
 Call `CASAudience.notChildren` to indicate that user **don't** want get content treated as child-directed for purposes of COPPA or **not** receive treatment for users in the European Economic Area (EEA) under the age of consent.
 ```swift
-CAS.settings.setTagged(audience: .notChildren)
+Swift: CAS.settings.setTagged(audience: .notChildren)
+```
+```objc
+Objc: [CAS.settings setTaggedWithAudience: CASAudienceNotChildren];
 ```
 By default, the audience is unknown and the mediation ad network will work as usual. For reset state:
 ```swift
-CAS.settings.setTagged(audience: .undefined)
+Swift: CAS.settings.setTagged(audience: .undefined)
+```
+```objc
+Objc: [CAS.settings setTaggedWithAudience: CASAudienceUndefined];
 ```
 
 **We recommend to set Privacy API before initializing CAS SDK.**
@@ -229,12 +256,10 @@ You can access to SDK from any thread.
 
 **Import the CAS SDK**
 ```swift
-// Swift
-import CleverAdsSolutions
+Swift: import CleverAdsSolutions
 ```
 ```objc
-// Objective-C
-#import <CleverAdsSolutions/CleverAdsSolutions-Swift.h>
+Objc: #import <CleverAdsSolutions/CleverAdsSolutions-Swift.h>
 ```
 
 **Configure Ads Settings singleton instance for configure all mediation managers:**
@@ -266,7 +291,7 @@ CAS.settings.setLoading(mode: .optimal)
 
 **Initialize MediationManager instance:**
 ```swift
-class AppDelegate: UIResponder, UIApplicationDelegate {
+Swift: class AppDelegate: UIResponder, UIApplicationDelegate {
 /* Class body ... */
 
     var manager: CASMediationManager?
@@ -276,7 +301,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         manager = CAS.create(
           // CAS manager (Placement) identifier.
           managerID: own_identifier, 
-          // Optional set active Ad Types: '[AdTypeFlags.Banner, AdTypeFlags.Interstitial]' for example.
+          // Optional set active Ad Types: '[CASTypeFlags.banner, CASTypeFlags.interstitial]' for example.
           // Ad types can be enabled manually after initialize by CASMediationManager.setEnabled
           enableTypes: CASTypeFlags.everything, 
           // Optional Enable demo mode that will always request test ads. Set FALSE for release!  
@@ -290,11 +315,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
+```objc
+Objc: @implementation AppDelegate
+/* Class body ... */
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Configure CAS.settings before initialize
+    CASMediationManager *manager =
+        // CAS manager (Placement) identifier.
+        [CAS createWithManagerID:own_identifier
+        // Optional set active Ad Types: 'CASTypeInt.banner | CASTypeInt.interstitial' for example.
+        // Ad types can be enabled manually after initialize by CASMediationManager.setEnabled
+                     enableTypes:CASTypeInt.everything
+        // Optional Enable demo mode that will always request test ads. Set FALSE for release!  
+                      demoAdMode:YES
+        // Optional subscribe to initialization done  
+                          onInit:^(BOOL complete, NSString *_Nullable error) {
+        // CAS manager initialization done  
+    }];
+    return YES;
+}
+@end
+```
 CAS.create can be called for different identifiers to create different managers. 
 
 **Optional.** Subscribe listener to Ad Loading response:  
 ```swift
-class AdLoadDelegate: CASLoadDelegate{
+Swift: class AdLoadDelegate: CASLoadDelegate{
     init(manager:CASMediationManager){
         manager.adLoadDelegate = self // Weak reference
     }
@@ -306,7 +353,19 @@ class AdLoadDelegate: CASLoadDelegate{
     }
 }
 ```
+```objc
+Objc: @interface ViewController : UIViewController<CASLoadDelegate>
+@end
 
+@implementation ViewController
+- (void)onAdLoaded:(enum CASType)adType {
+    // Callback on AdType loaded and ready to shown.
+}
+- (void)onAdFailedToLoad:(enum CASType) adType withError:(NSString *)error {
+    // Callback on AdType failed to load and cant be shown.
+}
+@end
+```
 ## Step 11 Implement our Ad Units
 ### Banner Ad
 Banner ads are displayed in `CASBannerView` objects from module `CleverAdsSolutions`, so the first step toward integrating banner ads is to include a `CASBannerView` in your view hierarchy. This is typically done either with the **Interface Builder** or **programmatically**.
@@ -319,13 +378,17 @@ A `CASBannerView` can also be instantiated directly. Here's an example of how to
 
 #### You can alternatively create CASBannerView programmatically:
 ```swift
-class ViewController: UIViewController, CASCallback {
+Swift: class ViewController: UIViewController, CASCallback {
 /* Class body ... */
     override func viewDidLoad() {
         super.viewDidLoad()
         // In this case, we instantiate the banner with desired ad size.
         manager.setBanner(size: CASSize.banner)
-        bannerView = CASBannerView(manager: manager)
+        bannerView = CASBannerView(manager: manager)      
+        bannerView.setTranslatesAutoresizingMaskIntoConstraints = false
+        
+        // Optional set delegate of Banner Ad state changes
+        bannerView.delegate = self           // Weak reference
         
         // This view controller is used to present an overlay when the ad is clicked. 
         // It should normally be set to the view controller that contains the GADBannerView.
@@ -350,8 +413,45 @@ class ViewController: UIViewController, CASCallback {
                             constant: 0)
         ])
         
-        // Optional
-        bannerView.delegate = self           // Weak reference
+        
+    }
+}
+```
+```objc
+Objc: @implementation ViewController
+/* Class body ... */
+- (void)viewDidLoad {
+    [super viewDidLoad];
+        // In this case, we instantiate the banner with desired ad size.
+        [manager setBannerSize: CASSize.banner];
+        self.bannerView = [[CASBannerView alloc] initWithManager:manager];        
+        [self.bannerView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        
+        // Optional set delegate of Banner Ad state changes
+        [self.bannerView setDelegate:self]; // Weak reference
+        
+        // This view controller is used to present an overlay when the ad is clicked. 
+        // It should normally be set to the view controller that contains the GADBannerView.
+        [self.bannerView setRootViewController:self]; // Weak reference
+
+        // Add BannerView To View
+        [self.view addSubview:self.bannerView];
+        [NSLayoutConstraint activateConstraints:@[
+           [NSLayoutConstraint constraintWithItem:self.bannerTest
+                                        attribute:NSLayoutAttributeBottom
+                                        relatedBy:NSLayoutRelationEqual
+                                           toItem:self.view
+                                        attribute:NSLayoutAttributeBottom
+                                       multiplier:1
+                                         constant:0],
+           [NSLayoutConstraint constraintWithItem:self.bannerTest
+                                        attribute:NSLayoutAttributeCenterX
+                                        relatedBy:NSLayoutRelationEqual
+                                           toItem:self.view
+                                        attribute:NSLayoutAttributeCenterX
+                                       multiplier:1
+                                         constant:0]
+      ]];
     }
 }
 ```
@@ -361,7 +461,10 @@ Note that in this case we don't give width or height constraints, as the provide
 Manual load manager mode require call `loadNextAd()` after create `CASBannerView` and change banner size.  
 You can use `loadNextAd()` for cancel current impression and load next ad.
 ```swift
-bannerView.loadNextAd();
+Swift: bannerView.loadNextAd()
+```
+```objc
+Objc: [self.bannerView loadNextAd];
 ```
 
 ### Ad Size
@@ -377,10 +480,10 @@ manager.setBanner(size: size)
 // OR same
 bannerView.adSize = size
 ```
-
-If you use `CASLoadingManagerMode.manual` then please call load next ad after banner size changed.
-```swift
-bannerView.loadNextAd()
+```objc
+[manager setBannerSize:size];
+// OR same
+self.bannerView.adSize = size;
 ```
 
 #### Adaptive Banners
