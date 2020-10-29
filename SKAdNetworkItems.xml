@@ -295,4 +295,14 @@
         <key>SKAdNetworkIdentifier</key>
         <string>p78axxw29g.skadnetwork</string>
     </dict>
+    <!-- Facebook Audience Network  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>v9wttpbfk9.skadnetwork</string>
+    </dict>
+    <!-- Facebook Audience Network  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>n38lu8286q.skadnetwork</string>
+    </dict>
 </array>
