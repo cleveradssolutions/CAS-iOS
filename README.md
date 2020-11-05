@@ -53,7 +53,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```
-pod 'CleverAdsSolutions-SDK', '~> 1.6.11'
+pod 'CleverAdsSolutions-SDK', '~> 1.6.12'
 ```
 4. Then from the command line run:
 ```
@@ -69,7 +69,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```
-pod 'CleverAdsSolutions-Promo', '~> 1.6.11'
+pod 'CleverAdsSolutions-Promo', '~> 1.6.12'
 ```
 Then from the command line run:
 ```
