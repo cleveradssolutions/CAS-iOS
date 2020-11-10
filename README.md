@@ -49,12 +49,12 @@ See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on
 The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). 
 1. Open your project's Podfile. 
 2. Add the following lines to the beginning of podfile:
-```
+```cpp
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
-```
+```cpp
 pod 'CleverAdsSolutions-SDK', '~> 1.7.0'
 ```
 > Some third party partners are not included in the main dependency: MyTarget, MobFox, AmazonAd.  Combine main dependency with partners dependencies from Advanced CocoaPods integration.
@@ -70,11 +70,11 @@ To do this, use any combination of partial dependencies.
 **Please provide us with a list of integrated dependencies so that we can make the correct settings.**  
 
 General is dependency of third-party mediation SDK that are always recommended to be used: Google Ads, Vungle, IronSource, AdColony, AppLovin, Facebook AN, InMobi, Yandex Ads, Unity Ads, Kidoz.
-```
+```cpp
 pod 'CleverAdsSolutions-SDK/General', '~> 1.7.0'
 ```
 Separate dependencies for each third party partner.:
-```
+```cpp
 pod 'CleverAdsSolutions-SDK/MobFox'
 pod 'CleverAdsSolutions-SDK/AmazonAd'
 pod 'CleverAdsSolutions-SDK/Chartboost'
@@ -101,8 +101,8 @@ Cross promotion is an app marketing strategy in which app developers promote one
 Start your cross promotion campaign with CAS [here](https://cleveradssolutions.com).
 
 Open your project's Podfile and add this line to your app's target:
-```
-pod 'CleverAdsSolutions-Promo', '~> 1.6.12'
+```cpp
+pod 'CleverAdsSolutions-Promo', '~> 1.7.0'
 ```
 Then from the command line run:
 ```
