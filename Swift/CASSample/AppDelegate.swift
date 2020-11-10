@@ -18,7 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // CAS.settings.updateUser(consent: .accepted)
         // CAS.settings.updateCCPA(status: .optInSale)
         // CAS.settings.setTagged(audience: .notChildren)
-
+        CAS.settings.setTrackLocation(enabled: true)
+        CAS.settings.setInterstitialAdsWhenVideoCostAreLower(allow: true)
+        
+        // Inform SDK of the users details
+        CAS.targetingOptions.setAge(12)
+        CAS.targetingOptions.setGender(.female)
+        
         // CAS storage last created manager in strong static CAS.manager property
         let manager = CAS.create(managerID: "demo",
                                  enableTypes: [.banner, .interstitial, .rewarded],

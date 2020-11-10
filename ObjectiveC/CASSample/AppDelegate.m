@@ -13,13 +13,17 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
     // Set any CAS Settings before CAS.create
     [[CAS settings] setDebugMode:YES];
     //[[CAS settings] updateUserWithConsent:CASConsentStatusAccepted];
     //[[CAS settings] updateCCPAWithStatus:CASCCPAStatusOptInSale];
     //[[CAS settings] setTaggedWithAudience:CASAudienceNotChildren];
+    [[CAS settings] setTrackLocationWithEnabled:YES];
+    [[CAS settings] setInterstitialAdsWhenVideoCostAreLowerWithAllow:YES];
+
+    // Inform SDK of the users details
+    [[CAS targetingOptions] setAge:12];
+    [[CAS targetingOptions] setGender:GenderFemale];
 
     // CAS storage last created manager in strong static CAS.manager property
     CASMediationManager *manager =
@@ -32,7 +36,7 @@
 
     // Set banner size immediately after CAS.create
     [manager setBannerSize:[CASSize getSmartBanner]];
-    
+
     return YES;
 }
 

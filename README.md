@@ -18,21 +18,22 @@
  6.  [Configuring URL Schemes (Optional)](#step-6-configuring-url-schemes)  
  7.  [Google Ads App ID](#step-7-google-ads-app-id)  
  8.  [Add the CAS default settings file (Optional)](#step-8-add-the-CAS-default-settings-file)  
- 9.  [Privacy Laws](#step-9-privacy-laws)  
- 9.1.  [GDPR Managing Consent](#gdpr-managing-consent)  
- 9.2.  [CCPA Compliance](#ccpa-compliance)  
- 9.3.  [COPPA and EEA Compliance](#coppa-and-eea-compliance)  
- 10.  [Initialize the SDK](#step-10-initialize-the-sdk)  
- 11.  [Implement our Ad Units](#step-11-implement-our-ad-units)  
- 11.1. [Banner Ad](#banner-ad)  
- 11.2. [Ad Size](#ad-size)  
- 11.3. [Ad events](#ad-events)  
- 11.4. [Check Ad Availability](#check-ad-availability)  
- 11.5. [Show fullscreen Ad](#show-fullscreen-ad)  
- 12.  [Mediation partners](#mediation-partners)  
- 13.  [GitHub issue tracker](#github-issue-tracker)
- 14.  [Support](#support)  
- 15.  [License](#license)
+ 9. [Import the CAS SDK](#step-9-import-the-cas-sdk)
+ 10.  [Privacy Laws](#step-10-privacy-laws)  
+ 10.1.  [GDPR Managing Consent](#gdpr-managing-consent)  
+ 10.2.  [CCPA Compliance](#ccpa-compliance)  
+ 10.3.  [COPPA and EEA Compliance](#coppa-and-eea-compliance)  
+ 11.  [Initialize the SDK](#step-10-initialize-the-sdk)  
+ 12.  [Implement our Ad Units](#step-11-implement-our-ad-units)  
+ 12.1. [Banner Ad](#banner-ad)  
+ 12.2. [Ad Size](#ad-size)  
+ 12.3. [Ad events](#ad-events)  
+ 12.4. [Check Ad Availability](#check-ad-availability)  
+ 12.5. [Show fullscreen Ad](#show-fullscreen-ad)  
+ 13.  [Mediation partners](#mediation-partners)  
+ 14.  [GitHub issue tracker](#github-issue-tracker)
+ 15.  [Support](#support)  
+ 16.  [License](#license)
 
 #### The Integration Demo application demonstrate how to integrate the CAS Mediation in your app.
 Each iOS example app on this repository includes a Podfile and a Podfile.lock. The Podfile.lock tracks the version of each Pod specified in the Podfile that was used to build the release of the iOS example apps.  
@@ -44,6 +45,7 @@ Each iOS example app on this repository includes a Podfile and a Podfile.lock. T
 See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on installing and updating pods.
 
 ## Step 1 Add the CAS Framework to Your Xcode Project
+#### CocoaPods
 The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). 
 1. Open your project's Podfile. 
 2. Add the following lines to the beginning of podfile:
@@ -53,13 +55,44 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```
-pod 'CleverAdsSolutions-SDK', '~> 1.6.12'
+pod 'CleverAdsSolutions-SDK', '~> 1.7.0'
 ```
+> Some third party partners are not included in the main dependency: MyTarget, MobFox, AmazonAd.  Combine main dependency with partners dependencies from Advanced CocoaPods integration.
 4. Then from the command line run:
 ```
 pod install --repo-update
 ```
 If you're new to CocoaPods, see their [official documentation](https://guides.cocoapods.org/using/using-cocoapods) for info on how to create and use Podfiles
+
+#### Advanced CocoaPods
+We support partial integration of the third party mediation sdk you really need.  
+To do this, use any combination of partial dependencies.  
+**Please provide us with a list of integrated dependencies so that we can make the correct settings.**  
+
+General is dependency of third-party mediation SDK that are always recommended to be used: Google Ads, Vungle, IronSource, AdColony, AppLovin, Facebook AN, InMobi, Yandex Ads, Unity Ads, Kidoz.
+```
+pod 'CleverAdsSolutions-SDK/General', '~> 1.7.0'
+```
+Separate dependencies for each third party partner.:
+```
+pod 'CleverAdsSolutions-SDK/MobFox'
+pod 'CleverAdsSolutions-SDK/AmazonAd'
+pod 'CleverAdsSolutions-SDK/Chartboost'
+pod 'CleverAdsSolutions-SDK/StartApp'
+pod 'CleverAdsSolutions-SDK/Kidoz'
+pod 'CleverAdsSolutions-SDK/SuperAwesome' # Works only for children audience
+pod 'CleverAdsSolutions-SDK/MyTarget' # Works only for CIS countries
+```
+> The list of third party partners will change in the future.
+
+#### Manual Download
+Follow these steps to add the CAS SDK to your project:
+1. Download latest version of [CleverAdsSolutions.zip](https://github.com/cleveradssolutions/CAS-iOS/releases/latest).
+2. Unzip it into your Xcode Project
+3. Add `CleverAdsSolutions.framework` to dependencies
+4. Set `Swift Compiler - Search paths` to the CASMediation folder in Build Settings.
+5. Add any supported third party mediation sdk.
+6. Remove unused scripts from the CASMediation folder of third party mediation that are not integrated.
 
 ## Step 2 Add Cross Promotion Framework
 **Optional step.**  
@@ -163,9 +196,35 @@ Add your AdMob App ID to your app's `Info.plist` file by adding a `GADApplicatio
 **Optional step.**  
 Follow the [link](http://psvpromo.psvgamestudio.com/cas-settings.php) to download a `cas_settings.json` file.
 
-Drop the `cas_settings.json` to any folder in your project. However, only the **main bundle** resources is supported.  
+Drop the `cas_settings.json` to your project and link the settings file to `Build Phases > Copy Bundle Resources`. However, only the **main bundle** resources is supported.  
 
-## Step 9 Privacy Laws
+## Step 9 Import the CAS SDK
+```swift
+Swift: import CleverAdsSolutions
+```
+```objc
+Objc: #import <CleverAdsSolutions/CleverAdsSolutions-Swift.h>
+```
+
+The `CAS` class gives access to all the possibilities of the SDK.
+Singleton instance of `CASSettings` to configure all mediation managers.
+```swift
+let sdkSettings = CAS.settings
+```
+Singleton instance of `CASTargetingOptions` to inform SDK of the users details.
+```swift
+let targetingOptions = CAS.targetingOptions
+```
+Last initialized instance of `CASMediationManager` stored with strong pointer. May be **nil** before calling the `CAS.create` function.
+```swift
+let lastManager = CAS.manager
+```
+The CAS SDK version string
+```swift
+let sdkVersion = CAS.getSDKVersion()
+```
+
+## Step 10 Privacy Laws
 This documentation is provided for compliance with various privacy laws. If you are collecting consent from your users, you can make use of APIs discussed below to inform CAS and all downstream consumers of this information.  
 
 A detailed article on the use of user data can be found in the [Privacy Policy](https://github.com/cleveradssolutions/CAS-Android/wiki/Privacy-Policy).
@@ -252,20 +311,11 @@ Objc: [CAS.settings setTaggedWithAudience: CASAudienceUndefined];
 **We recommend to set Privacy API before initializing CAS SDK.**
 
 ## Step 10 Initialize the SDK
-You can access to SDK from any thread.  
-
-**Import the CAS SDK**
-```swift
-Swift: import CleverAdsSolutions
-```
-```objc
-Objc: #import <CleverAdsSolutions/CleverAdsSolutions-Swift.h>
-```
-
-**Configure Ads Settings singleton instance for configure all mediation managers:**
+### Configure Ads Settings singleton instance
 ```swift
 CAS.settings.updateUser(consent: userConsent)
 CAS.settings.setDebugMode(debugMode)
+CAS.settings.setTrackLocation(enabled: isTrackLocation)
 // .. other settings
 ```
 
@@ -289,7 +339,22 @@ CAS.settings.setLoading(mode: .optimal)
 > Auto control load mediation ads starts immediately after initialization and will prepare displays automatically.  
 > Manual control loading mediation ads requires manual preparation of advertising content for display. Use ad loading methods before trying to show: `CASMediationManager.loadInterstitial(), CASMediationManager.loadRewardedVideo(), CASBannerView.loadNextAd()`  
 
-**Initialize MediationManager instance:**
+### Configure Targeting Options singleton instance once before initialize
+You can now easily tailor the way you serve your ads to fit a specific audience!  
+You’ll need to inform our servers of the users’ details so the SDK will know to serve ads according to the segment the user belongs to.
+```swift
+// Set user age. Limitation: 1-99 and 0 is 'unknown'
+CAS.targetingOptions.setAge(12)
+// Set user gender
+CAS.targetingOptions.setGender(CASTargetingOptions.Gender.male)
+// The user's current location.
+// Location data is not used to CAS; however, it may be used by 3rd party ad networks.
+// Do not use Location just for advertising.
+// Your app should have a valid use case for it as well.
+CAS.targetingOptions.setLocation(latitude: userLatitude, longitude: userLongitude)
+```
+
+### Initialize Mediation Manager instance
 ```swift
 Swift: class AppDelegate: UIResponder, UIApplicationDelegate {
 /* Class body ... */
@@ -298,14 +363,15 @@ Swift: class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Configure CAS.settings before initialize
+        // Configure CAS.targetingOptions before initialize
         manager = CAS.create(
           // CAS manager (Placement) identifier.
-          managerID: own_identifier, 
+          managerID: ownIdentifier, 
           // Optional set active Ad Types: '[CASTypeFlags.banner, CASTypeFlags.interstitial]' for example.
           // Ad types can be enabled manually after initialize by CASMediationManager.setEnabled
           enableTypes: CASTypeFlags.everything, 
           // Optional Enable demo mode that will always request test ads. Set FALSE for release!  
-          demoAdMode: true, 
+          demoAdMode: isTestBuild, 
           // Optional subscribe to initialization done  
           onInit: { success, error in  
               // CAS manager initialization done  

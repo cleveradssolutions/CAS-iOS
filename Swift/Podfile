@@ -5,6 +5,14 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'CASSample' do
-  pod 'CleverAdsSolutions-SDK', '>= 1.6.0'
-  pod 'CleverAdsSolutions-Promo', '>= 1.6.0'
+  ### Default integration:
+  pod 'CleverAdsSolutions-SDK', '>= 1.7.0'
+  ### Advanced integration:
+  #pod 'CleverAdsSolutions-SDK/General', '>= 1.7.0'
+  #pod 'CleverAdsSolutions-SDK/SuperAwesome', '>= 1.7.0'
+  #pod 'CleverAdsSolutions-SDK/MyTarget', '>= 1.7.0'
+  #pod 'CleverAdsSolutions-SDK/AmazonAd', '>= 1.7.0'
+  #pod 'CleverAdsSolutions-SDK/MobFox', '>= 1.7.0'
+  ### Cross Promotion integration:
+  #pod 'CleverAdsSolutions-Promo', '>= 1.7.0'
 end
