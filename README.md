@@ -30,10 +30,9 @@
  12.3. [Ad events](#ad-events)  
  12.4. [Check Ad Availability](#check-ad-availability)  
  12.5. [Show fullscreen Ad](#show-fullscreen-ad)  
- 13.  [Mediation partners](#mediation-partners)  
- 14.  [GitHub issue tracker](#github-issue-tracker)
- 15.  [Support](#support)  
- 16.  [License](#license)
+ 13.  [GitHub issue tracker](#github-issue-tracker)
+ 14.  [Support](#support)  
+ 15.  [License](#license)
 
 #### The Integration Demo application demonstrate how to integrate the CAS Mediation in your app.
 Each iOS example app on this repository includes a Podfile and a Podfile.lock. The Podfile.lock tracks the version of each Pod specified in the Podfile that was used to build the release of the iOS example apps.  
@@ -45,7 +44,8 @@ Each iOS example app on this repository includes a Podfile and a Podfile.lock. T
 See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on installing and updating pods.
 
 ## Step 1 Add the CAS Framework to Your Xcode Project
-#### CocoaPods
+<details><summary><b>Simple CocoaPods</b></summary>
+ 
 The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). 
 1. Open your project's Podfile. 
 2. Add the following lines to the beginning of podfile:
@@ -64,7 +64,9 @@ pod install --repo-update
 ```
 If you're new to CocoaPods, see their [official documentation](https://guides.cocoapods.org/using/using-cocoapods) for info on how to create and use Podfiles
 
-#### Advanced CocoaPods
+</details>
+<details><summary><b>Advanced CocoaPods</b></summary>
+
 We support partial integration of the third party mediation sdk you really need.  
 To do this, use any combination of partial dependencies.  
 **Please provide us with a list of integrated dependencies so that we can make the correct settings.**  
@@ -85,7 +87,9 @@ pod 'CleverAdsSolutions-SDK/MyTarget' # Works only for CIS countries
 ```
 > The list of third party partners will change in the future.
 
-#### Manual Download
+</details>
+<details><summary><b>Manual Download</b></summary>
+
 Follow these steps to add the CAS SDK to your project:
 1. Download latest version of [CleverAdsSolutions.zip](https://github.com/cleveradssolutions/CAS-iOS/releases/latest).
 2. Unzip it into your Xcode Project
@@ -93,6 +97,8 @@ Follow these steps to add the CAS SDK to your project:
 4. Set `Swift Compiler - Search paths` to the CASMediation folder in Build Settings.
 5. Add any supported third party mediation sdk.
 6. Remove unused scripts from the CASMediation folder of third party mediation that are not integrated.
+
+</details>
 
 ## Step 2 Add Cross Promotion Framework
 **Optional step.**  
@@ -129,20 +135,25 @@ In order to prevent your ads (and your revenue) from being impacted by ATS, plea
 The `NSAllowsArbitraryLoads` exception is required to make sure your ads are not impacted by ATS on iOS 9 devices, while `NSAllowsArbitraryLoadsForMedia` and `NSAllowsArbitraryLoadsInWebContent` are required to make sure your ads are not impacted by ATS on iOS 10 and later devices.
 
 ## Step 4 Configuring SK Ad Networks
-#### What is SKAdnetwork?
+<details><summary><b>What is SKAdnetwork?</b></summary>
+ 
 SKAdnetwork is a privacy safe method provided by Apple for ad networks to track installs. Up until iOS 14, most ad network campaign attribution has been based on a user's IDFA, but on iOS 14 and beyond, IDFAs will be less usable as a way to attribute which users have installed based on which ads they have interacted with.
+</details>
+<details><summary><b>How do I implement SKAdnetwork?</b></summary>
 
-#### How do I implement SKAdnetwork?
 To use SKAdnetwork, app developers must define which networks have permission to show ads within their app. Please add the SKAdNetworkIdentifiers listed below to your app's plist file as described [here](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps).
 
-#### Why should I implement SKAdnetwork?
+</details>
+<details><summary><b>Why should I implement SKAdnetwork?</b></summary>
 Going forward, fewer campaigns can rely on the IDFA to track ad campaign performance. Supporting SKAdnetwork will increase the number of eligible campaigns that may serve on your app which will increase demand and therefore eCPMs
+</details>
 
 To enable this functionality, you will need to update the SKAdNetworkItems key with an additional dictionary in your Info.plist.
 [View the latest list in XML format](SKAdNetworkItems.xml)
 
 ## Step 5 Configuring Privacy Controls
-#### Request App Tracking Transparency authorization
+<details><summary><b>Request App Tracking Transparency authorization</b></summary>
+
 iOS 14 and above requires publishers to obtain permission to track the user's device across applications.  
 To display the App Tracking Transparency authorization request for accessing the IDFA, update your Info.plist to add the NSUserTrackingUsageDescription key with a custom message describing your usage. Below is an example description text:
 ```xml
@@ -158,7 +169,9 @@ For more information, see [Apple's developer documentation](https://developer.ap
 
 Important: CAS does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.  
 
-#### Optional permissions 
+</details>
+<details><summary><b>Optional permissions</b></summary>
+ 
 In iOS 10, Apple has extended the scope of its privacy controls by restricting access to features like the camera, photo library, etc. In order to unlock rich, immersive experiences in the SDK that take advantage of these services, please add the following entry to your apps plist:
 ```xml
 <key>NSPhotoLibraryUsageDescription</key>
@@ -168,6 +181,7 @@ In iOS 10, Apple has extended the scope of its privacy controls by restricting a
 <key>NSMotionUsageDescription</key>
 <string>Some ad content may require access to accelerometer for interactive ad experience.</string>
 ```
+</details>
 
 ## Step 6 Configuring URL Schemes
 With the release of iOS 9, Apple also restricted usage of the canOpenURL: API, which CAS mediation networks uses to make decisions about whether or not we can land users in certain apps from our Dynamic End Cards (DECs). For example, one of our ad units could be for a new movie, and the associated DEC may present functionality to the user that allows them to send a tweet about it using the Twitter app. This kind of functionality is still possible in iOS 9, but publishers must enable it for the applications CAS links to by authorizing each app’s URL scheme in their plist. Note that if the schemes are not added, users will be taken to the app’s website instead, which may result in an undesirable user experience - having to login to the site, for example. In order to enable deep-linking for the apps the CAS uses, please add the following entry to your app's plist:
@@ -199,11 +213,10 @@ Follow the [link](http://psvpromo.psvgamestudio.com/cas-settings.php) to downloa
 Drop the `cas_settings.json` to your project and link the settings file to `Build Phases > Copy Bundle Resources`. However, only the **main bundle** resources is supported.  
 
 ## Step 9 Import the CAS SDK
+<details><summary>Swift</summary>
+ 
 ```swift
-Swift: import CleverAdsSolutions
-```
-```objc
-Objc: #import <CleverAdsSolutions/CleverAdsSolutions-Swift.h>
+import CleverAdsSolutions
 ```
 
 The `CAS` class gives access to all the possibilities of the SDK.
@@ -223,6 +236,31 @@ The CAS SDK version string
 ```swift
 let sdkVersion = CAS.getSDKVersion()
 ```
+</details>
+<details><summary>Objective-C</summary>
+
+```objc
+#import <CleverAdsSolutions/CleverAdsSolutions-Swift.h>
+```
+
+The `CAS` class gives access to all the possibilities of the SDK.
+Singleton instance of `CASSettings` to configure all mediation managers.
+```swift
+CASSettings *sdkSettings = [CAS settings]
+```
+Singleton instance of `CASTargetingOptions` to inform SDK of the users details.
+```swift
+CASTargetingOptions *targetingOptions = [CAS targetingOptions]
+```
+Last initialized instance of `CASMediationManager` stored with strong pointer. May be **nil** before calling the `[CAS create]` function.
+```swift
+CASMediationManager *lastManager = [CAS manager]
+```
+The CAS SDK version string
+```swift
+NSString *sdkVersion = [CAS getSDKVersion]
+```
+</details>
 
 ## Step 10 Privacy Laws
 This documentation is provided for compliance with various privacy laws. If you are collecting consent from your users, you can make use of APIs discussed below to inform CAS and all downstream consumers of this information.  
@@ -232,86 +270,113 @@ A detailed article on the use of user data can be found in the [Privacy Policy](
 ### GDPR Managing Consent
 This documentation is provided for compliance with the European Union's [General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679). In order to pass GDPR consent from your users, you should make use of the APIs and methods discussed below to inform CAS and all downstream consumers of this information.  
 
-**Passing Consent** to CAS API, use this functions:  
+<details><summary><b>Passing Consent to use personal information (Swift)</b></summary>
+   
 User consents to behavioral targeting in compliance with GDPR.
 ```swift
-Swift: CAS.settings.updateUser(consent: .accepted)
-```
-```objc
-Objc: [CAS.settings updateUserWithConsent: CASConsentStatusAccepted];
+CAS.settings.updateUser(consent: .accepted)
 ```
 User does not consent to behavioral targeting in compliance with GDPR.
 ```swift
-Swift: CAS.settings.updateUser(consent: .denied)
-```
-```objc
-Objc: [CAS.settings updateUserWithConsent: CASConsentStatusDenied];
+CAS.settings.updateUser(consent: .denied)
 ```
 By default, user consent management is passed on to media networks. For reset state:
 ```swift
-Swift: CAS.settings.updateUser(consent: .undefined)
+CAS.settings.updateUser(consent: .undefined)
 ```
+   
+</details>
+<details><summary><b>Passing Consent to use personal information (Objective-C)</b></summary>
+ 
+User consents to behavioral targeting in compliance with GDPR.
 ```objc
-Objc: [CAS.settings updateUserWithConsent: CASConsentStatusUndefined];
+[CAS.settings updateUserWithConsent: CASConsentStatusAccepted];
 ```
-
+User does not consent to behavioral targeting in compliance with GDPR.
+```objc
+[CAS.settings updateUserWithConsent: CASConsentStatusDenied];
+```
+By default, user consent management is passed on to media networks. For reset state:
+```objc
+[CAS.settings updateUserWithConsent: CASConsentStatusUndefined];
+```
+</details>
+ 
 ### CCPA Compliance
 This documentation is provided for compliance with the California Consumer Privacy Act (CCPA). In order to pass CCPA opt-outs from your users, you should make use of the APIs discussed below to inform CAS and all downstream consumers of this information.  
 
-**Passing consent to the sale personal information**
+<details><summary><b>Passing consent to the sale personal information (Swift)</b></summary>
+ 
 User does not consent to the sale of his or her personal information in compliance with CCPA.
 ```swift
-Swift: CAS.settings.updateCCPA(status: .optOutSale)
-```
-```objc
-Objc: [CAS.settings updateCCPAWithStatus: CASCCPAStatusOptOutSale];
+CAS.settings.updateCCPA(status: .optOutSale)
 ```
 User consents to the sale of his or her personal information in compliance with CCPA.
 ```swift
-Swift: CAS.settings.updateCCPA(status: .optInSale)
-```
-```objc
-Objc: [CAS.settings updateCCPAWithStatus: CASCCPAStatusOptInSale];
+CAS.settings.updateCCPA(status: .optInSale)
 ```
 By default, user consent management is passed on to media networks. For reset state:
 ```swift
-Swift: CAS.settings.updateCCPA(status: .undefined)
+CAS.settings.updateCCPA(status: .undefined)
 ```
+</details>
+<details><summary><b>Passing consent to the sale personal information (Objective-C)</b></summary>
+ 
+User does not consent to the sale of his or her personal information in compliance with CCPA.
 ```objc
-Objc: [CAS.settings updateCCPAWithStatus: CASCCPAStatusUndefined];
+[CAS.settings updateCCPAWithStatus: CASCCPAStatusOptOutSale];
 ```
-
+User consents to the sale of his or her personal information in compliance with CCPA.
+```objc
+[CAS.settings updateCCPAWithStatus: CASCCPAStatusOptInSale];
+```
+By default, user consent management is passed on to media networks. For reset state:
+```objc
+[CAS.settings updateCCPAWithStatus: CASCCPAStatusUndefined];
+```
+</details>
+ 
 ###  COPPA and EEA Compliance
 This documentation is provided for additional compliance with the [Children’s Online Privacy Protection Act (COPPA)](https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy). Publishers may designate all inventory within their applications as being child-directed or as COPPA-applicable though our UI. Publishers who have knowledge of specific individuals as being COPPA-applicable should make use of the API discussed below to inform CAS and all downstream consumers of this information.  
 
 You can mark your ad requests to receive treatment for users in the European Economic Area (EEA) under the age of consent. This feature is designed to help facilitate compliance with the General Data Protection Regulation (GDPR). Note that you may have other legal obligations under GDPR. Please review the European Union’s guidance and consult with your own legal counsel. Please remember that CAS tools are designed to facilitate compliance and do not relieve any particular publisher of its obligations under the law.
 
+<details><summary><b>Define application audience (Swift)</b></summary>
+ 
 Call `CASAudience.children` indicate that user want get content treated as child-directed for purposes of COPPA or receive treatment for users in the European Economic Area (EEA) under the age of consent. 
 ```swift
-Swift: CAS.settings.setTagged(audience: .children)
-```
-```objc
-Objc: [CAS.settings setTaggedWithAudience: CASAudienceChildren];
+CAS.settings.setTagged(audience: .children)
 ```
 Call `CASAudience.notChildren` to indicate that user **don't** want get content treated as child-directed for purposes of COPPA or **not** receive treatment for users in the European Economic Area (EEA) under the age of consent.
 ```swift
-Swift: CAS.settings.setTagged(audience: .notChildren)
-```
-```objc
-Objc: [CAS.settings setTaggedWithAudience: CASAudienceNotChildren];
+CAS.settings.setTagged(audience: .notChildren)
 ```
 By default, the audience is unknown and the mediation ad network will work as usual. For reset state:
 ```swift
-Swift: CAS.settings.setTagged(audience: .undefined)
+CAS.settings.setTagged(audience: .undefined)
 ```
+</details>
+<details><summary><b>Define application audience (Objective-C)</b></summary>
+ 
+Call `CASAudienceChildren` indicate that user want get content treated as child-directed for purposes of COPPA or receive treatment for users in the European Economic Area (EEA) under the age of consent. 
 ```objc
-Objc: [CAS.settings setTaggedWithAudience: CASAudienceUndefined];
+[CAS.settings setTaggedWithAudience: CASAudienceChildren];
 ```
+Call `CASAudienceNotChildren` to indicate that user **don't** want get content treated as child-directed for purposes of COPPA or **not** receive treatment for users in the European Economic Area (EEA) under the age of consent.
+```objc
+[CAS.settings setTaggedWithAudience: CASAudienceNotChildren];
+```
+By default, the audience is unknown and the mediation ad network will work as usual. For reset state:
+```objc
+[CAS.settings setTaggedWithAudience: CASAudienceUndefined];
+```
+</details>
 
 **We recommend to set Privacy API before initializing CAS SDK.**
 
 ## Step 10 Initialize the SDK
-### Configure Ads Settings singleton instance
+<details><summary><b>Configure Ads Settings singleton instance</b></summary>
+ 
 ```swift
 CAS.settings.updateUser(consent: userConsent)
 CAS.settings.setDebugMode(debugMode)
@@ -339,7 +404,9 @@ CAS.settings.setLoading(mode: .optimal)
 > Auto control load mediation ads starts immediately after initialization and will prepare displays automatically.  
 > Manual control loading mediation ads requires manual preparation of advertising content for display. Use ad loading methods before trying to show: `CASMediationManager.loadInterstitial(), CASMediationManager.loadRewardedVideo(), CASBannerView.loadNextAd()`  
 
-### Configure Targeting Options singleton instance once before initialize
+</details>
+<details><summary><b>Configure Targeting Options singleton instance once before initialize</b></summary>
+ 
 You can now easily tailor the way you serve your ads to fit a specific audience!  
 You’ll need to inform our servers of the users’ details so the SDK will know to serve ads according to the segment the user belongs to.
 ```swift
@@ -354,9 +421,11 @@ CAS.targetingOptions.setGender(CASTargetingOptions.Gender.male)
 CAS.targetingOptions.setLocation(latitude: userLatitude, longitude: userLongitude)
 ```
 
-### Initialize Mediation Manager instance
+</details>
+<details><summary><b>Initialize Mediation Manager instance (Swift)</b></summary>
+  
 ```swift
-Swift: class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 /* Class body ... */
 
     var manager: CASMediationManager?
@@ -381,8 +450,11 @@ Swift: class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
+</details>
+<details><summary><b>Initialize Mediation Manager instance (Objective-C)</b></summary>
+ 
 ```objc
-Objc: @implementation AppDelegate
+@implementation AppDelegate
 /* Class body ... */
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -403,11 +475,14 @@ Objc: @implementation AppDelegate
 }
 @end
 ```
+</details>
+
 CAS.create can be called for different identifiers to create different managers. 
 
-**Optional.** Subscribe listener to Ad Loading response:  
+<details><summary><b>Subscribe listener to Ad Loading response (Swift)</b></summary>
+ 
 ```swift
-Swift: class AdLoadDelegate: CASLoadDelegate{
+class AdLoadDelegate: CASLoadDelegate{
     init(manager:CASMediationManager){
         manager.adLoadDelegate = self // Weak reference
     }
@@ -419,8 +494,11 @@ Swift: class AdLoadDelegate: CASLoadDelegate{
     }
 }
 ```
+</details>
+<details><summary><b>Subscribe listener to Ad Loading response (Objective-C)</b></summary>
+ 
 ```objc
-Objc: @interface ViewController : UIViewController<CASLoadDelegate>
+@interface ViewController : UIViewController<CASLoadDelegate>
 @end
 
 @implementation ViewController
@@ -432,19 +510,23 @@ Objc: @interface ViewController : UIViewController<CASLoadDelegate>
 }
 @end
 ```
+</details>
+
 ## Step 11 Implement our Ad Units
 ### Banner Ad
 Banner ads are displayed in `CASBannerView` objects from module `CleverAdsSolutions`, so the first step toward integrating banner ads is to include a `CASBannerView` in your view hierarchy. This is typically done either with the **Interface Builder** or **programmatically**.
 
-#### Interface Builder
-A `CASBannerView` can be added to a storyboard or xib file like any typical view. When using this method, be sure to add width and height constraints to match the ad size you'd like to display. For example, when displaying a banner (320x50), use a width constraint of 320 points, and a height constraint of 50 points.
+<details><summary><b>Interface Builder</b></summary>
 
-#### Programmatically
+A `CASBannerView` can be added to a storyboard or xib file like any typical view. When using this method, be sure to add width and height constraints to match the ad size you'd like to display. For example, when displaying a banner (320x50), use a width constraint of 320 points, and a height constraint of 50 points.
+</details>
+
 A `CASBannerView` can also be instantiated directly. Here's an example of how to create a `CASBannerView`, aligned to the bottom center of the safe area of the screen, with a banner size of 320x50:
 
-#### You can alternatively create CASBannerView programmatically:
+<details><summary><b>Programmatically (Swift)</b></summary>
+ 
 ```swift
-Swift: class ViewController: UIViewController, CASCallback {
+class ViewController: UIViewController, CASCallback {
 /* Class body ... */
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -483,8 +565,11 @@ Swift: class ViewController: UIViewController, CASCallback {
     }
 }
 ```
+</details>
+<details><summary><b>Programmatically (Objective-C)</b></summary>
+ 
 ```objc
-Objc: @implementation ViewController
+@implementation ViewController
 /* Class body ... */
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -521,19 +606,17 @@ Objc: @implementation ViewController
     }
 }
 ```
-Note that in this case we don't give width or height constraints, as the provided ad size will give the banner an intrinsic content size to size the view.
+</details>
 
-#### Load an Ad
-Manual load manager mode require call `loadNextAd()` after create `CASBannerView` and change banner size.  
-You can use `loadNextAd()` for cancel current impression and load next ad.
+#### Load an Banner Ad
+Manual load manager mode require call `loadNextAd` after create `CASBannerView` or change banner size.  
+And you can use `loadNextAd` for cancel current impression to load next ad for any load manager mode.
 ```swift
-Swift: bannerView.loadNextAd()
-```
-```objc
-Objc: [self.bannerView loadNextAd];
+bannerView.loadNextAd()
 ```
 
-### Ad Size
+<details><summary><b>Ad Size</b></summary>
+ 
 | Size in dp (WxH) |      Description     |    Availability    |  CASSize constant |
 |:----------------:|:--------------------:|:------------------:|:----------------:|
 |      320x50      |    Standard Banner   | Phones and Tablets |      banner      |
@@ -545,11 +628,6 @@ We recommended set banner size once immediately after `CAS.create()`.
 manager.setBanner(size: size)
 // OR same
 bannerView.adSize = size
-```
-```objc
-[manager setBannerSize:size];
-// OR same
-self.bannerView.adSize = size;
 ```
 
 #### Adaptive Banners
@@ -574,7 +652,9 @@ Use the static method in the CASSize class to get the smart CASSize object.
 smartSize = CASSize.getSmartBanner()
 ```
 
-#### Banner refresh rate
+</details>
+<details><summary><b>Banner refresh rate</b></summary>
+ 
 An ad unit’s automatic refresh rate determines how often a new ad request is generated for that ad unit.  
 We recommend using 30 seconds (Default) refresh rate.  
 You may also set a custom refresh rate of 5-360 seconds.  
@@ -593,10 +673,14 @@ manager = CAS.create(..., onInit: { success, error in
 } )
 ```
 
+</details>
+
 ### Ad events
 Through the use of CASCallback, you can listen for lifecycle events, such as when an ad is closed or the user leaves the app.  
 
-To register for ad events, set the delegate property on CASBannerView to an object for banner or set argument on show ad, that implements the CASCallback protocol. Generally, the class that implements banner ads also acts as the delegate class, in which case, the delegate property can be set to self.  
+<details>
+ 
+To register for ad events, set the `delegate` property on CASBannerView to an object for banner or set argument on show ad, that implements the CASCallback protocol. Generally, the class that implements banner ads also acts as the delegate class, in which case, the `delegate` property can be set to `self`.  
 
 Each of the methods in CASCallback is marked as optional, so you only need to implement the methods you want. This example implements each method and logs a message to the console:
 ```swift
@@ -622,6 +706,7 @@ optional func didCompletedAd()
 /// If you decide to show the Banner Ad on this view then you need refresh view visibility.
 optional func didClosedAd()
 ```
+</details>
 
 ### Check Ad Availability
 You can ask for the ad availability directly by calling the following function:
@@ -648,7 +733,8 @@ manager.show(
   )
 ```
 
-#### Minimum interval between Interstitial ads
+<details><summary><b>Minimum interval between Interstitial ads</b></summary>
+ 
 You can limit the posting of an interstitial ad to a period of time in seconds after the ad is closed, during which display attempts will fail.  
 This setting is available for change through the web application settings.  Unlimited by default (0 seconds).
 
@@ -670,20 +756,7 @@ You can also restart the countdown interval until the next successful ad shown. 
 CAS.settings.restartInterstitialInterval()
 ```
 
-## Mediation partners
-* [Admob](https://admob.google.com/home)  
-* [AppLovin](https://www.applovin.com)  
-* [Chartboost](https://www.chartboost.com)  
-* [KIDOZ](https://kidoz.net)  
-* [UnityAds](https://unity.com/solutions/unity-ads)  
-* [Vungle](https://vungle.com)  
-* [AdColony](https://www.adcolony.com)  
-* [StartApp](https://www.startapp.com)  
-* [SuperAwesome](https://www.superawesome.com)  
-* [IronSource](https://www.ironsrc.com)  
-* [InMobi](https://www.inmobi.com)  
-* [Facebook Audience](https://www.facebook.com/business/marketing/audience-network)  
-* [Yandex Ad](https://yandex.ru/dev/mobile-ads)  
+</details>
 
 ## GitHub issue tracker
 To file bugs, make feature requests, or suggest improvements for the iOS SDK, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
