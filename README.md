@@ -25,10 +25,11 @@
  10.3.  [COPPA and EEA Compliance](#coppa-and-eea-compliance)  
  11.  [Initialize the SDK](#step-10-initialize-the-sdk)  
  12.  [Implement our Ad Units](#step-11-implement-our-ad-units)  
- 12.1. [Banner Ad](#banner-ad)  
- 12.2. [Ad events](#ad-events)  
- 12.3. [Check Ad Availability](#check-ad-availability)  
- 12.4. [Show fullscreen Ad](#show-fullscreen-ad)  
+ 12.1.  [Banner Ad](#banner-ad)  
+ 12.2.  [Ad events](#ad-events)  
+ 12.3.  [Check Ad Availability](#check-ad-availability)  
+ 12.4.  [Show Interstitial Ad](#show-interstitial-ad)  
+ 12.5.  [Show Rewarded Video Ad](#show-rewarded-video-ad)  
  13.  [GitHub issue tracker](#github-issue-tracker)
  14.  [Support](#support)  
  15.  [License](#license)
@@ -519,11 +520,9 @@ Banner ads are displayed in `CASBannerView` objects from module `CleverAdsSoluti
 
 A `CASBannerView` can be added to a storyboard or xib file like any typical view. When using this method, be sure to add width and height constraints to match the ad size you'd like to display. For example, when displaying a banner (320x50), use a width constraint of 320 points, and a height constraint of 50 points.
 </details>
-
-A `CASBannerView` can also be instantiated directly. Here's an example of how to create a `CASBannerView`, aligned to the bottom center of the safe area of the screen, with a banner size of 320x50:
-
 <details><summary><b>Programmatically (Swift)</b></summary>
  
+A `CASBannerView` can be instantiated directly. Here's an example of how to create a `CASBannerView`, aligned to the bottom center of the safe area of the screen, with a banner size of 320x50:
 ```swift
 class ViewController: UIViewController, CASCallback {
 /* Class body ... */
@@ -567,6 +566,7 @@ class ViewController: UIViewController, CASCallback {
 </details>
 <details><summary><b>Programmatically (Objective-C)</b></summary>
  
+A `CASBannerView` can be instantiated directly. Here's an example of how to create a `CASBannerView`, aligned to the bottom center of the safe area of the screen, with a banner size of 320x50:
 ```objc
 @implementation ViewController
 /* Class body ... */
@@ -606,14 +606,14 @@ class ViewController: UIViewController, CASCallback {
 }
 ```
 </details>
-
-#### Load an Banner Ad
+<details><summary><b>Load an Banner Ad</b></summary>
+ 
 Manual load manager mode require call `loadNextAd` after create `CASBannerView` or change banner size.  
 And you can use `loadNextAd` for cancel current impression to load next ad for any load manager mode.
 ```swift
 bannerView.loadNextAd()
 ```
-
+</details>
 <details><summary><b>Ad Size</b></summary>
  
 | Size in dp (WxH) |      Description     |    Availability    |  CASSize constant |
@@ -713,25 +713,44 @@ You can ask for the ad availability directly by calling the following function:
 manager.isAdReady(type: CASType.interstitial) //Check ready any AdType
 ```
 
-### Show fullscreen Ad
-**Manual load manager mode** require call `manager.loadInterstitial()` and `manager.loadRewardedVideo()`  before try show ad.  
+### Show Interstitial Ad
+<details><summary>Swift</summary>
+ 
+**Manual load manager mode** require call `loadInterstitial` before try show ad.  
 You will also need to load new ad after the ad closed.  
 ```swift
 manager.loadInterstitial()
-manager.loadRewardedVideo()
 ```
 
 Invoke the following method to serve an selected ad to your users:
 ```swift
 manager.show(
     fromRootViewController: self,
-    // Ad type Interstitial or Rewarded
     type: CASType.interstitial, 
     // Optional. CASCallback implementation. Weak reference
     callback: delegate
   )
 ```
 
+</details>
+<details><summary>Objective-C</summary>
+
+**Manual load manager mode** require call `loadInterstitial` before try show ad.  
+You will also need to load new ad after the ad closed.  
+```objc
+[self.manager loadInterstitial]
+```
+
+Invoke the following method to serve an selected ad to your users:
+```swift
+[self.manager showFromRootViewController:self,
+                                    type:CASTypeInterstitial, 
+    // Optional. CASCallback implementation. Weak reference
+                                callback:delegate
+  )
+```
+
+</details>
 <details><summary><b>Minimum interval between Interstitial ads</b></summary>
  
 You can limit the posting of an interstitial ad to a period of time in seconds after the ad is closed, during which display attempts will fail.  
@@ -755,6 +774,54 @@ You can also restart the countdown interval until the next successful ad shown. 
 CAS.settings.restartInterstitialInterval()
 ```
 
+</details>
+
+### Show Rewarded Video Ad
+<details><summary>Swift</summary>
+
+**Manual load manager mode** require call `loadRewardedVideo` before try show ad.  
+You will also need to load new ad after the ad closed.  
+```swift
+manager.loadRewardedVideo()
+```
+
+Invoke the following method to serve an selected ad to your users:
+```swift
+manager.show(
+    fromRootViewController: self,
+    type: CASType.Rewarded, 
+    // Optional. CASCallback implementation. Weak reference
+    callback: delegate
+  )
+```
+
+</details>
+<details><summary>Objective-C</summary>
+
+**Manual load manager mode** require call `loadRewardedVideo` before try show ad.  
+You will also need to load new ad after the ad closed.  
+```objc
+[self.manager loadRewardedVideo]
+```
+
+Invoke the following method to serve an selected ad to your users:
+```swift
+[self.manager showFromRootViewController:self,
+                                    type:CASTypeRewarded, 
+    // Optional. CASCallback implementation. Weak reference
+                                callback:delegate
+  )
+```
+
+</details>
+<details><summary><b>Redirect rewarded video ad impressions to interstitial ads at higher cost per impression</b></summary>
+ 
+This option will compare ad cost and serve regular interstitial ads when rewarded video ads are expected to generate less revenue.  
+Interstitial Ads does not require to watch the video to the end, but the `CASCallback.didCompletedAd` callback will be triggered in any case.  
+```java
+CAS.settings.setInterstitialAdsWhenVideoCostAreLower(allow: true);
+```
+Disabled by default.
 </details>
 
 ## GitHub issue tracker
