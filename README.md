@@ -6,7 +6,7 @@
 [![Updated](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/App-ads.txt/master/Shield.json)](https://github.com/cleveradssolutions/App-ads.txt)
 
 ## Note
-- XCode 12 and up
+- XCode 12.2 and up
 - Works on iOS 10 and above.
 
 # Table of contents
@@ -55,7 +55,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-SDK', '~> 1.7.1'
+pod 'CleverAdsSolutions-SDK', '~> 1.7.2'
 ```
 > Some third party partners are not included in the main dependency: MyTarget, MobFox, AmazonAd.  Combine main dependency with partners dependencies from Advanced CocoaPods integration.
 4. Then from the command line run:
@@ -73,7 +73,7 @@ To do this, use any combination of partial dependencies.
 
 General is dependency of third-party mediation SDK that are always recommended to be used: Google Ads, Vungle, IronSource, AdColony, AppLovin, Facebook AN, InMobi, Yandex Ads, Unity Ads, Kidoz.
 ```cpp
-pod 'CleverAdsSolutions-SDK/General', '~> 1.7.1'
+pod 'CleverAdsSolutions-SDK/General', '~> 1.7.2'
 ```
 Separate dependencies for each third party partner.:
 ```cpp
@@ -108,7 +108,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-Promo', '~> 1.7.1'
+pod 'CleverAdsSolutions-Promo', '~> 1.7.2'
 ```
 Then from the command line run:
 ```
