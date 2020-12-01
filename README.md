@@ -165,9 +165,24 @@ Some examples include:
 - We try to show ads for apps and products that will be most interesting to you based on the apps you use.
 - We try to show ads for apps and products that will be most interesting to you based on the apps you use, the device you are on, and the country you are in.  
 
+To present the authorization request, call `requestTrackingAuthorizationWithCompletionHandler:`. We recommend waiting for the completion callback prior to [initialzie ads](#step-10-initialize-the-sdk), so that if the user grants the App Tracking Transparency permission, the CAS mediation can use the IDFA in ad requests.
+```swift
+import AppTrackingTransparency
+import AdSupport
+...
+func requestIDFA() {
+  ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+    // Tracking authorization completed. Start initialize CAS here.
+    CAS.create(...)
+  })
+}
+```
+
 For more information, see [Apple's developer documentation](https://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription) or [Google Ads documentation](https://developers.google.com/admob/ios/ios14#request).
 
-Important: CAS does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.  
+> Regarding guideline 2.1.0, If your app does not include AppTrackingTransparency functionality, please indicate this information in the Review Notes section for each version of your app in App Store Connect when submitting for review.  
+
+> **Important:** CAS does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.  
 
 </details>
 <details><summary><b>Optional permissions</b></summary>
@@ -202,6 +217,12 @@ Add your AdMob App ID to your app's `Info.plist` file by adding a `GADApplicatio
 <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~1458002511 -->
 <key>GADApplicationIdentifier</key>
 <string>ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy</string>
+```
+
+To delay app measurement, add the `GADDelayAppMeasurementInit` key with a boolean value of `YES` to your app’s `Info.plist`:
+```xml
+<key>GADDelayAppMeasurementInit</key>
+<true/>
 ```
 
 **Note:** If you haven't created an CAS account and registered an app yet, now's a great time to do so. In a real app, it is important that you use your actual AdMob app ID, not the one listed above. If you're just looking to experiment with the SDK in a Hello World app, though, you can use the sample App ID shown above.  
