@@ -118,7 +118,7 @@ pod install --repo-update
 ## Step 3 Configuring App Transport Security
 With the release of iOS 9 Apple introduced ATS, which requires apps to make secure network connections via SSL and enforces HTTPS connections through its requirements on the SSL version, encryption cipher, and key length. At this time, CAS highly recommends **disabling ATS** in your application. Please note that, while CAS fully supports HTTPS, some of our advertisers and 3rd party ad tracking providers do not. Therefore enabling ATS may result in a reduction in fill rate.
 
-From the options mentioned below, please choose either option for seemless ad delivery and monetization.
+<details><summary>Info.plist</summary>
 
 In order to prevent your ads (and your revenue) from being impacted by ATS, please disable it by adding the following to your info.plist:
 ```xml
@@ -133,6 +133,7 @@ In order to prevent your ads (and your revenue) from being impacted by ATS, plea
 </dict>
 ```
 The `NSAllowsArbitraryLoads` exception is required to make sure your ads are not impacted by ATS on iOS 9 devices, while `NSAllowsArbitraryLoadsForMedia` and `NSAllowsArbitraryLoadsInWebContent` are required to make sure your ads are not impacted by ATS on iOS 10 and later devices.
+</details>
 
 ## Step 4 Configuring SK Ad Networks
 <details><summary><b>What is SKAdnetwork?</b></summary>
@@ -185,6 +186,14 @@ For more information, see [Apple's developer documentation](https://developer.ap
 > **Important:** CAS does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.  
 
 </details>
+<details><summary><b>Wireless Accessory Configuration (Optional)</b></summary>
+ 
+Apple has introduced privacy settings to access WiFi details from iOS 12 onwards. To boost monetization and relevant user experience, we encourage sharing WiFi details for targeted advertising.
+1. Log into you Apple developer account at https://developer.apple.com, and enable Wireless Accessory Configuration for the App ID
+2. Go to `Project Settings > Select Your App Target > Signing & Capabilities` tab. 
+3. Add capabilities bt clicking the "+" button and select Wireless Accessory Configuration.
+ 
+</details>
 <details><summary><b>Optional permissions</b></summary>
  
 In iOS 10, Apple has extended the scope of its privacy controls by restricting access to features like the camera, photo library, etc. In order to unlock rich, immersive experiences in the SDK that take advantage of these services, please add the following entry to your apps plist:
@@ -199,7 +208,13 @@ In iOS 10, Apple has extended the scope of its privacy controls by restricting a
 </details>
 
 ## Step 6 Configuring URL Schemes
-With the release of iOS 9, Apple also restricted usage of the canOpenURL: API, which CAS mediation networks uses to make decisions about whether or not we can land users in certain apps from our Dynamic End Cards (DECs). For example, one of our ad units could be for a new movie, and the associated DEC may present functionality to the user that allows them to send a tweet about it using the Twitter app. This kind of functionality is still possible in iOS 9, but publishers must enable it for the applications CAS links to by authorizing each app’s URL scheme in their plist. Note that if the schemes are not added, users will be taken to the app’s website instead, which may result in an undesirable user experience - having to login to the site, for example. In order to enable deep-linking for the apps the CAS uses, please add the following entry to your app's plist:
+With the release of iOS 9, Apple also restricted usage of the canOpenURL: API, which CAS mediation networks uses to make decisions about whether or not we can land users in certain apps from our Dynamic End Cards (DECs).  
+ 
+<details><summary>Info.plist</summary>
+ 
+For example, one of our ad units could be for a new movie, and the associated DEC may present functionality to the user that allows them to send a tweet about it using the Twitter app.  
+Note that if the schemes are not added, users will be taken to the app’s website instead, which may result in an undesirable user experience - having to login to the site, for example.  
+In order to enable deep-linking for the apps the CAS uses, please add the following entry to your app's plist:
 ```xml
 <key>LSApplicationQueriesSchemes</key>
 <array>
@@ -209,9 +224,13 @@ With the release of iOS 9, Apple also restricted usage of the canOpenURL: API, w
     <string>twitter</string>
 </array>
 ```
+</details>
+ 
 ## Step 7 Google Ads App ID
 Follow the [link](http://psvpromo.psvgamestudio.com/cas-settings.php) to get your Admob App ID.  
 
+<details><summary>Info.plist</summary>
+ 
 Add your AdMob App ID to your app's `Info.plist` file by adding a `GADApplicationIdentifier` key:
 ```xml
 <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~1458002511 -->
@@ -226,6 +245,7 @@ To delay app measurement, add the `GADDelayAppMeasurementInit` key with a boolea
 ```
 
 **Note:** If you haven't created an CAS account and registered an app yet, now's a great time to do so. In a real app, it is important that you use your actual AdMob app ID, not the one listed above. If you're just looking to experiment with the SDK in a Hello World app, though, you can use the sample App ID shown above.  
+</details>
 
 ## Step 8 Add the CAS default settings file
 **Optional step.**  
@@ -730,9 +750,20 @@ optional func didClosedAd()
 
 ### Check Ad Availability
 You can ask for the ad availability directly by calling the following function:
+<details><summary>Swift</summary>
+ 
 ```swift
-manager.isAdReady(type: CASType.interstitial) //Check ready any AdType
+manager.isAdReady(type: CASType.interstitial) //Check ready any CASType
 ```
+
+</details>
+<details><summary>Objective-C</summary>
+ 
+ ```objc
+[self.manager isAdReadyWithType:CASTypeInterstitial]; //Check ready any CASType
+```
+
+</details>
 
 ### Show Interstitial Ad
 <details><summary>Swift</summary>
