@@ -465,10 +465,13 @@ CAS.targetingOptions.setLocation(latitude: userLatitude, longitude: userLongitud
 </details>
 <details><summary><b>Initialize Mediation Manager instance (Swift)</b></summary>
   
+> :warning: Some third party CAS networks require a `window: UIWindow?` property in the **AppDelegate**, even when **SceneDelegate** is used. Missing the property will cause Fatal Error.
+
 ```swift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 /* Class body ... */
 
+    var window: UIWindow?
     var manager: CASMediationManager?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -494,15 +497,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 </details>
 <details><summary><b>Initialize Mediation Manager instance (Objective-C)</b></summary>
  
+> :warning: Some third party CAS networks require a `UIWindow *window` property in the **AppDelegate**, even when **SceneDelegate** is used. Missing the property will cause Fatal Error.
+
 ```objc
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) CASMediationManager *manager;
+@end
+
 @implementation AppDelegate
 /* Class body ... */
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Configure CAS.settings before initialize
-    CASMediationManager *manager =
-        // CAS manager (Placement) identifier.
-        [CAS createWithManagerID:own_identifier
+    self.manager =
+        [CAS createWithManagerID:own_identifier // CAS manager (Placement) identifier.
         // Optional set active Ad Types: 'CASTypeInt.banner | CASTypeInt.interstitial' for example.
         // Ad types can be enabled manually after initialize by CASMediationManager.setEnabled
                      enableTypes:CASTypeInt.everything
