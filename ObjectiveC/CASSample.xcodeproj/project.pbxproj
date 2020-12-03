@@ -15,6 +15,7 @@
 		92E84F492539EBAC0067BD47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E84F482539EBAC0067BD47 /* Assets.xcassets */; };
 		92E84F4C2539EBAC0067BD47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E84F4A2539EBAC0067BD47 /* LaunchScreen.storyboard */; };
 		92E84F4F2539EBAC0067BD47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F4E2539EBAC0067BD47 /* main.m */; };
+		92ED65792578E7B10022566E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED65772578E7B10022566E /* SceneDelegate.m */; };
 		DE8C635B6DF6508918D365F4 /* Pods_CASSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721883DC09F10E593FC8CCE4 /* Pods_CASSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		92E84F4B2539EBAC0067BD47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92E84F4D2539EBAC0067BD47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92E84F4E2539EBAC0067BD47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92ED65772578E7B10022566E /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		92ED65782578E7B10022566E /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +75,17 @@
 			children = (
 				92E84F3C2539EBAA0067BD47 /* AppDelegate.h */,
 				92E84F3D2539EBAA0067BD47 /* AppDelegate.m */,
+				92ED65782578E7B10022566E /* SceneDelegate.h */,
+				92ED65772578E7B10022566E /* SceneDelegate.m */,
 				92E84F422539EBAA0067BD47 /* ViewController.h */,
 				92E84F432539EBAA0067BD47 /* ViewController.m */,
+				926846B8253DCD14008F3687 /* AdDelegate.h */,
+				926846B9253DCD14008F3687 /* AdDelegate.m */,
 				92E84F452539EBAA0067BD47 /* Main.storyboard */,
 				92E84F482539EBAC0067BD47 /* Assets.xcassets */,
 				92E84F4A2539EBAC0067BD47 /* LaunchScreen.storyboard */,
 				92E84F4D2539EBAC0067BD47 /* Info.plist */,
 				92E84F4E2539EBAC0067BD47 /* main.m */,
-				926846B8253DCD14008F3687 /* AdDelegate.h */,
-				926846B9253DCD14008F3687 /* AdDelegate.m */,
 				926846BC253DDB7E008F3687 /* EnableSwift.swift */,
 			);
 			path = CASSample;
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E84F442539EBAA0067BD47 /* ViewController.m in Sources */,
+				92ED65792578E7B10022566E /* SceneDelegate.m in Sources */,
 				92E84F3E2539EBAA0067BD47 /* AppDelegate.m in Sources */,
 				92E84F4F2539EBAC0067BD47 /* main.m in Sources */,
 				926846BD253DDB7E008F3687 /* EnableSwift.swift in Sources */,

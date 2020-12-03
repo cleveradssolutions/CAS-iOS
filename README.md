@@ -34,14 +34,17 @@
  14.  [Support](#support)  
  15.  [License](#license)
 
-#### The Integration Demo application demonstrate how to integrate the CAS Mediation in your app.
-Each iOS example app on this repository includes a Podfile and a Podfile.lock. The Podfile.lock tracks the version of each Pod specified in the Podfile that was used to build the release of the iOS example apps.  
+<details><summary><b>Demo application demonstrate how to integrate the CAS Mediation</b></summary>
+
+Each iOS example app on this repository includes a Podfile and a Podfile.lock. The Podfile.lock tracks the version of each Pod specified in the Podfile that was used to build the release of the iOS example apps. 
 
 1. Run `pod install` in the same directory as the Podfile.
 2. [Optional] Run `pod update` to get the latest version of the SDK.
 3. Open the `.xcworkspace` file with Xcode and run the app.
 
 See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on installing and updating pods.
+***
+</details>
 
 ## Step 1 Add the CAS Framework to Your Xcode Project
 <details><summary><b>Simple CocoaPods</b></summary>
@@ -55,7 +58,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-SDK', '~> 1.7.2'
+pod 'CleverAdsSolutions-SDK', '~> 1.8.0'
 ```
 > Some third party partners are not included in the main dependency: MyTarget, MobFox, AmazonAd.  Combine main dependency with partners dependencies from Advanced CocoaPods integration.
 4. Then from the command line run:
@@ -63,7 +66,7 @@ pod 'CleverAdsSolutions-SDK', '~> 1.7.2'
 pod install --repo-update
 ```
 If you're new to CocoaPods, see their [official documentation](https://guides.cocoapods.org/using/using-cocoapods) for info on how to create and use Podfiles
-
+***
 </details>
 <details><summary><b>Advanced CocoaPods</b></summary>
 
@@ -71,22 +74,30 @@ We support partial integration of the third party mediation sdk you really need.
 To do this, use any combination of partial dependencies.  
 **Please provide us with a list of integrated dependencies so that we can make the correct settings.**  
 
-General is dependency of third-party mediation SDK that are always recommended to be used: Google Ads, Vungle, IronSource, AdColony, AppLovin, Facebook AN, InMobi, Yandex Ads, Unity Ads, Kidoz.
+General is dependency of third-party mediation SDK that are always recommended to be used: Google Ads, Vungle, IronSource, AdColony, AppLovin, InMobi, Unity Ads.
 ```cpp
-pod 'CleverAdsSolutions-SDK/General', '~> 1.7.2'
+pod 'CleverAdsSolutions-SDK/General', '~> 1.8.0'
 ```
-Separate dependencies for each third party partner.:
+Separate dependencies for each third party partners:
 ```cpp
-pod 'CleverAdsSolutions-SDK/MobFox'
-pod 'CleverAdsSolutions-SDK/AmazonAd'
-pod 'CleverAdsSolutions-SDK/Chartboost'
-pod 'CleverAdsSolutions-SDK/StartApp'
+pod 'CleverAdsSolutions-SDK/FBAudienceNetwork'
+pod 'CleverAdsSolutions-SDK/YandexAds'
 pod 'CleverAdsSolutions-SDK/Kidoz'
 pod 'CleverAdsSolutions-SDK/SuperAwesome' # Works only for children audience
+pod 'CleverAdsSolutions-SDK/Chartboost'
+pod 'CleverAdsSolutions-SDK/StartApp'
+```
+Dependencies of Beta third party partners:
+> :warning:  Next dependencies in closed beta and available upon invite only. If you would like to be considered for the beta, please contact Support.
+```cpp
+pod 'CleverAdsSolutions-SDK/Verizon'
+pod 'CleverAdsSolutions-SDK/MobFox'
+pod 'CleverAdsSolutions-SDK/AmazonAd'
 pod 'CleverAdsSolutions-SDK/MyTarget' # Works only for CIS countries
 ```
-> The list of third party partners will change in the future.
 
+> The list of third party partners will change in the future.
+***
 </details>
 <details><summary><b>Manual Download</b></summary>
 
@@ -97,7 +108,7 @@ Follow these steps to add the CAS SDK to your project:
 4. Set `Swift Compiler - Search paths` to the CASMediation folder in Build Settings.
 5. Add any supported third party mediation sdk.
 6. Remove unused scripts from the CASMediation folder of third party mediation that are not integrated.
-
+***
 </details>
 
 ## Step 2 Add Cross Promotion Framework
@@ -106,14 +117,18 @@ Cross promotion is an app marketing strategy in which app developers promote one
 
 Start your cross promotion campaign with CAS [here](https://cleveradssolutions.com).
 
+<details><summary><b>CocoaPods</b></summary>
+
 Open your project's Podfile and add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-Promo', '~> 1.7.2'
+pod 'CleverAdsSolutions-Promo', '~> 1.8.0'
 ```
 Then from the command line run:
 ```
 pod install --repo-update
 ```
+***
+</details>
 
 ## Step 3 Configuring App Transport Security
 With the release of iOS 9 Apple introduced ATS, which requires apps to make secure network connections via SSL and enforces HTTPS connections through its requirements on the SSL version, encryption cipher, and key length. At this time, CAS highly recommends **disabling ATS** in your application. Please note that, while CAS fully supports HTTPS, some of our advertisers and 3rd party ad tracking providers do not. Therefore enabling ATS may result in a reduction in fill rate.
@@ -133,23 +148,27 @@ In order to prevent your ads (and your revenue) from being impacted by ATS, plea
 </dict>
 ```
 The `NSAllowsArbitraryLoads` exception is required to make sure your ads are not impacted by ATS on iOS 9 devices, while `NSAllowsArbitraryLoadsForMedia` and `NSAllowsArbitraryLoadsInWebContent` are required to make sure your ads are not impacted by ATS on iOS 10 and later devices.
+***
 </details>
 
 ## Step 4 Configuring SK Ad Networks
 <details><summary><b>What is SKAdnetwork?</b></summary>
  
 SKAdnetwork is a privacy safe method provided by Apple for ad networks to track installs. Up until iOS 14, most ad network campaign attribution has been based on a user's IDFA, but on iOS 14 and beyond, IDFAs will be less usable as a way to attribute which users have installed based on which ads they have interacted with.
+***
 </details>
 <details><summary><b>How do I implement SKAdnetwork?</b></summary>
 
 To use SKAdnetwork, app developers must define which networks have permission to show ads within their app. Please add the SKAdNetworkIdentifiers listed below to your app's plist file as described [here](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps).
-
+***
 </details>
 <details><summary><b>Why should I implement SKAdnetwork?</b></summary>
+
 Going forward, fewer campaigns can rely on the IDFA to track ad campaign performance. Supporting SKAdnetwork will increase the number of eligible campaigns that may serve on your app which will increase demand and therefore eCPMs
+***
 </details>
 
-To enable this functionality, you will need to update the SKAdNetworkItems key with an additional dictionary in your Info.plist.
+To enable this functionality, you will need to update the SKAdNetworkItems key with an additional dictionary in your Info.plist.  
 [View the latest list in XML format](SKAdNetworkItems.xml)
 
 ## Step 5 Configuring Privacy Controls
@@ -184,7 +203,7 @@ For more information, see [Apple's developer documentation](https://developer.ap
 > Regarding guideline 2.1.0, If your app does not include AppTrackingTransparency functionality, please indicate this information in the Review Notes section for each version of your app in App Store Connect when submitting for review.  
 
 > **Important:** CAS does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.  
-
+***
 </details>
 <details><summary><b>Wireless Accessory Configuration (Optional)</b></summary>
  
@@ -192,7 +211,7 @@ Apple has introduced privacy settings to access WiFi details from iOS 12 onwards
 1. Log into you Apple developer account at https://developer.apple.com, and enable Wireless Accessory Configuration for the App ID
 2. Go to `Project Settings > Select Your App Target > Signing & Capabilities` tab. 
 3. Add capabilities bt clicking the "+" button and select Wireless Accessory Configuration.
- 
+***
 </details>
 <details><summary><b>Optional permissions</b></summary>
  
@@ -205,6 +224,7 @@ In iOS 10, Apple has extended the scope of its privacy controls by restricting a
 <key>NSMotionUsageDescription</key>
 <string>Some ad content may require access to accelerometer for interactive ad experience.</string>
 ```
+***
 </details>
 
 ## Step 6 Configuring URL Schemes
@@ -224,6 +244,7 @@ In order to enable deep-linking for the apps the CAS uses, please add the follow
     <string>twitter</string>
 </array>
 ```
+***
 </details>
  
 ## Step 7 Google Ads App ID
@@ -245,6 +266,7 @@ To delay app measurement, add the `GADDelayAppMeasurementInit` key with a boolea
 ```
 
 **Note:** If you haven't created an CAS account and registered an app yet, now's a great time to do so. In a real app, it is important that you use your actual AdMob app ID, not the one listed above. If you're just looking to experiment with the SDK in a Hello World app, though, you can use the sample App ID shown above.  
+***
 </details>
 
 ## Step 8 Add the CAS default settings file
@@ -277,6 +299,7 @@ The CAS SDK version string
 ```swift
 let sdkVersion = CAS.getSDKVersion()
 ```
+***
 </details>
 <details><summary>Objective-C</summary>
 
@@ -301,6 +324,22 @@ The CAS SDK version string
 ```swift
 NSString *sdkVersion = [CAS getSDKVersion]
 ```
+***
+</details>
+<details><summary><b>Verify Your Integration (Optional)</b></summary>
+
+The CAS SDK provides an easy way to verify that you’ve successfully integrated any additional adapters; it also makes sure all required dependencies and frameworks were added for the various mediated ad networks.  
+After you have finished your integration, call the following static method and confirm that all networks you have implemented are marked as VERIFIED:
+```swift
+CAS.validateIntegration()
+```
+
+Find log information by tag: **CASIntegrationHelper**  
+
+Once you’ve successfully verified your integration, please remember to **remove the integration helper from your code**.  
+
+The Integration Helper tool reviews everything, including ad networks you may have intentionally chosen NOT to include in your application. These will appear as MISSING and there is no reason for concern. In the case the ad network’s integration has not been completed successfully, it will be marked as NOT VERIFIED.
+***
 </details>
 
 ## Step 10 Privacy Laws
@@ -325,7 +364,7 @@ By default, user consent management is passed on to media networks. For reset st
 ```swift
 CAS.settings.updateUser(consent: .undefined)
 ```
-   
+***
 </details>
 <details><summary><b>Passing Consent to use personal information (Objective-C)</b></summary>
  
@@ -341,6 +380,7 @@ By default, user consent management is passed on to media networks. For reset st
 ```objc
 [CAS.settings updateUserWithConsent: CASConsentStatusUndefined];
 ```
+***
 </details>
  
 ### CCPA Compliance
@@ -360,6 +400,7 @@ By default, user consent management is passed on to media networks. For reset st
 ```swift
 CAS.settings.updateCCPA(status: .undefined)
 ```
+***
 </details>
 <details><summary><b>Passing consent to the sale personal information (Objective-C)</b></summary>
  
@@ -375,6 +416,7 @@ By default, user consent management is passed on to media networks. For reset st
 ```objc
 [CAS.settings updateCCPAWithStatus: CASCCPAStatusUndefined];
 ```
+***
 </details>
  
 ###  COPPA and EEA Compliance
@@ -396,6 +438,7 @@ By default, the audience is unknown and the mediation ad network will work as us
 ```swift
 CAS.settings.setTagged(audience: .undefined)
 ```
+***
 </details>
 <details><summary><b>Define application audience (Objective-C)</b></summary>
  
@@ -411,6 +454,7 @@ By default, the audience is unknown and the mediation ad network will work as us
 ```objc
 [CAS.settings setTaggedWithAudience: CASAudienceUndefined];
 ```
+***
 </details>
 
 **We recommend to set Privacy API before initializing CAS SDK.**
@@ -444,7 +488,7 @@ CAS.settings.setLoading(mode: .optimal)
 > Load*  
 > Auto control load mediation ads starts immediately after initialization and will prepare displays automatically.  
 > Manual control loading mediation ads requires manual preparation of advertising content for display. Use ad loading methods before trying to show: `CASMediationManager.loadInterstitial(), CASMediationManager.loadRewardedVideo(), CASBannerView.loadNextAd()`  
-
+***
 </details>
 <details><summary><b>Configure Targeting Options singleton instance once before initialize</b></summary>
  
@@ -461,7 +505,7 @@ CAS.targetingOptions.setGender(CASTargetingOptions.Gender.male)
 // Your app should have a valid use case for it as well.
 CAS.targetingOptions.setLocation(latitude: userLatitude, longitude: userLongitude)
 ```
-
+***
 </details>
 <details><summary><b>Initialize Mediation Manager instance (Swift)</b></summary>
   
@@ -494,6 +538,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
+***
 </details>
 <details><summary><b>Initialize Mediation Manager instance (Objective-C)</b></summary>
  
@@ -525,6 +570,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 @end
 ```
+***
 </details>
 
 CAS.create can be called for different identifiers to create different managers. 
@@ -544,6 +590,7 @@ class AdLoadDelegate: CASLoadDelegate{
     }
 }
 ```
+***
 </details>
 <details><summary><b>Subscribe listener to Ad Loading response (Objective-C)</b></summary>
  
@@ -560,6 +607,7 @@ class AdLoadDelegate: CASLoadDelegate{
 }
 @end
 ```
+***
 </details>
 
 ## Step 11 Implement our Ad Units
@@ -569,6 +617,7 @@ Banner ads are displayed in `CASBannerView` objects from module `CleverAdsSoluti
 <details><summary><b>Interface Builder</b></summary>
 
 A `CASBannerView` can be added to a storyboard or xib file like any typical view. When using this method, be sure to add width and height constraints to match the ad size you'd like to display. For example, when displaying a banner (320x50), use a width constraint of 320 points, and a height constraint of 50 points.
+***
 </details>
 <details><summary><b>Programmatically (Swift)</b></summary>
  
@@ -613,6 +662,7 @@ class ViewController: UIViewController, CASCallback {
     }
 }
 ```
+***
 </details>
 <details><summary><b>Programmatically (Objective-C)</b></summary>
  
@@ -655,6 +705,7 @@ A `CASBannerView` can be instantiated directly. Here's an example of how to crea
     }
 }
 ```
+***
 </details>
 <details><summary><b>Load an Banner Ad</b></summary>
  
@@ -663,6 +714,7 @@ And you can use `loadNextAd` for cancel current impression to load next ad for a
 ```swift
 bannerView.loadNextAd()
 ```
+***
 </details>
 <details><summary><b>Ad Size</b></summary>
  
@@ -700,7 +752,7 @@ Use the static method in the CASSize class to get the smart CASSize object.
 ```swift
 smartSize = CASSize.getSmartBanner()
 ```
-
+***
 </details>
 <details><summary><b>Banner refresh rate</b></summary>
  
@@ -721,7 +773,7 @@ manager = CAS.create(..., onInit: { success, error in
         CAS.settings.setBannerRefresh(interval: interval)
 } )
 ```
-
+***
 </details>
 
 ### Ad events
@@ -755,6 +807,7 @@ optional func didCompletedAd()
 /// If you decide to show the Banner Ad on this view then you need refresh view visibility.
 optional func didClosedAd()
 ```
+***
 </details>
 
 ### Check Ad Availability
@@ -764,14 +817,14 @@ You can ask for the ad availability directly by calling the following function:
 ```swift
 manager.isAdReady(type: CASType.interstitial) //Check ready any CASType
 ```
-
+***
 </details>
 <details><summary>Objective-C</summary>
  
  ```objc
 [self.manager isAdReadyWithType:CASTypeInterstitial]; //Check ready any CASType
 ```
-
+***
 </details>
 
 ### Show Interstitial Ad
@@ -792,7 +845,7 @@ manager.show(
     callback: delegate
   )
 ```
-
+***
 </details>
 <details><summary>Objective-C</summary>
 
@@ -810,7 +863,7 @@ Invoke the following method to serve an selected ad to your users:
                                 callback:delegate
   )
 ```
-
+***
 </details>
 <details><summary><b>Minimum interval between Interstitial ads</b></summary>
  
@@ -834,7 +887,7 @@ You can also restart the countdown interval until the next successful ad shown. 
 ```swift
 CAS.settings.restartInterstitialInterval()
 ```
-
+***
 </details>
 
 ### Show Rewarded Video Ad
@@ -855,7 +908,7 @@ manager.show(
     callback: delegate
   )
 ```
-
+***
 </details>
 <details><summary>Objective-C</summary>
 
@@ -873,7 +926,7 @@ Invoke the following method to serve an selected ad to your users:
                                 callback:delegate
   )
 ```
-
+***
 </details>
 <details><summary><b>Redirect rewarded video ad impressions to interstitial ads at higher cost per impression</b></summary>
  
@@ -883,6 +936,7 @@ Interstitial Ads does not require to watch the video to the end, but the `CASCal
 CAS.settings.setInterstitialAdsWhenVideoCostAreLower(allow: true);
 ```
 Disabled by default.
+***
 </details>
 
 ## GitHub issue tracker

@@ -13,6 +13,7 @@
 		924551522508ED6200620139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924551512508ED6200620139 /* Assets.xcassets */; };
 		924551552508ED6200620139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924551532508ED6200620139 /* LaunchScreen.storyboard */; };
 		9245515D250901A000620139 /* AdDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245515C250901A000620139 /* AdDelegate.swift */; };
+		92ED65372578E4770022566E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED65362578E4770022566E /* SceneDelegate.swift */; };
 		AD1AE5FFA757598F3FBEE239 /* Pods_CASSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6AC361083A55130C64C0CB /* Pods_CASSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		924551542508ED6200620139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		924551562508ED6200620139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9245515C250901A000620139 /* AdDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDelegate.swift; sourceTree = "<group>"; };
+		92ED65362578E4770022566E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BAD79748062930A6BCA60AE2 /* Pods-CASSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.debug.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				924551482508ED5F00620139 /* AppDelegate.swift */,
+				92ED65362578E4770022566E /* SceneDelegate.swift */,
 				9245514C2508ED5F00620139 /* ViewController.swift */,
 				9245515C250901A000620139 /* AdDelegate.swift */,
 				9245514E2508ED5F00620139 /* Main.storyboard */,
@@ -245,6 +248,7 @@
 				9245514D2508ED5F00620139 /* ViewController.swift in Sources */,
 				924551492508ED5F00620139 /* AppDelegate.swift in Sources */,
 				9245515D250901A000620139 /* AdDelegate.swift in Sources */,
+				92ED65372578E4770022566E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
