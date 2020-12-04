@@ -60,6 +60,38 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```cpp
 pod 'CleverAdsSolutions-SDK', '~> 1.8.0'
 ```
+
+Main solution included following mediation networks:  
+<details><summary>Google Ads, Vungle, AdColony, Kidoz, IronsSource, AppLovin, Unity Ads, StartApp, InMobi, Chartboost, SuperAwesome, Facebook AN, Yandex Ads</summary>
+
+- Google Ads  
+Banner, Interstitial, Rewarded Video - [Home](https://admob.google.com/home) - [Privacy Policy](https://policies.google.com/technologies/ads)
+- Unity Ads  
+Banner, Interstitial, Rewarded Video - [Home](https://unity.com/solutions/unity-ads) - [Privacy Policy](https://unity3d.com/legal/privacy-policy)
+- IronSource  
+~~Banner~~, Interstitial, Rewarded Video - [Home](https://www.ironsrc.com) - [Privacy Policy](https://developers.ironsrc.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/)
+- AdColony  
+Banner, Interstitial, Rewarded Video - [Home](https://www.adcolony.com) - [Privacy Policy](https://www.adcolony.com/privacy-policy/)
+- Kidoz  
+Banner, Interstitial, Rewarded Video - [Home](https://kidoz.net) - [Privacy Policy](https://kidoz.net/privacy-policy/)
+- Vungle  
+Banner, Interstitial, Rewarded Video - [Home](https://vungle.com) - [Privacy Policy](https://vungle.com/privacy/)
+- AppLovin  
+Banner, Interstitial, Rewarded Video - [Home](https://www.applovin.com) - [Privacy Policy](https://www.applovin.com/privacy/)
+- StartApp  
+Banner, Interstitial, Rewarded Video - [Home](https://www.startapp.com) - [Privacy Policy](https://www.startapp.com/policy/privacy-policy/)
+- InMobi  
+Banner, Interstitial, Rewarded Video - [Home](https://www.inmobi.com) - [Privacy Policy](https://www.inmobi.com/privacy-policy/)
+- Chartboost  
+Banner, Interstitial, Rewarded Video - [Home](https://www.chartboost.com) - [Privacy Policy](https://answers.chartboost.com/en-us/articles/200780269)
+- SuperAwesome  
+Banner, Interstitial, Rewarded Video - [Home](https://www.superawesome.com) - [Privacy Policy](https://www.superawesome.com/privacy-hub/privacy-policy/)  
+- Facebook Audience Network  
+Banner, Interstitial, Rewarded Video  - [Home](https://www.facebook.com/business/marketing/audience-network) - [Privacy Policy](https://developers.facebook.com/docs/audience-network/policy/)
+- Yandex Ads  
+Banner, Interstitial, Rewarded Video - [Home](https://yandex.com/dev/mobile-ads/) - [Privacy Policy](https://yandex.com/legal/mobileads_sdk_agreement/)  
+</details>
+
 > Some third party partners are not included in the main dependency: MyTarget, MobFox, AmazonAd.  Combine main dependency with partners dependencies from Advanced CocoaPods integration.
 4. Then from the command line run:
 ```
@@ -74,29 +106,97 @@ We support partial integration of the third party mediation sdk you really need.
 To do this, use any combination of partial dependencies.  
 **Please provide us with a list of integrated dependencies so that we can make the correct settings.**  
 
-General is dependency of third-party mediation SDK that are always recommended to be used: Google Ads, Vungle, IronSource, AdColony, AppLovin, InMobi, Unity Ads.
+<details><summary>Google Ads, Unity Ads, IronSource, AdColony, Vungle, AppLovin, InMobi, </summary>
+
+General is dependency of third-party mediation SDK that are always recommended to be used
+- Google Ads  
+ Banner, Interstitial, Rewarded Video - [Home](https://admob.google.com/home) - [Privacy Policy](https://policies.google.com/technologies/ads)
+- Unity Ads  
+Banner, Interstitial, Rewarded Video - [Home](https://unity.com/solutions/unity-ads) - [Privacy Policy](https://unity3d.com/legal/privacy-policy)
+- IronSource  
+~~Banner~~, Interstitial, Rewarded Video - [Home](https://www.ironsrc.com) - [Privacy Policy](https://developers.ironsrc.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/)
+- AdColony  
+Banner, Interstitial, Rewarded Video - [Home](https://www.adcolony.com) - [Privacy Policy](https://www.adcolony.com/privacy-policy/)
+- Vungle  
+Banner, Interstitial, Rewarded Video - [Home](https://vungle.com) - [Privacy Policy](https://vungle.com/privacy/)
+- AppLovin  
+Banner, Interstitial, Rewarded Video - [Home](https://www.applovin.com) - [Privacy Policy](https://www.applovin.com/privacy/)
+- InMobi  
+Banner, Interstitial, Rewarded Video - [Home](https://www.inmobi.com) - [Privacy Policy](https://www.inmobi.com/privacy-policy/)
+
 ```cpp
 pod 'CleverAdsSolutions-SDK/General', '~> 1.8.0'
 ```
-Separate dependencies for each third party partners:
+</details><details><summary>Facebook Audience Network</summary>
+
+Banner, Interstitial, Rewarded Video - [Home](https://www.facebook.com/business/marketing/audience-network) - [Privacy Policy](https://developers.facebook.com/docs/audience-network/policy/)
 ```cpp
 pod 'CleverAdsSolutions-SDK/FBAudienceNetwork'
+```
+</details><details><summary>Yandex Ads</summary>
+
+Banner, Interstitial, Rewarded Video - [Home](https://yandex.com/dev/mobile-ads/) - [Privacy Policy](https://yandex.com/legal/mobileads_sdk_agreement/) 
+```cpp
 pod 'CleverAdsSolutions-SDK/YandexAds'
+```
+</details><details><summary>Kidoz</summary>
+
+Banner, Interstitial, Rewarded Video - [Home](https://kidoz.net) - [Privacy Policy](https://kidoz.net/privacy-policy/)
+```cpp
 pod 'CleverAdsSolutions-SDK/Kidoz'
-pod 'CleverAdsSolutions-SDK/SuperAwesome' # Works only for children audience
+```
+</details><details><summary>SuperAwesome</summary>
+
+Banner, Interstitial, Rewarded Video - [Home](https://www.superawesome.com) - [Privacy Policy](https://www.superawesome.com/privacy-hub/privacy-policy/)   
+> Works only for children audience
+```cpp
+pod 'CleverAdsSolutions-SDK/SuperAwesome'
+```
+</details><details><summary>Chartboost</summary>
+
+Banner, Interstitial, Rewarded Video - [Home](https://www.chartboost.com) - [Privacy Policy](https://answers.chartboost.com/en-us/articles/200780269)
+```cpp
 pod 'CleverAdsSolutions-SDK/Chartboost'
+```
+</details><details><summary>StartApp</summary>
+
+Banner, Interstitial, Rewarded Video - [Home](https://www.startapp.com) - [Privacy Policy](https://www.startapp.com/policy/privacy-policy/)
+```cpp
 pod 'CleverAdsSolutions-SDK/StartApp'
 ```
-Dependencies of Beta third party partners:
+</details>
+
+Dependencies of Closed Beta third party partners:
 > :warning:  Next dependencies in closed beta and available upon invite only. If you would like to be considered for the beta, please contact Support.
+
+<details><summary>Verizon Media</summary>
+
+Banner, Interstitial, Rewarded Video - [Home](https://www.verizonmedia.com/advertising/solutions#/mobile)- [Privacy Policy](https://www.verizonmedia.com/policies/us/en/verizonmedia/privacy/)
 ```cpp
 pod 'CleverAdsSolutions-SDK/Verizon'
-pod 'CleverAdsSolutions-SDK/MobFox'
-pod 'CleverAdsSolutions-SDK/AmazonAd'
-pod 'CleverAdsSolutions-SDK/MyTarget' # Works only for CIS countries
 ```
+</details><details><summary>MyTarget</summary>
 
-> The list of third party partners will change in the future.
+Banner, Interstitial, Rewarded Video - [Home](https://target.my.com/) - [Privacy Policy](https://legal.my.com/us/mytarget/privacy/)   
+> Works to CIS countries only
+```cpp
+pod 'CleverAdsSolutions-SDK/MyTarget'
+```
+</details><details><summary>MobFox</summary>
+
+Banner, Interstitial, Rewarded Video - [Home](https://www.mobfox.com) - [Privacy Policy](https://www.mobfox.com/privacy-policy/)
+```cpp
+pod 'CleverAdsSolutions-SDK/MobFox'
+```
+</details><details><summary>Amazon Ads</summary>
+
+Banner, ~~Interstitial, Rewarded Video~~ - [Home](https://advertising.amazon.com) - [Privacy Policy](https://advertising.amazon.com/legal/privacy-notice)
+```cpp
+pod 'CleverAdsSolutions-SDK/AmazonAd'
+```
+</details>
+
+> The list of third party partners may change in the future.
 ***
 </details>
 <details><summary><b>Manual Download</b></summary>
