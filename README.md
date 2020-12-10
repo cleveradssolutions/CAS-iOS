@@ -18,7 +18,7 @@
  6.  [Configuring URL Schemes (Optional)](#step-6-configuring-url-schemes)  
  7.  [Google Ads App ID](#step-7-google-ads-app-id)  
  8.  [Add the CAS default settings file (Optional)](#step-8-add-the-CAS-default-settings-file)  
- 9. [Import the CAS SDK](#step-9-import-the-cas-sdk)
+ 9.  [Import the CAS SDK](#step-9-import-the-cas-sdk)
  10.  [Privacy Laws](#step-10-privacy-laws)  
  10.1.  [GDPR Managing Consent](#gdpr-managing-consent)  
  10.2.  [CCPA Compliance](#ccpa-compliance)  
@@ -440,6 +440,11 @@ Once you’ve successfully verified your integration, please remember to **remov
 
 The Integration Helper tool reviews everything, including ad networks you may have intentionally chosen NOT to include in your application. These will appear as MISSING and there is no reason for concern. In the case the ad network’s integration has not been completed successfully, it will be marked as NOT VERIFIED.
 ***
+</details>
+<details><summary><b>Don’t forget to implement app-ads.txt (Optional)</b></summary>
+
+For both iOS and Android integrations, we encourage our partners to adopt this file and help us combat ad fraud.  
+Read detailed instructions on [how to create and upload your app-ads.txt file](https://github.com/cleveradssolutions/App-ads.txt#cleveradssolutions-app-adstxt).
 </details>
 
 ## Step 10 Privacy Laws
