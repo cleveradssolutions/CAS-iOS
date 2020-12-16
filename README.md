@@ -596,24 +596,24 @@ CAS.settings.setTrackLocation(enabled: isTrackLocation)
 ```
 
 **Select the desired load manager mode:**
-|        Mode        |  Load*  | Impact on App performance | Memory usage |        Actual ads*       |
+|        Mode        |  Load<sup>[*1](#load-f-1)</sup>  | Impact on App performance | Memory usage |        Actual ads<sup>[*2](#actual-f-2)</sup>       |
 |:------------------:|:------:|:-------------------------:|:------------:|:------------------------:|
-|   FastestRequests  |  Auto  |         Very high         |     High     |       Most relevant      |
-|    FastRequests    |  Auto  |            High           |    Balance   |      High relevance      |
-|  Optimal(Default)  |  Auto  |          Balance          |    Balance   |          Balance         |
-|   HighPerformance  |  Auto  |            Low            |      Low     |       Possible loss      |
-| HighestPerformance |  Auto  |          Very low         |      Low     |       Possible loss      |
-|       Manual      | Manual |          Very low         |      Low     | Depends on the frequency |
+|   fastestRequests  |  Auto  |         Very high         |     High     |       Most relevant      |
+|    fastRequests    |  Auto  |            High           |    Balance   |      High relevance      |
+|  optimal *(Default)*  |  Auto  |          Balance          |    Balance   |          Balance         |
+|   highPerformance  |  Auto  |            Low            |      Low     |       Possible loss      |
+| highestPerformance |  Auto  |          Very low         |      Low     |       Possible loss      |
+|       manual      | Manual<sup>[*3](#manual-f-3)</sup> |          Very low         |      Low     | Depends on the frequency |
 
 ```swift
 CAS.settings.setLoading(mode: .optimal)
 ```
 
-> Actual ads* - Potential increase in revenue by increasing the frequency of ad requests. At the same time, it greatly affects the performance of the application.   
+<b id="load-f-1">^1</b>: Auto control load mediation ads starts immediately after initialization and will prepare displays automatically.  
 
-> Load*  
-> Auto control load mediation ads starts immediately after initialization and will prepare displays automatically.  
-> Manual control loading mediation ads requires manual preparation of advertising content for display. Use ad loading methods before trying to show: `CASMediationManager.loadInterstitial(), CASMediationManager.loadRewardedVideo(), CASBannerView.loadNextAd()`  
+<b id="actual-f-2">^2</b>: Potential increase in revenue by increasing the frequency of ad requests. At the same time, it greatly affects the performance of the application.  
+
+<b id="manual-f-3">^3</b>: Manual control loading mediation ads requires manual preparation of advertising content for display. Use ad loading methods before trying to show: `CASMediationManager.loadInterstitial(), CASMediationManager.loadRewardedVideo(), CASBannerView.loadNextAd()`.  
 ***
 </details>
 <details><summary><b>Configure Targeting Options singleton instance once before initialize</b></summary>
