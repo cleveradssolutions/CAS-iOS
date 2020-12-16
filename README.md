@@ -58,7 +58,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-SDK', '~> 1.8.0'
+pod 'CleverAdsSolutions-SDK', '~> 1.8.2'
 ```
 
 Main solution included following mediation networks:  
@@ -106,26 +106,47 @@ We support partial integration of the third party mediation sdk you really need.
 To do this, use any combination of partial dependencies.  
 **Please provide us with a list of integrated dependencies so that we can make the correct settings.**  
 
-<details><summary>Google Ads, Unity Ads, IronSource, AdColony, Vungle, AppLovin, InMobi, </summary>
-
-General is dependency of third-party mediation SDK that are always recommended to be used
-- Google Ads  
- Banner, Interstitial, Rewarded Video - [Home](https://admob.google.com/home) - [Privacy Policy](https://policies.google.com/technologies/ads)
-- Unity Ads  
-Banner, Interstitial, Rewarded Video - [Home](https://unity.com/solutions/unity-ads) - [Privacy Policy](https://unity3d.com/legal/privacy-policy)
-- IronSource  
-~~Banner~~, Interstitial, Rewarded Video - [Home](https://www.ironsrc.com) - [Privacy Policy](https://developers.ironsrc.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/)
-- AdColony  
-Banner, Interstitial, Rewarded Video - [Home](https://www.adcolony.com) - [Privacy Policy](https://www.adcolony.com/privacy-policy/)
-- Vungle  
-Banner, Interstitial, Rewarded Video - [Home](https://vungle.com) - [Privacy Policy](https://vungle.com/privacy/)
-- AppLovin  
-Banner, Interstitial, Rewarded Video - [Home](https://www.applovin.com) - [Privacy Policy](https://www.applovin.com/privacy/)
-- InMobi  
-Banner, Interstitial, Rewarded Video - [Home](https://www.inmobi.com) - [Privacy Policy](https://www.inmobi.com/privacy-policy/)
-
+<details><summary>Google Ads</summary>
+ 
+Banner, Interstitial, Rewarded Video - [Home](https://admob.google.com/home) - [Privacy Policy](https://policies.google.com/technologies/ads)
 ```cpp
-pod 'CleverAdsSolutions-SDK/General', '~> 1.8.0'
+pod 'CleverAdsSolutions-SDK/GoogleAds'
+```
+</details><details><summary>Unity Ads</summary>
+ 
+Banner, Interstitial, Rewarded Video - [Home](https://unity.com/solutions/unity-ads) - [Privacy Policy](https://unity3d.com/legal/privacy-policy)
+```cpp
+pod 'CleverAdsSolutions-SDK/UnityAds'
+```
+</details><details><summary>IronSource</summary>
+ 
+~~Banner~~, Interstitial, Rewarded Video - [Home](https://www.ironsrc.com) - [Privacy Policy](https://developers.ironsrc.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/)
+```cpp
+pod 'CleverAdsSolutions-SDK/IronSource'
+```
+</details><details><summary>AdColony</summary>
+ 
+Banner, Interstitial, Rewarded Video - [Home](https://www.adcolony.com) - [Privacy Policy](https://www.adcolony.com/privacy-policy/)
+```cpp
+pod 'CleverAdsSolutions-SDK/AdColony'
+```
+</details><details><summary>Vungle</summary>
+ 
+Banner, Interstitial, Rewarded Video - [Home](https://vungle.com) - [Privacy Policy](https://vungle.com/privacy/)
+```cpp
+pod 'CleverAdsSolutions-SDK/Vungle'
+```
+</details><details><summary>AppLovin</summary>
+ 
+Banner, Interstitial, Rewarded Video - [Home](https://www.applovin.com) - [Privacy Policy](https://www.applovin.com/privacy/)
+```cpp
+pod 'CleverAdsSolutions-SDK/AppLovin'
+```
+</details><details><summary>InMobi</summary>
+ 
+Banner, Interstitial, Rewarded Video - [Home](https://www.inmobi.com) - [Privacy Policy](https://www.inmobi.com/privacy-policy/)
+```cpp
+pod 'CleverAdsSolutions-SDK/InMobi'
 ```
 </details><details><summary>Facebook Audience Network</summary>
 
@@ -221,7 +242,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-Promo', '~> 1.8.0'
+pod 'CleverAdsSolutions-Promo', '~> 1.8.2'
 ```
 Then from the command line run:
 ```
