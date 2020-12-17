@@ -648,14 +648,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Configure CAS.settings before initialize
         // Configure CAS.targetingOptions before initialize
         manager = CAS.create(
-          // CAS manager (Placement) identifier.
-          managerID: ownIdentifier, 
-          // Optional set active Ad Types: '[CASTypeFlags.banner, CASTypeFlags.interstitial]' for example.
-          // Ad types can be enabled manually after initialize by CASMediationManager.setEnabled
+          managerID: ownIdentifier,
           enableTypes: CASTypeFlags.everything, 
-          // Optional Enable demo mode that will always request test ads. Set FALSE for release!  
           demoAdMode: isTestBuild, 
-          // Optional subscribe to initialization done  
           onInit: { success, error in  
               // CAS manager initialization done  
           }  
@@ -664,6 +659,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
+- An `managerID` is a unique ID number assigned to each of your ad placements when they're created in CAS.  
+The manager ID is added to your app's code and used to identify ad requests.  
+If you haven't created an CAS account and registered an app yet, now's a great time to do so.  
+In a real app, it is important that you use your actual CAS manager ID.  
+
+- An `enableTypes` is option to increase application performance by initializing only those ad types that will be used.  
+For example: `[CASTypeFlags.banner, CASTypeFlags.interstitial]`.  
+Ad types processing can be enabled manually after initialize with use `manager.setEnabled`.  
+
+- An `demoAdMode` is optional to enable Test ad mode that will always request test ads.  
+If you're just looking to experiment with the SDK in a Hello World app, though, you can use the `demoAdMode = true` and any manager ID string.  
+
+- `onInit` is optional subscribe to initialization finish.    
+
+`CAS.create` can be called for different identifiers to create different managers. 
 ***
 </details>
 <details><summary><b>Initialize Mediation Manager instance (Objective-C)</b></summary>
@@ -680,27 +690,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 /* Class body ... */
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Configure CAS.settings before initialize
+    // Configure [CAS settings] before initialize
+    // Configure [CAS targetingOptions] before initialize
     self.manager =
-        [CAS createWithManagerID:own_identifier // CAS manager (Placement) identifier.
-        // Optional set active Ad Types: 'CASTypeInt.banner | CASTypeInt.interstitial' for example.
-        // Ad types can be enabled manually after initialize by CASMediationManager.setEnabled
+        [CAS createWithManagerID:own_identifier
                      enableTypes:CASTypeInt.everything
-        // Optional Enable demo mode that will always request test ads. Set FALSE for release!  
                       demoAdMode:YES
-        // Optional subscribe to initialization done  
                           onInit:^(BOOL complete, NSString *_Nullable error) {
-        // CAS manager initialization done  
-    }];
+             // CAS manager initialization done  
+         }];
     return YES;
 }
 @end
 ```
+- An `managerID` is a unique ID number assigned to each of your ad placements when they're created in CAS.  
+The manager ID is added to your app's code and used to identify ad requests.  
+If you haven't created an CAS account and registered an app yet, now's a great time to do so.  
+In a real app, it is important that you use your actual CAS manager ID.  
+
+- An `enableTypes` is option to increase application performance by initializing only those ad types that will be used.  
+For example: `CASTypeInt.banner | CASTypeInt.interstitial`.  
+Ad types processing can be enabled manually after initialize with use `[manager setEnabledWithType:]`.  
+
+- An `demoAdMode` is optional to enable Test ad mode that will always request test ads.  
+If you're just looking to experiment with the SDK in a Hello World app, though, you can use the `demoAdMode:YES` and any manager ID string.  
+
+- `onInit` is optional subscribe to initialization finish.    
+
+`[CAS createWithManagerID:]` can be called for different identifiers to create different managers. 
 ***
 </details>
-
-CAS.create can be called for different identifiers to create different managers. 
-
 <details><summary><b>Subscribe listener to Ad Loading response (Swift)</b></summary>
  
 ```swift
