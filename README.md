@@ -58,7 +58,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-SDK', '~> 1.8.2'
+pod 'CleverAdsSolutions-SDK', '~> 1.8.3'
 ```
 
 Main solution included following mediation networks:  
@@ -242,7 +242,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-Promo', '~> 1.8.2'
+pod 'CleverAdsSolutions-Promo', '~> 1.8.3'
 ```
 Then from the command line run:
 ```
