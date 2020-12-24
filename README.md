@@ -12,27 +12,26 @@
 # Table of contents
  1.  [Add the CAS Framework to Your Xcode Project](#step-1-add-the-cas-framework-to-your-xcode-project)  
  2.  [Add Cross Promotion Framework (Optional)](#step-2-add-cross-promotion-framework)  
- 3.  [Configuring App Transport Security](#step-3-configuring-app-transport-security)  
- 4.  [Configuring SK Ad Networks](#step-4-configuring-sk-ad-networks)  
- 5.  [Configuring Privacy Controls](#step-5-configuring-privacy-controls)  
- 6.  [Configuring URL Schemes (Optional)](#step-6-configuring-url-schemes)  
- 7.  [Google Ads App ID](#step-7-google-ads-app-id)  
- 8.  [Add the CAS default settings file (Optional)](#step-8-add-the-CAS-default-settings-file)  
- 9.  [Import the CAS SDK](#step-9-import-the-cas-sdk)
- 10.  [Privacy Laws](#step-10-privacy-laws)  
- 10.1.  [GDPR Managing Consent](#gdpr-managing-consent)  
- 10.2.  [CCPA Compliance](#ccpa-compliance)  
- 10.3.  [COPPA and EEA Compliance](#coppa-and-eea-compliance)  
- 11.  [Initialize the SDK](#step-10-initialize-the-sdk)  
- 12.  [Implement our Ad Units](#step-11-implement-our-ad-units)  
- 12.1.  [Banner Ad](#banner-ad)  
- 12.2.  [Ad events](#ad-events)  
- 12.3.  [Check Ad Availability](#check-ad-availability)  
- 12.4.  [Show Interstitial Ad](#show-interstitial-ad)  
- 12.5.  [Show Rewarded Video Ad](#show-rewarded-video-ad)  
- 13.  [GitHub issue tracker](#github-issue-tracker)
- 14.  [Support](#support)  
- 15.  [License](#license)
+ 3.  [Update Info plist](#step-3-update-info-plist)
+ 4.  [Configuring Privacy Controls (Optional)](#step-4-configuring-privacy-controls)  
+ 5.  [Add the CAS default settings file (Optional)](#step-5-add-the-CAS-default-settings-file)  
+ 6.  [Import the CAS SDK](#step-6-import-the-cas-sdk)
+ 7.  [Privacy Laws](#step-7-privacy-laws)  
+ 7.1.  [GDPR Managing Consent](#gdpr-managing-consent)  
+ 7.2.  [CCPA Compliance](#ccpa-compliance)  
+ 7.3.  [COPPA and EEA Compliance](#coppa-and-eea-compliance)  
+ 8.  [Configuring CAS SDK](#step-8-configuring-cas-sdk)
+ 9.  [Initialize the SDK](#step-9-initialize-the-sdk)  
+ 10.  [Implement our Ad Units](#step-10-implement-our-ad-units)  
+ 10.1.  [Banner Ad](#banner-ad)  
+ 10.2.  [Ad events](#ad-events)  
+ 10.3.  [Check Ad Availability](#check-ad-availability)  
+ 10.4.  [Show Interstitial Ad](#show-interstitial-ad)  
+ 10.5.  [Show Rewarded Video Ad](#show-rewarded-video-ad)  
+ 11.  [Mediation extras](#mediation-extras)
+ 12.  [GitHub issue tracker](#github-issue-tracker)
+ 13.  [Support](#support)  
+ 14.  [License](#license)
 
 <details><summary><b>Demo application demonstrate how to integrate the CAS Mediation</b></summary>
 
@@ -58,7 +57,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-SDK', '~> 1.8.3'
+pod 'CleverAdsSolutions-SDK', '~> 1.9.0'
 ```
 
 Main solution included following mediation networks:  
@@ -89,7 +88,7 @@ Banner, Interstitial, Rewarded Video - [Home](https://www.superawesome.com) - [P
 - Facebook Audience Network  
 Banner, Interstitial, Rewarded Video  - [Home](https://www.facebook.com/business/marketing/audience-network) - [Privacy Policy](https://developers.facebook.com/docs/audience-network/policy/)
 - Yandex Ads  
-Banner, Interstitial, Rewarded Video - [Home](https://yandex.com/dev/mobile-ads/) - [Privacy Policy](https://yandex.com/legal/mobileads_sdk_agreement/)  
+Banner, Interstitial, ~~Rewarded Video~~ - [Home](https://yandex.com/dev/mobile-ads/) - [Privacy Policy](https://yandex.com/legal/mobileads_sdk_agreement/)  
 </details>
 
 > Some third party partners are not included in the main dependency: MyTarget, MobFox, AmazonAd.  Combine main dependency with partners dependencies from Advanced CocoaPods integration.
@@ -156,7 +155,7 @@ pod 'CleverAdsSolutions-SDK/FBAudienceNetwork'
 ```
 </details><details><summary>Yandex Ads</summary>
 
-Banner, Interstitial, Rewarded Video - [Home](https://yandex.com/dev/mobile-ads/) - [Privacy Policy](https://yandex.com/legal/mobileads_sdk_agreement/) 
+Banner, Interstitial, ~~Rewarded Video~~ - [Home](https://yandex.com/dev/mobile-ads/) - [Privacy Policy](https://yandex.com/legal/mobileads_sdk_agreement/) 
 ```cpp
 pod 'CleverAdsSolutions-SDK/YandexAds'
 ```
@@ -205,7 +204,7 @@ pod 'CleverAdsSolutions-SDK/MyTarget'
 ```
 </details><details><summary>MobFox</summary>
 
-Banner, Interstitial, Rewarded Video - [Home](https://www.mobfox.com) - [Privacy Policy](https://www.mobfox.com/privacy-policy/)
+Banner, Interstitial, ~~Rewarded Video~~ - [Home](https://www.mobfox.com) - [Privacy Policy](https://www.mobfox.com/privacy-policy/)
 ```cpp
 pod 'CleverAdsSolutions-SDK/MobFox'
 ```
@@ -251,10 +250,10 @@ pod install --repo-update
 ***
 </details>
 
-## Step 3 Configuring App Transport Security
-With the release of iOS 9 Apple introduced ATS, which requires apps to make secure network connections via SSL and enforces HTTPS connections through its requirements on the SSL version, encryption cipher, and key length. At this time, CAS highly recommends **disabling ATS** in your application. Please note that, while CAS fully supports HTTPS, some of our advertisers and 3rd party ad tracking providers do not. Therefore enabling ATS may result in a reduction in fill rate.
+## Step 3 Update Info plist
+<details><summary>Configuring App Transport Security</summary>
 
-<details><summary>Info.plist</summary>
+With the release of iOS 9 Apple introduced ATS, which requires apps to make secure network connections via SSL and enforces HTTPS connections through its requirements on the SSL version, encryption cipher, and key length. At this time, CAS highly recommends **disabling ATS** in your application. Please note that, while CAS fully supports HTTPS, some of our advertisers and 3rd party ad tracking providers do not. Therefore enabling ATS may result in a reduction in fill rate.  
 
 In order to prevent your ads (and your revenue) from being impacted by ATS, please disable it by adding the following to your info.plist:
 ```xml
@@ -271,28 +270,59 @@ In order to prevent your ads (and your revenue) from being impacted by ATS, plea
 The `NSAllowsArbitraryLoads` exception is required to make sure your ads are not impacted by ATS on iOS 9 devices, while `NSAllowsArbitraryLoadsForMedia` and `NSAllowsArbitraryLoadsInWebContent` are required to make sure your ads are not impacted by ATS on iOS 10 and later devices.
 ***
 </details>
+<details><summary>Configuring SK Ad Networks</summary>
 
-## Step 4 Configuring SK Ad Networks
-<details><summary><b>What is SKAdnetwork?</b></summary>
- 
+#### What is SKAdnetwork?
 SKAdnetwork is a privacy safe method provided by Apple for ad networks to track installs. Up until iOS 14, most ad network campaign attribution has been based on a user's IDFA, but on iOS 14 and beyond, IDFAs will be less usable as a way to attribute which users have installed based on which ads they have interacted with.
-***
-</details>
-<details><summary><b>How do I implement SKAdnetwork?</b></summary>
-
-To use SKAdnetwork, app developers must define which networks have permission to show ads within their app. Please add the SKAdNetworkIdentifiers listed below to your app's plist file as described [here](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps).
-***
-</details>
-<details><summary><b>Why should I implement SKAdnetwork?</b></summary>
-
+#### Why should I implement SKAdnetwork?
 Going forward, fewer campaigns can rely on the IDFA to track ad campaign performance. Supporting SKAdnetwork will increase the number of eligible campaigns that may serve on your app which will increase demand and therefore eCPMs
-***
-</details>
+#### How do I implement SKAdnetwork?
+To use SKAdnetwork, app developers must define which networks have permission to show ads within their app. Please add the SKAdNetworkIdentifiers listed below to your app's plist file as described [here](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps).
 
 To enable this functionality, you will need to update the SKAdNetworkItems key with an additional dictionary in your Info.plist.  
 [View the latest list in XML format](SKAdNetworkItems.xml)
+***
+</details>
+<details><summary>Add Google Ads App ID</summary>
 
-## Step 5 Configuring Privacy Controls
+Follow the [link](http://psvpromo.psvgamestudio.com/cas-settings.php) to get your Admob App ID.  
+
+Add your AdMob App ID to your app's `Info.plist` file by adding a `GADApplicationIdentifier` key:
+```xml
+<!-- Sample AdMob App ID: ca-app-pub-3940256099942544~1458002511 -->
+<key>GADApplicationIdentifier</key>
+<string>ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy</string>
+```
+
+To delay app measurement, add the `GADDelayAppMeasurementInit` key with a boolean value of `YES` to your app’s `Info.plist`:
+```xml
+<key>GADDelayAppMeasurementInit</key>
+<true/>
+```
+
+**Note:** If you haven't created an CAS account and registered an app yet, now's a great time to do so. In a real app, it is important that you use your actual AdMob app ID, not the one listed above. If you're just looking to experiment with the SDK in a Hello World app, though, you can use the sample App ID shown above.  
+***
+</details>
+<details><summary>Configuring URL Schemes</summary>
+
+With the release of iOS 9, Apple also restricted usage of the canOpenURL: API, which CAS mediation networks uses to make decisions about whether or not we can land users in certain apps from our Dynamic End Cards (DECs).  
+ 
+For example, one of our ad units could be for a new movie, and the associated DEC may present functionality to the user that allows them to send a tweet about it using the Twitter app.  
+Note that if the schemes are not added, users will be taken to the app’s website instead, which may result in an undesirable user experience - having to login to the site, for example.  
+In order to enable deep-linking for the apps the CAS uses, please add the following entry to your app's plist:
+```xml
+<key>LSApplicationQueriesSchemes</key>
+<array>
+    <string>fb</string>
+    <string>instagram</string>
+    <string>tumblr</string>
+    <string>twitter</string>
+</array>
+```
+***
+</details>
+
+## Step 4 Configuring Privacy Controls
 <details><summary><b>Request App Tracking Transparency authorization</b></summary>
 
 iOS 14 and above requires publishers to obtain permission to track the user's device across applications.  
@@ -348,55 +378,13 @@ In iOS 10, Apple has extended the scope of its privacy controls by restricting a
 ***
 </details>
 
-## Step 6 Configuring URL Schemes
-With the release of iOS 9, Apple also restricted usage of the canOpenURL: API, which CAS mediation networks uses to make decisions about whether or not we can land users in certain apps from our Dynamic End Cards (DECs).  
- 
-<details><summary>Info.plist</summary>
- 
-For example, one of our ad units could be for a new movie, and the associated DEC may present functionality to the user that allows them to send a tweet about it using the Twitter app.  
-Note that if the schemes are not added, users will be taken to the app’s website instead, which may result in an undesirable user experience - having to login to the site, for example.  
-In order to enable deep-linking for the apps the CAS uses, please add the following entry to your app's plist:
-```xml
-<key>LSApplicationQueriesSchemes</key>
-<array>
-    <string>fb</string>
-    <string>instagram</string>
-    <string>tumblr</string>
-    <string>twitter</string>
-</array>
-```
-***
-</details>
- 
-## Step 7 Google Ads App ID
-Follow the [link](http://psvpromo.psvgamestudio.com/cas-settings.php) to get your Admob App ID.  
-
-<details><summary>Info.plist</summary>
- 
-Add your AdMob App ID to your app's `Info.plist` file by adding a `GADApplicationIdentifier` key:
-```xml
-<!-- Sample AdMob App ID: ca-app-pub-3940256099942544~1458002511 -->
-<key>GADApplicationIdentifier</key>
-<string>ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy</string>
-```
-
-To delay app measurement, add the `GADDelayAppMeasurementInit` key with a boolean value of `YES` to your app’s `Info.plist`:
-```xml
-<key>GADDelayAppMeasurementInit</key>
-<true/>
-```
-
-**Note:** If you haven't created an CAS account and registered an app yet, now's a great time to do so. In a real app, it is important that you use your actual AdMob app ID, not the one listed above. If you're just looking to experiment with the SDK in a Hello World app, though, you can use the sample App ID shown above.  
-***
-</details>
-
-## Step 8 Add the CAS default settings file
+## Step 5 Add the CAS default settings file
 **Optional step.**  
 Follow the [link](http://psvpromo.psvgamestudio.com/cas-settings.php) to download a `cas_settings.json` file.
 
 Drop the `cas_settings.json` to your project and link the settings file to `Build Phases > Copy Bundle Resources`. However, only the **main bundle** resources is supported.  
 
-## Step 9 Import the CAS SDK
+## Step 6 Import the CAS SDK
 <details><summary>Swift</summary>
  
 ```swift
@@ -468,7 +456,7 @@ For both iOS and Android integrations, we encourage our partners to adopt this f
 Read detailed instructions on [how to create and upload your app-ads.txt file](https://github.com/cleveradssolutions/App-ads.txt#cleveradssolutions-app-adstxt).
 </details>
 
-## Step 10 Privacy Laws
+## Step 7 Privacy Laws
 This documentation is provided for compliance with various privacy laws. If you are collecting consent from your users, you can make use of APIs discussed below to inform CAS and all downstream consumers of this information.  
 
 A detailed article on the use of user data can be found in the [Privacy Policy](https://github.com/cleveradssolutions/CAS-Android/wiki/Privacy-Policy).
@@ -585,17 +573,49 @@ By default, the audience is unknown and the mediation ad network will work as us
 
 **We recommend to set Privacy API before initializing CAS SDK.**
 
-## Step 10 Initialize the SDK
-<details><summary><b>Configure Ads Settings singleton instance</b></summary>
- 
-```swift
-CAS.settings.updateUser(consent: userConsent)
-CAS.settings.setDebugMode(debugMode)
-CAS.settings.setTrackLocation(enabled: isTrackLocation)
-// .. other settings
-```
+## Step 8 Configuring CAS SDK
+<details><summary><b>Track Location</b></summary>
 
-**Select the desired load manager mode:**
+The SDK automatically collects location data if the user allowed the app to track the location.  
+Enables or disables collecting location data.  
+Disabled by default.
+```swift
+CAS.settings.setTrackLocation(enabled:true)
+```
+***
+</details>
+<details><summary><b>Debug mode</b></summary>
+
+The enabled Debug Mode will display a lot of useful information for debugging about the states of the sdk with tag CAS.   
+Disabling Debug Mode may improve application performance.  
+Disabled by default.  
+
+```swift
+CAS.settings.setDebugMode(true)
+```
+***
+</details>
+<details><summary><b>Test Device IDs</b></summary>
+
+Identifiers corresponding to test devices which will always request test ads.  
+The test device identifier for the current device is logged to the console when the first ad request is made.
+
+```swift
+CAS.settings.setTestDevice(["test-device-id"])
+```
+***
+</details>
+<details><summary><b>Muted Ad sounds</b></summary>
+
+Indicates if the application’s audio is muted. Affects initial mute state for all ads.  
+Use this method only if your application has its own volume controls.
+```swift
+CAS.settings.setMuteAdSounds(to: false)
+```
+***
+</details>
+<details><summary><b>Waterfall Loading Mode</b></summary>
+
 |        Mode        |  Load<sup>[*1](#load-f-1)</sup>  | Impact on App performance | Memory usage |        Actual ads<sup>[*2](#actual-f-2)</sup>       |
 |:------------------:|:------:|:-------------------------:|:------------:|:------------------------:|
 |   fastestRequests  |  Auto  |         Very high         |     High     |       Most relevant      |
@@ -606,7 +626,7 @@ CAS.settings.setTrackLocation(enabled: isTrackLocation)
 |       manual      | Manual<sup>[*3](#manual-f-3)</sup> |          Very low         |      Low     | Depends on the frequency |
 
 ```swift
-CAS.settings.setLoading(mode: .optimal)
+CAS.settings.setLoading(mode: CASLoadingManagerMode.optimal)
 ```
 
 <b id="load-f-1">^1</b>: Auto control load mediation ads starts immediately after initialization and will prepare displays automatically.  
@@ -616,7 +636,70 @@ CAS.settings.setLoading(mode: .optimal)
 <b id="manual-f-3">^3</b>: Manual control loading mediation ads requires manual preparation of advertising content for display. Use ad loading methods before trying to show: `CASMediationManager.loadInterstitial(), CASMediationManager.loadRewardedVideo(), CASBannerView.loadNextAd()`.  
 ***
 </details>
-<details><summary><b>Configure Targeting Options singleton instance once before initialize</b></summary>
+<details><summary><b>Analytics collection</b></summary>
+
+Sets CAS analytics collection is enabled for this app on this device.    
+By default it is disabled. This setting is persisted across app sessions. 
+```swift
+CAS.settings.setAnalyticsCollection(enabled: true)
+```
+
+<details><summary>Implement a analytics event handler (Swift)</summary>
+
+```swift
+class AppDelegate: UIResponder, UIApplicationDelegate, CASAnalyticsHandler {
+/* Class body ... */
+
+    var window: UIWindow?
+    var manager: CASMediationManager?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Set weak reference to analytics handler
+        CASAnalytics.handler = self
+        CAS.settings.setAnalyticsCollection(enabled: true)
+    
+        // TODO: Initialize CAS manager
+        return true
+    }
+    
+    override func log(_ eventName: String, _ map: [String: Any]){
+      // For example Firebase Analytics implementation
+      Analytics.logEvent(eventName, parameters: map)
+    }
+}
+```
+</details>
+<details><summary>Implement a analytics event handler (Objective-C)</summary>
+
+```objc
+@interface AppDelegate : UIResponder <UIApplicationDelegate, CASAnalyticsHandler>
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) CASMediationManager *manager;
+@end
+
+@implementation AppDelegate
+/* Class body ... */
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Set weak reference to analytics handler
+    [CASAnalytics setHandler:self];
+    [[CAS settings] setAnalyticsCollectionWithEnabled:YES];
+    
+    // TODO: Initialize CAS manager
+    return YES;
+}
+@end
+
+- (void)log:(NSString *)eventName:(NSDictionary<NSString *, id> *)map {
+    // For example Firebase Analytics implementation
+    [FIRAnalytics logEventWithName:eventName parameters:map];
+}
+```
+</details>
+
+***
+</details>
+<details><summary><b>Targeting Options</b></summary>
  
 You can now easily tailor the way you serve your ads to fit a specific audience!  
 You’ll need to inform our servers of the users’ details so the SDK will know to serve ads according to the segment the user belongs to.
@@ -633,6 +716,8 @@ CAS.targetingOptions.setLocation(latitude: userLatitude, longitude: userLongitud
 ```
 ***
 </details>
+
+## Step 9 Initialize the SDK
 <details><summary><b>Initialize Mediation Manager instance (Swift)</b></summary>
   
 > :warning: Some third party CAS networks require a `window: UIWindow?` property in the **AppDelegate**, even when **SceneDelegate** is used. Missing the property will cause Fatal Error.
@@ -752,6 +837,42 @@ class AdLoadDelegate: CASLoadDelegate{
 }
 @end
 ```
+***
+</details>
+<details><summary><b>Last page Ad</b></summary>
+
+The latest free ad page for your own promotion.  
+This ad page will be displayed when there is no paid ad to show or internet availability.  
+**Attention!** Impressions and clicks of this ad page will not be billed.  
+By default, this page will not be displayed while the ad content is NIL.  
+The Last Page Ad Content will be shown as a Banner and Interstitial ads.
+
+<details><summary>Swift</summary>
+
+```swift
+manager.lastPageAdContent = CASLastPageAdContent(
+    headline: headline,  // The message that you want users to see.
+    adText: adText,      // A description for the app being promoted.
+    destinationURL: URL, // The URL that CAS will direct users to when they click the ad.
+    imageURL: imageURL,  // The direct URL of the image to be used as the ad file.
+    iconURL: iconURL     // The direct URL of the icon or logo (Small square picture).
+)
+```
+</details><details><summary>Objective-C</summary>
+
+```objc
+self.manager.lastPageAdContent =
+  [[CASLastPageAdContent alloc]
+   initWithHeadline:title // The message that you want users to see.
+             adText:txt   // A description for the app being promoted.
+     destinationURL:url   // The URL that CAS will direct users to when they click the ad.
+           imageURL:img   // The direct URL of the image to be used as the ad file.
+            iconURL:icon  // The direct URL of the icon or logo (Small square picture).
+  ];
+```
+</details>
+
+> `CASLastPageAdContent.destinationURL` is not visible in the ad and should always have a non-empty URL.
 ***
 </details>
 
@@ -1084,12 +1205,141 @@ Disabled by default.
 ***
 </details>
 
+## Mediation extras
+The CAS mediation adapters provides the `CASNetwork` constant keys to customize parameters to be sent to networks SDK.  
+
+The following sample code demonstrates how to pass these parameters to the networks adapter:
+```swift
+var extras = [CASNetwork.adMobGDPRConsent: "0",
+              CASNetwork.vunglePublishIDFV: "1"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+
+Although the GDPR and CCPA settings are used by all media adapters, you have the option to override these values for a specific network.
+
+<details><summary>Google Ads</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.adMobGDPRConsent: "0",
+// User CCPA do not sell data "1" and "0" is use data in ad
+              CASNetwork.adMobCCPAOptedOut: "1"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+See Admob [GDPR](https://developers.google.com/admob/ios/eu-consent) and [CCPA](https://developers.google.com/admob/ios/ccpa) implementation details for more information about what values may be provided in these methods.
+***
+</details><details><summary>AppLovin</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.appLovinGDPRConsent: "0",
+// User CCPA do not sell data "1" and "0" is use data in ad
+              CASNetwork.appLovinCCPAOptedOut: "1",
+              // Initialize MAX
+              CASNetwork.appLovinUseMAX: "1"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+***
+</details><details><summary>AdColony</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.adColonyGDPRConsent: "0",
+// User CCPA do not sell data "1" and "0" is use data in ad
+              CASNetwork.adColonyCCPAOptedOut: "1"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+See [AdColony’s Privacy Laws implementation details](https://github.com/AdColony/AdColony-iOS-SDK/wiki/Privacy-Laws) for more information about what values may be provided in these methods.
+***
+</details><details><summary>Vungle</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.vungleGDPRConsent: "0",
+// User CCPA do not sell data "1" and "0" is use data in ad
+              CASNetwork.vungleCCPAOptedOut: "1",
+              // Restrict use of IDFV
+              CASNetwork.vunglePublishIDFV: "0"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+See [Vungle's Advanced Settings implementation](https://support.vungle.com/hc/en-us/articles/360048572411) for more information.
+***
+</details><details><summary>IronSource</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.ironSourceGDPRConsent: "0",
+// User CCPA do not sell data "1" and "0" is use data in ad
+              CASNetwork.ironSourceCCPAOptedOut: "1"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+See [ironSource's managing consent](https://developers.ironsrc.com/ironsource-mobile/ios/advanced-settings/) documentation for more details.
+***
+</details><details><summary>Unity Ads</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.unityAdsGDPRConsent: "0",
+// User CCPA do not sell data "1" and "0" is use data in ad
+              CASNetwork.unityAdsCCPAOptedOut: "1"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+
+See [Unity Ads data privacy and consent implementation details](https://unityads.unity3d.com/help/legal/data-privacy-and-consent) for more information about what values may be provided in these methods.
+***
+</details><details><summary>InMobi</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.inMobiGDPRConsent: "0",
+              CASNetwork.inMobiGDPRIAB: iab_string]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+See [InMobi's GDPR implementation details](https://support.inmobi.com/monetize/ios-guidelines) for more information about the possible keys and values that InMobi accepts in this consent object.
+***
+</details><details><summary>StartApp</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.startAppGDPRConsent: "0"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+***
+</details>
+
+>Unique properties for each network will be added in the future. 
+
 ## GitHub issue tracker
 To file bugs, make feature requests, or suggest improvements for the iOS SDK, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
 
 ## Support
-Site: [https://cleveradssolutions.com](https://cleveradssolutions.com)
-
 Technical support: Max  
 Skype: m.shevchenko_15  
 
