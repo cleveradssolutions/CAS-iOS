@@ -295,14 +295,29 @@
         <key>SKAdNetworkIdentifier</key>
         <string>p78axxw29g.skadnetwork</string>
     </dict>
-    <!-- Facebook Audience Network  -->
     <dict>
+        <!-- Facebook Audience Network  -->
         <key>SKAdNetworkIdentifier</key>
         <string>v9wttpbfk9.skadnetwork</string>
     </dict>
-    <!-- Facebook Audience Network  -->
     <dict>
+        <!-- Facebook Audience Network  -->
         <key>SKAdNetworkIdentifier</key>
         <string>n38lu8286q.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  UNICORN Inc.  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>578prtvx9j.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Cheetah Medialink   -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>24t9a8vw3c.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Chartboost Partner  -->
+        <key>SkAdNetworkIdentifier</key>
+        <string>s39g8k73mm.skadnetwork</string>
     </dict>
 </array>
