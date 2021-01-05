@@ -2,7 +2,7 @@
 
 [![SDK](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CAS.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
 [![Promo](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CASPromo.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-Promo)
-[![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Dec%2024%2C%202020-orange)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
+[![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Jan%2005%2C%202021-orange)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
 [![Updated](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/App-ads.txt/master/Shield.json)](https://github.com/cleveradssolutions/App-ads.txt)
 
 ## Note
@@ -57,7 +57,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-SDK', '~> 1.9.1'
+pod 'CleverAdsSolutions-SDK', '~> 1.9.2'
 ```
 
 Main solution included following mediation networks:  
@@ -189,7 +189,13 @@ pod 'CleverAdsSolutions-SDK/StartApp'
 Dependencies of Closed Beta third party partners:
 > :warning:  Next dependencies in closed beta and available upon invite only. If you would like to be considered for the beta, please contact Support.
 
-<details><summary>Verizon Media</summary>
+<details><summary>MoPub</summary>
+
+Banner, Interstitial, Rewarded Video - [Home](https://www.mopub.com/) - [Privacy Policy](https://www.mopub.com/en/legal/privacy)
+```cpp
+pod 'CleverAdsSolutions-SDK/MoPub'
+```
+</details><details><summary>Verizon Media</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://www.verizonmedia.com/advertising/solutions#/mobile)- [Privacy Policy](https://www.verizonmedia.com/policies/us/en/verizonmedia/privacy/)
 ```cpp
@@ -204,7 +210,7 @@ pod 'CleverAdsSolutions-SDK/MyTarget'
 ```
 </details><details><summary>MobFox</summary>
 
-Banner, Interstitial, ~~Rewarded Video~~ - [Home](https://www.mobfox.com) - [Privacy Policy](https://www.mobfox.com/privacy-policy/)
+Banner, Interstitial, Rewarded Video - [Home](https://www.mobfox.com) - [Privacy Policy](https://www.mobfox.com/privacy-policy/)
 ```cpp
 pod 'CleverAdsSolutions-SDK/MobFox'
 ```
@@ -241,7 +247,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-Promo', '~> 1.9.1'
+pod 'CleverAdsSolutions-Promo', '~> 1.9.2'
 ```
 Then from the command line run:
 ```
