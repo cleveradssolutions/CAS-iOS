@@ -57,11 +57,11 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```cpp
-pod 'CleverAdsSolutions-SDK', '~> 1.9.3'
+pod 'CleverAdsSolutions-SDK', '~> 1.9.4'
 ```
 
 Main solution included following mediation networks:  
-<details><summary>Google Ads, Vungle, AdColony, Kidoz, IronsSource, AppLovin, Unity Ads, StartApp, InMobi, Chartboost, SuperAwesome, Facebook AN, Yandex Ads</summary>
+<details><summary>Google Ads, Vungle, AdColony, Kidoz, IronsSource, AppLovin, Unity Ads, StartApp, InMobi, SuperAwesome, Facebook AN, Yandex Ads</summary>
 
 - Google Ads  
 Banner, Interstitial, Rewarded Video - [Home](https://admob.google.com/home) - [Privacy Policy](https://policies.google.com/technologies/ads)
@@ -81,8 +81,6 @@ Banner, Interstitial, Rewarded Video - [Home](https://www.applovin.com) - [Priva
 Banner, Interstitial, Rewarded Video - [Home](https://www.startapp.com) - [Privacy Policy](https://www.startapp.com/policy/privacy-policy/)
 - InMobi  
 Banner, Interstitial, Rewarded Video - [Home](https://www.inmobi.com) - [Privacy Policy](https://www.inmobi.com/privacy-policy/)
-- Chartboost  
-Banner, Interstitial, Rewarded Video - [Home](https://www.chartboost.com) - [Privacy Policy](https://answers.chartboost.com/en-us/articles/200780269)
 - SuperAwesome  
 Banner, Interstitial, Rewarded Video - [Home](https://www.superawesome.com) - [Privacy Policy](https://www.superawesome.com/privacy-hub/privacy-policy/)  
 - Facebook Audience Network  
@@ -158,6 +156,10 @@ pod 'CleverAdsSolutions-SDK/FBAudienceNetwork'
 Banner, Interstitial, ~~Rewarded Video~~ - [Home](https://yandex.com/dev/mobile-ads/) - [Privacy Policy](https://yandex.com/legal/mobileads_sdk_agreement/) 
 ```cpp
 pod 'CleverAdsSolutions-SDK/YandexAds'
+```
+If you have problems on download Yandex Ads SDK then you can use the following proxy dependency instead.
+```cpp
+pod 'CleverAdsSolutions-SDK/YandexAdsProxy'
 ```
 </details><details><summary>Kidoz</summary>
 
