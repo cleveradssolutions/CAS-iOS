@@ -51,12 +51,12 @@ See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on
 The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). 
 1. Open your project's Podfile. 
 2. Add the following lines to the beginning of podfile:
-```cpp
+```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK', '~> 1.9.4'
 ```
 
@@ -91,7 +91,7 @@ Banner, Interstitial, ~~Rewarded Video~~ - [Home](https://yandex.com/dev/mobile-
 
 > Some third party partners are not included in the main dependency: MyTarget, MobFox, AmazonAd.  Combine main dependency with partners dependencies from Advanced CocoaPods integration.
 4. Then from the command line run:
-```
+```ruby
 pod install --repo-update
 ```
 If you're new to CocoaPods, see their [official documentation](https://guides.cocoapods.org/using/using-cocoapods) for info on how to create and use Podfiles
@@ -106,84 +106,84 @@ To do this, use any combination of partial dependencies.
 <details><summary>Google Ads</summary>
  
 Banner, Interstitial, Rewarded Video - [Home](https://admob.google.com/home) - [Privacy Policy](https://policies.google.com/technologies/ads)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/GoogleAds'
 ```
 </details><details><summary>Unity Ads</summary>
  
 Banner, Interstitial, Rewarded Video - [Home](https://unity.com/solutions/unity-ads) - [Privacy Policy](https://unity3d.com/legal/privacy-policy)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/UnityAds'
 ```
 </details><details><summary>IronSource</summary>
  
 ~~Banner~~, Interstitial, Rewarded Video - [Home](https://www.ironsrc.com) - [Privacy Policy](https://developers.ironsrc.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/IronSource'
 ```
 </details><details><summary>AdColony</summary>
  
 Banner, Interstitial, Rewarded Video - [Home](https://www.adcolony.com) - [Privacy Policy](https://www.adcolony.com/privacy-policy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/AdColony'
 ```
 </details><details><summary>Vungle</summary>
  
 Banner, Interstitial, Rewarded Video - [Home](https://vungle.com) - [Privacy Policy](https://vungle.com/privacy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/Vungle'
 ```
 </details><details><summary>AppLovin</summary>
  
 Banner, Interstitial, Rewarded Video - [Home](https://www.applovin.com) - [Privacy Policy](https://www.applovin.com/privacy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/AppLovin'
 ```
 </details><details><summary>InMobi</summary>
  
 Banner, Interstitial, Rewarded Video - [Home](https://www.inmobi.com) - [Privacy Policy](https://www.inmobi.com/privacy-policy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/InMobi'
 ```
 </details><details><summary>Facebook Audience Network</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://www.facebook.com/business/marketing/audience-network) - [Privacy Policy](https://developers.facebook.com/docs/audience-network/policy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/FBAudienceNetwork'
 ```
 </details><details><summary>Yandex Ads</summary>
 
 Banner, Interstitial, ~~Rewarded Video~~ - [Home](https://yandex.com/dev/mobile-ads/) - [Privacy Policy](https://yandex.com/legal/mobileads_sdk_agreement/) 
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/YandexAds'
 ```
 If you have problems on download Yandex Ads SDK then you can use the following proxy dependency instead.
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/YandexAdsProxy'
 ```
 </details><details><summary>Kidoz</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://kidoz.net) - [Privacy Policy](https://kidoz.net/privacy-policy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/Kidoz'
 ```
 </details><details><summary>SuperAwesome</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://www.superawesome.com) - [Privacy Policy](https://www.superawesome.com/privacy-hub/privacy-policy/)   
 > Works only for children audience
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/SuperAwesome'
 ```
 </details><details><summary>Chartboost</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://www.chartboost.com) - [Privacy Policy](https://answers.chartboost.com/en-us/articles/200780269)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/Chartboost'
 ```
 </details><details><summary>StartApp</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://www.startapp.com) - [Privacy Policy](https://www.startapp.com/policy/privacy-policy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/StartApp'
 ```
 </details>
@@ -194,32 +194,32 @@ Dependencies of Closed Beta third party partners:
 <details><summary>MoPub</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://www.mopub.com/) - [Privacy Policy](https://www.mopub.com/en/legal/privacy)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/MoPub'
 ```
 </details><details><summary>Verizon Media</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://www.verizonmedia.com/advertising/solutions#/mobile)- [Privacy Policy](https://www.verizonmedia.com/policies/us/en/verizonmedia/privacy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/Verizon'
 ```
 </details><details><summary>MyTarget</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://target.my.com/) - [Privacy Policy](https://legal.my.com/us/mytarget/privacy/)   
 > Works to CIS countries only
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/MyTarget'
 ```
 </details><details><summary>MobFox</summary>
 
 Banner, Interstitial, Rewarded Video - [Home](https://www.mobfox.com) - [Privacy Policy](https://www.mobfox.com/privacy-policy/)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/MobFox'
 ```
 </details><details><summary>Amazon Ads</summary>
 
 Banner, ~~Interstitial, Rewarded Video~~ - [Home](https://advertising.amazon.com) - [Privacy Policy](https://advertising.amazon.com/legal/privacy-notice)
-```cpp
+```ruby
 pod 'CleverAdsSolutions-SDK/AmazonAd'
 ```
 </details>
@@ -248,11 +248,11 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 <details><summary><b>CocoaPods</b></summary>
 
 Open your project's Podfile and add this line to your app's target:
-```cpp
+```ruby
 pod 'CleverAdsSolutions-Promo', '~> 1.9.3'
 ```
 Then from the command line run:
-```
+```ruby
 pod install --repo-update
 ```
 ***
