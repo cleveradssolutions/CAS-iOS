@@ -57,7 +57,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```ruby
-pod 'CleverAdsSolutions-SDK', '~> 1.9.4'
+pod 'CleverAdsSolutions-SDK', '~> 1.9.5'
 ```
 
 Main solution included following mediation networks:  
@@ -216,6 +216,8 @@ Banner, Interstitial, Rewarded Video - [Home](https://www.mobfox.com) - [Privacy
 ```ruby
 pod 'CleverAdsSolutions-SDK/MobFox'
 ```
+> MobFox support removed due to conflicts with new IronSource and Vungle versions. We hope that the conflicts will be fixed soon and we will return support for the MobFox.
+
 </details><details><summary>Amazon Ads</summary>
 
 Banner, ~~Interstitial, Rewarded Video~~ - [Home](https://advertising.amazon.com) - [Privacy Policy](https://advertising.amazon.com/legal/privacy-notice)
@@ -249,7 +251,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```ruby
-pod 'CleverAdsSolutions-Promo', '~> 1.9.3'
+pod 'CleverAdsSolutions-Promo', '~> 1.9.5'
 ```
 Then from the command line run:
 ```ruby
