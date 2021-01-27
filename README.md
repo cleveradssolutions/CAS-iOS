@@ -57,7 +57,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```ruby
-pod 'CleverAdsSolutions-SDK', '~> 1.9.5'
+pod 'CleverAdsSolutions-SDK', '~> 1.9.6'
 ```
 
 Main solution included following mediation networks:  
@@ -251,7 +251,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```ruby
-pod 'CleverAdsSolutions-Promo', '~> 1.9.5'
+pod 'CleverAdsSolutions-Promo', '~> 1.9.6'
 ```
 Then from the command line run:
 ```ruby
@@ -1331,11 +1331,46 @@ manager = CAS.create(
 ```
 See [InMobi's GDPR implementation details](https://support.inmobi.com/monetize/ios-guidelines) for more information about the possible keys and values that InMobi accepts in this consent object.
 ***
+</details><details><summary>CrossPromotion</summary>
+
+```swift
+// Enables/disables endless impression Cross promo creative when waterfall have no loaded ad.
+var extras = [CASNetwork.crossPromoEndless: "0"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+***
+</details><details><summary>MyTarget</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.myTargetGDPRConsent: "0",
+// User CCPA do not sell data "1" and "0" is use data in ad
+              CASNetwork.myTargetCCPAOptedOut: "1"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+***
 </details><details><summary>StartApp</summary>
 
 ```swift
 // User GDPR consent "1" is accepted and "0" is rejected
 var extras = [CASNetwork.startAppGDPRConsent: "0"]
+              
+manager = CAS.create(
+    managerID: ownIdentifier,
+    mediationExtras: extras)
+```
+***
+</details><details><summary>YandexAds</summary>
+
+```swift
+// User GDPR consent "1" is accepted and "0" is rejected
+var extras = [CASNetwork.yandexAdsGDPRConsent: "0"]
               
 manager = CAS.create(
     managerID: ownIdentifier,
