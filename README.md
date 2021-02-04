@@ -57,7 +57,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```ruby
-pod 'CleverAdsSolutions-SDK', '~> 1.9.6'
+pod 'CleverAdsSolutions-SDK', '~> 1.9.8'
 ```
 
 Main solution included following mediation networks:  
@@ -212,7 +212,7 @@ pod 'CleverAdsSolutions-SDK/MyTarget'
 ```
 </details><details><summary>MobFox</summary>
 
-Banner, Interstitial, Rewarded Video - [Home](https://www.mobfox.com) - [Privacy Policy](https://www.mobfox.com/privacy-policy/)
+Banner, ~~Interstitial, Rewarded Video~~ - [Home](https://www.mobfox.com) - [Privacy Policy](https://www.mobfox.com/privacy-policy/)
 ```ruby
 pod 'CleverAdsSolutions-SDK/MobFox'
 ```
@@ -251,7 +251,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```ruby
-pod 'CleverAdsSolutions-Promo', '~> 1.9.6'
+pod 'CleverAdsSolutions-Promo', '~> 1.9.8'
 ```
 Then from the command line run:
 ```ruby
