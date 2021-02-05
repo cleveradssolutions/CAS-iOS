@@ -57,7 +57,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 ```
 3. Add this line to your app's target:
 ```ruby
-pod 'CleverAdsSolutions-SDK', '~> 1.9.8'
+pod 'CleverAdsSolutions-SDK', '~> 1.9.9'
 ```
 
 Main solution included following mediation networks:  
@@ -251,7 +251,7 @@ Start your cross promotion campaign with CAS [here](https://cleveradssolutions.c
 
 Open your project's Podfile and add this line to your app's target:
 ```ruby
-pod 'CleverAdsSolutions-Promo', '~> 1.9.8'
+pod 'CleverAdsSolutions-Promo', '~> 1.9.9'
 ```
 Then from the command line run:
 ```ruby
