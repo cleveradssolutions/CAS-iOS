@@ -8,9 +8,6 @@
 ## Getting Started
 To get started, here is the link to [iOS SDK integration documentation](https://github.com/cleveradssolutions/CAS-iOS/wiki).  
 
-## GitHub issue tracker
-To file bugs, make feature requests, or suggest improvements for the iOS SDK, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
-
 ## Demo application
 Each iOS example app on this repository includes a Podfile and a **Podfile.lock**. The Podfile.lock tracks the version of each Pod specified in the Podfile that was used to build the release of the iOS example apps. 
 
@@ -19,6 +16,9 @@ Each iOS example app on this repository includes a Podfile and a **Podfile.lock*
 3. Open the `.xcworkspace` file with Xcode and run the app.
 
 See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on installing and updating pods.
+
+## GitHub issue tracker
+To file bugs, make feature requests, or suggest improvements for the iOS SDK, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
 
 ## Support
 mailto:support@cleveradssolutions.com 
