@@ -9,10 +9,30 @@ import CleverAdsSolutions
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CASCallback {
     var window: UIWindow?
+    var appOpenAd: CASAppOpen!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // Validate integration. For develop only.
+        CAS.validateIntegration()
+        
+        configureCAS()
+        let manager = createCASManager()
+
+        // Set banner size immediately after CAS.create
+        manager.setBanner(size: .getSmartBanner())
+
+        createAppOpenAd(manager)
+        requestAppOpenAd()
+
+        return true
+    }
+
+    // MARK: Initialize Clever Ads Solutions
+
+    func configureCAS() {
         // Set any CAS Settings before CAS.create
         CAS.settings.setDebugMode(true)
         // CAS.settings.updateUser(consent: .accepted)
@@ -24,20 +44,61 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Inform SDK of the users details
         CAS.targetingOptions.setAge(12)
         CAS.targetingOptions.setGender(.female)
+    }
 
-        // Validate integration. For develop only.
-        CAS.validateIntegration()
-        
+    func createCASManager() -> CASMediationManager {
         // CAS storage last created manager in strong static CAS.manager property
-        let manager = CAS.create(managerID: "demo",
-                                 enableTypes: [.banner, .interstitial, .rewarded],
-                                 demoAdMode: true) { complete, error in
+        return CAS.create(managerID: "demo",
+                          enableTypes: [.banner, .interstitial, .rewarded],
+                          demoAdMode: true) { complete, error in
             print("[CAS Sample] Mediation manager initialization: \(complete) with error: \(String(describing: error))")
         }
-        // Set banner size immediately after CAS.create
-        manager.setBanner(size: .getSmartBanner())
+    }
 
-        return true
+    // MARK: AppOpenAd implementation
+
+    func createAppOpenAd(_ manager:CASMediationManager){
+        appOpenAd = CASAppOpen.create(manager: manager)
+        appOpenAd.contentCallback = self
+    }
+    
+    func requestAppOpenAd() {
+        appOpenAd.loadAd(orientation: UIInterfaceOrientation.portrait,
+                         completionHandler: { _, error in
+                             if let error = error {
+                                 print("[CAS Sample] App Open Ad failed to load: " + error.localizedDescription)
+                             } else {
+                                 print("[CAS Sample] App Open Ad loaded")
+                             }
+                         })
+    }
+
+    func tryToPresentAppOpenAd(_ rootController: UIViewController) {
+        // If App Open Ad not ready then tells the delegate didShowAdFailed(error:)
+        appOpenAd.present(fromRootViewController: rootController)
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        // If you use Scenes, call tryToPresentAppOpenAd in the sceneDidBecomeActive: method of your UISceneDelegate instead.
+        if let rootController = window?.rootViewController {
+            tryToPresentAppOpenAd(rootController)
+        }
+    }
+
+    // MARK: AppOpenAd content callback
+
+    func willShown(ad adStatus: CASStatusHandler) {
+        print("[CAS Sample] App Open Ad will presented")
+    }
+
+    func didShowAdFailed(error: String) {
+        print("[CAS Sample] App Open Ad failed to present with error: " + error)
+        requestAppOpenAd()
+    }
+
+    func didClosedAd() {
+        print("[CAS Sample] App Open Ad did closed")
+        requestAppOpenAd()
     }
 
     // MARK: UISceneSession Lifecycle

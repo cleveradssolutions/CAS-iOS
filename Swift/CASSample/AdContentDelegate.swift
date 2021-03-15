@@ -9,16 +9,16 @@ import CleverAdsSolutions
 import Foundation
 import UIKit
 
-class AdDelegate: CASCallback {
+class AdContentDelegate: CASCallback {
     let type: CASType
-    var lastInfo:UILabel?
+    var infoLabel: UILabel?
 
     init(type: CASType) {
         self.type = type
     }
 
     func willShown(ad adStatus: CASStatusHandler) {
-        lastInfo?.text = adStatus.identifier
+        infoLabel?.text = adStatus.identifier
         print("[CAS Sample] \(type.description) Ad received Show action")
     }
 

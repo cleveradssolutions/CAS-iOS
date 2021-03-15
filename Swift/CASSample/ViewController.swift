@@ -15,41 +15,51 @@ class ViewController: UIViewController, CASLoadDelegate {
     @IBOutlet var lastRewardedInfo: UILabel!
     @IBOutlet var bannerView: CASBannerView!
 
-    private var bannerDelegate = AdDelegate(type: .banner)
-    private var interDelegate = AdDelegate(type: .interstitial)
-    private var rewardDelegate = AdDelegate(type: .rewarded)
+    private let bannerDelegate = AdContentDelegate(type: .banner)
+    private let interDelegate = AdContentDelegate(type: .interstitial)
+    private let rewardDelegate = AdContentDelegate(type: .rewarded)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         versionLabel.text = CAS.getSDKVersion()
-        CAS.manager?.adLoadDelegate = self
 
-//        bannerView = CASBannerView(manager: CAS.manager!)
+        // Get last initialized CAS Manager.
+        let manager = CAS.manager!
+
+        manager.adLoadDelegate = self
+
+        // CASBannerView created in Storyboard else use createBannerAdView() to create
+        // createBannerAdView(manager)
+
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         bannerView.rootViewController = self
         bannerView.delegate = bannerDelegate
-//        view.addSubview(bannerView)
 
-//        if #available(iOS 11, *) {
-//            let guide = view.safeAreaLayoutGuide
-//            NSLayoutConstraint.activate([
-//                bannerView.bottomAnchor.constraint(equalTo: guide.bottomAnchor),
-//                bannerView.rightAnchor.constraint(equalTo: guide.rightAnchor),
-//            ])
-//        } else {
-//            NSLayoutConstraint.activate([
-//                bannerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-//                bannerView.rightAnchor.constraint(equalTo: view.rightAnchor),
-//            ])
-//        }
+        bannerDelegate.infoLabel = lastBannerLabel
+        interDelegate.infoLabel = lastInterstitialLabel
+        rewardDelegate.infoLabel = lastRewardedInfo
 
-        bannerDelegate.lastInfo = lastBannerLabel
-        interDelegate.lastInfo = lastInterstitialLabel
-        rewardDelegate.lastInfo = lastRewardedInfo
+        lastBannerLabel.text = manager.getLastActiveMediation(type: .banner)
+        lastInterstitialLabel.text = manager.getLastActiveMediation(type: .interstitial)
+        lastRewardedInfo.text = manager.getLastActiveMediation(type: .rewarded)
+    }
 
-        lastBannerLabel.text = CAS.manager?.getLastActiveMediation(type: .banner)
-        lastInterstitialLabel.text = CAS.manager?.getLastActiveMediation(type: .interstitial)
-        lastRewardedInfo.text = CAS.manager?.getLastActiveMediation(type: .rewarded)
+    func createBannerAdView(_ manager: CASMediationManager) {
+        bannerView = CASBannerView(manager: manager)
+        view.addSubview(bannerView)
+
+        if #available(iOS 11, *) {
+            let guide = view.safeAreaLayoutGuide
+            NSLayoutConstraint.activate([
+                bannerView.bottomAnchor.constraint(equalTo: guide.bottomAnchor),
+                bannerView.rightAnchor.constraint(equalTo: guide.rightAnchor),
+            ])
+        } else {
+            NSLayoutConstraint.activate([
+                bannerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+                bannerView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            ])
+        }
     }
 
     @IBAction func showBanner(_ sender: Any) {
@@ -81,11 +91,11 @@ class ViewController: UIViewController, CASLoadDelegate {
     }
 
     @IBAction func showInterstitial(_ sender: Any) {
-        CAS.manager?.show(fromRootViewController: self, type: .interstitial, callback: interDelegate)
+        CAS.manager?.presentInterstitial(fromRootViewController: self, callback: interDelegate)
     }
 
     @IBAction func showRewarded(_ sender: Any) {
-        CAS.manager?.show(fromRootViewController: self, type: .rewarded, callback: rewardDelegate)
+        CAS.manager?.presentRewardedAd(fromRootViewController: self, callback: rewardDelegate)
     }
 
     func onAdLoaded(_ adType: CASType) {

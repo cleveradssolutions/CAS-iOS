@@ -22,6 +22,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Not called under iOS 12 - See AppDelegate applicationDidBecomeActive
+        if let rootController = window?.rootViewController {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.tryToPresentAppOpenAd(rootController)
+        }
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
