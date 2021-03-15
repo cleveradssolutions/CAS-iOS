@@ -416,5 +416,10 @@
             <key>SKAdNetworkIdentifier</key>
             <string>rx5hdcabgc.skadnetwork</string>
         </dict>
+        <dict>
+            <!--  TapJoy  -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>ecpz2srf59.skadnetwork</string>
+        </dict>
     </array>
 </plist>
