@@ -87,11 +87,6 @@
             <string>44n7hlldy6.skadnetwork</string>
         </dict>
         <dict>
-            <!--  Adikteev SA  -->
-            <key>SKAdNetworkIdentifier</key>
-            <string>ydx93a7ass.skadnetwork</string>
-        </dict>
-        <dict>
             <!--  Bidmachine  -->
             <key>SKAdNetworkIdentifier</key>
             <string>wg4vff78zm.skadnetwork</string>
@@ -407,7 +402,7 @@
             <string>9nlqeag3gk.skadnetwork</string>
         </dict>
         <dict>
-            <!--  AdColony partner  -->
+            <!--  Zynga  -->
             <key>SKAdNetworkIdentifier</key>
             <string>g28c52eehv.skadnetwork</string>
         </dict>
@@ -420,6 +415,16 @@
             <!--  TapJoy  -->
             <key>SKAdNetworkIdentifier</key>
             <string>ecpz2srf59.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Clearpier Inc. -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>x44k69ngh6.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- WEBEYE MOBILE(HK) LIMITED -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>5tjdwbrq8w.skadnetwork</string>
         </dict>
     </array>
 </plist>
