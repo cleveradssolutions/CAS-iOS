@@ -397,7 +397,7 @@
             <string>275upjj5gd.skadnetwork</string>
         </dict>
         <dict>
-            <!--  AdColony partner  -->
+            <!--  Edge 226  -->
             <key>SKAdNetworkIdentifier</key>
             <string>9nlqeag3gk.skadnetwork</string>
         </dict>
@@ -430,6 +430,71 @@
             <!-- Yandex Ads -->
             <key>SKAdNetworkIdentifier</key>
             <string>zq492l623r.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Fyber -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>9g2aggbj52.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Brave People Ltd. -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>252b5q8x7y.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Singular Labs, Inc. -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>hdw39hrw9y.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Singular Labs, Inc. -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>y45688jllp.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Singular Labs, Inc. -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>dzg6xy7pwj.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- RhythmOne -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>pwa73g5rt2.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- MIllMobile BV -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>23zd986j2c.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Curate Mobile Ltd. -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>52fl2v3hgk.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- IGAWorks -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>54nzkqm89y.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Front Porch -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>9b89h5y424.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Mediamath -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>n6fk4nfna4.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- VerizonMedia -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>e5fvkxwrpn.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- MyTarget partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>r26jy69rpl.skadnetwork</string>
         </dict>
     </array>
 </plist>
