@@ -426,5 +426,10 @@
             <key>SKAdNetworkIdentifier</key>
             <string>5tjdwbrq8w.skadnetwork</string>
         </dict>
+        <dict>
+            <!-- Yandex Ads -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>zq492l623r.skadnetwork</string>
+        </dict>
     </array>
 </plist>
