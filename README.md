@@ -2,7 +2,7 @@
 
 [![SDK](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CAS.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
 [![Promo](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CASPromo.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-Promo)
-[![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Mar%2023%2C%202021-green)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
+[![SKAdNetworksID](https://img.shields.io/badge/SKAdNetworksItems-Apr%2002%2C%202021-green)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
 [![Updated](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/App-ads.txt/master/Shield.json)](https://github.com/cleveradssolutions/App-ads.txt)
 
 ## Getting Started
