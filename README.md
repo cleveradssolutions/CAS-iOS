@@ -22,9 +22,7 @@ To file bugs, make feature requests, or suggest improvements for the iOS SDK, pl
 
 ## Support
 mailto:support@cleveradssolutions.com 
-
-Technical support Max Skype: m.shevchenko_15  
-Network support Vitaly Skype: zanzavital  
+Skype Vitaly: zanzavital  
 
 ## License
 The CAS iOS-SDK is available under a commercial license. See the LICENSE file for more info.
