@@ -21,7 +21,7 @@ See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on
 To file bugs, make feature requests, or suggest improvements for the iOS SDK, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
 
 ## Support
-mailto:support@cleveradssolutions.com 
+mailto:support@cleveradssolutions.com  
 Skype Vitaly: zanzavital  
 
 ## License
