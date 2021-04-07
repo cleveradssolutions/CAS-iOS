@@ -496,5 +496,30 @@
             <key>SKAdNetworkIdentifier</key>
             <string>r26jy69rpl.skadnetwork</string>
         </dict>
+        <dict>
+            <!-- AdMob partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>2fnua5tdw4.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AdMob partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>k674qkevps.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AdMob partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>y2ed4ez56y.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AdMob partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>hjevpa356n.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AdMob partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>3qcr597p9d.skadnetwork</string>
+        </dict>
     </array>
 </plist>
