@@ -12,7 +12,7 @@
             <string>gta9lk7p23.skadnetwork</string>
         </dict>
         <dict>
-            <!-- Adcolony RTBD -->
+            <!-- Mediation Adcolony -->
             <key>SKAdNetworkIdentifier</key>
             <string>4pfyvq9l8r.skadnetwork</string>
         </dict>
@@ -27,7 +27,7 @@
             <string>klf5c3l5u5.skadnetwork</string>
         </dict>
         <dict>
-            <!-- Mediation AppLovin -->
+            <!-- AppLovin partner -->
             <key>SKAdNetworkIdentifier</key>
             <string>ludvb6z3bs.skadnetwork</string>
         </dict>
@@ -277,7 +277,7 @@
             <string>5a6flpkh64.skadnetwork</string>
         </dict>
         <dict>
-            <!--  AdColony Partner  -->
+            <!--  Geofy  -->
             <key>SKAdNetworkIdentifier</key>
             <string>ejvt5qm6ak.skadnetwork</string>
         </dict>
@@ -387,7 +387,7 @@
             <string>z4gj7hsk7h.skadnetwork</string>
         </dict>
         <dict>
-            <!--  AdColony partner  -->
+            <!--  Curate Mobile Ltd.  -->
             <key>SKAdNetworkIdentifier</key>
             <string>6g9af3uyq4.skadnetwork</string>
         </dict>
@@ -497,7 +497,7 @@
             <string>r26jy69rpl.skadnetwork</string>
         </dict>
         <dict>
-            <!-- AdMob partner -->
+            <!-- AdForm -->
             <key>SKAdNetworkIdentifier</key>
             <string>2fnua5tdw4.skadnetwork</string>
         </dict>
@@ -520,6 +520,101 @@
             <!-- AdMob partner -->
             <key>SKAdNetworkIdentifier</key>
             <string>3qcr597p9d.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AdColony partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>qqp299437r.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Yeahmobi -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>32z4fx6l9h.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AppLift -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>6xzpu9s2p8.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AppLovin partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>79pbpufp6p.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AppLovin partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>feyaarzu9v.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AppLovin partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>x8jxxk4ff5.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Tencent -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>f7s53z58qe.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Clearpier Performance Inc. -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>mp6xlyr22a.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Appier Inc. -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>x8uqf25wch.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Target Media Ads LTD -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>x5854y7y24.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Curate Mobile Ltd. -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>m5mvw97r93.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Stack Adapt -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>kbmxgpxpgc.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- GlobalWide Media Ltd -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>g2y4y55b64.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Mobileadz PTE Ltd -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>b53axzn49s.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Wider Planet -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>89z7zv988g.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Mapendo -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>6v7lgmsu45.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Z2A -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>6p4ks3rnbw.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- BidsOpt Pte. Ltd -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>5mv394q32t.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Meitu -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>4w7y6s5ca2.skadnetwork</string>
         </dict>
     </array>
 </plist>
