@@ -616,5 +616,45 @@
             <key>SKAdNetworkIdentifier</key>
             <string>4w7y6s5ca2.skadnetwork</string>
         </dict>
+        <dict>
+            <!-- Smartyads -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>74b6s63p6l.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- IPONWEB Holding Ltd -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>294l99pt4k.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Koneo RTBD -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>b9bk5wbcq9.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Adkomo Limited -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>tmhh9296z4.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Admob partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>8c4e2ghe7u.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Admob partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>v4nxqhlyqp.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AppLovin partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>rvh3l7un93.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AppLovin partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>r45fhb6rf7.skadnetwork</string>
+        </dict>
     </array>
 </plist>
