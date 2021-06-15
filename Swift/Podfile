@@ -4,7 +4,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-$casVersion = '~> 2.2.1'
+$casVersion = '~> 2.3.0'
 
 target 'CASSample' do
   ### Default integration:

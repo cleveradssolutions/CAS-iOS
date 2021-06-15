@@ -5,11 +5,13 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () 
 
 @end
 
 @implementation ViewController
+
+BOOL isAppReturnEnable = false;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -124,6 +126,24 @@
 
 - (void)onAdFailedToLoad:(enum CASType) adType withError:(NSString *)error {
     NSLog(@"[CAS Sample] %@d Ad failed to load with error: %@d", [AdDelegate getNameOfType:adType], error);
+}
+
+- (UIViewController *)viewControllerForPresentingAppReturnAd {
+    return self;
+}
+
+- (IBAction)changeStateOfAppReturn {
+    if (isAppReturnEnable) {
+        _appReturnStatusLabel.text = @"Disabled";
+        [_changeStateOfAppReturnButton setTitle:@"Enable" forState:UIControlStateNormal];
+        [CAS.manager disableAppReturnAds];
+        isAppReturnEnable = false;
+    } else {
+        _appReturnStatusLabel.text = @"Enabled";
+        [_changeStateOfAppReturnButton setTitle:@"Disable" forState:UIControlStateNormal];
+        [CAS.manager enableAppReturnAdsWith:self];
+        isAppReturnEnable = true;
+    }
 }
 
 @end
