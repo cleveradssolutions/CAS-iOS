@@ -656,5 +656,30 @@
             <key>SKAdNetworkIdentifier</key>
             <string>r45fhb6rf7.skadnetwork</string>
         </dict>
+        <dict>
+            <!-- AdColony partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>84993kbrcf.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AdColony partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>pwdxu55a5a.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AdColony partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>6964rsfnh4.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AdColony partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>a7xqa6mtl2.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Adelphic -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>c3frkrj4fj.skadnetwork</string>
+        </dict>
     </array>
 </plist>
