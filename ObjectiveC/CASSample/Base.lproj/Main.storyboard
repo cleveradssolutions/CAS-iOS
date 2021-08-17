@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,42 +21,42 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="568"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clever Ads Solutioons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaA-On-mtW">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1P-fU-15B">
-                                        <rect key="frame" x="0.0" y="46" width="414" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="39" width="414" height="29.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner Ad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb8-Ms-znJ">
-                                        <rect key="frame" x="0.0" y="87.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="73.5" width="414" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hzc-uD-OYh">
-                                        <rect key="frame" x="0.0" y="133.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="112.5" width="414" height="49.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9P-QJ-NMf">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="49.5"/>
                                                 <state key="normal" title="Show"/>
                                                 <connections>
                                                     <action selector="showBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJZ-tv-bzX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tap-d8-yEM">
-                                                <rect key="frame" x="138" y="0.0" width="138" height="60"/>
+                                                <rect key="frame" x="138" y="0.0" width="138" height="49.5"/>
                                                 <state key="normal" title="Hide"/>
                                                 <connections>
                                                     <action selector="hideBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ncc-xN-alD"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaI-rT-54m">
-                                                <rect key="frame" x="276" y="0.0" width="138" height="60"/>
+                                                <rect key="frame" x="276" y="0.0" width="138" height="49.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -64,44 +64,44 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPw-oZ-jsV">
-                                        <rect key="frame" x="0.0" y="198.5" width="414" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="167" width="414" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0Py-O1-xx9">
-                                        <rect key="frame" x="0.0" y="240" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="202" width="414" height="49.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKz-Lx-EHT">
-                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="49.5"/>
                                                 <state key="normal" title="Banner"/>
                                                 <connections>
                                                     <action selector="setBannerSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYf-ku-EtP"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFx-vi-TFA">
-                                                <rect key="frame" x="72.5" y="0.0" width="120" height="60"/>
+                                                <rect key="frame" x="72.5" y="0.0" width="120" height="49.5"/>
                                                 <state key="normal" title="Leaderboard"/>
                                                 <connections>
                                                     <action selector="setLeaderboardSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3wN-vD-fDO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMo-xN-7iu">
-                                                <rect key="frame" x="197.5" y="0.0" width="58" height="60"/>
+                                                <rect key="frame" x="197.5" y="0.0" width="58" height="49.5"/>
                                                 <state key="normal" title="MREC"/>
                                                 <connections>
                                                     <action selector="setMrecSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W74-fM-oIe"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcK-vZ-Cbg">
-                                                <rect key="frame" x="260.5" y="0.0" width="83" height="60"/>
+                                                <rect key="frame" x="260.5" y="0.0" width="83" height="49.5"/>
                                                 <state key="normal" title="Adaptive"/>
                                                 <connections>
                                                     <action selector="setAdaptiveSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1m-1y-kBX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K30-4N-81P">
-                                                <rect key="frame" x="348.5" y="0.0" width="65.5" height="60"/>
+                                                <rect key="frame" x="348.5" y="0.0" width="65.5" height="49.5"/>
                                                 <state key="normal" title="Smart"/>
                                                 <connections>
                                                     <action selector="setSmartSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="poc-op-6Kp"/>
@@ -110,23 +110,23 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interstitial Ad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS4-bH-MPi">
-                                        <rect key="frame" x="0.0" y="305" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="256.5" width="414" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="zPV-Sv-Egd">
-                                        <rect key="frame" x="0.0" y="351" width="414" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="295.5" width="414" height="49.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e30-li-vna">
-                                                <rect key="frame" x="0.0" y="0.0" width="223" height="60.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="223" height="49.5"/>
                                                 <state key="normal" title="Show"/>
                                                 <connections>
                                                     <action selector="showInterstitial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXl-fB-vMw"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syl-N2-IP1">
-                                                <rect key="frame" x="223" y="0.0" width="191" height="60.5"/>
+                                                <rect key="frame" x="223" y="0.0" width="191" height="49.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -134,23 +134,47 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewarded Ad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XW-Xl-v2q">
-                                        <rect key="frame" x="0.0" y="416.5" width="414" height="41"/>
+                                        <rect key="frame" x="0.0" y="350" width="414" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1sM-Mz-aPs">
-                                        <rect key="frame" x="0.0" y="462.5" width="414" height="105.5"/>
+                                        <rect key="frame" x="0.0" y="389" width="414" height="49.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbv-gT-Qey">
-                                                <rect key="frame" x="0.0" y="0.0" width="223" height="105.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="223" height="49.5"/>
                                                 <state key="normal" title="Show"/>
                                                 <connections>
                                                     <action selector="showRewarded:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qA9-LA-zBg"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0C-ym-E3Q">
-                                                <rect key="frame" x="223" y="0.0" width="191" height="105.5"/>
+                                                <rect key="frame" x="223" y="0.0" width="191" height="49.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Return" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeB-WI-OHw" userLabel="App Return">
+                                        <rect key="frame" x="0.0" y="443.5" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="UhW-lq-WvM">
+                                        <rect key="frame" x="0.0" y="482.5" width="414" height="85.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCJ-oR-8yT">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="85.5"/>
+                                                <state key="normal" title="Enable"/>
+                                                <connections>
+                                                    <action selector="changeStateOfAppReturn" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLt-Pq-rfx"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disabled" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsu-Jd-v0U">
+                                                <rect key="frame" x="171.5" y="0.0" width="242.5" height="85.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -180,7 +204,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="appReturnStatusLabel" destination="Gsu-Jd-v0U" id="zeE-cJ-5uV"/>
                         <outlet property="bannerView" destination="XHK-6i-NEv" id="NsZ-Kf-K3d"/>
+                        <outlet property="changeStateOfAppReturnButton" destination="rCJ-oR-8yT" id="sdG-Sa-YZX"/>
                         <outlet property="lastBannerLabel" destination="HaI-rT-54m" id="8av-wh-WSn"/>
                         <outlet property="lastInterstitialLabel" destination="Syl-N2-IP1" id="cMg-AK-4Vv"/>
                         <outlet property="lastRewardedInfo" destination="e0C-ym-E3Q" id="WNa-cD-Fnk"/>

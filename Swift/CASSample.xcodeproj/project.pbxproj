@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6272D5902678B37300B6AEA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6272D58F2678B37300B6AEA0 /* SceneDelegate.swift */; };
 		924551492508ED5F00620139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924551482508ED5F00620139 /* AppDelegate.swift */; };
 		9245514D2508ED5F00620139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245514C2508ED5F00620139 /* ViewController.swift */; };
 		924551502508ED5F00620139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9245514E2508ED5F00620139 /* Main.storyboard */; };
 		924551522508ED6200620139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924551512508ED6200620139 /* Assets.xcassets */; };
 		924551552508ED6200620139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924551532508ED6200620139 /* LaunchScreen.storyboard */; };
 		9245515D250901A000620139 /* AdContentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245515C250901A000620139 /* AdContentDelegate.swift */; };
-		92ED65372578E4770022566E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED65362578E4770022566E /* SceneDelegate.swift */; };
 		AD1AE5FFA757598F3FBEE239 /* Pods_CASSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6AC361083A55130C64C0CB /* Pods_CASSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C6AC361083A55130C64C0CB /* Pods_CASSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CASSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6272D58F2678B37300B6AEA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		661A8C5B6BFE59901CD39BF1 /* Pods-CASSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.release.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.release.xcconfig"; sourceTree = "<group>"; };
 		924551452508ED5F00620139 /* CASSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924551482508ED5F00620139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		924551542508ED6200620139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		924551562508ED6200620139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9245515C250901A000620139 /* AdContentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdContentDelegate.swift; sourceTree = "<group>"; };
-		92ED65362578E4770022566E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BAD79748062930A6BCA60AE2 /* Pods-CASSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.debug.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +82,8 @@
 		924551472508ED5F00620139 /* CASSample */ = {
 			isa = PBXGroup;
 			children = (
+				6272D58F2678B37300B6AEA0 /* SceneDelegate.swift */,
 				924551482508ED5F00620139 /* AppDelegate.swift */,
-				92ED65362578E4770022566E /* SceneDelegate.swift */,
 				9245514C2508ED5F00620139 /* ViewController.swift */,
 				9245515C250901A000620139 /* AdContentDelegate.swift */,
 				9245514E2508ED5F00620139 /* Main.storyboard */,
@@ -227,10 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6272D5902678B37300B6AEA0 /* SceneDelegate.swift in Sources */,
 				9245514D2508ED5F00620139 /* ViewController.swift in Sources */,
 				924551492508ED5F00620139 /* AppDelegate.swift in Sources */,
 				9245515D250901A000620139 /* AdContentDelegate.swift in Sources */,
-				92ED65372578E4770022566E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KJK32752G4;
+				DEVELOPMENT_TEAM = CR29UDMXTC;
 				INFOPLIST_FILE = CASSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -398,7 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KJK32752G4;
+				DEVELOPMENT_TEAM = CR29UDMXTC;
 				INFOPLIST_FILE = CASSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,7 +7,7 @@
 #import <CleverAdsSolutions/CleverAdsSolutions-Swift.h>
 #import "AdDelegate.h"
 
-@interface ViewController : UIViewController<CASLoadDelegate>
+@interface ViewController : UIViewController<CASLoadDelegate, CASAppReturnDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *versionLabel;
 @property (strong, nonatomic) IBOutlet UILabel *lastBannerLabel;
 @property (strong, nonatomic) IBOutlet UILabel *lastInterstitialLabel;
@@ -17,5 +17,8 @@
 @property (nonatomic, strong, nonnull) AdDelegate *bannerDelegate;
 @property (nonatomic, strong, nonnull) AdDelegate *interDelegate;
 @property (nonatomic, strong, nonnull) AdDelegate *rewardDelegate;
+
+@property (strong, nonatomic) IBOutlet UILabel *appReturnStatusLabel;
+@property (strong, nonatomic) IBOutlet UIButton *changeStateOfAppReturnButton;
 @end
 

@@ -8,16 +8,21 @@
 import CleverAdsSolutions
 import UIKit
 
-class ViewController: UIViewController, CASLoadDelegate {
+class ViewController: UIViewController, CASLoadDelegate, CASAppReturnDelegate {
     @IBOutlet var versionLabel: UILabel!
     @IBOutlet var lastBannerLabel: UILabel!
     @IBOutlet var lastInterstitialLabel: UILabel!
     @IBOutlet var lastRewardedInfo: UILabel!
     @IBOutlet var bannerView: CASBannerView!
-
+    
+    @IBOutlet var statusAppReturnLabel: UILabel!
+    @IBOutlet var enableAppReturnButton: UIButton!
+    
     private let bannerDelegate = AdContentDelegate(type: .banner)
     private let interDelegate = AdContentDelegate(type: .interstitial)
     private let rewardDelegate = AdContentDelegate(type: .rewarded)
+    
+    private var isAppReturnEnabled: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,12 +102,31 @@ class ViewController: UIViewController, CASLoadDelegate {
     @IBAction func showRewarded(_ sender: Any) {
         CAS.manager?.presentRewardedAd(fromRootViewController: self, callback: rewardDelegate)
     }
-
+    
+    @IBAction func changeStateOfAppReturn(_ sender: Any) {
+        if (isAppReturnEnabled) {
+            enableAppReturnButton.setTitle("Enable", for: UIControl.State.normal)
+            statusAppReturnLabel.text = "Disabled"
+            CAS.manager?.disableAppReturnAds()
+            isAppReturnEnabled = false
+        } else {
+            enableAppReturnButton.setTitle("Disable", for: UIControl.State.normal)
+            statusAppReturnLabel.text = "Enabled"
+            CAS.manager?.enableAppReturnAds(with: self)
+            isAppReturnEnabled = true
+        }
+    }
+    
     func onAdLoaded(_ adType: CASType) {
         print("[CAS Sample] \(adType.description) Ad loaded and ready to show")
     }
 
     func onAdFailedToLoad(_ adType: CASType, withError error: String?) {
         print("[CAS Sample] \(adType.description) Ad failed to load with error: \(String(describing: error))")
+    }
+    
+    // Implement the method to pass active UIViewController
+    func viewControllerForPresentingAppReturnAd() -> UIViewController {
+        return self
     }
 }
