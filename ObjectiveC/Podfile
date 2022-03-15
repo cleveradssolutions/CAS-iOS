@@ -4,17 +4,16 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-$casVersion = '~> 2.4.3'
+$casVersion = '~> 2.6.6'
 
 target 'CASSample' do
   ### Default integration:
   pod 'CleverAdsSolutions-SDK', $casVersion
   ### Advanced integration:
-  #pod 'CleverAdsSolutions-SDK/General', $casVersion
-  #pod 'CleverAdsSolutions-SDK/SuperAwesome', $casVersion
-  #pod 'CleverAdsSolutions-SDK/MyTarget', $casVersion
-  #pod 'CleverAdsSolutions-SDK/MoPub', $casVersion
-  #pod 'CleverAdsSolutions-SDK/Mintegral', $casVersion
+  # pod 'CleverAdsSolutions-SDK/GoogleAds', $casVersion
+  # pod 'CleverAdsSolutions-SDK/UnityAds', $casVersion
+  # pod 'CleverAdsSolutions-SDK/AppLovin', $casVersion
+  # pod 'CleverAdsSolutions-SDK/InMobi', $casVersion
   # ... any other combination of networks
   ### Cross Promotion integration:
   pod 'CleverAdsSolutions-Promo', $casVersion
