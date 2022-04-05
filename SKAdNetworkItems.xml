@@ -681,5 +681,15 @@
             <key>SKAdNetworkIdentifier</key>
             <string>c3frkrj4fj.skadnetwork</string>
         </dict>
+        <dict>
+            <!-- TapJoy partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>a2p9lx4jpn.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- AppLovin partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>dkc879ngq3.skadnetwork</string>
+        </dict>
     </array>
 </plist>
