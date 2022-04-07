@@ -691,5 +691,20 @@
             <key>SKAdNetworkIdentifier</key>
             <string>dkc879ngq3.skadnetwork</string>
         </dict>
+        <dict>
+            <!-- Chartboost partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>krvm3zuq6h.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Chartboost partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>bxvub5ada5.skadnetwork</string>
+        </dict>
+        <dict>
+            <!-- Chartboost partner -->
+            <key>SKAdNetworkIdentifier</key>
+            <string>s69wq72ugq.skadnetwork</string>
+        </dict>
     </array>
 </plist>
