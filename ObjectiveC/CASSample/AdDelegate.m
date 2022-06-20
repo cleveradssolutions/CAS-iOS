@@ -35,10 +35,7 @@
 }
 
 - (void)willShownWithAd:(id<CASStatusHandler>)adStatus {
-    if (_lastInfo) {
-        [_lastInfo setText:adStatus.identifier];
-        NSLog(@"[CAS Sample] %@d received Show action", [self getTypeName]);
-    }
+    NSLog(@"[CAS Sample] %@d received Show action", [self getTypeName]);
 }
 
 - (void)didShowAdFailedWithError:(NSString *)error {

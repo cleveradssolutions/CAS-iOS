@@ -16,6 +16,7 @@
 		92E84F4C2539EBAC0067BD47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E84F4A2539EBAC0067BD47 /* LaunchScreen.storyboard */; };
 		92E84F4F2539EBAC0067BD47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F4E2539EBAC0067BD47 /* main.m */; };
 		92ED65792578E7B10022566E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED65772578E7B10022566E /* SceneDelegate.m */; };
+		9D62EABA286099C600414A56 /* BannerAdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EAB9286099C600414A56 /* BannerAdDelegate.m */; };
 		DE8C635B6DF6508918D365F4 /* Pods_CASSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721883DC09F10E593FC8CCE4 /* Pods_CASSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		92E84F4E2539EBAC0067BD47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92ED65772578E7B10022566E /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		92ED65782578E7B10022566E /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9D62EAB8286099C600414A56 /* BannerAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerAdDelegate.h; sourceTree = "<group>"; };
+		9D62EAB9286099C600414A56 /* BannerAdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerAdDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				92E84F432539EBAA0067BD47 /* ViewController.m */,
 				926846B8253DCD14008F3687 /* AdDelegate.h */,
 				926846B9253DCD14008F3687 /* AdDelegate.m */,
+				9D62EAB8286099C600414A56 /* BannerAdDelegate.h */,
+				9D62EAB9286099C600414A56 /* BannerAdDelegate.m */,
 				92E84F452539EBAA0067BD47 /* Main.storyboard */,
 				92E84F482539EBAC0067BD47 /* Assets.xcassets */,
 				92E84F4A2539EBAC0067BD47 /* LaunchScreen.storyboard */,
@@ -120,7 +125,6 @@
 				92E84F362539EBAA0067BD47 /* Frameworks */,
 				92E84F372539EBAA0067BD47 /* Resources */,
 				B57E27B1192765C7BDC629C3 /* [CP] Embed Pods Frameworks */,
-				3D2042508A5E0B03417BDA13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,23 +181,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3D2042508A5E0B03417BDA13 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B57E27B1192765C7BDC629C3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +229,7 @@
 			files = (
 				92E84F442539EBAA0067BD47 /* ViewController.m in Sources */,
 				92ED65792578E7B10022566E /* SceneDelegate.m in Sources */,
+				9D62EABA286099C600414A56 /* BannerAdDelegate.m in Sources */,
 				92E84F3E2539EBAA0067BD47 /* AppDelegate.m in Sources */,
 				92E84F4F2539EBAC0067BD47 /* main.m in Sources */,
 				926846BD253DDB7E008F3687 /* EnableSwift.swift in Sources */,
@@ -391,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CR29UDMXTC;
+				DEVELOPMENT_TEAM = KJK32752G4;
 				INFOPLIST_FILE = CASSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (id _Nonnull)initWithType:(CASType)type;
 
 @property (nonatomic) CASType type;
-@property (strong, nonatomic, nullable) UILabel *lastInfo;
 
 + (NSString *) getNameOfType:(CASType)type;
 @end

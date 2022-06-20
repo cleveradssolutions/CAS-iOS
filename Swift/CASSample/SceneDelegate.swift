@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  CASSample
 //
-//  Copyright © 2020 Clever Ads Solutions. All rights reserved.
+//  Copyright © 2022 Clever Ads Solutions. All rights reserved.
 //
 
 import Foundation

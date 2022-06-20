@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -206,10 +206,10 @@
                     <connections>
                         <outlet property="bannerView" destination="XHK-6i-NEv" id="VGi-GG-bYp"/>
                         <outlet property="enableAppReturnButton" destination="SMd-Nf-rbg" id="iQj-J2-oww"/>
-                        <outlet property="lastBannerLabel" destination="HaI-rT-54m" id="bSn-nT-GUb"/>
-                        <outlet property="lastInterstitialLabel" destination="Syl-N2-IP1" id="XmC-2m-J9k"/>
-                        <outlet property="lastRewardedInfo" destination="e0C-ym-E3Q" id="t3L-1h-wUa"/>
                         <outlet property="statusAppReturnLabel" destination="7ZX-PJ-UoM" id="t14-Wb-Q5k"/>
+                        <outlet property="statusBannerLabel" destination="HaI-rT-54m" id="Gow-FO-Cfc"/>
+                        <outlet property="statusInterstitialLabel" destination="Syl-N2-IP1" id="0bk-DD-jVt"/>
+                        <outlet property="statusRewardedLabel" destination="e0C-ym-E3Q" id="ecI-hH-i58"/>
                         <outlet property="versionLabel" destination="F1P-fU-15B" id="bGq-bx-x7V"/>
                     </connections>
                 </viewController>

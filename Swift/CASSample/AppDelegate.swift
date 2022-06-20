@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CASSample
 //
-//  Copyright © 2020 Clever Ads Solutions. All rights reserved.
+//  Copyright © 2022 Clever Ads Solutions. All rights reserved.
 //
 
 import CleverAdsSolutions
@@ -10,24 +10,22 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CASCallback {
+    var window: UIWindow?
     
+    static var mediationManager: CASMediationManager!
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         // Validate integration. For develop only.
         CAS.validateIntegration()
-        
-        configureCAS()
-        let manager = createCASManager()
 
-        // Set banner size immediately after CAS.create
-        manager.setBanner(size: .getSmartBanner())
-
+        AppDelegate.configureCAS()
+        AppDelegate.createCASManager()
         return true
     }
 
     // MARK: Initialize Clever Ads Solutions
 
-    func configureCAS() {
+    static func configureCAS() {
         // Set any CAS Settings before CAS.create
         CAS.settings.setDebugMode(true)
         // CAS.settings.updateUser(consent: .accepted)
@@ -41,13 +39,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CASCallback {
         CAS.targetingOptions.setGender(.female)
     }
 
-    func createCASManager() -> CASMediationManager {
+    static func createCASManager() {
         // CAS storage last created manager in strong static CAS.manager property
-        return CAS.create(managerID: "demo",
-                          enableTypes: [.banner, .interstitial, .rewarded],
-                          demoAdMode: true) { complete, error in
-            print("[CAS Sample] Mediation manager initialization: \(complete) with error: \(String(describing: error))")
-        }
+        mediationManager = CAS.buildManager()
+            .withAdTypes(.banner, .interstitial, .rewarded)
+            .withTestAdMode(true)
+            .withCompletionHandler({ initialConfig in
+                if let error = initialConfig.error {
+                    print("[CAS Sample] Mediation manager initialization failed: \(error)")
+                } else {
+                    print("[CAS Sample] Mediation manager initialization complete.")
+                }
+            })
+            .create(withCasId: "demo")
     }
 
     // MARK: UISceneSession Lifecycle

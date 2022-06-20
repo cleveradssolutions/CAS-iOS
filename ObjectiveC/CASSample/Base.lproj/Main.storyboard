@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -183,7 +183,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHK-6i-NEv" customClass="CASBannerView" customModule="CleverAdsSolutions">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHK-6i-NEv" customClass="CASBannerView" customModule="CleverAdsSolutions">
                                 <rect key="frame" x="0.0" y="612" width="414" height="250"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -201,15 +201,16 @@
                             <constraint firstItem="XHK-6i-NEv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dVb-7S-erd"/>
                             <constraint firstItem="XHK-6i-NEv" firstAttribute="leading" secondItem="TDe-Zg-q5G" secondAttribute="leading" id="iX0-S8-g6q"/>
                             <constraint firstItem="TDe-Zg-q5G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qK7-tR-d8R"/>
+                            <constraint firstItem="XHK-6i-NEv" firstAttribute="top" secondItem="TDe-Zg-q5G" secondAttribute="bottom" id="t7H-XJ-OSW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="appReturnStatusLabel" destination="Gsu-Jd-v0U" id="zeE-cJ-5uV"/>
                         <outlet property="bannerView" destination="XHK-6i-NEv" id="NsZ-Kf-K3d"/>
                         <outlet property="changeStateOfAppReturnButton" destination="rCJ-oR-8yT" id="sdG-Sa-YZX"/>
-                        <outlet property="lastBannerLabel" destination="HaI-rT-54m" id="8av-wh-WSn"/>
-                        <outlet property="lastInterstitialLabel" destination="Syl-N2-IP1" id="cMg-AK-4Vv"/>
-                        <outlet property="lastRewardedInfo" destination="e0C-ym-E3Q" id="WNa-cD-Fnk"/>
+                        <outlet property="statusBannerLabel" destination="HaI-rT-54m" id="chx-ZE-H6S"/>
+                        <outlet property="statusInterstitialLabel" destination="Syl-N2-IP1" id="LJq-0y-QQX"/>
+                        <outlet property="statusRewardedLabel" destination="e0C-ym-E3Q" id="BQa-h4-Jxn"/>
                         <outlet property="versionLabel" destination="F1P-fU-15B" id="Ji7-pa-Edf"/>
                     </connections>
                 </viewController>

@@ -1,99 +1,113 @@
 PODS:
-  - AdColony (4.7.2)
-  - Ads-Global/BUAdSDK (4.3.0.4):
-    - Ads-Global/BUFoundation
+  - AdColony (4.9.0)
+  - Ads-Global (4.5.2.3):
+    - Ads-Global/BUAdSDK (= 4.5.2.3)
+  - Ads-Global/APM (4.5.2.3):
+    - RangersAPM-Pangle/Crash (= 2.3.2-pangle)
+    - RangersAPM-Pangle/Global (= 2.3.2-pangle)
+    - RangersAPM-Pangle/SessionTracker (= 2.3.2-pangle)
+  - Ads-Global/BUAdSDK (4.5.2.3):
     - Ads-Global/International
-  - Ads-Global/BUFoundation (4.3.0.4):
-    - BURelyFoundation_Global (= 0.0.1.47)
-  - Ads-Global/Domestic (4.3.0.4)
-  - Ads-Global/International (4.3.0.4):
+  - Ads-Global/BUFoundation (4.5.2.3):
+    - BURelyFoundation_Global (= 0.0.1.58)
+  - Ads-Global/BURelyAdSDK (4.5.2.3)
+  - Ads-Global/International (4.5.2.3):
+    - Ads-Global/APM
     - Ads-Global/BUFoundation
-  - AppLovinSDK (11.2.1)
-  - BURelyFoundation_Global (0.0.1.47):
-    - BURelyFoundation_Global/NETWork (= 0.0.1.47)
-  - BURelyFoundation_Global/NETWork (0.0.1.47)
-  - CleverAdsSolutions-Base (2.6.6)
-  - CleverAdsSolutions-Promo (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-  - CleverAdsSolutions-SDK (2.6.6):
-    - CleverAdsSolutions-SDK/Optimal (= 2.6.6)
-  - CleverAdsSolutions-SDK/AdColony (2.6.6):
-    - AdColony (~> 4.7.2)
-    - CleverAdsSolutions-Base (= 2.6.6)
-  - CleverAdsSolutions-SDK/AppLovin (2.6.6):
-    - AppLovinSDK (~> 11.2.1)
-    - CleverAdsSolutions-Base (= 2.6.6)
-  - CleverAdsSolutions-SDK/FBAudienceNetwork (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-    - FBAudienceNetwork (~> 6.9.0)
-  - CleverAdsSolutions-SDK/GoogleAds (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-    - Google-Mobile-Ads-SDK (~> 9.1)
-  - CleverAdsSolutions-SDK/InMobi (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-    - InMobiSDK/Core (~> 10.0.2)
-  - CleverAdsSolutions-SDK/IronSource (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-    - IronSourceSDK (~> 7.2.1)
-  - CleverAdsSolutions-SDK/Mintegral (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-    - MintegralAdSDK/BidBannerAd (~> 7.1.0)
-    - MintegralAdSDK/BidInterstitialVideoAd (~> 7.1.0)
-    - MintegralAdSDK/BidNewInterstitialAd (~> 7.1.0)
-    - MintegralAdSDK/BidRewardVideoAd (~> 7.1.0)
-  - CleverAdsSolutions-SDK/MyTarget (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-    - myTargetSDK (~> 5.15.0)
-  - CleverAdsSolutions-SDK/Optimal (2.6.6):
-    - CleverAdsSolutions-SDK/AdColony (= 2.6.6)
-    - CleverAdsSolutions-SDK/AppLovin (= 2.6.6)
-    - CleverAdsSolutions-SDK/FBAudienceNetwork (= 2.6.6)
-    - CleverAdsSolutions-SDK/GoogleAds (= 2.6.6)
-    - CleverAdsSolutions-SDK/InMobi (= 2.6.6)
-    - CleverAdsSolutions-SDK/IronSource (= 2.6.6)
-    - CleverAdsSolutions-SDK/Mintegral (= 2.6.6)
-    - CleverAdsSolutions-SDK/MyTarget (= 2.6.6)
-    - CleverAdsSolutions-SDK/Pangle (= 2.6.6)
-    - CleverAdsSolutions-SDK/Tapjoy (= 2.6.6)
-    - CleverAdsSolutions-SDK/UnityAds (= 2.6.6)
-    - CleverAdsSolutions-SDK/Vungle (= 2.6.6)
-  - CleverAdsSolutions-SDK/Pangle (2.6.6):
-    - Ads-Global/BUAdSDK (~> 4.3.0.2)
-    - Ads-Global/Domestic (~> 4.3.0.2)
-    - CleverAdsSolutions-Base (= 2.6.6)
-  - CleverAdsSolutions-SDK/Tapjoy (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-    - TapjoySDK (~> 12.9.0)
-  - CleverAdsSolutions-SDK/UnityAds (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-    - UnityAds (~> 4.0.1)
-  - CleverAdsSolutions-SDK/Vungle (2.6.6):
-    - CleverAdsSolutions-Base (= 2.6.6)
-    - VungleSDK-iOS (~> 6.10.6)
-  - FBAudienceNetwork (6.9.0)
-  - Google-Mobile-Ads-SDK (9.1.0):
-    - GoogleAppMeasurement (< 9.0, >= 7.0)
+    - Ads-Global/BURelyAdSDK
+    - Ads-Global/PAGAdSDK
+  - Ads-Global/PAGAdSDK (4.5.2.3):
+    - Ads-Global/BUFoundation
+  - AppLovinSDK (11.4.2)
+  - BURelyFoundation_Global (0.0.1.58):
+    - BURelyFoundation_Global/NETWork (= 0.0.1.58)
+  - BURelyFoundation_Global/NETWork (0.0.1.58)
+  - ChartboostSDK (8.5.0.2)
+  - CleverAdsSolutions-Base (2.8.2)
+  - CleverAdsSolutions-SDK/AdColony (2.8.2):
+    - AdColony (~> 4.9.0)
+    - CleverAdsSolutions-Base
+  - CleverAdsSolutions-SDK/AppLovin (2.8.2):
+    - AppLovinSDK (~> 11.4.2)
+    - CleverAdsSolutions-Base
+  - CleverAdsSolutions-SDK/AudienceNetwork (2.8.2):
+    - CleverAdsSolutions-Base
+    - FBAudienceNetwork (~> 6.11.1)
+  - CleverAdsSolutions-SDK/Chartboost (2.8.2):
+    - ChartboostSDK (~> 8.5.0.2)
+    - CleverAdsSolutions-Base
+  - CleverAdsSolutions-SDK/FBAudienceNetwork (2.8.2):
+    - CleverAdsSolutions-SDK/AudienceNetwork (= 2.8.2)
+  - CleverAdsSolutions-SDK/Fyber (2.8.2):
+    - CleverAdsSolutions-Base
+    - Fyber_Marketplace_SDK (~> 8.1.5)
+  - CleverAdsSolutions-SDK/GoogleAds (2.8.2):
+    - CleverAdsSolutions-Base
+    - Google-Mobile-Ads-SDK (~> 9.6.0)
+  - CleverAdsSolutions-SDK/InMobi (2.8.2):
+    - CleverAdsSolutions-Base
+    - InMobiSDK/Core (~> 10.0.7)
+  - CleverAdsSolutions-SDK/IronSource (2.8.2):
+    - CleverAdsSolutions-Base
+    - IronSourceSDK (= 7.2.2.1)
+  - CleverAdsSolutions-SDK/Mintegral (2.8.2):
+    - CleverAdsSolutions-Base
+    - MintegralAdSDK (~> 7.1.7)
+  - CleverAdsSolutions-SDK/MyTarget (2.8.2):
+    - CleverAdsSolutions-Base
+    - myTargetSDK (= 5.15.2)
+  - CleverAdsSolutions-SDK/Optimal (2.8.2):
+    - CleverAdsSolutions-SDK/AdColony (= 2.8.2)
+    - CleverAdsSolutions-SDK/AppLovin (= 2.8.2)
+    - CleverAdsSolutions-SDK/FBAudienceNetwork (= 2.8.2)
+    - CleverAdsSolutions-SDK/GoogleAds (= 2.8.2)
+    - CleverAdsSolutions-SDK/InMobi (= 2.8.2)
+    - CleverAdsSolutions-SDK/IronSource (= 2.8.2)
+    - CleverAdsSolutions-SDK/Mintegral (= 2.8.2)
+    - CleverAdsSolutions-SDK/MyTarget (= 2.8.2)
+    - CleverAdsSolutions-SDK/Pangle (= 2.8.2)
+    - CleverAdsSolutions-SDK/Tapjoy (= 2.8.2)
+    - CleverAdsSolutions-SDK/UnityAds (= 2.8.2)
+    - CleverAdsSolutions-SDK/Vungle (= 2.8.2)
+  - CleverAdsSolutions-SDK/Pangle (2.8.2):
+    - Ads-Global (= 4.5.2.3)
+    - CleverAdsSolutions-Base
+  - CleverAdsSolutions-SDK/Tapjoy (2.8.2):
+    - CleverAdsSolutions-Base
+    - TapjoySDK (~> 12.10.0)
+  - CleverAdsSolutions-SDK/UnityAds (2.8.2):
+    - CleverAdsSolutions-Base
+    - UnityAds (~> 4.2.1)
+  - CleverAdsSolutions-SDK/Vungle (2.8.2):
+    - CleverAdsSolutions-Base
+    - VungleSDK-iOS (~> 6.11.0)
+  - FBAudienceNetwork (6.11.1)
+  - Fyber_Marketplace_SDK (8.1.5):
+    - Fyber_Marketplace_SDK/IASDKCore (= 8.1.5)
+  - Fyber_Marketplace_SDK/IASDKCore (8.1.5)
+  - Google-Mobile-Ads-SDK (9.6.0):
+    - GoogleAppMeasurement (< 10.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (8.13.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.13.0)
+  - GoogleAppMeasurement (9.1.0):
+    - GoogleAppMeasurement/AdIdSupport (= 9.1.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.13.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.13.0)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (9.1.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 9.1.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (8.13.0):
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (9.1.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - GoogleUtilities/Network (~> 7.7)
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
-    - nanopb (~> 2.30908.0)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
   - GoogleUserMessagingPlatform (2.0.0)
   - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
@@ -112,60 +126,96 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.7.0)"
   - GoogleUtilities/Reachability (7.7.0):
     - GoogleUtilities/Logger
-  - InMobiSDK/Core (10.0.2)
-  - IronSourceSDK (7.2.1.0)
-  - MintegralAdSDK/BannerAd (7.1.1.0):
+  - InMobiSDK/Core (10.0.7)
+  - IronSourceSDK (7.2.2.1)
+  - MintegralAdSDK (7.1.7.0):
+    - MintegralAdSDK/BannerAd (= 7.1.7.0)
+    - MintegralAdSDK/BidBannerAd (= 7.1.7.0)
+    - MintegralAdSDK/BidInterstitialVideoAd (= 7.1.7.0)
+    - MintegralAdSDK/BidNativeAd (= 7.1.7.0)
+    - MintegralAdSDK/BidNewInterstitialAd (= 7.1.7.0)
+    - MintegralAdSDK/BidRewardVideoAd (= 7.1.7.0)
+    - MintegralAdSDK/InterstitialVideoAd (= 7.1.7.0)
+    - MintegralAdSDK/NativeAd (= 7.1.7.0)
+    - MintegralAdSDK/NewInterstitialAd (= 7.1.7.0)
+    - MintegralAdSDK/RewardVideoAd (= 7.1.7.0)
+  - MintegralAdSDK/BannerAd (7.1.7.0):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/BidBannerAd (7.1.1.0):
+  - MintegralAdSDK/BidBannerAd (7.1.7.0):
     - MintegralAdSDK/BannerAd
     - MintegralAdSDK/BidNativeAd
-  - MintegralAdSDK/BidInterstitialVideoAd (7.1.1.0):
+  - MintegralAdSDK/BidInterstitialVideoAd (7.1.7.0):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/InterstitialVideoAd
-  - MintegralAdSDK/BidNativeAd (7.1.1.0):
+  - MintegralAdSDK/BidNativeAd (7.1.7.0):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/BidNewInterstitialAd (7.1.1.0):
+  - MintegralAdSDK/BidNewInterstitialAd (7.1.7.0):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/NewInterstitialAd
-  - MintegralAdSDK/BidRewardVideoAd (7.1.1.0):
+  - MintegralAdSDK/BidRewardVideoAd (7.1.7.0):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/RewardVideoAd
-  - MintegralAdSDK/InterstitialVideoAd (7.1.1.0):
+  - MintegralAdSDK/InterstitialVideoAd (7.1.7.0):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/NativeAd (7.1.1.0)
-  - MintegralAdSDK/NewInterstitialAd (7.1.1.0):
+  - MintegralAdSDK/NativeAd (7.1.7.0)
+  - MintegralAdSDK/NewInterstitialAd (7.1.7.0):
     - MintegralAdSDK/InterstitialVideoAd
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/RewardVideoAd (7.1.1.0):
+  - MintegralAdSDK/RewardVideoAd (7.1.7.0):
     - MintegralAdSDK/NativeAd
-  - myTargetSDK (5.15.0):
+  - myTargetSDK (5.15.2):
     - myTrackerSDK (~> 3.0.3)
   - myTrackerSDK (3.0.6)
-  - nanopb (2.30908.0):
-    - nanopb/decode (= 2.30908.0)
-    - nanopb/encode (= 2.30908.0)
-  - nanopb/decode (2.30908.0)
-  - nanopb/encode (2.30908.0)
-  - PromisesObjC (2.0.0)
-  - TapjoySDK (12.9.1)
-  - UnityAds (4.0.1)
-  - VungleSDK-iOS (6.10.6)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - OneKit-Pangle/BaseKit (1.1.21-pangle)
+  - OneKit-Pangle/Database (1.1.21-pangle):
+    - OneKit-Pangle/Service
+  - OneKit-Pangle/Service (1.1.21-pangle)
+  - PromisesObjC (2.1.0)
+  - RangersAPM-Pangle/Core (2.3.2-pangle):
+    - OneKit-Pangle/BaseKit (= 1.1.21-pangle)
+  - RangersAPM-Pangle/Crash (2.3.2-pangle):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/HMD
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/Global (2.3.2-pangle):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/HMD (2.3.2-pangle):
+    - OneKit-Pangle/Database (= 1.1.21-pangle)
+    - RangersAPM-Pangle/Core
+  - RangersAPM-Pangle/Public (2.3.2-pangle):
+    - RangersAPM-Pangle/Core
+  - RangersAPM-Pangle/SessionTracker (2.3.2-pangle):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/HMD
+    - RangersAPM-Pangle/Public
+  - TapjoySDK (12.10.0)
+  - UnityAds (4.2.1)
+  - VungleSDK-iOS (6.11.0)
 
 DEPENDENCIES:
-  - CleverAdsSolutions-Promo (~> 2.6.6)
-  - CleverAdsSolutions-SDK (~> 2.6.6)
+  - CleverAdsSolutions-Base (~> 2.8.2)
+  - CleverAdsSolutions-SDK/Chartboost (~> 2.8.2)
+  - CleverAdsSolutions-SDK/Fyber (~> 2.8.2)
+  - CleverAdsSolutions-SDK/Optimal (~> 2.8.2)
 
 SPEC REPOS:
   https://github.com/cleveradssolutions/CAS-Specs.git:
     - CleverAdsSolutions-Base
-    - CleverAdsSolutions-Promo
     - CleverAdsSolutions-SDK
   https://github.com/CocoaPods/Specs.git:
     - AdColony
     - Ads-Global
     - AppLovinSDK
     - BURelyFoundation_Global
+    - ChartboostSDK
     - FBAudienceNetwork
+    - Fyber_Marketplace_SDK
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
@@ -176,35 +226,40 @@ SPEC REPOS:
     - myTargetSDK
     - myTrackerSDK
     - nanopb
+    - OneKit-Pangle
     - PromisesObjC
+    - RangersAPM-Pangle
     - TapjoySDK
     - UnityAds
     - VungleSDK-iOS
 
 SPEC CHECKSUMS:
-  AdColony: 970af2bff1e500c8a681bfcbd85f8054c0f57071
-  Ads-Global: c2e31daedd00fb13e26bd36b3ebed4965afbf6df
-  AppLovinSDK: 2ed08703a7e44477ef5dedc264a1ef1e8050dd6c
-  BURelyFoundation_Global: 2cb922d28b6f3493cfdf24eb30f1e3ae61b6ca47
-  CleverAdsSolutions-Base: 7bfb8aaa80f20a461f9c5eab890c90e7040cff0c
-  CleverAdsSolutions-Promo: 7ff046ffb295b52299cd60b2e8e727c298efe3f6
-  CleverAdsSolutions-SDK: e26a5d3c84e6bb8923295d2e281c2961554cf72b
-  FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
-  Google-Mobile-Ads-SDK: d6ebb0e05cc38f4fad82d77a6655552213ed5e38
-  GoogleAppMeasurement: 135c2fbcf5038e0f37dbce04fa641a702fc275d1
+  AdColony: 4f3738dc633d7aaa8ec60729df973076cc8e97ed
+  Ads-Global: fcef90d0500248160422b64945f30f6741b97c25
+  AppLovinSDK: 119a0b2a743f9d9c6002c58776b1013778a65084
+  BURelyFoundation_Global: 4d19085056d58dc06a102f2d41c140ab2fc47da5
+  ChartboostSDK: b9940615a3073ee71703958809baf6c86ab008cb
+  CleverAdsSolutions-Base: 39ddc8063c701a4ed302f0800c01a9de9a663a44
+  CleverAdsSolutions-SDK: bb073df8099ddd4a536b798bb4b2d662d7da8e07
+  FBAudienceNetwork: 78c7565dbc7df3a24013b4dccdc69a0d0ded8404
+  Fyber_Marketplace_SDK: 8079047b963f2e829fde65ac69677d95e73501f1
+  Google-Mobile-Ads-SDK: bdf13d37aa77e368510687b5305d4972b4f9e9c7
+  GoogleAppMeasurement: 8ecc717f2abe3f9ee95a5d38db08827852894acc
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
-  InMobiSDK: ff90089c722e6ce387d85a7d07a45902c73ecf24
-  IronSourceSDK: 49c6abb070214a60ee9f201a30336eb733b4adf1
-  MintegralAdSDK: 6f4a39e4801633686b58583e3974b8c7c5c064ef
-  myTargetSDK: e821d1cf642c2a0785a0dddb1a10ba46a2737605
+  InMobiSDK: 05929df4efec452604ca391363fbff3b4e335794
+  IronSourceSDK: 2c5aa482ea7c5e85ff934d2c8bb34fe3ceb54f43
+  MintegralAdSDK: 9c8952852f6b7d38dfca6acd70bc267443c57729
+  myTargetSDK: e79ecceb7ce283f274202ff8e8b64b854ac8edad
   myTrackerSDK: 4fc38a0c56573d58761f3e85dbad483077fd0d2d
-  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  TapjoySDK: 4a3ea5146704a2ba8aab84f4e6f7dcec172972b9
-  UnityAds: 6d2fecf09f314049993b9d1c0fcd2efc43dfa60e
-  VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  OneKit-Pangle: 68a778c39d36ed8feffd667a6b49225427bcf286
+  PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
+  RangersAPM-Pangle: 97c8fe91af08574a739cc72a714b735efb6c891f
+  TapjoySDK: 3dcd899e69eb3e36f231390c95c7105730619bcb
+  UnityAds: a2274b216f9ed1e4d1d74c08178f21223f08e17a
+  VungleSDK-iOS: 5d0c27330a1d793d1f628a1f0e227113c9f8a478
 
-PODFILE CHECKSUM: 522496454e66bda9e12a07431a62a2f9472274f8
+PODFILE CHECKSUM: a6063696345466ec68f80310137f6010e47ce485
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

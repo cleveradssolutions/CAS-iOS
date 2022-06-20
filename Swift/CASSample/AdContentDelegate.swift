@@ -2,7 +2,7 @@
 //  AdDelegate.swift
 //  CASSample
 //
-//  Copyright © 2020 Clever Ads Solutions. All rights reserved.
+//  Copyright © 2022 Clever Ads Solutions. All rights reserved.
 //
 
 import CleverAdsSolutions
@@ -11,14 +11,12 @@ import UIKit
 
 class AdContentDelegate: CASCallback {
     let type: CASType
-    var infoLabel: UILabel?
 
     init(type: CASType) {
         self.type = type
     }
 
-    func willShown(ad adStatus: CASStatusHandler) {
-        infoLabel?.text = adStatus.identifier
+    func willShown(ad adStatus: CASImpression) {
         print("[CAS Sample] \(type.description) Ad received Show action")
     }
 
