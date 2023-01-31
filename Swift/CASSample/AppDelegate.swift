@@ -15,9 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CASCallback {
     static var mediationManager: CASMediationManager!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Validate integration. For develop only.
-        CAS.validateIntegration()
-
+       
         AppDelegate.configureCAS()
         AppDelegate.createCASManager()
         return true
@@ -30,9 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CASCallback {
         CAS.settings.setDebugMode(true)
         // CAS.settings.updateUser(consent: .accepted)
         // CAS.settings.updateCCPA(status: .optInSale)
-        // CAS.settings.setTagged(audience: .notChildren)
-        CAS.settings.setTrackLocation(enabled: true)
-        CAS.settings.setInterstitialAdsWhenVideoCostAreLower(allow: true)
+        CAS.settings.setTagged(audience: .notChildren)
 
         // Inform SDK of the users details
         CAS.targetingOptions.setAge(12)

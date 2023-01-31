@@ -22,16 +22,11 @@ static CASMediationManager *manager = nil;
     [[CAS settings] setDebugMode:YES];
     //[[CAS settings] updateUserWithConsent:CASConsentStatusAccepted];
     //[[CAS settings] updateCCPAWithStatus:CASCCPAStatusOptInSale];
-    //[[CAS settings] setTaggedWithAudience:CASAudienceNotChildren];
-    [[CAS settings] setTrackLocationWithEnabled:YES];
-    [[CAS settings] setInterstitialAdsWhenVideoCostAreLowerWithAllow:YES];
+    [[CAS settings] setTaggedWithAudience:CASAudienceNotChildren];
 
     // Inform SDK of the users details
     [[CAS targetingOptions] setAge:12];
     [[CAS targetingOptions] setGender:GenderFemale];
-
-    // Validate integration. For develop only.
-    [CAS validateIntegration];
 
     // CAS storage last created manager
     CASManagerBuilder *builder = [CAS buildManager];
