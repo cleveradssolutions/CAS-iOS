@@ -1,9 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 
-platform :ios, '10.0'
+platform :ios, '12.0'
 use_frameworks!
 
 target 'CASSample' do
-  pod 'CleverAdsSolutions-Base', '~> 2.8.6'
+  pod 'CleverAdsSolutions-Base', '~> 3.0.0'
 end

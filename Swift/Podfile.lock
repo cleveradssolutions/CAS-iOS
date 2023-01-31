@@ -1,16 +1,16 @@
 PODS:
-  - CleverAdsSolutions-Base (2.8.6)
+  - CleverAdsSolutions-Base (3.0.0)
 
 DEPENDENCIES:
-  - CleverAdsSolutions-Base (~> 2.8.6)
+  - CleverAdsSolutions-Base (~> 3.0.0)
 
 SPEC REPOS:
   https://github.com/cleveradssolutions/CAS-Specs.git:
     - CleverAdsSolutions-Base
 
 SPEC CHECKSUMS:
-  CleverAdsSolutions-Base: e83333262e05b71325594e51b42c7dd5e8ef1db0
+  CleverAdsSolutions-Base: 2e6263bf1152cc72a5729df25eed22e3a9c021e0
 
-PODFILE CHECKSUM: 3107872f2a739c417252ee14913673139793225c
+PODFILE CHECKSUM: 56d2b526f949cb465e8440da588e3688a770a002
 
 COCOAPODS: 1.11.3

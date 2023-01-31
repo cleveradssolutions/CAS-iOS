@@ -124,7 +124,7 @@
 				92E84F352539EBAA0067BD47 /* Sources */,
 				92E84F362539EBAA0067BD47 /* Frameworks */,
 				92E84F372539EBAA0067BD47 /* Resources */,
-				B57E27B1192765C7BDC629C3 /* [CP] Embed Pods Frameworks */,
+				0ED2437CD8DD1FDAA90259BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,21 +181,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B57E27B1192765C7BDC629C3 /* [CP] Embed Pods Frameworks */ = {
+		0ED2437CD8DD1FDAA90259BB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8BBE7B132194A0620F83A9D /* [CP] Check Pods Manifest.lock */ = {
