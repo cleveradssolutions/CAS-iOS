@@ -17,20 +17,21 @@ module CASConfig
     SCRIPT_VERSION = '1.0'
 
     class << self
-        attr_accessor :casId, :projectName, :gad_included, :clean_install
+        attr_accessor :casId, :project_path, :gad_included, :clean_install
 
         def config
+            Dir.chdir __dir__
             if block_given?
                 yield self
             end
 
             update_project() do |project|
-                casConfig, casConfigName = load_configuration()
-                project.check_config_file(casConfig, casConfigName)
+                cas_config, cas_config_name = load_configuration()
+                project.check_config_file(cas_config, cas_config_name)
                 
                 update_plist(project.get_plist_path()) do |plist|
                     plist.check_sk_ad_networks()
-                    plist.check_google_app_Id(casConfig)
+                    plist.check_google_app_Id(cas_config)
                     plist.check_transport_security()
                     plist.check_tracking_usage_description()
                     plist.check_app_bound_domains()
@@ -40,16 +41,21 @@ module CASConfig
         end
 
         def update_project()
-            instance = Project.new(@projectName)
+            instance = Project.new(@project_path)
             yield(instance)
             if instance.dirt?
                 instance.project.save()
-                puts "Updated: " + instance.project.path.relative_path_from(__dir__).to_s
+                puts "Updated: " + relative_path(instance.project.path)
             end
         end
 
         def update_plist(path)
-            instance = ProjectPlist.new(path)
+            if File.exist?(path)
+                plist = Xcodeproj::Plist.read_from_path(path)
+            else
+                plist = Hash.new
+            end
+            instance = ProjectPlist.new(plist)
             yield(instance)
             if instance.dirt?
                 begin
@@ -77,7 +83,7 @@ module CASConfig
             end
             
             @casId = ""
-            @projectName = ""
+            @project_path = ""
             @gad_included = true
             @clean_install = false
             
@@ -89,13 +95,17 @@ module CASConfig
                 elsif arg == ARG_CLEAN
                     @clean_install = true
                 elsif arg.start_with?(ARG_PROJECT)
-                    @projectName = sub_between(arg, ARG_PROJECT, ' ')
-                    if @projectName.end_with?(XC_PROJECT_FILE)
-                        @projectName += XC_PROJECT_FILE
+                    @project_path = sub_between(arg, ARG_PROJECT, ' ')
+                    unless @project_path.end_with?(XC_PROJECT_FILE)
+                        @project_path = @project_path + XC_PROJECT_FILE
                     end
-                    unless File.exist?(@projectName)
-                        error("[!] Not found project: " + @projectName)
-                        exit
+                    unless File.exist?(@project_path)
+                        Dir.chdir File.expand_path('../')
+                        unless File.exist?(@project_path)
+                            error("[!] Not found project: " + @project_path)
+                            print_help()
+                            exit
+                        end
                     end
                 elsif !arg.empty? && arg.scan(/\D/).empty?
                     @casId = arg
@@ -110,6 +120,10 @@ module CASConfig
             end
         end
     
+        def relative_path(path)
+            Pathname.new(path).relative_path_from(File.expand_path('.')).to_s
+        end
+
         def sub_between(source, startStr, endStr)
             source.split(startStr).last.split(endStr).first
         end
@@ -126,14 +140,18 @@ module CASConfig
             puts colortxt(message, 33)
         end
 
+        def thin_text(message)
+            colortxt(message, 2)
+        end
+
         def colortxt(txt, term_color_code)
             "\e[#{term_color_code}m#{txt}\e[0m"
         end
 
         def print_footer
             puts ""
-            puts colortxt("XCode project configuration script version " + SCRIPT_VERSION, 2)
-            puts colortxt("   Powered by ", 2) + colortxt("Clever Ads Solutions", 36)
+            puts thin_text("XCode project configuration script version " + SCRIPT_VERSION)
+            puts thin_text("   Powered by ") + colortxt("Clever Ads Solutions", 36)
         end
 
         def print_help
@@ -232,59 +250,78 @@ module CASConfig
         def initialize(projectName)
             if projectName.empty?
                 foundProjects = Dir.glob("*" + XC_PROJECT_FILE)
+                if foundProjects.empty?
+                    Dir.chdir File.expand_path('../')
+                    foundProjects = Dir.glob("*" + XC_PROJECT_FILE)
+                    if foundProjects.empty?
+                        CASConfig.error("[!] XCode project not found")
+                        CASConfig.print_help
+                    end
+                end
                 if foundProjects.count == 1
                     path = foundProjects.first
-                    #puts "Target project: " + path
                 else
                     CASConfig.warning("Found several XC Projects near the script.")
                     CASConfig.warning("Add the --project option with target application project:")
                     foundProjects.each do |file|
-                        puts "   " + ARG_PROJECT + file
+                        CASConfig.success "   " + ARG_PROJECT + file
                     end
                     exit
                 end
             else
                 path = projectName
             end
-            
+            puts "Target: " + path
             @project = Xcodeproj::Project.open(path)
 
             mainTargetName = File.basename(path, XC_PROJECT_FILE)
-            @mainTarget = @project.targets.first
-            @project.targets.each do |target|
-                if target.name == mainTargetName
-                    @mainTarget = target
-                end
-            end
+            @mainTarget = @project.targets.find { |target| target.name == mainTargetName }
+            @mainTarget ||= @project.targets.first
         end
 
-        def get_s(key)
+        def get_setting(key)
             @mainTarget.build_configurations.each do |config|
                 prop = config.build_settings[key]
-                return prop unless prop.empty?
+                return prop unless prop.nil? || prop.empty?
             end
             return ""
         end
 
+        def set_setting(key, value)
+            @mainTarget.build_configurations.each { |config| config.build_settings[key] = value }
+            @is_dirt = true
+        end
+
+        def new_file(name, group)
+            @is_dirt = true
+            if group == '.'
+                return @project.new_file(name)
+            else
+                return @project[group].new_file(name)
+            end
+        end
+
         def get_plist_path()
-            return get_s("INFOPLIST_FILE")
+            path = get_setting("INFOPLIST_FILE")
+            if path.empty?
+                path = @project.groups.find{ |group| !group.path.empty? }.new_file("Info.plist").full_path.to_s
+                set_setting("INFOPLIST_FILE", path)
+            end
+            return path
         end
 
         def check_config_file(configBody, configName)
             return if configBody.empty?
             configName = "cas_settings.json" if configName.empty?
-            dirPath = File.dirname(get_plist_path())
-            if dirPath == '.'
-                xcFile = @project.new_file(configName)
-            else
-                xcFile = @project[dirPath].new_file(configName)
-            end
-            if CASConfig.file_expired?(xcFile.real_path)
-                CASConfig.success "- Config file has been " + (if File.exist?(xcFile.real_path) then "updated" else "created" end)
-                puts "   " + xcFile.real_path.to_s
+            groupPath = File.dirname(get_plist_path())
+            filePath = groupPath + "/" + configName
+
+            if CASConfig.file_expired?(filePath)
+                CASConfig.success "- Config file has been " + (if File.exist?(filePath) then "updated" else "created" end)
+                puts "   " + CASConfig.thin_text(filePath)
+                xcFile = new_file(configName, groupPath)
                 File.open(xcFile.real_path, 'w') { |file| file.write(configBody) }
                 @mainTarget.add_resources([xcFile])
-                @is_dirt = true
             else
                 puts "- Config file is up-to-date"
             end
@@ -308,8 +345,8 @@ module CASConfig
             @is_dirt
         end
 
-        def initialize(path)
-            @plist = Xcodeproj::Plist.read_from_path(path)
+        def initialize(plist)
+            @plist = plist
         end
 
         def check_sk_ad_networks()
@@ -329,7 +366,7 @@ module CASConfig
                 requiredIds.each do |item|
                     skAdArray.push({KEY_SKAD=>item})
                 end
-                CASConfig.success("- " + KEY_SKAD_ARRAY + " has been added new " + requiredIds.count.to_s + " " + KEY_SKAD)
+                CASConfig.success("- " + KEY_SKAD_ARRAY + " has added " + requiredIds.count.to_s + " new items")
                 @is_dirt = true
             else
                 puts "- " + KEY_SKAD_ARRAY + " is up-to-date"
@@ -338,7 +375,7 @@ module CASConfig
 
         def check_transport_security
             security = plist[KEY_SECURITY]
-            allowLoad = security[KEY_ALLOWS_LOADS]
+            allowLoad = security && security[KEY_ALLOWS_LOADS]
             if security.nil? || allowLoad.nil?
                 plist[KEY_SECURITY] = {KEY_ALLOWS_LOADS=>true}
                 @is_dirt = true
@@ -369,6 +406,7 @@ module CASConfig
                 @plist[KEY_MYTARGET_AUTO_INIT] = false
                 @is_dirt = true
                 CASConfig.success("- " + KEY_GAD_APP_ID + " has been " + (if currAppId.nil? then "added" else "updated" end))
+                puts "   required for Google AdMob network. Use " + ARG_NO_GAD + " option if app doesn't use AdMob"
             else
                 puts "- " + KEY_GAD_APP_ID + " is up-to-date"
             end
@@ -381,7 +419,7 @@ module CASConfig
                 @is_dirt = true
                 CASConfig.success("- " + KEY_TRACKING_USAGE + " has been added")
                 puts("   to display the App Tracking Transparency authorization request:")
-                puts("   " + plist[KEY_TRACKING_USAGE])
+                puts("   " + CASConfig.thin_text(plist[KEY_TRACKING_USAGE]))
             else
                 puts "- " + KEY_TRACKING_USAGE + " is defined"
             end
