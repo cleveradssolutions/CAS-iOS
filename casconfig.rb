@@ -191,6 +191,14 @@ module CASConfig
             unless file_expired?(cache_filename)
                 return File.open(cache_filename, 'rb') { |f| f.read }
             end
+            if !clean_install? && File.exist(file)
+                Dir.each_child(cacheDir) do |filename|
+                    filepath = File.join(cacheDir, filepath)
+                    if file_expired?(filepath)
+                        File.delete(filepath)
+                    end
+                end
+            end
             res = Net::HTTP.get_response(URI(url))
             if block_given?
                 file_contents = yield res
