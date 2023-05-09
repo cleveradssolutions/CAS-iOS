@@ -191,7 +191,7 @@ module CASConfig
             unless file_expired?(cache_filename)
                 return File.open(cache_filename, 'rb') { |f| f.read }
             end
-            if !clean_install? && File.exist(cache_filename)
+            if !clean_install? && File.exist?(cache_filename)
                 Dir.each_child(cacheDir) do |filename|
                     filepath = File.join(cacheDir, filepath)
                     if file_expired?(filepath)
