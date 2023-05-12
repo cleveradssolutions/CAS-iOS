@@ -193,7 +193,7 @@ module CASConfig
             end
             if !clean_install? && File.exist?(cache_filename)
                 Dir.each_child(cacheDir) do |filename|
-                    filepath = File.join(cacheDir, filepath)
+                    filepath = File.join(cacheDir, filename)
                     if file_expired?(filepath)
                         File.delete(filepath)
                     end
