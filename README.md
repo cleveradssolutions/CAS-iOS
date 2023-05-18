@@ -1,4 +1,4 @@
-# CleverAdsSolutions-iOS SDK Integration 
+# CAS.AI SDK for iOS 
 
 [![Cocoapods](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CAS.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
 [![SKAdNetworksID](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/master/SKAdNetowrksShield.json)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
