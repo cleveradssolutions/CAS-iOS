@@ -15,12 +15,12 @@
 		924551552508ED6200620139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924551532508ED6200620139 /* LaunchScreen.storyboard */; };
 		9245515D250901A000620139 /* AdContentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245515C250901A000620139 /* AdContentDelegate.swift */; };
 		9D62EAB028607B3900414A56 /* BannerAdDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EAAF28607B3900414A56 /* BannerAdDelegate.swift */; };
-		C815A3BC4AC61EF0FCAEA7B8 /* Pods_CASSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788FEBA6B60BD4B85689E030 /* Pods_CASSample.framework */; };
+		DEC44AB18B0409472B81A9D9 /* libPods-CASSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C86D112DAA65EE71C339AB /* libPods-CASSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6272D58F2678B37300B6AEA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		788FEBA6B60BD4B85689E030 /* Pods_CASSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CASSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C86D112DAA65EE71C339AB /* libPods-CASSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CASSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		924551452508ED5F00620139 /* CASSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924551482508ED5F00620139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9245514C2508ED5F00620139 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C815A3BC4AC61EF0FCAEA7B8 /* Pods_CASSample.framework in Frameworks */,
+				DEC44AB18B0409472B81A9D9 /* libPods-CASSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 		BF35C8ED3DE7F016F1C01EE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				788FEBA6B60BD4B85689E030 /* Pods_CASSample.framework */,
+				77C86D112DAA65EE71C339AB /* libPods-CASSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

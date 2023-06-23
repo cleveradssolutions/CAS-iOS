@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		606178416CA8FD809D6A9BCB /* libPods-CASSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 990E14E79017BCB37C17E598 /* libPods-CASSample.a */; };
 		926846BA253DCD14008F3687 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926846B9253DCD14008F3687 /* AdDelegate.m */; };
 		926846BD253DDB7E008F3687 /* EnableSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926846BC253DDB7E008F3687 /* EnableSwift.swift */; };
 		92E84F3E2539EBAA0067BD47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F3D2539EBAA0067BD47 /* AppDelegate.m */; };
@@ -17,13 +18,11 @@
 		92E84F4F2539EBAC0067BD47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F4E2539EBAC0067BD47 /* main.m */; };
 		92ED65792578E7B10022566E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED65772578E7B10022566E /* SceneDelegate.m */; };
 		9D62EABA286099C600414A56 /* BannerAdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EAB9286099C600414A56 /* BannerAdDelegate.m */; };
-		DE8C635B6DF6508918D365F4 /* Pods_CASSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721883DC09F10E593FC8CCE4 /* Pods_CASSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06621C93295BE62D83E8503E /* Pods-CASSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.release.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.release.xcconfig"; sourceTree = "<group>"; };
-		15FA3442C587C91228704608 /* Pods-CASSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.debug.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.debug.xcconfig"; sourceTree = "<group>"; };
-		721883DC09F10E593FC8CCE4 /* Pods_CASSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CASSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		226C7A7162992A217B9F8AC2 /* Pods-CASSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.release.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.release.xcconfig"; sourceTree = "<group>"; };
+		30835AAE2808ED8A5A2D5CA3 /* Pods-CASSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.debug.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.debug.xcconfig"; sourceTree = "<group>"; };
 		926846B8253DCD14008F3687 /* AdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdDelegate.h; sourceTree = "<group>"; };
 		926846B9253DCD14008F3687 /* AdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdDelegate.m; sourceTree = "<group>"; };
 		926846BC253DDB7E008F3687 /* EnableSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableSwift.swift; sourceTree = "<group>"; };
@@ -39,6 +38,7 @@
 		92E84F4E2539EBAC0067BD47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92ED65772578E7B10022566E /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		92ED65782578E7B10022566E /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		990E14E79017BCB37C17E598 /* libPods-CASSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CASSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D62EAB8286099C600414A56 /* BannerAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerAdDelegate.h; sourceTree = "<group>"; };
 		9D62EAB9286099C600414A56 /* BannerAdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerAdDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,20 +48,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE8C635B6DF6508918D365F4 /* Pods_CASSample.framework in Frameworks */,
+				606178416CA8FD809D6A9BCB /* libPods-CASSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AD96E602E4C70D9C1D3E4EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				990E14E79017BCB37C17E598 /* libPods-CASSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92E84F302539EBAA0067BD47 = {
 			isa = PBXGroup;
 			children = (
 				92E84F3B2539EBAA0067BD47 /* CASSample */,
 				92E84F3A2539EBAA0067BD47 /* Products */,
 				D6BC847351AD25E4345170B8 /* Pods */,
-				F0672051713EBB82C1249A5A /* Frameworks */,
+				4AD96E602E4C70D9C1D3E4EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,18 +107,10 @@
 		D6BC847351AD25E4345170B8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				15FA3442C587C91228704608 /* Pods-CASSample.debug.xcconfig */,
-				06621C93295BE62D83E8503E /* Pods-CASSample.release.xcconfig */,
+				30835AAE2808ED8A5A2D5CA3 /* Pods-CASSample.debug.xcconfig */,
+				226C7A7162992A217B9F8AC2 /* Pods-CASSample.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		F0672051713EBB82C1249A5A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				721883DC09F10E593FC8CCE4 /* Pods_CASSample.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,11 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E84F522539EBAC0067BD47 /* Build configuration list for PBXNativeTarget "CASSample" */;
 			buildPhases = (
-				C8BBE7B132194A0620F83A9D /* [CP] Check Pods Manifest.lock */,
+				00860B1114206B1A7858DD81 /* [CP] Check Pods Manifest.lock */,
 				92E84F352539EBAA0067BD47 /* Sources */,
 				92E84F362539EBAA0067BD47 /* Frameworks */,
 				92E84F372539EBAA0067BD47 /* Resources */,
-				0ED2437CD8DD1FDAA90259BB /* [CP] Copy Pods Resources */,
+				F238569B892F821D81D7D479 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,24 +181,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0ED2437CD8DD1FDAA90259BB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C8BBE7B132194A0620F83A9D /* [CP] Check Pods Manifest.lock */ = {
+		00860B1114206B1A7858DD81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,6 +201,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F238569B892F821D81D7D479 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -373,7 +373,7 @@
 		};
 		92E84F532539EBAC0067BD47 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15FA3442C587C91228704608 /* Pods-CASSample.debug.xcconfig */;
+			baseConfigurationReference = 30835AAE2808ED8A5A2D5CA3 /* Pods-CASSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -396,7 +396,7 @@
 		};
 		92E84F542539EBAC0067BD47 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06621C93295BE62D83E8503E /* Pods-CASSample.release.xcconfig */;
+			baseConfigurationReference = 226C7A7162992A217B9F8AC2 /* Pods-CASSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
