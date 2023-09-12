@@ -315,6 +315,9 @@ module CASConfig
                 path = @project.groups.find{ |group| !group.path.empty? }.new_file("Info.plist").full_path.to_s
                 set_setting("INFOPLIST_FILE", path)
             end
+            if path.start_with?("$(SRCROOT)/")
+                return path["$(SRCROOT)/".length..]
+            end
             return path
         end
 
