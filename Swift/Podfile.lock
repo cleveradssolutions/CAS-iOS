@@ -1,29 +1,29 @@
 PODS:
-  - CleverAdsSolutions-Base (3.2.4)
-  - CleverAdsSolutions-SDK/GoogleAds (3.2.4):
-    - CleverAdsSolutions-SDK/IronSource (= 3.2.4)
-    - Google-Mobile-Ads-SDK (~> 10.9.0)
-  - CleverAdsSolutions-SDK/IronSource (3.2.4):
-    - CleverAdsSolutions-Base
-    - IronSourceSDK (= 7.4.0.0)
-  - Google-Mobile-Ads-SDK (10.9.0):
+  - CleverAdsSolutions-Base (3.3.0.1)
+  - CleverAdsSolutions-SDK/GoogleAds (3.3.0.1):
+    - CleverAdsSolutions-SDK/IronSource (= 3.3.0.1)
+    - Google-Mobile-Ads-SDK (~> 10.11.0)
+  - CleverAdsSolutions-SDK/IronSource (3.3.0.1):
+    - Google-Mobile-Ads-SDK (~> 10.11.0)
+    - IronSourceSDK (= 7.3.1.0)
+  - Google-Mobile-Ads-SDK (10.11.0):
     - GoogleAppMeasurement (< 11.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (10.13.0):
-    - GoogleAppMeasurement/AdIdSupport (= 10.13.0)
+  - GoogleAppMeasurement (10.15.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.15.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
     - GoogleUtilities/MethodSwizzler (~> 7.11)
     - GoogleUtilities/Network (~> 7.11)
     - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (10.13.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.13.0)
+  - GoogleAppMeasurement/AdIdSupport (10.15.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.15.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
     - GoogleUtilities/MethodSwizzler (~> 7.11)
     - GoogleUtilities/Network (~> 7.11)
     - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (10.13.0):
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.15.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
     - GoogleUtilities/MethodSwizzler (~> 7.11)
     - GoogleUtilities/Network (~> 7.11)
@@ -47,7 +47,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.11.5)"
   - GoogleUtilities/Reachability (7.11.5):
     - GoogleUtilities/Logger
-  - IronSourceSDK (7.4.0.0)
+  - IronSourceSDK (7.3.1.0)
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
     - nanopb/encode (= 2.30909.0)
@@ -56,8 +56,8 @@ PODS:
   - PromisesObjC (2.3.1)
 
 DEPENDENCIES:
-  - CleverAdsSolutions-Base (~> 3.2.4)
-  - CleverAdsSolutions-SDK/GoogleAds (~> 3.2.4)
+  - CleverAdsSolutions-Base (~> 3.3.0)
+  - CleverAdsSolutions-SDK/GoogleAds (~> 3.3.0)
 
 SPEC REPOS:
   https://github.com/cleveradssolutions/CAS-Specs.git:
@@ -73,16 +73,16 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  CleverAdsSolutions-Base: e1491102bba2b3c0651270fd2913429435f59510
-  CleverAdsSolutions-SDK: 426ce4ea6eba15bcf3aaa30e37827c6e2767058a
-  Google-Mobile-Ads-SDK: e81e8b009a182dc8dd14951782efdbb30a5e4510
-  GoogleAppMeasurement: 3ae505b44174bcc0775f5c86cecc5826259fbb1e
+  CleverAdsSolutions-Base: d38c350e62dbbe0f83f0d22bb9980c568f167039
+  CleverAdsSolutions-SDK: 41d9099c6fc131ab3479c73eed2345583fd2fba0
+  Google-Mobile-Ads-SDK: 58b4fda3f9758fc1ed210aa5cf7777b5eb55d47e
+  GoogleAppMeasurement: 722db6550d1e6d552b08398b69a975ac61039338
   GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
   GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
-  IronSourceSDK: 31bf34fdf92756dde41c00d10e3d3344461cbe2e
+  IronSourceSDK: eb6d95e3528d2163343d79ec70ec7d065e808864
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
 
-PODFILE CHECKSUM: 95620dc2dbd6d1cab5c69031d43f649ad7a94245
+PODFILE CHECKSUM: 408996f02e18ffae37fa2612278cbf73518aa38a
 
 COCOAPODS: 1.12.1
