@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		606178416CA8FD809D6A9BCB /* libPods-CASSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 990E14E79017BCB37C17E598 /* libPods-CASSample.a */; };
 		926846BA253DCD14008F3687 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926846B9253DCD14008F3687 /* AdDelegate.m */; };
 		926846BD253DDB7E008F3687 /* EnableSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926846BC253DDB7E008F3687 /* EnableSwift.swift */; };
 		92E84F3E2539EBAA0067BD47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F3D2539EBAA0067BD47 /* AppDelegate.m */; };
@@ -18,11 +17,11 @@
 		92E84F4F2539EBAC0067BD47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F4E2539EBAC0067BD47 /* main.m */; };
 		92ED65792578E7B10022566E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED65772578E7B10022566E /* SceneDelegate.m */; };
 		9D62EABA286099C600414A56 /* BannerAdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EAB9286099C600414A56 /* BannerAdDelegate.m */; };
+		D8336983E56FCFBE45DFDF12 /* libPods-CASSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D277773D242F15CCE0789CCF /* libPods-CASSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		226C7A7162992A217B9F8AC2 /* Pods-CASSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.release.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.release.xcconfig"; sourceTree = "<group>"; };
-		30835AAE2808ED8A5A2D5CA3 /* Pods-CASSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.debug.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.debug.xcconfig"; sourceTree = "<group>"; };
+		4571980B0D335DB55945BA2F /* Pods-CASSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.release.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.release.xcconfig"; sourceTree = "<group>"; };
 		926846B8253DCD14008F3687 /* AdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdDelegate.h; sourceTree = "<group>"; };
 		926846B9253DCD14008F3687 /* AdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdDelegate.m; sourceTree = "<group>"; };
 		926846BC253DDB7E008F3687 /* EnableSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableSwift.swift; sourceTree = "<group>"; };
@@ -38,9 +37,11 @@
 		92E84F4E2539EBAC0067BD47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92ED65772578E7B10022566E /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		92ED65782578E7B10022566E /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		990E14E79017BCB37C17E598 /* libPods-CASSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CASSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D23F0D62AD00AE800764FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9D62EAB8286099C600414A56 /* BannerAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerAdDelegate.h; sourceTree = "<group>"; };
 		9D62EAB9286099C600414A56 /* BannerAdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerAdDelegate.m; sourceTree = "<group>"; };
+		B636B04E0BACF18F5172C1DD /* Pods-CASSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.debug.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.debug.xcconfig"; sourceTree = "<group>"; };
+		D277773D242F15CCE0789CCF /* libPods-CASSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CASSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,28 +49,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606178416CA8FD809D6A9BCB /* libPods-CASSample.a in Frameworks */,
+				D8336983E56FCFBE45DFDF12 /* libPods-CASSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4AD96E602E4C70D9C1D3E4EF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				990E14E79017BCB37C17E598 /* libPods-CASSample.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		92E84F302539EBAA0067BD47 = {
 			isa = PBXGroup;
 			children = (
 				92E84F3B2539EBAA0067BD47 /* CASSample */,
 				92E84F3A2539EBAA0067BD47 /* Products */,
 				D6BC847351AD25E4345170B8 /* Pods */,
-				4AD96E602E4C70D9C1D3E4EF /* Frameworks */,
+				94731D6A19D82AC1E599BF39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,11 +97,20 @@
 			path = CASSample;
 			sourceTree = "<group>";
 		};
+		94731D6A19D82AC1E599BF39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D23F0D62AD00AE800764FD0 /* Foundation.framework */,
+				D277773D242F15CCE0789CCF /* libPods-CASSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D6BC847351AD25E4345170B8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				30835AAE2808ED8A5A2D5CA3 /* Pods-CASSample.debug.xcconfig */,
-				226C7A7162992A217B9F8AC2 /* Pods-CASSample.release.xcconfig */,
+				B636B04E0BACF18F5172C1DD /* Pods-CASSample.debug.xcconfig */,
+				4571980B0D335DB55945BA2F /* Pods-CASSample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -120,11 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E84F522539EBAC0067BD47 /* Build configuration list for PBXNativeTarget "CASSample" */;
 			buildPhases = (
-				00860B1114206B1A7858DD81 /* [CP] Check Pods Manifest.lock */,
+				1B25B9605522D5600D76A477 /* [CP] Check Pods Manifest.lock */,
 				92E84F352539EBAA0067BD47 /* Sources */,
 				92E84F362539EBAA0067BD47 /* Frameworks */,
 				92E84F372539EBAA0067BD47 /* Resources */,
-				F238569B892F821D81D7D479 /* [CP] Copy Pods Resources */,
+				7234F497C922532A6A502172 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,7 +183,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00860B1114206B1A7858DD81 /* [CP] Check Pods Manifest.lock */ = {
+		1B25B9605522D5600D76A477 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,7 +205,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F238569B892F821D81D7D479 /* [CP] Copy Pods Resources */ = {
+		7234F497C922532A6A502172 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -365,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -375,7 +377,7 @@
 		};
 		92E84F532539EBAC0067BD47 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30835AAE2808ED8A5A2D5CA3 /* Pods-CASSample.debug.xcconfig */;
+			baseConfigurationReference = B636B04E0BACF18F5172C1DD /* Pods-CASSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,7 +386,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KJK32752G4;
 				INFOPLIST_FILE = CASSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,7 +402,7 @@
 		};
 		92E84F542539EBAC0067BD47 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 226C7A7162992A217B9F8AC2 /* Pods-CASSample.release.xcconfig */;
+			baseConfigurationReference = 4571980B0D335DB55945BA2F /* Pods-CASSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -409,7 +411,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KJK32752G4;
 				INFOPLIST_FILE = CASSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -26,9 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CASCallback {
     static func configureCAS() {
         // Set any CAS Settings before CAS.create
         CAS.settings.setDebugMode(true)
-        // CAS.settings.updateUser(consent: .accepted)
-        // CAS.settings.updateCCPA(status: .optInSale)
-        CAS.settings.setTagged(audience: .notChildren)
+        CAS.settings.taggedAudience = .notChildren
 
         // Inform SDK of the users details
         CAS.targetingOptions.setAge(12)
