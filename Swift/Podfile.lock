@@ -1,11 +1,11 @@
 PODS:
-  - CleverAdsSolutions-Base (3.3.1)
-  - CleverAdsSolutions-SDK/GoogleAds (3.3.1):
-    - CleverAdsSolutions-SDK/IronSource (= 3.3.1)
+  - CleverAdsSolutions-Base (3.3.2)
+  - CleverAdsSolutions-SDK/GoogleAds (3.3.2):
+    - CleverAdsSolutions-SDK/IronSource (= 3.3.2)
     - Google-Mobile-Ads-SDK (~> 10.12.0)
-  - CleverAdsSolutions-SDK/IronSource (3.3.1):
+  - CleverAdsSolutions-SDK/IronSource (3.3.2):
     - CleverAdsSolutions-Base
-    - Google-Mobile-Ads-SDK (~> 10.12.0)
+    - Google-Mobile-Ads-SDK
     - IronSourceSDK (= 7.3.1.0)
   - Google-Mobile-Ads-SDK (10.12.0):
     - GoogleAppMeasurement (< 11.0, >= 7.0)
@@ -57,8 +57,8 @@ PODS:
   - PromisesObjC (2.3.1)
 
 DEPENDENCIES:
-  - CleverAdsSolutions-Base (~> 3.3.1)
-  - CleverAdsSolutions-SDK/GoogleAds (~> 3.3.1)
+  - CleverAdsSolutions-Base (~> 3.3.2)
+  - CleverAdsSolutions-SDK/GoogleAds (~> 3.3.2)
 
 SPEC REPOS:
   https://github.com/cleveradssolutions/CAS-Specs.git:
@@ -74,8 +74,8 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  CleverAdsSolutions-Base: 388eadd16b2ec5b25d820f0eec4ab5de00eb2afa
-  CleverAdsSolutions-SDK: cc7c59f8fc92e1985cfb7537bea286758070eeb9
+  CleverAdsSolutions-Base: 8315951697ab76344609533b14ca200a3b09c854
+  CleverAdsSolutions-SDK: aa495a29f00fcbc1901bedea91feb0760dd22c80
   Google-Mobile-Ads-SDK: 976fdf273815674eed30b8aafffedb3c25b055e4
   GoogleAppMeasurement: 079d7632810e9d9704a99932547ba1554acc4342
   GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
@@ -84,6 +84,6 @@ SPEC CHECKSUMS:
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
 
-PODFILE CHECKSUM: f2f58ce2fbf4df39f4d907eb244d0a05bf0f980c
+PODFILE CHECKSUM: 67762e3332911a5c2a8d32d0a67c7c456e22a80d
 
 COCOAPODS: 1.13.0
