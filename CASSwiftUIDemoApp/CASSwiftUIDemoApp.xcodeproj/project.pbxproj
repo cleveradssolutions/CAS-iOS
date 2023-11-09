@@ -48,6 +48,7 @@
 		9DA4F8D32AA225B600B30739 /* ShortBannerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortBannerContentView.swift; sourceTree = "<group>"; };
 		9DC0799D2A9F34EA007FA0D9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9DC0799F2A9F3947007FA0D9 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		9DEA22AE2AE94BDE002997DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9DF4A6F42A9E721900940FB3 /* InterstitialAdViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdViewExtension.swift; sourceTree = "<group>"; };
 		9DF4A6F62A9E724F00940FB3 /* RewardedAdViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdViewExtension.swift; sourceTree = "<group>"; };
 		9DF4A6F82A9E72B800940FB3 /* AdaptiveBannerAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveBannerAdView.swift; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		9D857FB92A9DD89E00A0C1DF /* CASSwiftUIDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				9DEA22AE2AE94BDE002997DB /* Info.plist */,
 				9DF4A7012A9E803700940FB3 /* AdViews */,
 				9D7530CB2AA096B6001CCA5C /* Banner */,
 				9D7530CE2AA0A656001CCA5C /* Interstitial */,
@@ -442,6 +444,7 @@
 				DEVELOPMENT_TEAM = CG78EM8VXT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CASSwiftUIDemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -474,6 +477,7 @@
 				DEVELOPMENT_TEAM = CG78EM8VXT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CASSwiftUIDemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
