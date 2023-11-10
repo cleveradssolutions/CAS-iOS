@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3BFAE6D2C845645A5435A076 /* Pods_CASSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91490ACF6A233B0118DE734 /* Pods_CASSample.framework */; };
+		8353F7D9A411E69F32A52B65 /* Pods_CASSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F629AD3BBE4C7C36088B29D /* Pods_CASSample.framework */; };
 		926846BA253DCD14008F3687 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926846B9253DCD14008F3687 /* AdDelegate.m */; };
 		926846BD253DDB7E008F3687 /* EnableSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926846BC253DDB7E008F3687 /* EnableSwift.swift */; };
 		92E84F3E2539EBAA0067BD47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F3D2539EBAA0067BD47 /* AppDelegate.m */; };
@@ -21,7 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4571980B0D335DB55945BA2F /* Pods-CASSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.release.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.release.xcconfig"; sourceTree = "<group>"; };
+		486962454A27915306D43DDF /* Pods-CASSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.debug.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.debug.xcconfig"; sourceTree = "<group>"; };
+		6F629AD3BBE4C7C36088B29D /* Pods_CASSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CASSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		926846B8253DCD14008F3687 /* AdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdDelegate.h; sourceTree = "<group>"; };
 		926846B9253DCD14008F3687 /* AdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdDelegate.m; sourceTree = "<group>"; };
 		926846BC253DDB7E008F3687 /* EnableSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableSwift.swift; sourceTree = "<group>"; };
@@ -40,8 +41,7 @@
 		9D23F0D62AD00AE800764FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9D62EAB8286099C600414A56 /* BannerAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerAdDelegate.h; sourceTree = "<group>"; };
 		9D62EAB9286099C600414A56 /* BannerAdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerAdDelegate.m; sourceTree = "<group>"; };
-		B636B04E0BACF18F5172C1DD /* Pods-CASSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.debug.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.debug.xcconfig"; sourceTree = "<group>"; };
-		D91490ACF6A233B0118DE734 /* Pods_CASSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CASSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7108726D0F7CC74A975B6D /* Pods-CASSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.release.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFAE6D2C845645A5435A076 /* Pods_CASSample.framework in Frameworks */,
+				8353F7D9A411E69F32A52B65 /* Pods_CASSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9D23F0D62AD00AE800764FD0 /* Foundation.framework */,
-				D91490ACF6A233B0118DE734 /* Pods_CASSample.framework */,
+				6F629AD3BBE4C7C36088B29D /* Pods_CASSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,8 +109,8 @@
 		D6BC847351AD25E4345170B8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B636B04E0BACF18F5172C1DD /* Pods-CASSample.debug.xcconfig */,
-				4571980B0D335DB55945BA2F /* Pods-CASSample.release.xcconfig */,
+				486962454A27915306D43DDF /* Pods-CASSample.debug.xcconfig */,
+				BC7108726D0F7CC74A975B6D /* Pods-CASSample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -122,11 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E84F522539EBAC0067BD47 /* Build configuration list for PBXNativeTarget "CASSample" */;
 			buildPhases = (
-				1B25B9605522D5600D76A477 /* [CP] Check Pods Manifest.lock */,
+				C1CDF7B925A5056265CC780C /* [CP] Check Pods Manifest.lock */,
 				92E84F352539EBAA0067BD47 /* Sources */,
 				92E84F362539EBAA0067BD47 /* Frameworks */,
 				92E84F372539EBAA0067BD47 /* Resources */,
-				7234F497C922532A6A502172 /* [CP] Copy Pods Resources */,
+				8C6F7F0328FB0ED0E4CF265B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,7 +183,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B25B9605522D5600D76A477 /* [CP] Check Pods Manifest.lock */ = {
+		8C6F7F0328FB0ED0E4CF265B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1CDF7B925A5056265CC780C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,23 +220,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7234F497C922532A6A502172 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSample/Pods-CASSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -377,7 +377,7 @@
 		};
 		92E84F532539EBAC0067BD47 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B636B04E0BACF18F5172C1DD /* Pods-CASSample.debug.xcconfig */;
+			baseConfigurationReference = 486962454A27915306D43DDF /* Pods-CASSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -402,7 +402,7 @@
 		};
 		92E84F542539EBAC0067BD47 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4571980B0D335DB55945BA2F /* Pods-CASSample.release.xcconfig */;
+			baseConfigurationReference = BC7108726D0F7CC74A975B6D /* Pods-CASSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

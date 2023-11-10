@@ -1,9 +1,9 @@
 PODS:
-  - CleverAdsSolutions-Base (3.4.0)
-  - CleverAdsSolutions-SDK/GoogleAds (3.4.0):
-    - CleverAdsSolutions-SDK/IronSource (= 3.4.0)
+  - CleverAdsSolutions-Base (3.4.1)
+  - CleverAdsSolutions-SDK/GoogleAds (3.4.1):
+    - CleverAdsSolutions-SDK/IronSource (= 3.4.1)
     - Google-Mobile-Ads-SDK (~> 10.13.0)
-  - CleverAdsSolutions-SDK/IronSource (3.4.0):
+  - CleverAdsSolutions-SDK/IronSource (3.4.1):
     - CleverAdsSolutions-Base
     - IronSourceSDK (= 7.5.1.0)
   - Google-Mobile-Ads-SDK (10.13.0):
@@ -56,8 +56,8 @@ PODS:
   - PromisesObjC (2.3.1)
 
 DEPENDENCIES:
-  - CleverAdsSolutions-Base (~> 3.4.0)
-  - CleverAdsSolutions-SDK/GoogleAds (~> 3.4.0)
+  - CleverAdsSolutions-Base (~> 3.4.1)
+  - CleverAdsSolutions-SDK/GoogleAds (~> 3.4.1)
 
 SPEC REPOS:
   https://github.com/cleveradssolutions/CAS-Specs.git:
