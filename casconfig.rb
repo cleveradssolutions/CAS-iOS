@@ -14,7 +14,7 @@ module CASConfig
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '1.0'
+    SCRIPT_VERSION = '1.1'
 
     class << self
         attr_accessor :casId, :project_path, :gad_included, :clean_install
@@ -104,7 +104,6 @@ module CASConfig
                         unless File.exist?(@project_path)
                             error("[!] Not found project: " + @project_path)
                             print_help()
-                            exit
                         end
                     end
                 elsif !arg.empty? && arg.scan(/\D/).empty?
@@ -151,7 +150,7 @@ module CASConfig
         def print_footer
             puts ""
             puts thin_text("XCode project configuration script version " + SCRIPT_VERSION)
-            puts thin_text("   Powered by ") + colortxt("Clever Ads Solutions", 36)
+            puts thin_text("   Powered by ") + colortxt("CAS.ai", 36)
         end
 
         def print_help
@@ -177,7 +176,7 @@ module CASConfig
             success "    " + ARG_HELP
             puts "        Show help banner of specified command"
             print_footer()
-            exit
+            exit!
         end
 
         def file_expired?(file)
@@ -189,7 +188,11 @@ module CASConfig
             FileUtils.mkdir_p(cacheDir) unless File.directory?(cacheDir)
             cache_filename = File.join(cacheDir, Digest::MD5.hexdigest(url))
             unless file_expired?(cache_filename)
-                return File.open(cache_filename, 'rb') { |f| f.read }
+                cache_content = File.open(cache_filename, 'rb') { |f| f.read }
+                unless cache_content.empty?
+                    return cache_content
+                end
+                File.delete(cache_filename)
             end
             if !clean_install? && File.exist?(cache_filename)
                 Dir.each_child(cacheDir) do |filename|
@@ -210,7 +213,9 @@ module CASConfig
                     return ""
                 end
             end
-            File.open(cache_filename, 'wb') { |f| f.write(file_contents) }
+            unless file_contents.empty?
+                File.open(cache_filename, 'wb') { |f| f.write(file_contents) }
+            end
             return file_contents
         end
 
@@ -231,19 +236,21 @@ module CASConfig
             end
             url = 'https://psvpromo.psvgamestudio.com/cas-settings.php?platform=1&apply=config&bundle=' + @casId
             data = load_with_cache(url) do |res|
+                if res.is_a?(Net::HTTPNoContent)
+                    error("[!] CAS Id " + casId + " not registered.")
+                    print_help()
+                end
                 if res.is_a?(Net::HTTPSuccess)
                     configName = sub_between(res['content-disposition'], 'filename="', '"')
                     next Marshal.dump({body: res.body, name: configName})
                 end
-                if res.code == 204
-                    error("[!] CAS Id " + casId + " not registered.")
-                else
-                    error(res.value) # to get error
-                end
-                puts res.value # to get error
+                error(res.value)
+                exit!
                 next ""
             end
-            return "", "" if data.empty?
+            if data.empty?
+                return "", "" 
+            end
             combine = Marshal.load(data)
             return combine[:body], combine[:name]
         end
