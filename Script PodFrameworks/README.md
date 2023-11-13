@@ -1,4 +1,4 @@
-# CAS.AI iOS XCode Config script
+# CAS.AI Pod Frameowkrs setup script
 
 This script is designed to seamlessly load and build CAS Adapters, incorporating essential libraries from Cocoapods into the Frameworks directory to facilitate the iOS build process.
 
