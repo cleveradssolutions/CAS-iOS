@@ -14,7 +14,7 @@ module CASConfig
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '1.1'
+    SCRIPT_VERSION = '1.2'
 
     class << self
         attr_accessor :casId, :project_path, :gad_included, :clean_install
@@ -163,7 +163,7 @@ module CASConfig
             success "ruby casconfig.rb CASID"
             puts "        In most cases, a CASID is the same as your app store ID"
             puts "        If you haven't created an CAS account and registered an app yet,"
-            puts "        now's a great time to do so at https://cleveradssolutions.com"
+            puts "        now's a great time to do so at https://cas.ai"
             puts ""
             warning "Options:"
             success "    " + ARG_PROJECT + "XCodeProjectName"
@@ -433,7 +433,7 @@ module CASConfig
         def check_tracking_usage_description
             description = plist[KEY_TRACKING_USAGE]
             if description.nil? || description.empty?
-                plist[KEY_TRACKING_USAGE] = "Get ads that are more interesting and support keeping this app free by allowing tracking"
+                plist[KEY_TRACKING_USAGE] = "Your data will remain confidential and will only be used to provide you a better and personalised ad experience"
                 @is_dirt = true
                 CASConfig.success("- " + KEY_TRACKING_USAGE + " has been added")
                 puts("   to display the App Tracking Transparency authorization request:")

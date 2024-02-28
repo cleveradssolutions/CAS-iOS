@@ -6,14 +6,15 @@ The script automatically performs the following integration steps:
 - [x] SKAdNetwork Support
 - [x] App Transport Security
 - [x] Link the CAS project
-- [x] Add Google Ads App ID
+- [X] Set User Tracking usage description
+- [x] Set Google Ads App ID
 - [x] Set Delay app measurement
 
 > [!NOTE]
 > Read more about it on [wiki page](https://github.com/cleveradssolutions/CAS-iOS/wiki/Manually-configure-project).
 
 ## Getting Started 
-1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/3.4.1/casconfig.rb)  
+1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/3.5.6/casconfig.rb)  
 3. Place the script in directory with the app `.xcodeproj` 
 4. Open the terminal window and run command:
 ```
@@ -38,6 +39,3 @@ To file bugs, make feature requests, or suggest improvements for the script, ple
 
 ## Support
 mailto:support@cleveradssolutions.com
-
-## License
-The CAS iOS-SDK is available under a commercial license. See the LICENSE file for more info.
