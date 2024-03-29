@@ -1,6 +1,11 @@
 ## IronSource iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/IronSource'`
 
+### 3.6.0
+- Certified with IronSource - 7.9.1.0
+- Improve Banner ad lifecycle.
+- Fixed an issue with ad content position in adaptive ad size. 
+
 ### 3.5.6
 
 ### 3.5.5

@@ -1,6 +1,8 @@
 ## Bigo iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/Bigo'`
 
+### 3.6.0
+
 ### 3.5.6
 
 ### 3.5.5
