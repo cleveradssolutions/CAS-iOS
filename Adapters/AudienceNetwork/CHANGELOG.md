@@ -1,6 +1,8 @@
 ## Meta Audience Network iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/AudienceNetwork'`
 
+### 3.6.1
+
 ### 3.6.0
 - Certified with AudienceNetwork - 6.15.0
 

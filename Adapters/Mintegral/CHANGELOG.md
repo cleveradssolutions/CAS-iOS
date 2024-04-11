@@ -1,6 +1,9 @@
 ## Mintegral iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/Mintegral'`
 
+### 3.6.1
+- Certified with Mintegral - 7.6.1
+
 ### 3.6.0
 - Certified with Mintegral - 7.5.9
 

@@ -1,6 +1,8 @@
 ## Kidoz iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/Kidoz'`
 
+### 3.6.1
+
 ### 3.6.0
 - Certified with Kidoz - 9.1.0
 

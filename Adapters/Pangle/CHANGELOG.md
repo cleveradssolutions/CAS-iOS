@@ -1,6 +1,8 @@
 ## Pangle iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/Pangle'`
 
+### 3.6.1
+
 ### 3.6.0
 - Certified with Pangle - 5.8.0.8
 

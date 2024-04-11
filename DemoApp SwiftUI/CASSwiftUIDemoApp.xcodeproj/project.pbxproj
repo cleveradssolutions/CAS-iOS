@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76F6EDCE8BF28DBCB85CEA0A /* libPods-CASSwiftUIDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC13E6C1F5A803F612EEDCF /* libPods-CASSwiftUIDemoApp.a */; };
+		838E15ECA1B2036AB14F5321 /* libPods-CASSwiftUIDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030C678492C1A3EE3650C94 /* libPods-CASSwiftUIDemoApp.a */; };
 		9D7530BA2AA07582001CCA5C /* BannerAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7530B92AA07582001CCA5C /* BannerAdView.swift */; };
 		9D7530BC2AA077C7001CCA5C /* AdaptiveBannerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7530BB2AA077C7001CCA5C /* AdaptiveBannerContentView.swift */; };
 		9D7530CD2AA0A1DE001CCA5C /* AdCallbacksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7530CC2AA0A1DE001CCA5C /* AdCallbacksViewModel.swift */; };
@@ -30,8 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B7101D30AC7106054CA289E /* Pods-CASSwiftUIDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSwiftUIDemoApp.release.xcconfig"; path = "Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp.release.xcconfig"; sourceTree = "<group>"; };
-		4DC13E6C1F5A803F612EEDCF /* libPods-CASSwiftUIDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CASSwiftUIDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EDBB7371814E5244B8B449 /* Pods-CASSwiftUIDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSwiftUIDemoApp.release.xcconfig"; path = "Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		1030C678492C1A3EE3650C94 /* libPods-CASSwiftUIDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CASSwiftUIDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50073DC2603EBCE91B1639F8 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSwiftUIDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9D7530B92AA07582001CCA5C /* BannerAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdView.swift; sourceTree = "<group>"; };
 		9D7530BB2AA077C7001CCA5C /* AdaptiveBannerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveBannerContentView.swift; sourceTree = "<group>"; };
 		9D7530CC2AA0A1DE001CCA5C /* AdCallbacksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCallbacksViewModel.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		9DF4A6F62A9E724F00940FB3 /* RewardedAdViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdViewExtension.swift; sourceTree = "<group>"; };
 		9DF4A6F82A9E72B800940FB3 /* AdaptiveBannerAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveBannerAdView.swift; sourceTree = "<group>"; };
 		9DF4A7032A9E80B300940FB3 /* BannerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerContentView.swift; sourceTree = "<group>"; };
-		C4FDE8D76A3A4DA78A8AD027 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSwiftUIDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,28 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76F6EDCE8BF28DBCB85CEA0A /* libPods-CASSwiftUIDemoApp.a in Frameworks */,
+				838E15ECA1B2036AB14F5321 /* libPods-CASSwiftUIDemoApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02CD90CAC09A5F0D3FD7758D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4DC13E6C1F5A803F612EEDCF /* libPods-CASSwiftUIDemoApp.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3E71A6290C9314B4D08B8B4C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C4FDE8D76A3A4DA78A8AD027 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */,
-				0B7101D30AC7106054CA289E /* Pods-CASSwiftUIDemoApp.release.xcconfig */,
+				50073DC2603EBCE91B1639F8 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */,
+				07EDBB7371814E5244B8B449 /* Pods-CASSwiftUIDemoApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		98BEE311E2738646E2B7F33B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1030C678492C1A3EE3650C94 /* libPods-CASSwiftUIDemoApp.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9D7530CB2AA096B6001CCA5C /* Banner */ = {
@@ -117,7 +117,7 @@
 				9D857FB92A9DD89E00A0C1DF /* CASSwiftUIDemoApp */,
 				9D857FB82A9DD89E00A0C1DF /* Products */,
 				3E71A6290C9314B4D08B8B4C /* Pods */,
-				02CD90CAC09A5F0D3FD7758D /* Frameworks */,
+				98BEE311E2738646E2B7F33B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,11 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D857FC52A9DD89F00A0C1DF /* Build configuration list for PBXNativeTarget "CASSwiftUIDemoApp" */;
 			buildPhases = (
-				5F61ABEE4171493DF1470D6F /* [CP] Check Pods Manifest.lock */,
+				7235841F14D92D9BF0E9B044 /* [CP] Check Pods Manifest.lock */,
 				9D857FB32A9DD89E00A0C1DF /* Sources */,
 				9D857FB42A9DD89E00A0C1DF /* Frameworks */,
 				9D857FB52A9DD89E00A0C1DF /* Resources */,
-				571CACDF2C119B9057C847DE /* [CP] Copy Pods Resources */,
+				796A3A545EEB4D3590309346 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,24 +248,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		571CACDF2C119B9057C847DE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5F61ABEE4171493DF1470D6F /* [CP] Check Pods Manifest.lock */ = {
+		7235841F14D92D9BF0E9B044 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,6 +268,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		796A3A545EEB4D3590309346 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -434,7 +434,7 @@
 		};
 		9D857FC62A9DD89F00A0C1DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FDE8D76A3A4DA78A8AD027 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */;
+			baseConfigurationReference = 50073DC2603EBCE91B1639F8 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,7 +467,7 @@
 		};
 		9D857FC72A9DD89F00A0C1DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B7101D30AC7106054CA289E /* Pods-CASSwiftUIDemoApp.release.xcconfig */;
+			baseConfigurationReference = 07EDBB7371814E5244B8B449 /* Pods-CASSwiftUIDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
