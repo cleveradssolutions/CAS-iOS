@@ -1,6 +1,10 @@
 ## DT Exchange iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/DTExchange'`
 
+### 3.7.0
+- Certified with DTExchange - 8.2.8
+- Support Bidding ads requests. (Closed beta)
+
 ### 3.6.1
 
 ### 3.6.0

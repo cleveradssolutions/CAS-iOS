@@ -1,6 +1,10 @@
 ## Yandex Ads iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/YandexAds'`
 
+### 3.7.0
+- Certified with YandexAds - 7.0.1
+- Fixed calculations of the Adaptive Banner ad size. 
+
 ### 3.6.1
 - Certified with YandexAds - 7.0.0
 
