@@ -7,12 +7,12 @@ import shutil
 import argparse
 import json
 
-_CAS_VERSION = '3.7.0'
+_CAS_VERSION = '3.7.2'
 _MIN_IOS = '13.0'
 _XC_PROJ_NAME = 'CASFrameworks'
 _XC_WORKSPACE = _XC_PROJ_NAME + '.xcworkspace'
 _FRAMEWORK = '.framework'
-_SCRIPT_INFO = '1.4. Apr 22, 2024'
+_SCRIPT_INFO = '1.5. May 9, 2024'
 
 _DYNAMIC_FRAMEWORKS_SET = {
     "AppLovinSDK",
@@ -21,6 +21,8 @@ _DYNAMIC_FRAMEWORKS_SET = {
     "MadexSDK",
     "SspnetCore",
     "SspnetDsp",
+    "StartApp",
+    "InMobiSDK"
 }
 
 join = os.path.join
@@ -211,13 +213,18 @@ def find_resources_in_pods():
     with open(podsXCFileList) as f:
         next(f) #Skip first line with script path
         for line in f:
-            bundle = line.strip().replace("${PODS_ROOT}", podsRoot)
+            bundle = (line.strip()
+                      .replace("${PODS_ROOT}", podsRoot)
+                      .replace("${PODS_CONFIGURATION_BUILD_DIR}", _DATA_DIR))
             if not bundle: continue
             bundleName = os.path.basename(bundle)
             print_log("   Resources " + bundleName)
             bundlePath = join(_RESULT_DIR, bundleName)
-            shutil.move(bundle, bundlePath)
-            resourcesSet.add(bundlePath)
+            if not exists(bundle):
+                exit_with_error('Resource path is invalid (' + bundle + '). Please create github issue.')
+            if not exists(bundlePath):
+                shutil.move(bundle, bundlePath)
+                resourcesSet.add(bundlePath)
 
 def archive_embedded_frameworks():
     print_header("## Archive Embedded Frameworks")   
@@ -324,7 +331,7 @@ def update_podfile(adapters):
             f.write("use_frameworks!\n")
         else:
             f.write("use_frameworks! :linkage => :static\n")
-        f.write("$cas_version = '" + _CAS_VERSION + "'\n\n")
+        f.write("$cas_version = '" + args.version + "'\n\n")
         
         f.write("target 'CASFrameworks' do\n")
         pod = "  pod 'CleverAdsSolutions-Base'"
