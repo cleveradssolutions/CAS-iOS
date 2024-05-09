@@ -1,6 +1,8 @@
 ## MyTarget iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/MyTarget'`
 
+### 3.7.2
+
 ### 3.7.0
 - Certified with MyTarget - 5.21.2
 
