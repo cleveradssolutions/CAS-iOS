@@ -1,6 +1,9 @@
 ## HyprMX iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/HyprMX'`
 
+### 3.7.3
+- Certified with HyprMX - 6.4.0
+
 ### 3.7.2
 
 ### 3.7.0

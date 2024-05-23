@@ -1,6 +1,9 @@
 ## AppLovin iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/AppLovin'`
 
+### 3.7.3
+- Certified with AppLovin - 12.5.0
+
 ### 3.7.2
 - Certified with AppLovin - 12.4.2
 

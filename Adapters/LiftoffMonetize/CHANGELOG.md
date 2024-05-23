@@ -1,6 +1,8 @@
 ## LiftoffMonetize iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/LiftoffMonetize'`
 
+### 3.7.3
+
 ### 3.7.2
 - Certified with LiftoffMonetize - 7.3.2
 
