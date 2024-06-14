@@ -1,6 +1,8 @@
 ## StartIO iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/StartIO'`
 
+### 3.8.0
+
 ### 3.7.3
 
 ### 3.7.2
