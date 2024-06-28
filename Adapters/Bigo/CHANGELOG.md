@@ -1,6 +1,9 @@
 ## Bigo iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/Bigo'`
 
+### 3.8.1
+- Fixed some internal issues with MREC.
+
 ### 3.8.0
 
 ### 3.7.3

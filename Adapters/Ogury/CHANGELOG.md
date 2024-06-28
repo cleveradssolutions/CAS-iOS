@@ -4,5 +4,8 @@ Read Ogury SDK releases [here](https://ogury-ltd.gitbook.io/release-notes/ios/og
 pod 'CleverAdsSolutions-SDK/Ogury'
 ```
 
+### 3.8.1
+- Certified with Ogury - 4.4.0
+
 ### 3.8.0
 - Certified with Ogury - 4.3.0
