@@ -1,6 +1,9 @@
 ## Madex iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/Madex'`
 
+### 3.9.0
+- Certified with Madex - 1.5.0
+
 ### 3.8.1
 
 ### 3.8.0

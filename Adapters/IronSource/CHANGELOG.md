@@ -1,6 +1,9 @@
 ## IronSource iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/IronSource'`
 
+### 3.9.0
+- Certified with IronSource - 8.2.0.0
+
 ### 3.8.1
 - Certified with IronSource - 8.1.1.0
 
