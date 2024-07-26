@@ -1,6 +1,8 @@
 ## Unity Ads iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/UnityAds'`
 
+### 3.9.1
+
 ### 3.9.0
 - Certified with UnityAds - 4.12.1
 

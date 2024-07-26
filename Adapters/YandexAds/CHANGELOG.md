@@ -1,6 +1,9 @@
 ## Yandex Ads iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/YandexAds'`
 
+### 3.9.1
+- Certified with YandexAds - 7.3.0
+
 ### 3.9.0
 - Certified with YandexAds - 7.1.1
 - Introducing Yandex Mobile Ads bidding requests. (Closed beta)

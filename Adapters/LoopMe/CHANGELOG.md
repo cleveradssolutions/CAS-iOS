@@ -4,6 +4,8 @@ Read LoopMe SDK releases [here](https://github.com/loopme/ios-united-sdk/release
 pod 'CleverAdsSolutions-SDK/LoopMe'
 ```
 
+### 3.9.1
+
 ### 3.9.0
 - Certified with LoopMe - 7.4.20
 
