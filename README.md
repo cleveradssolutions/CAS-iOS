@@ -19,8 +19,5 @@ See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on
 ## GitHub issue tracker
 To file bugs, make feature requests, or suggest improvements for the iOS SDK, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
 
-## Support
-mailto:support@cleveradssolutions.com
-
 ## License
 The CAS iOS-SDK is available under a commercial license. See the LICENSE file for more info.

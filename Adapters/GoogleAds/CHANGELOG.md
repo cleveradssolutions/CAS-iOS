@@ -1,6 +1,8 @@
 ## Google Ads iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/GoogleAds'`
 
+### 3.9.2
+
 ### 3.9.1
 
 ### 3.9.0
