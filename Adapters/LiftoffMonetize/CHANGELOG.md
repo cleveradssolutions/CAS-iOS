@@ -1,6 +1,8 @@
 ## LiftoffMonetize iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/LiftoffMonetize'`
 
+### 3.9.3
+
 ### 3.9.2
   - Fixed an issue where banner ads would load at the wrong size.
 

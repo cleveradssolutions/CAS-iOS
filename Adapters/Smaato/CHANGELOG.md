@@ -1,6 +1,9 @@
 ## Smaato iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/Smaato'`
 
+### 3.9.3
+- Certified with Smaato - 22.8.4
+
 ### 3.9.2
 
 ### 3.9.1

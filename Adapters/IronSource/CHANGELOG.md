@@ -1,6 +1,9 @@
 ## IronSource iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/IronSource'`
 
+### 3.9.3
+- Fixed automatic refresh of banner ad.
+
 ### 3.9.2
 
 ### 3.9.1
