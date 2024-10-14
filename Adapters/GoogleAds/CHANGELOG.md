@@ -1,6 +1,8 @@
 ## Google Ads iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/GoogleAds'`
 
+### 3.9.5
+
 ### 3.9.4
 - Certified with GoogleAds - 11.10.0
 - [lib] Fixed a bug related to MarketplaceKit that would cause the SDK to crash when running on MacOS.

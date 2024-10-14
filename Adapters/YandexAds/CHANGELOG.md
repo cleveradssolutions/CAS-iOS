@@ -1,6 +1,8 @@
 ## Yandex Ads iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/YandexAds'`
 
+### 3.9.5
+
 ### 3.9.4
 - Certified with YandexAds - 7.5.1
 
