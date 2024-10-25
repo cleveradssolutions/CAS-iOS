@@ -1,6 +1,9 @@
 ## Chartboost iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/Chartboost'`
 
+### 3.9.6
+- Certified with Chartboost - 9.8.0
+
 ### 3.9.5
 
 ### 3.9.4
