@@ -3,6 +3,9 @@
 pod 'CleverAdsSolutions-SDK/CASExchange'
 ```
 
+### 3.9.7
+- Update endpoint.
+
 ### 3.9.6
 - Update endpoint.
 
