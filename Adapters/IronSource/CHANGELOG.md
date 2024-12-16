@@ -1,6 +1,10 @@
 ## IronSource iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/IronSource'`
 
+### 3.9.8
+- Certified with IronSource - 8.5.1.0
+- Fixed an issue when `[UIView superview]` called on a background thread.
+
 ### 3.9.7
 
 ### 3.9.6
