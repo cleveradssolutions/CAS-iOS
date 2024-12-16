@@ -1,6 +1,8 @@
 ## SuperAwesome iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/SuperAwesome'`
 
+### 3.9.8
+
 ### 3.9.7
 
 ### 3.9.6
