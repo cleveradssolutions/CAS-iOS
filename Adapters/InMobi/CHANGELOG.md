@@ -1,6 +1,8 @@
 ## InMobi iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/InMobi'`
 
+### 3.9.9
+
 ### 3.9.8
 - Certified with InMobi - 10.8.0
 

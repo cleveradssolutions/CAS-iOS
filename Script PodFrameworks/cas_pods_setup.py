@@ -7,7 +7,7 @@ import shutil
 import argparse
 import json
 
-_CAS_VERSION = '3.9.2'
+_CAS_VERSION = '3.9.9'
 _MIN_IOS = '13.0'
 _XC_PROJ_NAME = 'CASFrameworks'
 _XC_WORKSPACE = _XC_PROJ_NAME + '.xcworkspace'
