@@ -14,7 +14,7 @@ module CASConfig
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '1.2'
+    SCRIPT_VERSION = '1.3'
 
     class << self
         attr_accessor :casId, :project_path, :gad_included, :clean_install
@@ -307,20 +307,27 @@ module CASConfig
             @is_dirt = true
         end
 
-        def new_file(name, group)
+        def get_path_to_new_file(name, group)
             @is_dirt = true
-            if group == '.'
-                return @project.new_file(name)
+            if group.nil?
+                xcFile = @project.new_file(name)
+                @mainTarget.add_resources([xcFile])
+                return xcFile.full_path.to_s
+            elsif group.isa == 'PBXFileSystemSynchronizedRootGroup'
+                return File.join(@project.path.dirname, group.display_name, name) 
             else
-                return @project[group].new_file(name)
+                xcFile = group.new_file(name)
+                @mainTarget.add_resources([xcFile])
+                return xcFile.full_path.to_s
             end
         end
 
         def get_plist_path()
             path = get_setting("INFOPLIST_FILE")
             if path.empty?
-                path = @project.groups.find{ |group| !group.path.empty? }.new_file("Info.plist").full_path.to_s
+                path = get_path_to_new_file("Info.plist", @project.groups.find{ |group| !group.path.empty? })
                 set_setting("INFOPLIST_FILE", path)
+                return path
             end
             if path.start_with?("$(SRCROOT)/")
                 return path["$(SRCROOT)/".length..]
@@ -336,10 +343,9 @@ module CASConfig
 
             if CASConfig.file_expired?(filePath)
                 CASConfig.success "- Config file has been " + (if File.exist?(filePath) then "updated" else "created" end)
-                puts "   " + CASConfig.thin_text(filePath)
-                xcFile = new_file(configName, groupPath)
-                File.open(xcFile.real_path, 'w') { |file| file.write(configBody) }
-                @mainTarget.add_resources([xcFile])
+                newFilePath = get_path_to_new_file(configName, @project[groupPath])
+                puts "   " + CASConfig.thin_text(newFilePath)
+                File.open(newFilePath, 'w') { |file| file.write(configBody) }
             else
                 puts "- Config file is up-to-date"
             end
@@ -353,7 +359,6 @@ module CASConfig
         KEY_ALLOWS_LOADS = "NSAllowsArbitraryLoads"
         KEY_GAD_APP_ID = "GADApplicationIdentifier"
         KEY_GAD_DELAY_INIT = "GADDelayAppMeasurementInit"
-        KEY_MYTARGET_AUTO_INIT = "MyTargetSDKAutoInitMode"
         KEY_TRACKING_USAGE = "NSUserTrackingUsageDescription"
         KEY_BOUND_DOMAINS = "WKAppBoundDomains"
 
@@ -421,7 +426,6 @@ module CASConfig
             if currAppId != requiredAppId 
                 @plist[KEY_GAD_APP_ID] = requiredAppId
                 @plist[KEY_GAD_DELAY_INIT] = true
-                @plist[KEY_MYTARGET_AUTO_INIT] = false
                 @is_dirt = true
                 CASConfig.success("- " + KEY_GAD_APP_ID + " has been " + (if currAppId.nil? then "added" else "updated" end))
                 puts "   required for Google AdMob network. Use " + ARG_NO_GAD + " option if app doesn't use AdMob"
