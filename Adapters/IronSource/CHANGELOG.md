@@ -1,6 +1,9 @@
 ## IronSource iOS Mediation Adapter Changelog
 `pod 'CleverAdsSolutions-SDK/IronSource'`
 
+### 3.9.10
+- Certified with IronSource - 8.7.0.0
+
 ### 3.9.9
 - Certified with IronSource - 8.6.0.0
 - Adding Creative ID as part of ILR callbacks

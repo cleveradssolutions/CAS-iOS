@@ -3,7 +3,7 @@ source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 
 platform :ios, '13.0'
 use_frameworks! :linkage => :static
-$casVersion = '~> 3.9.9'
+$casVersion = '~> 3.9.10'
 
 target 'CASSample' do
   pod 'CleverAdsSolutions-Base', $casVersion
