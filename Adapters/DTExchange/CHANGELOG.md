@@ -1,5 +1,12 @@
 ## DT Exchange iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/DTExchange'`
+```ruby
+pod 'CASMediationDTExchange', '8.3.6.0'
+```
+
+### 8.3.6.0
+- Certified with DTExchange - 8.3.6
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 - Certified with DTExchange - 8.3.5

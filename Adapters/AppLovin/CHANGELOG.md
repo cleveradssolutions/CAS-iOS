@@ -1,5 +1,12 @@
 ## AppLovin iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/AppLovin'`
+```ruby
+pod 'CASMediationAppLovin', '13.2.0.0'
+```
+
+### 13.2.0.0
+- Certified with AppLovin - 13.2.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 - Certified with AppLovin - 13.1.0

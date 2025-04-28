@@ -1,5 +1,11 @@
 ## Cross Promo iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/CrossPromo'`
+```ruby
+pod 'CASMediationCrossPromo', '4.0.2.0'
+```
+
+### 4.0.2.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.5.6
 

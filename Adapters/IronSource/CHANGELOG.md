@@ -1,5 +1,12 @@
 ## IronSource iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/IronSource'`
+```ruby
+pod 'CASMediationIronSource', '8.8.0.0'
+```
+
+### 8.8.0.0
+- Certified with IronSource - 8.8.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 - Certified with IronSource - 8.7.0.0

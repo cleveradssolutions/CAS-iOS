@@ -1,5 +1,12 @@
 ## Kidoz iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/Kidoz'`
+```ruby
+pod 'CASMediationKidoz', '9.2.0.0'
+```
+
+### 9.2.0.0
+- Certified with Kidoz - 9.2.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

@@ -1,7 +1,14 @@
 ## CAS Exchange iOS Mediation Adapter Changelog
+```ruby
+pod 'CASMediationCASExchange', '4.0.2.0'
 ```
-pod 'CleverAdsSolutions-SDK/CASExchange'
-```
+
+### 4.0.2.0
+- Added Native ad support
+- Fixed Video ad black screen
+- Fixed Video ad mute button
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.7
 - Update endpoint.

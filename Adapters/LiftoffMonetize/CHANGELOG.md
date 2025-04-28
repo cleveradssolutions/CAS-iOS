@@ -1,5 +1,12 @@
 ## LiftoffMonetize iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/LiftoffMonetize'`
+```ruby
+pod 'CASMediationLiftoffMonetize', '7.5.0.0'
+```
+
+### 7.5.0.0
+- Certified with LiftoffMonetize - 7.5.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

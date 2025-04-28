@@ -1,5 +1,11 @@
 ## Mintegral iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/Mintegral'`
+```ruby
+pod 'CASMediationMintegral', '7.7.7.0'
+```
+
+### 7.7.7.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 - Certified with Mintegral - 7.7.7

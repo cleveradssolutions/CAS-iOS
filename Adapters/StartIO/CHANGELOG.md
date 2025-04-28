@@ -1,5 +1,12 @@
 ## StartIO iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/StartIO'`
+```ruby
+pod 'CASMediationStartIO', '4.10.5.0'
+```
+
+### 4.10.5.0
+- Certified with StartIO - 4.10.5
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

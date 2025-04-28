@@ -1,5 +1,12 @@
 ## HyprMX iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/HyprMX'`
+```ruby
+pod 'CASMediationHyprMX', '6.4.2.0'
+```
+
+### 6.4.2.0
+- Certified with HyprMX - 6.4.2
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

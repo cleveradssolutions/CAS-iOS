@@ -1,5 +1,12 @@
 ## InMobi iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/InMobi'`
+```ruby
+pod 'CASMediationInMobi', '10.8.2.0'
+```
+
+### 10.8.2.0
+- Certified with InMobi - 10.8.2
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

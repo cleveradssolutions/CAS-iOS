@@ -1,5 +1,12 @@
 ## Smaato iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/Smaato'`
+```ruby
+pod 'CASMediationSmaato', '22.9.3.0'
+```
+
+### 22.9.3.0
+- Certified with Smaato - 22.9.3
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

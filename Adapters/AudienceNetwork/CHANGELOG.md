@@ -1,5 +1,12 @@
 ## Meta Audience Network iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/AudienceNetwork'`
+```ruby
+pod 'CASMediationAudienceNetwork', '6.17.1.0'
+```
+
+### 6.17.1.0
+- Certified with AudienceNetwork - 6.17.1
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 - Certified with AudienceNetwork - 6.17.0

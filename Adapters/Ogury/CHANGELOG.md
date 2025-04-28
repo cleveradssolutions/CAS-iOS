@@ -1,8 +1,12 @@
 ## Ogury iOS Mediation Adapter Changelog
-Read Ogury SDK releases [here](https://ogury-ltd.gitbook.io/release-notes/ios/ogury-sdk).
+```ruby
+pod 'CASMediationOgury', '5.0.2.0'
 ```
-pod 'CleverAdsSolutions-SDK/Ogury'
-```
+
+### 5.0.2.0
+- Certified with Ogury - 5.0.2
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

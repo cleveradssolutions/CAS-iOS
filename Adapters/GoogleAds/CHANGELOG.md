@@ -1,5 +1,12 @@
 ## Google Ads iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/GoogleAds'`
+```ruby
+pod 'CASMediationGoogleAds', '12.3.0.0'
+```
+
+### 12.3.0.0
+- Certified with GoogleAds - 12.3.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

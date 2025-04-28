@@ -1,5 +1,11 @@
 ## Chartboost iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/Chartboost'`
+```ruby
+pod 'CASMediationChartboost', '9.8.1.0'
+```
+
+### 9.8.1.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 - Certified with Chartboost - 9.8.1

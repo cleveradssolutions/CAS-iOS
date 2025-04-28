@@ -1,5 +1,11 @@
 ## SuperAwesome iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/SuperAwesome'`
+```ruby
+pod 'CASMediationSuperAwesome', '9.4.0.0'
+```
+
+### 9.4.0.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

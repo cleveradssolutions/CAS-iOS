@@ -1,5 +1,12 @@
 ## Madex iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/Madex'`
+```ruby
+pod 'CASMediationMadex', '1.7.0.0'
+```
+
+### 1.7.0.0
+- Certified with Madex - 1.7.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

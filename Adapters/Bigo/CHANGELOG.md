@@ -1,5 +1,12 @@
 ## Bigo iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/Bigo'`
+```ruby
+pod 'CASMediationBigo', '4.7.0.0'
+```
+
+### 4.7.0.0
+- Certified with Bigo - 4.7.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 

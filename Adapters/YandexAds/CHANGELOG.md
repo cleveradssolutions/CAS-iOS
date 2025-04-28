@@ -1,5 +1,12 @@
 ## Yandex Ads iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/YandexAds'`
+```ruby
+pod 'CASMediationYandexAds', '7.12.1.0'
+```
+
+### 7.12.1.0
+- Certified with YandexAds - 7.12.1
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 - Certified with YandexAds - 7.10.2

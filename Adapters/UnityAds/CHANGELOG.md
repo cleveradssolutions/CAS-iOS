@@ -1,5 +1,12 @@
 ## Unity Ads iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/UnityAds'`
+```ruby
+pod 'CASMediationUnityAds', '4.14.2.0'
+```
+
+### 4.14.2.0
+- Certified with UnityAds - 4.14.2
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 - Certified with UnityAds - 4.13.2

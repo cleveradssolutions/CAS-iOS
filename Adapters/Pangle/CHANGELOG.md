@@ -1,5 +1,12 @@
 ## Pangle iOS Mediation Adapter Changelog
-`pod 'CleverAdsSolutions-SDK/Pangle'`
+```ruby
+pod 'CASMediationPangle', '7.1.1.0.0'
+```
+
+### 7.1.1.0.0
+- Certified with Pangle - 7.1.1.0
+
+## Legacy Versions are incompatible with CAS 4.0
 
 ### 3.9.10
 - Certified with Pangle - 6.5.0.8
