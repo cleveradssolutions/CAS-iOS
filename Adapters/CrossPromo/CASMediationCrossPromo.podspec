@@ -8,9 +8,8 @@ Pod::Spec.new do |s|
   s.source              = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.0.2/CASMediationCrossPromo-4.0.2.0.tar.gz" }
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0'
-  s.swift_versions      = '5.0'
-  s.requires_arc        = true  
   s.static_framework    = true
+  s.resources           = 'libs/CASPromoResources.bundle'
   s.vendored_frameworks = 'libs/CASBigo.xcframework'
   s.dependency 'CleverAdsSolutions-Base'
 end

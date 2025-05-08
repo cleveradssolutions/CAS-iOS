@@ -8,8 +8,6 @@ Pod::Spec.new do |s|
   s.source              = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.0.2/CASMediationChartboost-9.8.1.0.tar.gz" }
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0'
-  s.swift_versions      = '5.0'
-  s.requires_arc        = true  
   s.static_framework    = true
   s.vendored_frameworks = 'libs/CASChartboost.xcframework'
   s.dependency 'ChartboostSDK', '9.8.1'

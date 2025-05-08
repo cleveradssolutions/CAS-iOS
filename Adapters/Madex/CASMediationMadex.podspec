@@ -7,9 +7,7 @@ Pod::Spec.new do |s|
   s.author              = { "CleverAdsSolutions LTD" => "support@cas.ai" }
   s.source              = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.0.2/CASMediationMadex-1.7.0.0.tar.gz" }
   s.platform            = :ios, '13.0'
-  s.swift_version       = '5.0'
-  s.swift_versions      = '5.0'
-  s.requires_arc        = true  
+  s.swift_version       = '5.0' 
   s.static_framework    = true
   s.vendored_frameworks = 'libs/CASMadex.xcframework'
   s.dependency 'MadexSDK', '1.7.0'
