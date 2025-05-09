@@ -3,44 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8353F7D9A411E69F32A52B65 /* Pods_CASSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F629AD3BBE4C7C36088B29D /* Pods_CASSample.framework */; };
-		926846BA253DCD14008F3687 /* AdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926846B9253DCD14008F3687 /* AdDelegate.m */; };
-		926846BD253DDB7E008F3687 /* EnableSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926846BC253DDB7E008F3687 /* EnableSwift.swift */; };
 		92E84F3E2539EBAA0067BD47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F3D2539EBAA0067BD47 /* AppDelegate.m */; };
-		92E84F442539EBAA0067BD47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F432539EBAA0067BD47 /* ViewController.m */; };
 		92E84F472539EBAA0067BD47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E84F452539EBAA0067BD47 /* Main.storyboard */; };
 		92E84F492539EBAC0067BD47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E84F482539EBAC0067BD47 /* Assets.xcassets */; };
 		92E84F4C2539EBAC0067BD47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E84F4A2539EBAC0067BD47 /* LaunchScreen.storyboard */; };
-		92E84F4F2539EBAC0067BD47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E84F4E2539EBAC0067BD47 /* main.m */; };
 		92ED65792578E7B10022566E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED65772578E7B10022566E /* SceneDelegate.m */; };
-		9D62EABA286099C600414A56 /* BannerAdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EAB9286099C600414A56 /* BannerAdDelegate.m */; };
+		A02BB39E2DB1136700C8748F /* FormatsSection.m in Sources */ = {isa = PBXBuildFile; fileRef = A02BB39D2DB1136700C8748F /* FormatsSection.m */; };
+		A02BB3A22DB113D800C8748F /* MainTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02BB3A12DB113D800C8748F /* MainTVCell.m */; };
+		A02BB3A52DB1151A00C8748F /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A02BB3A42DB1151A00C8748F /* MainVC.m */; };
+		A02BB3B42DB1298800C8748F /* AppOpenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A02BB3B32DB1298800C8748F /* AppOpenVC.m */; };
+		A02BB3B72DB129AA00C8748F /* BannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A02BB3B62DB129AA00C8748F /* BannerVC.m */; };
+		A02BB3BA2DB129D500C8748F /* InterstitialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A02BB3B92DB129D500C8748F /* InterstitialVC.m */; };
+		A02BB3C02DB12A0600C8748F /* RewardedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A02BB3BF2DB12A0600C8748F /* RewardedVC.m */; };
+		A02BB3C62DB140CC00C8748F /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A02BB3C52DB140CC00C8748F /* AppCoordinator.m */; };
+		A0B699D12DBF69AB009DE7C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B699D02DBF69A3009DE7C0 /* main.m */; };
+		A0B699D52DBF8898009DE7C0 /* NativeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B699D42DBF8898009DE7C0 /* NativeVC.m */; };
+		A0B699D82DBF8EDB009DE7C0 /* NativeTemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B699D72DBF8EDB009DE7C0 /* NativeTemplateVC.m */; };
+		A8A7A1743E8F9A8AFB38C3AB /* libPods-CASSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2958F807683D49973A53AE4E /* libPods-CASSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2958F807683D49973A53AE4E /* libPods-CASSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CASSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		486962454A27915306D43DDF /* Pods-CASSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.debug.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.debug.xcconfig"; sourceTree = "<group>"; };
-		6F629AD3BBE4C7C36088B29D /* Pods_CASSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CASSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		926846B8253DCD14008F3687 /* AdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdDelegate.h; sourceTree = "<group>"; };
-		926846B9253DCD14008F3687 /* AdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdDelegate.m; sourceTree = "<group>"; };
-		926846BC253DDB7E008F3687 /* EnableSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableSwift.swift; sourceTree = "<group>"; };
 		92E84F392539EBAA0067BD47 /* CASSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E84F3C2539EBAA0067BD47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		92E84F3D2539EBAA0067BD47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		92E84F422539EBAA0067BD47 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		92E84F432539EBAA0067BD47 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		92E84F462539EBAA0067BD47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92E84F482539EBAC0067BD47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92E84F4B2539EBAC0067BD47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92E84F4D2539EBAC0067BD47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92E84F4E2539EBAC0067BD47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92ED65772578E7B10022566E /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		92ED65782578E7B10022566E /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9D23F0D62AD00AE800764FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9D62EAB8286099C600414A56 /* BannerAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerAdDelegate.h; sourceTree = "<group>"; };
-		9D62EAB9286099C600414A56 /* BannerAdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerAdDelegate.m; sourceTree = "<group>"; };
+		A02BB39C2DB1135B00C8748F /* FormatsSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormatsSection.h; sourceTree = "<group>"; };
+		A02BB39D2DB1136700C8748F /* FormatsSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormatsSection.m; sourceTree = "<group>"; };
+		A02BB39F2DB113C700C8748F /* MainTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTVCell.h; sourceTree = "<group>"; };
+		A02BB3A12DB113D800C8748F /* MainTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTVCell.m; sourceTree = "<group>"; };
+		A02BB3A32DB1151200C8748F /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		A02BB3A42DB1151A00C8748F /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		A02BB3B22DB1297B00C8748F /* AppOpenVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppOpenVC.h; sourceTree = "<group>"; };
+		A02BB3B32DB1298800C8748F /* AppOpenVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppOpenVC.m; sourceTree = "<group>"; };
+		A02BB3B52DB1299F00C8748F /* BannerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerVC.h; sourceTree = "<group>"; };
+		A02BB3B62DB129AA00C8748F /* BannerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerVC.m; sourceTree = "<group>"; };
+		A02BB3B82DB129CB00C8748F /* InterstitialVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialVC.h; sourceTree = "<group>"; };
+		A02BB3B92DB129D500C8748F /* InterstitialVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialVC.m; sourceTree = "<group>"; };
+		A02BB3BE2DB129FF00C8748F /* RewardedVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedVC.h; sourceTree = "<group>"; };
+		A02BB3BF2DB12A0600C8748F /* RewardedVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedVC.m; sourceTree = "<group>"; };
+		A02BB3C42DB140AC00C8748F /* AppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCoordinator.h; sourceTree = "<group>"; };
+		A02BB3C52DB140CC00C8748F /* AppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCoordinator.m; sourceTree = "<group>"; };
+		A0B699D02DBF69A3009DE7C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0B699D32DBF8884009DE7C0 /* NativeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeVC.h; sourceTree = "<group>"; };
+		A0B699D42DBF8898009DE7C0 /* NativeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeVC.m; sourceTree = "<group>"; };
+		A0B699D62DBF8ECF009DE7C0 /* NativeTemplateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeTemplateVC.h; sourceTree = "<group>"; };
+		A0B699D72DBF8EDB009DE7C0 /* NativeTemplateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeTemplateVC.m; sourceTree = "<group>"; };
 		BC7108726D0F7CC74A975B6D /* Pods-CASSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSample.release.xcconfig"; path = "Target Support Files/Pods-CASSample/Pods-CASSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8353F7D9A411E69F32A52B65 /* Pods_CASSample.framework in Frameworks */,
+				A8A7A1743E8F9A8AFB38C3AB /* libPods-CASSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,22 +96,20 @@
 		92E84F3B2539EBAA0067BD47 /* CASSample */ = {
 			isa = PBXGroup;
 			children = (
+				A0B699D02DBF69A3009DE7C0 /* main.m */,
 				92E84F3C2539EBAA0067BD47 /* AppDelegate.h */,
 				92E84F3D2539EBAA0067BD47 /* AppDelegate.m */,
 				92ED65782578E7B10022566E /* SceneDelegate.h */,
 				92ED65772578E7B10022566E /* SceneDelegate.m */,
-				92E84F422539EBAA0067BD47 /* ViewController.h */,
-				92E84F432539EBAA0067BD47 /* ViewController.m */,
-				926846B8253DCD14008F3687 /* AdDelegate.h */,
-				926846B9253DCD14008F3687 /* AdDelegate.m */,
-				9D62EAB8286099C600414A56 /* BannerAdDelegate.h */,
-				9D62EAB9286099C600414A56 /* BannerAdDelegate.m */,
-				92E84F452539EBAA0067BD47 /* Main.storyboard */,
+				A0589C732DBBA94F0068FE5E /* BannerAd */,
+				A0B699D22DBF885E009DE7C0 /* NativeAd */,
+				A02BB3982DB10E7800C8748F /* InterstitialAd */,
+				A02BB3992DB10E7F00C8748F /* RewardedAd */,
+				A02BB3972DB10E7100C8748F /* AppOpenAd */,
+				A0589C742DBBA9650068FE5E /* SupportFiles */,
+				A02BB38F2DB10A1D00C8748F /* Storyboards */,
 				92E84F482539EBAC0067BD47 /* Assets.xcassets */,
-				92E84F4A2539EBAC0067BD47 /* LaunchScreen.storyboard */,
 				92E84F4D2539EBAC0067BD47 /* Info.plist */,
-				92E84F4E2539EBAC0067BD47 /* main.m */,
-				926846BC253DDB7E008F3687 /* EnableSwift.swift */,
 			);
 			path = CASSample;
 			sourceTree = "<group>";
@@ -101,9 +118,112 @@
 			isa = PBXGroup;
 			children = (
 				9D23F0D62AD00AE800764FD0 /* Foundation.framework */,
-				6F629AD3BBE4C7C36088B29D /* Pods_CASSample.framework */,
+				2958F807683D49973A53AE4E /* libPods-CASSample.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A02BB38B2DB109AB00C8748F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A02BB3C42DB140AC00C8748F /* AppCoordinator.h */,
+				A02BB3C52DB140CC00C8748F /* AppCoordinator.m */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A02BB38C2DB109FC00C8748F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A02BB39A2DB1133100C8748F /* Enums */,
+				A02BB39B2DB1133600C8748F /* Cells */,
+				A02BB3A32DB1151200C8748F /* MainVC.h */,
+				A02BB3A42DB1151A00C8748F /* MainVC.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A02BB38F2DB10A1D00C8748F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				92E84F452539EBAA0067BD47 /* Main.storyboard */,
+				92E84F4A2539EBAC0067BD47 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A02BB3972DB10E7100C8748F /* AppOpenAd */ = {
+			isa = PBXGroup;
+			children = (
+				A02BB3B22DB1297B00C8748F /* AppOpenVC.h */,
+				A02BB3B32DB1298800C8748F /* AppOpenVC.m */,
+			);
+			path = AppOpenAd;
+			sourceTree = "<group>";
+		};
+		A02BB3982DB10E7800C8748F /* InterstitialAd */ = {
+			isa = PBXGroup;
+			children = (
+				A02BB3B82DB129CB00C8748F /* InterstitialVC.h */,
+				A02BB3B92DB129D500C8748F /* InterstitialVC.m */,
+			);
+			path = InterstitialAd;
+			sourceTree = "<group>";
+		};
+		A02BB3992DB10E7F00C8748F /* RewardedAd */ = {
+			isa = PBXGroup;
+			children = (
+				A02BB3BE2DB129FF00C8748F /* RewardedVC.h */,
+				A02BB3BF2DB12A0600C8748F /* RewardedVC.m */,
+			);
+			path = RewardedAd;
+			sourceTree = "<group>";
+		};
+		A02BB39A2DB1133100C8748F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A02BB39C2DB1135B00C8748F /* FormatsSection.h */,
+				A02BB39D2DB1136700C8748F /* FormatsSection.m */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A02BB39B2DB1133600C8748F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A02BB39F2DB113C700C8748F /* MainTVCell.h */,
+				A02BB3A12DB113D800C8748F /* MainTVCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A0589C732DBBA94F0068FE5E /* BannerAd */ = {
+			isa = PBXGroup;
+			children = (
+				A02BB3B52DB1299F00C8748F /* BannerVC.h */,
+				A02BB3B62DB129AA00C8748F /* BannerVC.m */,
+			);
+			path = BannerAd;
+			sourceTree = "<group>";
+		};
+		A0589C742DBBA9650068FE5E /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A02BB38C2DB109FC00C8748F /* Main */,
+				A02BB38B2DB109AB00C8748F /* Coordinator */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		A0B699D22DBF885E009DE7C0 /* NativeAd */ = {
+			isa = PBXGroup;
+			children = (
+				A0B699D32DBF8884009DE7C0 /* NativeVC.h */,
+				A0B699D42DBF8898009DE7C0 /* NativeVC.m */,
+				A0B699D62DBF8ECF009DE7C0 /* NativeTemplateVC.h */,
+				A0B699D72DBF8EDB009DE7C0 /* NativeTemplateVC.m */,
+			);
+			path = NativeAd;
 			sourceTree = "<group>";
 		};
 		D6BC847351AD25E4345170B8 /* Pods */ = {
@@ -229,13 +349,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E84F442539EBAA0067BD47 /* ViewController.m in Sources */,
+				A02BB3C62DB140CC00C8748F /* AppCoordinator.m in Sources */,
+				A02BB39E2DB1136700C8748F /* FormatsSection.m in Sources */,
+				A02BB3B42DB1298800C8748F /* AppOpenVC.m in Sources */,
+				A02BB3A22DB113D800C8748F /* MainTVCell.m in Sources */,
+				A0B699D82DBF8EDB009DE7C0 /* NativeTemplateVC.m in Sources */,
+				A02BB3B72DB129AA00C8748F /* BannerVC.m in Sources */,
+				A02BB3A52DB1151A00C8748F /* MainVC.m in Sources */,
+				A02BB3BA2DB129D500C8748F /* InterstitialVC.m in Sources */,
 				92ED65792578E7B10022566E /* SceneDelegate.m in Sources */,
-				9D62EABA286099C600414A56 /* BannerAdDelegate.m in Sources */,
 				92E84F3E2539EBAA0067BD47 /* AppDelegate.m in Sources */,
-				92E84F4F2539EBAC0067BD47 /* main.m in Sources */,
-				926846BD253DDB7E008F3687 /* EnableSwift.swift in Sources */,
-				926846BA253DCD14008F3687 /* AdDelegate.m in Sources */,
+				A0B699D52DBF8898009DE7C0 /* NativeVC.m in Sources */,
+				A0B699D12DBF69AB009DE7C0 /* main.m in Sources */,
+				A02BB3C02DB12A0600C8748F /* RewardedVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,9 +510,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KJK32752G4;
+				DEVELOPMENT_TEAM = CG78EM8VXT;
 				INFOPLIST_FILE = CASSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,9 +535,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KJK32752G4;
+				DEVELOPMENT_TEAM = CG78EM8VXT;
 				INFOPLIST_FILE = CASSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

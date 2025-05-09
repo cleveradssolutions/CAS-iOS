@@ -4,11 +4,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@import CleverAdsSolutions;
+#import <CleverAdsSolutions/CleverAdsSolutions.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (strong, nonatomic) UIWindow *window;
 
-+ (CASMediationManager *) getMediationManager;
+@property (class, nonatomic, readonly) NSString *casId;
+
 @end
-
