@@ -1,8 +1,7 @@
 import CleverAdsSolutions
 
 final class InterstitialAdModel: NSObject, ObservableObject {
-      
-    let interstitial = CASInterstitial(casID: CASSwiftUIDemoAppApp.casID)
+    let interstitial = CASInterstitial(casID: AppDelegate.casID)
         
     override init() {
         super.init()
@@ -10,6 +9,7 @@ final class InterstitialAdModel: NSObject, ObservableObject {
         interstitial.impressionDelegate = self
         interstitial.isAutoloadEnabled = false // by default
         interstitial.isAutoshowEnabled = false // by default
+        interstitial.minInterval = 0 // by default
     }
     
     func loadAd() {
@@ -28,6 +28,8 @@ extension InterstitialAdModel: CASScreenContentDelegate {
     
     func screenAd(_ ad: any CASScreenContent, didFailToLoadWithError error: AdError) {
         print(#function, "Error: \(error.description)")
+        
+        // isAutoloadEnabled can do retry with delay automatically
     }
     
     func screenAdWillPresentContent(_ ad: any CASScreenContent) {

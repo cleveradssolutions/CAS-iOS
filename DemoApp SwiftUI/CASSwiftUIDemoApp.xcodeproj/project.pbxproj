@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		838E15ECA1B2036AB14F5321 /* libPods-CASSwiftUIDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030C678492C1A3EE3650C94 /* libPods-CASSwiftUIDemoApp.a */; };
+		9D569C972DD1DB8E00095580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D569C962DD1DB8800095580 /* AppDelegate.swift */; };
 		9D857FBB2A9DD89E00A0C1DF /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D857FBA2A9DD89E00A0C1DF /* DemoApp.swift */; };
 		9D857FBF2A9DD89F00A0C1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D857FBE2A9DD89F00A0C1DF /* Assets.xcassets */; };
 		9D857FC22A9DD89F00A0C1DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D857FC12A9DD89F00A0C1DF /* Preview Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		07EDBB7371814E5244B8B449 /* Pods-CASSwiftUIDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSwiftUIDemoApp.release.xcconfig"; path = "Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		1030C678492C1A3EE3650C94 /* libPods-CASSwiftUIDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CASSwiftUIDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50073DC2603EBCE91B1639F8 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSwiftUIDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9D569C962DD1DB8800095580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D857FB72A9DD89E00A0C1DF /* CASSwiftUIDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASSwiftUIDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D857FBA2A9DD89E00A0C1DF /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		9D857FBE2A9DD89F00A0C1DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				9DEA22AE2AE94BDE002997DB /* Info.plist */,
 				9D857FBA2A9DD89E00A0C1DF /* DemoApp.swift */,
+				9D569C962DD1DB8800095580 /* AppDelegate.swift */,
 				A03C07712DCCFE77007F3D0D /* BannersAd */,
 				A0AFCF662DACFAE10043E6A4 /* NativeAd */,
 				A0AFCF672DACFAE90043E6A4 /* AppOpenAd */,
@@ -322,6 +325,7 @@
 			files = (
 				A0B699E82DBFC97C009DE7C0 /* NativeAdView.swift in Sources */,
 				A0AFCF692DACFB0B0043E6A4 /* HomeView.swift in Sources */,
+				9D569C972DD1DB8E00095580 /* AppDelegate.swift in Sources */,
 				A0AFCF7A2DACFD7C0043E6A4 /* AppOpenAdModel.swift in Sources */,
 				A03C07772DCD0154007F3D0D /* MediumRectangleContainerView.swift in Sources */,
 				A03C07792DCD0173007F3D0D /* BannerAdView.swift in Sources */,

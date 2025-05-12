@@ -1,14 +1,14 @@
 import CleverAdsSolutions
 
 final class RewardedAdModel: NSObject, ObservableObject {
-    
-    let rewarded = CASRewarded(casID: CASSwiftUIDemoAppApp.casID)
+    let rewarded = CASRewarded(casID: AppDelegate.casID)
     
     override init() {
         super.init()
         rewarded.delegate = self
-        rewarded.isAutoloadEnabled = false
         rewarded.impressionDelegate = self
+        rewarded.isAutoloadEnabled = false // by default
+        rewarded.isExtraFillInterstitialAdEnabled = true // by default
     }
     
     func loadAd() {
@@ -27,6 +27,8 @@ extension RewardedAdModel: CASScreenContentDelegate {
     
     func screenAd(_ ad: any CASScreenContent, didFailToLoadWithError error: AdError) {
         print(#function, "Error: \(error.description)")
+        
+        // isAutoloadEnabled can do retry with delay automatically
     }
     
     func screenAdWillPresentContent(_ ad: any CASScreenContent) {

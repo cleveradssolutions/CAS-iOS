@@ -17,6 +17,10 @@ struct BannerAdView: UIViewRepresentable {
     func updateUIView(_ uiView: CASBannerView, context: Context) {
         print(#function)
         uiView.adSize = adSize
+        
+        if !uiView.isAutoloadEnabled {
+            uiView.loadAd()
+        }
     }
 
     static func dismantleUIView(_ uiView: CASBannerView, coordinator: Coordinator) {
@@ -27,16 +31,15 @@ struct BannerAdView: UIViewRepresentable {
     }
 
     class Coordinator: NSObject, CASBannerDelegate, CASImpressionDelegate {
-        let parent: BannerAdView
         let bannerView: CASBannerView
 
         init(parent: BannerAdView) {
-            self.parent = parent
-            bannerView = CASBannerView(casID: CASSwiftUIDemoAppApp.casID,
+            bannerView = CASBannerView(casID: AppDelegate.casID,
                                        size: parent.adSize)
             super.init()
             bannerView.delegate = self
             bannerView.impressionDelegate = self
+            bannerView.refreshInterval = 30 // by default
             bannerView.isAutoloadEnabled = true
         }
 
@@ -48,6 +51,8 @@ struct BannerAdView: UIViewRepresentable {
 
         func bannerAdView(_ adView: CASBannerView, didFailWith error: CASError) {
             print(#function, "Error: \(error.description)")
+
+            // isAutoloadEnabled do retry with delay automatically
         }
 
         func bannerAdView(_ adView: CASBannerView, willPresent impression: any CASImpression) {

@@ -18,23 +18,23 @@ struct NativeAdView: UIViewRepresentable {
     }
 
     class Coordinator: NSObject, CASNativeLoaderDelegate, CASNativeContentDelegate, CASImpressionDelegate {
-        let loader = CASNativeLoader(casID: CASSwiftUIDemoAppApp.casID)
+        let loader = CASNativeLoader(casID: AppDelegate.casID)
         var adView: CASNativeView
         var adContent: NativeAdContent?
 
         override init() {
             let nib = UINib(nibName: "NativeAdView", bundle: .main)
             adView = nib.instantiate(withOwner: nil, options: nil).first as! CASNativeView
-            
+
             adView.registerMediaView(tag: 100)
             adView.registerIconView(tag: 101)
             adView.registerHeadlineView(tag: 102)
             adView.registerAdLabelView(tag: 103)
             adView.registerBodyView(tag: 104)
             adView.registerCallToActionView(tag: 105)
-            
+
             super.init()
-            
+
             loader.delegate = self
             loader.adChoicesPlacement = .topRight // by default
             loader.isStartVideoMuted = true // by default
@@ -45,6 +45,10 @@ struct NativeAdView: UIViewRepresentable {
 
         func nativeAdDidLoadContent(_ ad: NativeAdContent) {
             print(#function)
+            if let previousAd = adContent {
+                previousAd.destroy()
+            }
+
             adContent = ad
             ad.delegate = self
             ad.impressionDelegate = self
@@ -53,6 +57,8 @@ struct NativeAdView: UIViewRepresentable {
 
         func nativeAdDidFailToLoad(error: AdError) {
             print(#function, "Error: \(error.description)")
+            
+            // TODO: Implement custom retry logic with delay
         }
 
         // MARK: - CASNativeContentDelegate

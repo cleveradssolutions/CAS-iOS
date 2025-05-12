@@ -1,8 +1,7 @@
 import CleverAdsSolutions
 
 final class AppOpenAdModel: NSObject, ObservableObject {
-        
-    let appOpen = CASAppOpen(casID: CASSwiftUIDemoAppApp.casID)
+    let appOpen = CASAppOpen(casID: AppDelegate.casID)
         
     override init() {
         super.init()
@@ -28,6 +27,8 @@ extension AppOpenAdModel: CASScreenContentDelegate {
     
     func screenAd(_ ad: any CASScreenContent, didFailToLoadWithError error: AdError) {
         print(#function, "Error: \(error.description)")
+        
+        // isAutoloadEnabled can do retry with delay automatically
     }
     
     func screenAdWillPresentContent(_ ad: any CASScreenContent) {

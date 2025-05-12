@@ -21,7 +21,7 @@ struct NativeAdTemplateView: UIViewRepresentable {
     
     class Coordinator: NSObject, CASNativeLoaderDelegate, CASNativeContentDelegate, CASImpressionDelegate {
         let parent: NativeAdTemplateView
-        let loader = CASNativeLoader(casID: CASSwiftUIDemoAppApp.casID)
+        let loader = CASNativeLoader(casID: AppDelegate.casID)
         let adView: CASNativeView
         var adContent: NativeAdContent?
 
@@ -41,6 +41,10 @@ struct NativeAdTemplateView: UIViewRepresentable {
 
         func nativeAdDidLoadContent(_ ad: NativeAdContent) {
             print(#function)
+            if let previousAd = adContent {
+                previousAd.destroy()
+            }
+            
             adContent = ad
             ad.delegate = self
             ad.impressionDelegate = self
@@ -49,6 +53,8 @@ struct NativeAdTemplateView: UIViewRepresentable {
 
         func nativeAdDidFailToLoad(error: AdError) {
             print(#function, "Error: \(error.description)")
+            
+            // TODO: Implement custom retry logic with delay
         }
 
         // MARK: - CASNativeContentDelegate
