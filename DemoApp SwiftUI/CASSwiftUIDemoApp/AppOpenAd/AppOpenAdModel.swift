@@ -21,12 +21,6 @@ final class AppOpenAdModel: NSObject, ObservableObject {
     }
 }
 
-extension AppOpenAdModel: CASImpressionDelegate {
-    func adDidRecordImpression(info: AdContentInfo) {
-        print(#function)
-    }
-}
-
 extension AppOpenAdModel: CASScreenContentDelegate {
     func screenAdDidLoadContent(_ ad: any CASScreenContent) {
         print(#function)
@@ -49,6 +43,12 @@ extension AppOpenAdModel: CASScreenContentDelegate {
     }
     
     func screenAdDidDismissContent(_ ad: any CASScreenContent) {
+        print(#function)
+    }
+}
+
+extension AppOpenAdModel: CASImpressionDelegate {
+    func adDidRecordImpression(info: AdContentInfo) {
         print(#function)
     }
 }

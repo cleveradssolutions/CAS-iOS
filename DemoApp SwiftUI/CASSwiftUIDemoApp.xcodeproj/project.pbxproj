@@ -24,7 +24,7 @@
 		A0AFCF7A2DACFD7C0043E6A4 /* AppOpenAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFCF792DACFD780043E6A4 /* AppOpenAdModel.swift */; };
 		A0AFCF7C2DACFD820043E6A4 /* RewardedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFCF7B2DACFD7F0043E6A4 /* RewardedView.swift */; };
 		A0AFCF7E2DACFD890043E6A4 /* RewardedAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFCF7D2DACFD850043E6A4 /* RewardedAdModel.swift */; };
-		A0AFCF802DACFD910043E6A4 /* interstitialAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFCF7F2DACFD8D0043E6A4 /* interstitialAdModel.swift */; };
+		A0AFCF802DACFD910043E6A4 /* InterstitialAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFCF7F2DACFD8D0043E6A4 /* InterstitialAdModel.swift */; };
 		A0AFCF822DACFDA00043E6A4 /* InterstitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AFCF812DACFD940043E6A4 /* InterstitialView.swift */; };
 		A0B699DC2DBFBE8F009DE7C0 /* NativeAdTemplateContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B699DB2DBFBE85009DE7C0 /* NativeAdTemplateContainerView.swift */; };
 		A0B699E62DBFC12A009DE7C0 /* NativeAdTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B699E52DBFC129009DE7C0 /* NativeAdTemplateView.swift */; };
@@ -54,7 +54,7 @@
 		A0AFCF792DACFD780043E6A4 /* AppOpenAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOpenAdModel.swift; sourceTree = "<group>"; };
 		A0AFCF7B2DACFD7F0043E6A4 /* RewardedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedView.swift; sourceTree = "<group>"; };
 		A0AFCF7D2DACFD850043E6A4 /* RewardedAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdModel.swift; sourceTree = "<group>"; };
-		A0AFCF7F2DACFD8D0043E6A4 /* interstitialAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interstitialAdModel.swift; sourceTree = "<group>"; };
+		A0AFCF7F2DACFD8D0043E6A4 /* InterstitialAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdModel.swift; sourceTree = "<group>"; };
 		A0AFCF812DACFD940043E6A4 /* InterstitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialView.swift; sourceTree = "<group>"; };
 		A0B699DB2DBFBE85009DE7C0 /* NativeAdTemplateContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdTemplateContainerView.swift; sourceTree = "<group>"; };
 		A0B699E52DBFC129009DE7C0 /* NativeAdTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdTemplateView.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				A0AFCF812DACFD940043E6A4 /* InterstitialView.swift */,
-				A0AFCF7F2DACFD8D0043E6A4 /* interstitialAdModel.swift */,
+				A0AFCF7F2DACFD8D0043E6A4 /* InterstitialAdModel.swift */,
 			);
 			path = InterstitialAd;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 				A0B699DC2DBFBE8F009DE7C0 /* NativeAdTemplateContainerView.swift in Sources */,
 				A0AFCF7C2DACFD820043E6A4 /* RewardedView.swift in Sources */,
 				9D857FBB2A9DD89E00A0C1DF /* DemoApp.swift in Sources */,
-				A0AFCF802DACFD910043E6A4 /* interstitialAdModel.swift in Sources */,
+				A0AFCF802DACFD910043E6A4 /* InterstitialAdModel.swift in Sources */,
 				A0AFCF782DACFD750043E6A4 /* AppOpenView.swift in Sources */,
 				A0AFCF702DACFD3A0043E6A4 /* BannerContainerView.swift in Sources */,
 				A0B699E62DBFC12A009DE7C0 /* NativeAdTemplateView.swift in Sources */,

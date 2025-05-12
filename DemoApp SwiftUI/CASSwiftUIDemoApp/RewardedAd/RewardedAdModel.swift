@@ -20,12 +20,6 @@ final class RewardedAdModel: NSObject, ObservableObject {
     }
 }
 
-extension RewardedAdModel: CASImpressionDelegate {
-    func adDidRecordImpression(info: AdContentInfo) {
-        print(#function)
-    }
-}
-
 extension RewardedAdModel: CASScreenContentDelegate {
     func screenAdDidLoadContent(_ ad: any CASScreenContent) {
         print(#function)
@@ -48,6 +42,12 @@ extension RewardedAdModel: CASScreenContentDelegate {
     }
     
     func screenAdDidDismissContent(_ ad: any CASScreenContent) {
+        print(#function)
+    }
+}
+
+extension RewardedAdModel: CASImpressionDelegate {
+    func adDidRecordImpression(info: AdContentInfo) {
         print(#function)
     }
 }

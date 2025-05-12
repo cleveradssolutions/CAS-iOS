@@ -21,12 +21,6 @@ final class InterstitialAdModel: NSObject, ObservableObject {
     }
 }
 
-extension InterstitialAdModel: CASImpressionDelegate {
-    func adDidRecordImpression(info: AdContentInfo) {
-        print(#function)
-    }
-}
-
 extension InterstitialAdModel: CASScreenContentDelegate {
     func screenAdDidLoadContent(_ ad: any CASScreenContent) {
         print(#function)
@@ -49,6 +43,12 @@ extension InterstitialAdModel: CASScreenContentDelegate {
     }
     
     func screenAdDidDismissContent(_ ad: any CASScreenContent) {
+        print(#function)
+    }
+}
+
+extension InterstitialAdModel: CASImpressionDelegate {
+    func adDidRecordImpression(info: AdContentInfo) {
         print(#function)
     }
 }
