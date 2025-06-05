@@ -172,7 +172,7 @@ let package = Package(
                 .target(name: "CASMediationIronSource"),
                 .target(name: "CASBaseResources")
             ],
-            path: "SPMSources/CASMediationIronSourceTarget"
+            path: "Adapters/IronSource"
         ),
         
         .target(
@@ -206,7 +206,7 @@ let package = Package(
                 .target(name: "CASMediationUnityAds"),
                 .target(name: "CASBaseResources")
             ],
-            path: "SPMSources/CASMediationUnityAdsTarget"
+            path: "Adapters/UnityAds"
         ),
                 
         .target(
@@ -223,7 +223,7 @@ let package = Package(
                 .target(name: "HyprMXSPMTarget"),
                 .target(name: "CASBaseResources"),
             ],
-            path: "SPMSources/CASMediationHyprMXTarget"
+            path: "Adapters/HyprMX"
         ),
         .target(
             name: "KidozSPMTarget",
@@ -239,7 +239,7 @@ let package = Package(
                 .target(name: "KidozSPMTarget"),
                 .target(name: "CASBaseResources"),
             ],
-            path: "SPMSources/CASMediationKidozTarget"
+            path: "Adapters/Kidoz"
         ),
         
         .target(
@@ -249,7 +249,7 @@ let package = Package(
                 .target(name: "CASBaseResources"),
                 .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package")
             ],
-            path: "SPMSources/CASMediationAppLovinTarget"
+            path: "Adapters/AppLovin"
         ),
         .target(
             name: "CASMediationGoogleAdsTarget",
@@ -258,7 +258,7 @@ let package = Package(
                 .target(name: "CASBaseResources"),
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
             ],
-            path: "SPMSources/CASMediationGoogleAdsTarget"
+            path: "Adapters/GoogleAds"
         ),
         .target(
             name: "CASMediationVungleTarget",
@@ -267,7 +267,7 @@ let package = Package(
                 .target(name: "CASBaseResources"),
                 .product(name: "VungleAdsSDK", package: "VungleAdsSDK-SwiftPackageManager")
             ],
-            path: "SPMSources/CASMediationVungleTarget"
+            path: "Adapters/LiftoffMonetize"
         ),
         
         .target(
@@ -277,7 +277,7 @@ let package = Package(
                 .target(name: "CASBaseResources"),
                 .product(name: "StartApp", package: "StartAppSDK-SwiftPackage")
             ],
-            path: "SPMSources/CASMediationStartIOTarget"
+            path: "Adapters/StartIO"
         ),
         .target(
             name: "CASMediationMintegralTarget",
@@ -286,7 +286,7 @@ let package = Package(
                 .target(name: "CASBaseResources"),
                 .product(name: "MintegralAdSDK", package: "MintegralAdSDK-Swift-Package")
             ],
-            path: "SPMSources/CASMediationMintegralTarget"
+            path: "Adapters/Mintegral"
         ),
         
         .target(
@@ -303,7 +303,7 @@ let package = Package(
                 .target(name: "CASMediationDTExchange"),
                 .target(name: "CASBaseResources")
             ],
-            path: "SPMSources/CASMediationDTExchangeTarget"
+            path: "Adapters/DTExchange"
         ),
     
         .target(
@@ -312,7 +312,7 @@ let package = Package(
                 .target(name: "CASMediationExchange"),
                 .target(name: "CASBaseResources")
             ],
-            path: "SPMSources/CASMediationExchangeTarget",
+            path: "Adapters/CASExchange",
             linkerSettings: [
                 .linkedFramework("SafariServices"),
                 .linkedFramework("SystemConfiguration"),
@@ -342,7 +342,7 @@ let package = Package(
                 .target(name: "CASMediationInMobi"),
                 .target(name: "CASBaseResources")
             ],
-            path: "SPMSources/CASMediationInMobiTarget"
+            path: "Adapters/InMobi"
         ),
         
         .target(
@@ -426,7 +426,7 @@ let package = Package(
                 .target(name: "CASMediationYsoNetwork"),
                 .target(name: "CASBaseResources")
             ],
-            path: "SPMSources/CASMediationYsoNetworkTarget"
+            path: "Adapters/YsoNetwork"
         ),
                         
         .target(
@@ -436,7 +436,7 @@ let package = Package(
                 .target(name: "CASMediationYandexAds"),
                 .target(name: "CASBaseResources")
             ],
-            path: "SPMSources/CASMediationYandexAdsTarget"
+            path: "Adapters/YandexAds"
         ),
                         
         .binaryTarget(
