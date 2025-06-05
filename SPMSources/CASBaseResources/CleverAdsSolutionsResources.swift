@@ -1,0 +1,4 @@
+//
+//  CleverAdsSolutionsResources.swift
+//  CleverAdsSolutions
+//

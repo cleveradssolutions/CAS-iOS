@@ -1,0 +1,4 @@
+//
+//  CASMediationCrossPromoResources.swift
+//  CleverAdsSolutions
+//
