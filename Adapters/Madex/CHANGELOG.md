@@ -1,7 +1,10 @@
 ## Madex iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMadex', '1.7.0.0'
+pod 'CASMediationMadex', '1.7.2.0'
 ```
+
+### 1.7.2.0
+- Certified with Madex - 1.7.2
 
 ### 1.7.0.0
 - Certified with Madex - 1.7.0

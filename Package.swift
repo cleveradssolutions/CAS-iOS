@@ -12,6 +12,7 @@ import PackageDescription
 // - AudienceNetwork: https://github.com/CocoaPods/Specs/blob/master/Specs/2/1/5/FBAudienceNetwork/
 // - HyprMX: https://github.com/CocoaPods/Specs/tree/master/Specs/6/7/d/HyprMX/
 // - Kidoz: https://github.com/CocoaPods/Specs/tree/master/Specs/2/b/8/KidozSDK/
+// - Prado: https://github.com/CocoaPods/Specs/tree/master/Specs/4/f/7/PradoSDK
 // - DTExchange: https://github.com/CocoaPods/Specs/tree/master/Specs/1/7/3/Fyber_Marketplace_SDK/
 // - InMobi: https://github.com/CocoaPods/Specs/tree/master/Specs/7/8/1/InMobiSDK/
 // - YsoNetwork: https://github.com/CocoaPods/Specs/tree/master/Specs/8/a/a/YsoNetworkSDK/
@@ -35,6 +36,14 @@ let package = Package(
             targets: ["CASBaseResources"]
         ),
         .library(
+            name: "CASMediationExchange",
+            targets: ["CASMediationExchangeTarget"]
+        ),
+        .library(
+            name: "CASMediationCrossPromo",
+            targets: ["CASPromoResources"]
+        ),
+        .library(
             name: "CASMediationIronSource",
             targets: ["CASMediationIronSourceTarget"]
         ),
@@ -50,7 +59,10 @@ let package = Package(
             name: "CASMediationKidoz",
             targets: ["CASMediationKidozTarget"]
         ),
-        
+        .library(
+            name: "CASMediationPrado",
+            targets: ["CASMediationPradoTarget"]
+        ),
         .library(
             name: "CASMediationAppLovin",
             targets: ["CASMediationAppLovinTarget"]
@@ -63,7 +75,10 @@ let package = Package(
             name: "CASMediationLiftoffMonetize",
             targets: ["CASMediationLiftoffMonetizeTarget"]
         ),
-       
+        .library(
+            name: "CASMediationAudienceNetwork",
+            targets: ["CASMediationAudienceNetworkTarget"]
+        ),
         .library(
             name: "CASMediationStartIO",
             targets: ["CASMediationStartIOTarget"]
@@ -72,31 +87,18 @@ let package = Package(
             name: "CASMediationMintegral",
             targets: ["CASMediationMintegralTarget"]
         ),
-        
         .library(
             name: "CASMediationDTExchange",
             targets: ["CASMediationDTExchangeTarget"]
         ),
-        
-        .library(
-            name: "CASMediationExchange",
-            targets: ["CASMediationExchangeTarget"]
-        ),
-        .library(
-            name: "CASMediationCrossPromo",
-            targets: ["CASPromoResources"]
-        ),
-        
         .library(
             name: "CASMediationInMobi",
             targets: ["CASMediationInMobiTarget"]
         ),
-        
         .library(
             name: "CASMediationYandexAds",
             targets: ["CASMediationYandexAdsTarget"]
         ),
-        
         .library(
             name: "CASMediationYsoNetwork",
             targets: ["CASMediationYsoNetworkTarget"]
@@ -231,7 +233,49 @@ let package = Package(
             ],
             path: "Adapters/UnityAds"
         ),
-                
+        
+        .target(
+            name: "AudienceNetworkSPMTarget",
+            dependencies: [
+                .target(name: "AudienceNetworkSPM")
+            ],
+            path: "SPMSources/AudienceNetworkSPMTarget",
+            linkerSettings: [
+                .linkedFramework("AudioToolbox"),
+                .linkedFramework("AppTrackingTransparency"),
+                .linkedFramework("StoreKit"),
+                .linkedFramework("CoreGraphics"),
+                .linkedFramework("UIKit"),
+                .linkedFramework("Foundation"),
+                .linkedFramework("Security"),
+                .linkedFramework("CoreImage"),
+                .linkedFramework("AVFoundation"),
+                .linkedFramework("CoreMedia")
+                .linkedFramework("AdSupport"),
+                .linkedFramework("CFNetwork"),
+                .linkedFramework("CoreMotion"),
+                .linkedFramework("CoreTelephony"),
+                .linkedFramework("LocalAuthentication"),
+                .linkedFramework("SafariServices"),
+                .linkedFramework("SystemConfiguration"),
+                .linkedFramework("VideoToolbox"),
+                .linkedFramework("WebKit"),
+                .linkedLibrary("c++"),
+                .linkedLibrary("xml2"),
+                .linkedLibrary("z")
+            ]
+        ),
+        .target(
+            name: "CASMediationAudienceNetworkTarget",
+            dependencies: [
+                .target(name: "AudienceNetworkSPMTarget"),
+                .target(name: "CASMediationAudienceNetwork"),
+                .target(name: "CASBaseResources"),
+                .target(name: "CASMediationGoogleAdsTarget")
+            ],
+            path: "Adapters/AudienceNetwork"
+        ),
+
         .target(
             name: "HyprMXSPMTarget",
             dependencies: [
@@ -253,6 +297,9 @@ let package = Package(
             dependencies: [
                 .target(name: "KidozSPM")
             ],
+            linkerSettings: [
+                .linkedLibrary("c++")
+            ],
             path: "SPMSources/KidozSPMTarget"
         ),
         .target(
@@ -263,6 +310,26 @@ let package = Package(
                 .target(name: "CASBaseResources"),
             ],
             path: "Adapters/Kidoz"
+        ),
+
+        .target(
+            name: "PradoSPMTarget",
+            dependencies: [
+                .target(name: "PradoSPM")
+            ],
+            linkerSettings: [
+                .linkedLibrary("c++")
+            ],
+            path: "SPMSources/PradoSPMTarget"
+        ),
+        .target(
+            name: "CASMediationKidozTarget",
+            dependencies: [
+                .target(name: "CASMediationPrado"),
+                .target(name: "PradoSPMTarget"),
+                .target(name: "CASBaseResources"),
+            ],
+            path: "Adapters/Prado"
         ),
         
         .target(
@@ -463,6 +530,17 @@ let package = Package(
         ),
         .binaryTarget(
             name: "CASMediationKidoz",
+            url: "https://github.com/cleveradssolutions/cas-ios-spm/releases/download/v1.0.0/CASMediationKidoz-9.2.0.0.zip",
+            checksum: "da69d436d5016d9acc8337ce8c6634879a375505733f0d7469e3b08d2f717289"
+        ),
+
+        .binaryTarget(
+            name: "PradoSPM",
+            url: "https://github.com/Kidoz-SDK/kidoz-ios-frameworks/raw/main/KidozSDK/9.2.0/KidozSDK-9.2.0.zip",
+            checksum: "498a360a7af9dedcdf6501425b7e1decafcbd843596bc434ebe06af07bfe067a"
+        ),
+        .binaryTarget(
+            name: "CASMediationPrado",
             url: "https://github.com/cleveradssolutions/cas-ios-spm/releases/download/v1.0.0/CASMediationKidoz-9.2.0.0.zip",
             checksum: "da69d436d5016d9acc8337ce8c6634879a375505733f0d7469e3b08d2f717289"
         ),

@@ -1,7 +1,10 @@
 ## Unity Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationUnityAds', '4.14.2.0'
+pod 'CASMediationUnityAds', '4.15.0.0'
 ```
+
+### 4.15.0.0
+- Certified with UnityAds - 4.15.0
 
 ### 4.14.2.0
 - Certified with UnityAds - 4.14.2
