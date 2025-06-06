@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0'
   s.static_framework    = true
-  s.vendored_frameworks = 'libs/CASYandexAds.xcframework'
+  s.vendored_frameworks = 'CASMediationYandexAds.xcframework'
   s.dependency 'YandexMobileAds', '7.12.1'
   s.dependency 'CASMediationIronSource'
 end

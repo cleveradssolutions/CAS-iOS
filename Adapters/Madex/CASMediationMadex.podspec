@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0' 
   s.static_framework    = true
-  s.vendored_frameworks = 'libs/CASMadex.xcframework'
+  s.vendored_frameworks = 'CASMediationMadex.xcframework'
   s.dependency 'MadexSDK', '1.7.0'
   s.dependency 'CleverAdsSolutions-Base'
 end

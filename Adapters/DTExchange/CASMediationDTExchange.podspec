@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0'
   s.static_framework    = true
-  s.vendored_frameworks = 'libs/CASDTExchange.xcframework'
+  s.vendored_frameworks = 'CASMediationDTExchange.xcframework'
   s.dependency 'Fyber_Marketplace_SDK', '8.3.6'
   s.dependency 'CASMediationIronSource'
 end

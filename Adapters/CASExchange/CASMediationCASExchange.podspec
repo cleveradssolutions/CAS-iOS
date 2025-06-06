@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
                    'QuartzCore'
                  ]
   s.weak_frameworks = [ 'AdSupport', 'StoreKit', 'WebKit' ]
-  s.vendored_frameworks = 'libs/CASExchange.xcframework'
+  s.vendored_frameworks = 'CASMediationExchange.xcframework'
   s.dependency 'CleverAdsSolutions-Base'
 end

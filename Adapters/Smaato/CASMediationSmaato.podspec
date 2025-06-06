@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0'
   s.static_framework    = true
-  s.vendored_frameworks = 'libs/CASSmaato.xcframework'
+  s.vendored_frameworks = 'CASMediationSmaato.xcframework'
   s.dependency 'smaato-ios-sdk', '22.9.3'
   s.dependency 'smaato-ios-sdk/InApp', '22.9.3'
   s.dependency 'CASMediationIronSource'

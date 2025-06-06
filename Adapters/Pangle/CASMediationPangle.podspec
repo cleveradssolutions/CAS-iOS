@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0'
   s.static_framework    = true
-  s.vendored_frameworks = 'libs/CASPangle.xcframework'
+  s.vendored_frameworks = 'CASMediationPangle.xcframework'
   s.dependency 'Ads-Global', '7.1.1.0'
   s.dependency 'CASMediationAppLovin'
 end

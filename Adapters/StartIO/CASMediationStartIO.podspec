@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0'
   s.static_framework    = true
-  s.vendored_frameworks = 'libs/CASStartIO.xcframework'
+  s.vendored_frameworks = 'CASMediationStartIO.xcframework'
   s.dependency 'StartAppSDK', '4.10.5'
   s.dependency 'CleverAdsSolutions-Base'
 end

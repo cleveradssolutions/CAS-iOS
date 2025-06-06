@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0'
   s.static_framework    = true
-  s.vendored_frameworks = 'libs/CASGoogleAds.xcframework'
+  s.vendored_frameworks = 'CASMediationGoogleAds.xcframework'
   s.dependency 'Google-Mobile-Ads-SDK', '12.3.0'
   s.dependency 'CASMediationIronSource'
 end

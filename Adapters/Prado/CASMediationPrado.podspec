@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '13.0'
   s.swift_version       = '5.0'
   s.static_framework    = true
-  s.vendored_frameworks = 'libs/CASPrado.xcframework'
+  s.vendored_frameworks = 'CASMediationPrado.xcframework'
   s.dependency 'PradoSDK', '10.0.1'
   s.dependency 'CleverAdsSolutions-Base'
 end
