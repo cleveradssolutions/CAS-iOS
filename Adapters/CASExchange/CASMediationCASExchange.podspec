@@ -12,13 +12,11 @@ Pod::Spec.new do |s|
 
   s.frameworks = [ 'UIKit', 
                    'Foundation', 
-                   'MapKit', 
                    'SafariServices', 
                    'SystemConfiguration',
                    'AVFoundation',
                    'CoreGraphics',
                    'CoreLocation',
-                   'CoreTelephony',
                    'CoreMedia',
                    'QuartzCore'
                  ]

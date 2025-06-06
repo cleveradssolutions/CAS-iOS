@@ -3,51 +3,24 @@
 
 import PackageDescription
 
-// Integration of some SDKs (e.g. IronSource, UnityAds, HyprMX, Kidoz, DTExchange, InMobi, YandexAds, YsoNetwork)
-// is not done through ready-made SPM packages, but using .zip archives from official sources.
-// Below are the links to the sources used to configure binaryTarget:
+// Some ad frameworks, such as IronSource and UnityAds, do not provide official support Swift Package Manager (SPM). 
+// Instead, we created custom Package.swift definitions using the official .zip archives supplied for CocoaPods integration. 
+// Below you can find the links to the cocoapods we used for configuring binaryTargets.
 //
-// - IronSource:
-//   Taken from the official GitHub repository:
-//   https://github.com/ironsource-mobile/iOS-sdk/tree/master/8.8.0
-//   Archive: IronSource8.8.0.zip
+// - IronSource: https://github.com/CocoaPods/Specs/tree/master/Specs/7/7/b/IronSourceSDK
+// - UnityAds: https://github.com/CocoaPods/Specs/tree/master/Specs/2/e/8/UnityAds
+// - HyprMX: https://github.com/CocoaPods/Specs/tree/master/Specs/6/7/d/HyprMX
+// - Kidoz: https://github.com/CocoaPods/Specs/tree/master/Specs/2/b/8/KidozSDK/
+// - DTExchange: https://github.com/CocoaPods/Specs/tree/master/Specs/1/7/3/Fyber_Marketplace_SDK
+// - InMobi: https://github.com/CocoaPods/Specs/tree/master/Specs/7/8/1/InMobiSDK
+// - YsoNetwork: https://github.com/CocoaPods/Specs/tree/master/Specs/8/a/a/YsoNetworkSDK/
+// - Yandex Ads: https://github.com/yandexmobile/yandex-ads-sdk-ios/blob/master/Package.swift
 //
-// - UnityAds:
-//   Taken from official GitHub Releases:
-//   https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.14.2
-//   Archive: UnityAds.zip
+// Not supported CAS Adapters:
+// - Chartboost: https://github.com/CocoaPods/Specs/tree/master/Specs/5/3/e/ChartboostSDK
+// - BigoAds: https://github.com/CocoaPods/Specs/tree/master/Specs/a/5/5/BigoADS
+// - Pangle: https://github.com/CocoaPods/Specs/tree/master/Specs/d/1/c/Ads-Global
 //
-// - HyprMX:
-//   Available from official site:
-//   https://www.hyprmx.com
-//   Archive: HyprMX.zip
-//
-// - Kidoz:
-//   Available from official site:
-//   https://www.kidoz.net
-//   Archive: KidozSDK.zip
-//
-// - DTExchange (Digital Turbine):
-//   Available from official site:
-//   https://www.digitalturbine.com
-//   Archive: DTExchangeSDK.zip
-//
-// - InMobi:
-//   Available from official site:
-//   https://www.inmobi.com/sdk
-//   Archive: InMobiSDK.zip
-//
-// - Yandex Ads:
-//   Available from official GitHub repo (releases section):
-//   https://github.com/yandexmobile/yandex-ads-sdk-ios/releases
-//   Archive: YandexMobileAds.zip
-//
-// - YsoNetwork:
-//   SDK distributed privately (contact required): https://www.ysonetwork.com
-//   Archive: YsoNetworkSDK.zip
-//
-// These archives were downloaded manually and added to the project using `binaryTarget`
-// as allowed by Swift Package Manager.
 
 
 let package = Package(
@@ -140,7 +113,54 @@ let package = Package(
     ],
     
     targets: [
-    
+        .target(
+            name: "CASBaseResources",
+            dependencies: [
+                .target(name: "CleverAdsSolutionsSPM"),
+            ],
+            path: "SPMSources/CASBaseResources",
+            resources: [
+                .process("Resources")
+            ],
+            linkerSettings: [
+                .linkedFramework("AVFoundation"),
+                .linkedFramework("CoreLocation"),
+                .linkedFramework("Foundation"),
+                .linkedFramework("Network"),
+                .linkedFramework("SwiftUI"),
+                .linkedFramework("UIKit"),
+                .linkedFramework("WebKit")
+            ]
+        ),
+        .target(
+            name: "CASPromoResources",
+            dependencies: [
+                .target(name: "CASMediationCrossPromo"),
+                .target(name: "CASBaseResources")
+            ],
+            path: "SPMSources/CASPromoResources",
+            resources: [
+                .process("Resources")
+            ]
+        ),
+        .target(
+            name: "CASMediationExchangeTarget",
+            dependencies: [
+                .target(name: "CASMediationExchange"),
+                .target(name: "CASBaseResources")
+            ],
+            path: "Adapters/CASExchange",
+            linkerSettings: [
+                .linkedFramework("SafariServices"),
+                .linkedFramework("SystemConfiguration"),
+                .linkedFramework("AVFoundation"),
+                .linkedFramework("CoreGraphics"),
+                .linkedFramework("CoreLocation"),
+                .linkedFramework("CoreMedia"),
+                .linkedFramework("QuartzCore")
+            ]
+        ),
+
         .target(
             name: "IronSourceSPMTarget",
             dependencies: [
@@ -170,7 +190,8 @@ let package = Package(
             dependencies: [
                 .target(name: "IronSourceSPMTarget"),
                 .target(name: "CASMediationIronSource"),
-                .target(name: "CASBaseResources")
+                .target(name: "CASBaseResources"),
+                .target(name: "CASMediationAppLovinTarget")
             ],
             path: "Adapters/IronSource"
         ),
@@ -204,7 +225,8 @@ let package = Package(
             dependencies: [
                 .target(name: "UnityAdsSPMTarget"),
                 .target(name: "CASMediationUnityAds"),
-                .target(name: "CASBaseResources")
+                .target(name: "CASBaseResources"),
+                .target(name: "CASMediationIronSourceTarget")
             ],
             path: "Adapters/UnityAds"
         ),
@@ -255,7 +277,8 @@ let package = Package(
             name: "CASMediationGoogleAdsTarget",
             dependencies: [
                 .target(name: "CASMediationGoogleAds"),
-                .target(name: "CASBaseResources"),
+                .target(name: "CASBaseResources"),,
+                .target(name: "CASMediationIronSourceTarget")
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
             ],
             path: "Adapters/GoogleAds"
@@ -301,27 +324,10 @@ let package = Package(
             dependencies: [
                 .target(name: "DTExchangeSPMTarget"),
                 .target(name: "CASMediationDTExchange"),
-                .target(name: "CASBaseResources")
+                .target(name: "CASBaseResources"),
+                .target(name: "CASMediationIronSourceTarget")
             ],
             path: "Adapters/DTExchange"
-        ),
-    
-        .target(
-            name: "CASMediationExchangeTarget",
-            dependencies: [
-                .target(name: "CASMediationExchange"),
-                .target(name: "CASBaseResources")
-            ],
-            path: "Adapters/CASExchange",
-            linkerSettings: [
-                .linkedFramework("SafariServices"),
-                .linkedFramework("SystemConfiguration"),
-                .linkedFramework("AVFoundation"),
-                .linkedFramework("CoreGraphics"),
-                .linkedFramework("CoreLocation"),
-                .linkedFramework("CoreMedia"),
-                .linkedFramework("QuartzCore")
-            ]
         ),
         
         .target(
@@ -340,42 +346,12 @@ let package = Package(
             dependencies: [
                 .target(name: "InMobiSPMTarget"),
                 .target(name: "CASMediationInMobi"),
-                .target(name: "CASBaseResources")
+                .target(name: "CASBaseResources"),
+                .target(name: "CASMediationAppLovinTarget")
             ],
             path: "Adapters/InMobi"
         ),
         
-        .target(
-            name: "CASBaseResources",
-            dependencies: [
-                .target(name: "CleverAdsSolutionsSPM"),
-            ],
-            path: "SPMSources/CASBaseResources",
-            resources: [
-                .process("Resources")
-            ],
-            linkerSettings: [
-                .linkedFramework("AVFoundation"),
-                .linkedFramework("CoreLocation"),
-                .linkedFramework("Foundation"),
-                .linkedFramework("Network"),
-                .linkedFramework("SwiftUI"),
-                .linkedFramework("UIKit"),
-                .linkedFramework("WebKit")
-            ]
-        ),
-        .target(
-            name: "CASPromoResources",
-            dependencies: [
-                .target(name: "CASMediationCrossPromo"),
-                .target(name: "CASBaseResources")
-            ],
-            path: "SPMSources/CASPromoResources",
-            resources: [
-                .process("Resources")
-            ]
-        ),
-
         .target(
             name: "YandexAdsSPMTarget",
             dependencies: [
@@ -411,6 +387,16 @@ let package = Package(
                 .linkedFramework("WebKit")
             ]
         ),
+        .target(
+            name: "CASMediationYandexAdsTarget",
+            dependencies: [
+                .target(name: "YandexAdsSPMTarget"),
+                .target(name: "CASMediationYandexAds"),
+                .target(name: "CASBaseResources"),
+                .target(name: "CASMediationIronSourceTarget")
+            ],
+            path: "Adapters/YandexAds"
+        ),
                                 
         .target(
             name: "YsoNetworkSPMTarget",
@@ -424,19 +410,10 @@ let package = Package(
             dependencies: [
                 .target(name: "YsoNetworkSPMTarget"),
                 .target(name: "CASMediationYsoNetwork"),
-                .target(name: "CASBaseResources")
+                .target(name: "CASBaseResources"),
+                .target(name: "CASMediationAppLovinTarget")
             ],
             path: "Adapters/YsoNetwork"
-        ),
-                        
-        .target(
-            name: "CASMediationYandexAdsTarget",
-            dependencies: [
-                .target(name: "YandexAdsSPMTarget"),
-                .target(name: "CASMediationYandexAds"),
-                .target(name: "CASBaseResources")
-            ],
-            path: "Adapters/YandexAds"
         ),
                         
         .binaryTarget(
