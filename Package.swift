@@ -7,19 +7,20 @@ import PackageDescription
 // Instead, we created custom Package.swift definitions using the official .zip archives supplied for CocoaPods integration. 
 // Below you can find the links to the cocoapods we used for configuring binaryTargets.
 //
-// - IronSource: https://github.com/CocoaPods/Specs/tree/master/Specs/7/7/b/IronSourceSDK
-// - UnityAds: https://github.com/CocoaPods/Specs/tree/master/Specs/2/e/8/UnityAds
-// - HyprMX: https://github.com/CocoaPods/Specs/tree/master/Specs/6/7/d/HyprMX
+// - IronSource: https://github.com/CocoaPods/Specs/tree/master/Specs/7/7/b/IronSourceSDK/
+// - UnityAds: https://github.com/CocoaPods/Specs/tree/master/Specs/2/e/8/UnityAds/
+// - AudienceNetwork: https://github.com/CocoaPods/Specs/blob/master/Specs/2/1/5/FBAudienceNetwork/
+// - HyprMX: https://github.com/CocoaPods/Specs/tree/master/Specs/6/7/d/HyprMX/
 // - Kidoz: https://github.com/CocoaPods/Specs/tree/master/Specs/2/b/8/KidozSDK/
-// - DTExchange: https://github.com/CocoaPods/Specs/tree/master/Specs/1/7/3/Fyber_Marketplace_SDK
-// - InMobi: https://github.com/CocoaPods/Specs/tree/master/Specs/7/8/1/InMobiSDK
+// - DTExchange: https://github.com/CocoaPods/Specs/tree/master/Specs/1/7/3/Fyber_Marketplace_SDK/
+// - InMobi: https://github.com/CocoaPods/Specs/tree/master/Specs/7/8/1/InMobiSDK/
 // - YsoNetwork: https://github.com/CocoaPods/Specs/tree/master/Specs/8/a/a/YsoNetworkSDK/
 // - Yandex Ads: https://github.com/yandexmobile/yandex-ads-sdk-ios/blob/master/Package.swift
 //
 // Not supported CAS Adapters:
-// - Chartboost: https://github.com/CocoaPods/Specs/tree/master/Specs/5/3/e/ChartboostSDK
-// - BigoAds: https://github.com/CocoaPods/Specs/tree/master/Specs/a/5/5/BigoADS
-// - Pangle: https://github.com/CocoaPods/Specs/tree/master/Specs/d/1/c/Ads-Global
+// - Chartboost: https://github.com/CocoaPods/Specs/tree/master/Specs/5/3/e/ChartboostSDK/
+// - BigoAds: https://github.com/CocoaPods/Specs/tree/master/Specs/a/5/5/BigoADS/
+// - Pangle: https://github.com/CocoaPods/Specs/tree/master/Specs/d/1/c/Ads-Global/
 //
 
 
@@ -59,8 +60,8 @@ let package = Package(
             targets: ["CASMediationGoogleAdsTarget"]
         ),
         .library(
-            name: "CASMediationVungle",
-            targets: ["CASMediationVungleTarget"]
+            name: "CASMediationLiftoffMonetize",
+            targets: ["CASMediationLiftoffMonetizeTarget"]
         ),
        
         .library(
@@ -104,7 +105,7 @@ let package = Package(
     
     dependencies: [
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "12.3.0"),
-        .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", exact: "7.4.5"),
+        .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", exact: "7.5.0"),
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", exact: "7.7.7"),
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", exact: "13.2.0"),
         .package(url: "https://github.com/divkit/divkit-ios-facade", exact: "4.6.1"),
@@ -116,7 +117,7 @@ let package = Package(
         .target(
             name: "CASBaseResources",
             dependencies: [
-                .target(name: "CleverAdsSolutionsSPM"),
+                .target(name: "CleverAdsSolutions"),
             ],
             path: "SPMSources/CASBaseResources",
             resources: [
@@ -284,9 +285,9 @@ let package = Package(
             path: "Adapters/GoogleAds"
         ),
         .target(
-            name: "CASMediationVungleTarget",
+            name: "CASMediationLiftoffMonetizeTarget",
             dependencies: [
-                .target(name: "CASMediationVungle"),
+                .target(name: "CASMediationLiftoffMonetize"),
                 .target(name: "CASBaseResources"),
                 .product(name: "VungleAdsSDK", package: "VungleAdsSDK-SwiftPackageManager")
             ],
@@ -417,7 +418,7 @@ let package = Package(
         ),
                         
         .binaryTarget(
-            name: "CleverAdsSolutionsSPM",
+            name: "CleverAdsSolutions",
             url: "https://github.com/cleveradssolutions/cas-ios-spm/releases/download/v1.0.0/CleverAdsSolutions-4.0.2.1.zip",
             checksum: "1b8dd73cda9d35b04b411847d969f5c3b6d45561978f2dd0964655d52dc9e7dc"
         ),
@@ -457,7 +458,7 @@ let package = Package(
         
         .binaryTarget(
             name: "KidozSPM",
-            url: "https://github.com/Kidoz-SDK/kidoz-ios-frameworks/raw/refs/heads/main/KidozSDK/9.2.0/KidozSDK-9.2.0.zip",
+            url: "https://github.com/Kidoz-SDK/kidoz-ios-frameworks/raw/main/KidozSDK/9.2.0/KidozSDK-9.2.0.zip",
             checksum: "498a360a7af9dedcdf6501425b7e1decafcbd843596bc434ebe06af07bfe067a"
         ),
         .binaryTarget(
@@ -477,7 +478,7 @@ let package = Package(
             checksum: "e8bee8ef3294f6eb691efa74ff0c2e8911dd00ea18d65c928967f1dac89a4073"
         ),
         .binaryTarget(
-            name: "CASMediationVungle",
+            name: "CASMediationLiftoffMonetize",
             url: "https://github.com/cleveradssolutions/cas-ios-spm/releases/download/v1.0.0/CASMediationLiftoffMonetize-7.5.0.0.zip",
             checksum: "9d73620b7f37a5e4aba51feb5366fdaa0713c3178f6e3f43740cdd7f53734f02"
         ),
@@ -494,8 +495,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "DTExchangeSPM",
-            url: "https://github.com/inner-active/InneractiveAdSDK-iOS/archive/refs/heads/8.3.7.zip",
-            checksum: "bbf3ec0949f89c5b4a7922c4584417293bf56e8489725118a757d3e5dea0fe8a"
+            url: "https://github.com/inner-active/InneractiveAdSDK-iOS/archive/refs/heads/8.3.6.zip",
+            checksum: "342ab3200e6291a5490078d2eb439398d061e55c1e657e9aa721f309211b2f82"
         ),
         .binaryTarget(
             name: "CASMediationDTExchange",
