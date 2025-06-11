@@ -1,7 +1,11 @@
 ## InMobi iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationInMobi', '10.8.2.0'
+pod 'CASMediationInMobi', '10.8.3.0'
 ```
+
+### 10.8.3.0
+- Certified with InMobi - 10.8.3
+- Added Swift Package Manager integration support.
 
 ### 10.8.2.0
 - Certified with InMobi - 10.8.2

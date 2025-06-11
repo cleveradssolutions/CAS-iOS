@@ -1,7 +1,10 @@
 ## Cross Promo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationCrossPromo', '4.0.2.0'
+pod 'CASMediationCrossPromo', '4.1.0.0'
 ```
+
+### 4.1.0.0
+- Added Swift Package Manager integration support.
 
 ### 4.0.2.0
 

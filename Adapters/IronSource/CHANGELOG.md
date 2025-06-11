@@ -1,7 +1,11 @@
 ## IronSource iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationIronSource', '8.8.0.0'
+pod 'CASMediationIronSource', '8.9.1.0'
 ```
+
+### 8.9.1.0
+- Certified with IronSource - 8.9.1
+- Added Swift Package Manager integration support.
 
 ### 8.8.0.0
 - Certified with IronSource - 8.8.0

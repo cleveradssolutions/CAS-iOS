@@ -1,7 +1,11 @@
 ## Google Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationGoogleAds', '12.3.0.0'
+pod 'CASMediationGoogleAds', '12.6.0.0'
 ```
+
+### 12.6.0.0
+- Certified with GoogleAds - 12.6.0
+- Added Swift Package Manager integration support.
 
 ### 12.3.0.0
 - Certified with GoogleAds - 12.3.0

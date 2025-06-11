@@ -1,7 +1,12 @@
 ## LiftoffMonetize iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationLiftoffMonetize', '7.5.0.0'
+pod 'CASMediationLiftoffMonetize', '7.5.1.0'
 ```
+
+### 7.5.1.0
+- Certified with LiftoffMonetize - 7.5.1
+- Added Swift Package Manager integration support.
+- Added Adaptive banner sizes support. (Closed beta)
 
 ### 7.5.0.0
 - Certified with LiftoffMonetize - 7.5.0

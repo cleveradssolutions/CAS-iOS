@@ -1,7 +1,10 @@
 ## CAS Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationCASExchange', '4.0.2.0'
+pod 'CASMediationCASExchange', '4.1.0.0'
 ```
+
+### 4.1.0.0
+- Added Swift Package Manager integration support.
 
 ### 4.0.2.0
 - Added Native ad support

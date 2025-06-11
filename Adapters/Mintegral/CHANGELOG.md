@@ -1,7 +1,11 @@
 ## Mintegral iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMintegral', '7.7.7.0'
+pod 'CASMediationMintegral', '7.7.8.0'
 ```
+
+### 7.7.8.0
+- Certified with Mintegral - 7.7.8
+- Added Swift Package Manager integration support.
 
 ### 7.7.7.0
 

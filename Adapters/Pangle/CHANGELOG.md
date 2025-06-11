@@ -1,7 +1,11 @@
 ## Pangle iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPangle', '7.1.1.0.0'
+pod 'CASMediationPangle', '7.2.0.4.0'
 ```
+
+### 7.2.0.4.0
+- Certified with Pangle - 7.2.0.4
+- Added Adaptive banner sizes support.
 
 ### 7.1.1.0.0
 - Certified with Pangle - 7.1.1.0
