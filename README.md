@@ -5,7 +5,7 @@
 [![App-ads.txt](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/App-ads.txt/master/Shield.json)](https://github.com/cleveradssolutions/App-ads.txt)
 
 ## Getting Started
-To get started, here is the link to [iOS SDK integration documentation](https://github.com/cleveradssolutions/CAS-iOS/wiki/Project-Setup).  
+To get started, here is the link to [iOS SDK integration documentation](https://github.com/cleveradssolutions/CAS-iOS/wiki).  
 
 ## Demo application
 Each iOS example app on this repository includes a Podfile and a **Podfile.lock**. The Podfile.lock tracks the version of each Pod specified in the Podfile that was used to build the release of the iOS example apps. 
