@@ -28,6 +28,7 @@ module CASConfig
             update_project() do |project|
                 cas_config, cas_config_name = load_configuration()
                 project.check_config_file(cas_config, cas_config_name)
+                project.ensure_ldflags
                 
                 update_plist(project.get_plist_path()) do |plist|
                     plist.check_sk_ad_networks()
@@ -175,6 +176,13 @@ module CASConfig
             puts "        Ignore the SKAdNetworks of the project and add CAS SKAdNetworks only"
             success "    " + ARG_HELP
             puts "        Show help banner of specified command"
+
+            warning "Note:"
+            puts "   This script also ensures the project has proper linker flags."
+            puts "   Specifically, it checks and adds the following to OTHER_LDFLAGS:"
+            success "     -ObjC"
+            success "     $(inherited)"
+            puts "   These flags are required for correct Objective-C symbol linking in SDKs."
             print_footer()
             exit!
         end
@@ -348,6 +356,29 @@ module CASConfig
                 File.open(newFilePath, 'w') { |file| file.write(configBody) }
             else
                 puts "- Config file is up-to-date"
+            end
+        end
+
+        def ensure_ldflags
+            updated = false
+            @mainTarget.build_configurations.each do |config|
+                flags = config.build_settings["OTHER_LDFLAGS"] || ""
+                flags = flags.split(" ")
+                unless flags.include?("-ObjC")
+                    flags << "-ObjC"
+                    updated = true
+                end
+                unless flags.include?("$(inherited)")
+                    flags << "$(inherited)"
+                    updated = true
+                end
+                config.build_settings["OTHER_LDFLAGS"] = flags.join(" ") if updated
+            end
+            if updated
+                CASConfig.success("- OTHER_LDFLAGS updated with -ObjC and $(inherited)")
+                @is_dirt = true
+            else
+                puts "- OTHER_LDFLAGS already contains -ObjC and $(inherited)"
             end
         end
     end
