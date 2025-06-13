@@ -1,7 +1,10 @@
 ## Meta Audience Network iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAudienceNetwork', '6.17.1.1'
+pod 'CASMediationAudienceNetwork', '6.20.0.0'
 ```
+
+### 6.20.0.0
+- Certified with AudienceNetwork - 6.20.0
 
 ### 6.17.1.1
 - Added Swift Package Manager integration support.

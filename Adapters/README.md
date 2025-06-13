@@ -12,11 +12,11 @@
 | `pod 'CASMediationKidoz', '10.0.2.0'` | Banner, Interstitial, Rewarded | Yes | No | [view](Kidoz/CHANGELOG.md) | [link](https://github.com/Kidoz-SDK/kidoz-mobile-sdk/tree/main/Kidoz%20Direct/iOS) |
 | `pod 'CASMediationSuperAwesome', '9.4.0.0'` | Banner, Interstitial, Rewarded | No | No | [view](SuperAwesome/CHANGELOG.md) | [link](https://sdks.superawesome.com/docs/ios/releases) |
 | `pod 'CASMediationMintegral', '7.7.8.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](Mintegral/CHANGELOG.md) | [link](http://cdn-adn.rayjump.com/cdn-adn/v2/markdown_v2/index.html?file=sdk-m_sdk-ios&lang=en) |
-| `pod 'CASMediationAppLovin', '13.3.0.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
+| `pod 'CASMediationAppLovin', '13.3.0.1'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
 | `pod 'CASMediationPangle', '7.2.0.4.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | No | Yes | [view](Pangle/CHANGELOG.md) | [link](https://github.com/bytedance/Bytedance-UnionAD) |
 | `pod 'CASMediationBigo', '4.8.0.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | No | Yes | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
 | `pod 'CASMediationYandexAds', '7.13.0.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](YandexAds/CHANGELOG.md) | [link](https://github.com/yandexmobile/yandex-ads-sdk-ios/blob/master/changelog/mobileads/CHANGELOG.md) |
-| `pod 'CASMediationAudienceNetwork', '6.17.1.1'` | Banner, Interstitial, Rewarded, Native | Yes | Yes | [view](AudienceNetwork/CHANGELOG.md) | [link](https://developers.facebook.com/docs/audience-network/setting-up/platform-setup/ios/changelog?locale=en_US) |
+| `pod 'CASMediationAudienceNetwork', '6.20.0.0'` | Banner, Interstitial, Rewarded, Native | Yes | Yes | [view](AudienceNetwork/CHANGELOG.md) | [link](https://developers.facebook.com/docs/audience-network/setting-up/platform-setup/ios/changelog?locale=en_US) |
 | `pod 'CASMediationYsoNetwork', '1.1.31.1'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](YsoNetwork/CHANGELOG.md) | [link]() |
 | `pod 'CASMediationCASExchange', '4.1.0.0'` | Banner, Interstitial, Rewarded, Native | Yes | Yes | [view](CASExchange/CHANGELOG.md) | [link]() |
 | `pod 'CASMediationCrossPromo', '4.1.0.0'` | Banner, Interstitial, Rewarded | Yes | No | [view](CrossPromo/CHANGELOG.md) | [link]() |
