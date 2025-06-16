@@ -14,7 +14,7 @@ module CASConfig
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '1.3'
+    SCRIPT_VERSION = '1.4'
 
     class << self
         attr_accessor :casId, :project_path, :gad_included, :clean_install
@@ -28,6 +28,7 @@ module CASConfig
             update_project() do |project|
                 cas_config, cas_config_name = load_configuration()
                 project.check_config_file(cas_config, cas_config_name)
+                project.ensure_ldflags
                 
                 update_plist(project.get_plist_path()) do |plist|
                     plist.check_sk_ad_networks()
@@ -106,7 +107,7 @@ module CASConfig
                             print_help()
                         end
                     end
-                elsif !arg.empty? && arg.scan(/\D/).empty?
+                elsif !arg.empty? && (arg == 'demo' || arg.scan(/\D/).empty?)
                     @casId = arg
                 else
                     if arg.start_with?('--')
@@ -164,6 +165,7 @@ module CASConfig
             puts "        In most cases, a CASID is the same as your app store ID"
             puts "        If you haven't created an CAS account and registered an app yet,"
             puts "        now's a great time to do so at https://cas.ai"
+            puts "        While testing, use 'demo' as CASID."
             puts ""
             warning "Options:"
             success "    " + ARG_PROJECT + "XCodeProjectName"
@@ -233,6 +235,9 @@ module CASConfig
             if casId.empty?
                 error("[!] You must specify an CAS Id to complete the configuration.")
                 print_help()
+            end
+            if casId == "demo"
+                return "", ""
             end
             url = 'https://psvpromo.psvgamestudio.com/cas-settings.php?platform=1&apply=config&bundle=' + @casId
             data = load_with_cache(url) do |res|
@@ -350,6 +355,28 @@ module CASConfig
                 puts "- Config file is up-to-date"
             end
         end
+
+        def ensure_ldflags
+            updated = false
+            @mainTarget.build_configurations.each do |config|
+                flags = config.build_settings["OTHER_LDFLAGS"] || []
+                unless flags.include?("-ObjC")
+                    flags.unshift("-ObjC")
+                    updated = true
+                end
+                unless flags.include?("$(inherited)")
+                    flags.unshift("$(inherited)")
+                    updated = true
+                end
+                config.build_settings["OTHER_LDFLAGS"] = flags if updated
+            end
+            if updated
+                CASConfig.success "- OTHER_LDFLAGS updated with -ObjC and $(inherited)"
+                @is_dirt = true
+            else
+                puts "- -ObjC and $(inherited) is defined"
+            end
+        end
     end
 
     class ProjectPlist
@@ -440,8 +467,8 @@ module CASConfig
                 plist[KEY_TRACKING_USAGE] = "Your data will remain confidential and will only be used to provide you a better and personalised ad experience"
                 @is_dirt = true
                 CASConfig.success("- " + KEY_TRACKING_USAGE + " has been added")
-                puts("   to display the App Tracking Transparency authorization request:")
-                puts("   " + CASConfig.thin_text(plist[KEY_TRACKING_USAGE]))
+                CASConfig.success("   to display the App Tracking Transparency authorization request:")
+                puts "   " + CASConfig.thin_text(plist[KEY_TRACKING_USAGE])
             else
                 puts "- " + KEY_TRACKING_USAGE + " is defined"
             end

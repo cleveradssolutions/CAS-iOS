@@ -1,5 +1,9 @@
 # CAS.AI iOS XCode Config script change log
 
+# [1.4] - June 16, 2025
+- Added automatic setting of `$(inherited)` and `-ObjC` to `OTHER_LDFLAGS` project settings.
+- Aaded `demo` support as CAS ID for testing.
+
 # [1.3] - Jan 30, 2024
 - Added support new `PBXFileSystemSynchronizedRootGroup` from XCode 16.
 - Removed `MyTargetSDKAutoInitMode` property from Info.plist.
