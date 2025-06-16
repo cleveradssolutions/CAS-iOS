@@ -9,12 +9,13 @@ The script automatically performs the following integration steps:
 - [X] Set User Tracking usage description
 - [x] Set Google Ads App ID
 - [x] Set Delay app measurement
+- [x] Set `$(inherited)` and `-ObjC` to `OTHER_LDFLAGS` project settings
 
 > [!NOTE]
 > Read more about it on [wiki page](https://github.com/cleveradssolutions/CAS-iOS/wiki/Manually-configure-project).
 
 ## Getting Started 
-1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/3.9.9/casconfig.rb)  
+1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.1.0.1/casconfig.rb)  
 3. Place the script in directory with the app `.xcodeproj` 
 4. Open the terminal window and run command:
 ```
@@ -38,4 +39,4 @@ ruby casconfig.rb --help
 To file bugs, make feature requests, or suggest improvements for the script, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
 
 ## Support
-mailto:support@cleveradssolutions.com
+mailto:support@cas.ai
