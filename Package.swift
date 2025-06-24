@@ -502,7 +502,7 @@ let package = Package(
         .binaryTarget(
             name: "CASMediationIronSource",
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.1.2/CASMediationIronSource-8.9.1.1.zip",
-            checksum: "1a48b87b9bdfbb3cad517ba59b39f635f5ec41605fda823ddc2d8004ea9e0b3d"
+            checksum: "18a57aa63bdd49ccf3848fa82375a00f9f871bcda98ea663fb7e410c392afe8a"
         ),
         
         .binaryTarget(
@@ -602,8 +602,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "CASMediationInMobi",
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.1.0/CASMediationInMobi-10.8.3.0.zip",
-            checksum: "877642298c7f4633595a41e86be16e443bc58881b4a072ec014551dd6a793608"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.1.2/CASMediationInMobi-10.8.3.1.zip",
+            checksum: "cad9f310a0d5820479db9e76fdfd4e14bfb92ae65da1a51dae56037169bf06e8"
         ),
         
         .binaryTarget(

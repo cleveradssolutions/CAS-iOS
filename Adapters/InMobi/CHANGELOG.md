@@ -3,6 +3,9 @@
 pod 'CASMediationInMobi', '10.8.3.0'
 ```
 
+### 10.8.3.1
+- Fixed support for loading inline banner sizes.
+
 ### 10.8.3.0
 - Certified with InMobi - 10.8.3
 - Added Swift Package Manager integration support.

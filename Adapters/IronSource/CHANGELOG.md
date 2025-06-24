@@ -4,7 +4,7 @@ pod 'CASMediationIronSource', '8.9.1.1'
 ```
 
 ### 8.9.1.1
-- Minor performance optimizations.
+- Fixed support for loading inline banner sizes.
 
 ### 8.9.1.0
 - Certified with IronSource - 8.9.1
