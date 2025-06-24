@@ -1,5 +1,9 @@
 # CAS.AI Pod Frameowkrs setup script change log
 
+# [1.6] - June 24, 2025
+- Certified with CAS 4.1.2 (Use `--version` to set CAS version).
+- Added YsoNetwork, Ogury, Smaato Frameworks support.
+
 # [1.5] - May 9, 2024
 - Certified with CAS 3.7.2 (Use `--version` to set CAS version).
 - Fixed the path to generated resource bundles with `${PODS_CONFIGURATION_BUILD_DIR}` variable.

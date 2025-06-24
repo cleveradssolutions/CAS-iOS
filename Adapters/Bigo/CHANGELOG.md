@@ -1,7 +1,10 @@
 ## Bigo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBigo', '4.8.0.0'
+pod 'CASMediationBigo', '4.8.0.1'
 ```
+
+### 4.8.0.1
+- Fixed support for loading inline banner sizes.
 
 ### 4.8.0.0
 - Certified with Bigo - 4.8.0

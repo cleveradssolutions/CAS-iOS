@@ -1,7 +1,10 @@
 ## Chartboost iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationChartboost', '9.9.0.0'
+pod 'CASMediationChartboost', '9.9.0.1'
 ```
+
+### 9.9.0.1
+- Rollback Chartboost 9.8.1 to avoid an issue with CallKit.
 
 ### 9.9.0.0
 - Certified with Chartboost - 9.9.0

@@ -7,22 +7,34 @@ import shutil
 import argparse
 import json
 
-_CAS_VERSION = '3.9.9'
+_CAS_VERSION = '4.1.2'
 _MIN_IOS = '13.0'
 _XC_PROJ_NAME = 'CASFrameworks'
 _XC_WORKSPACE = _XC_PROJ_NAME + '.xcworkspace'
 _FRAMEWORK = '.framework'
-_SCRIPT_INFO = '1.5. May 9, 2024'
+_SCRIPT_INFO = '1.6. June 24, 2025'
 
 _DYNAMIC_FRAMEWORKS_SET = {
     "AppLovinSDK",
+    "InMobiSDK",
     "HyprMX",
-    "OMSDK_Smaato",
     "MadexSDK",
     "SspnetCore",
     "SspnetDsp",
     "StartApp",
-    "InMobiSDK"
+    "YsoNetwork"
+    "OMSDK_Ogury",
+    'OMSDK_Smaato',
+    'SmaatoSDKCore',
+    'SmaatoSDKInAppBidding',
+    'SmaatoSDKInterstitial',
+    'SmaatoSDKNative',
+    'SmaatoSDKBanner',
+    'SmaatoSDKOpenMeasurement',
+    'SmaatoSDKOutstream',
+    'SmaatoSDKRewardedAds',
+    'SmaatoSDKRichMedia',
+    'SmaatoSDKVideo'
 }
 
 join = os.path.join

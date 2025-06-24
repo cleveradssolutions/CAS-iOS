@@ -1,7 +1,10 @@
 ## Yandex Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationYandexAds', '7.13.0.0'
+pod 'CASMediationYandexAds', '7.14.0.0'
 ```
+
+### 7.14.0.0
+- Certified with YandexAds - 7.14.0
 
 ### 7.13.0.0
 - Certified with YandexAds - 7.13.0

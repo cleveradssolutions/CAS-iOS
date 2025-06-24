@@ -1,7 +1,10 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.3.0.1'
+pod 'CASMediationAppLovin', '13.3.1.0'
 ```
+
+### 13.3.1.0
+- Certified with AppLovin - 13.3.1
 
 ### 13.3.0.1
 - Rollback AppLovin 13.2.0 to avoid massive crash on iOS 15.

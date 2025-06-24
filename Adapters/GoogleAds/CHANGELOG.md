@@ -1,7 +1,10 @@
 ## Google Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationGoogleAds', '12.6.0.0'
+pod 'CASMediationGoogleAds', '12.6.0.1'
 ```
+
+### 12.6.0.1
+- Added Max ad content rating flag for Google Ads requests (Closed beta)
 
 ### 12.6.0.0
 - Certified with GoogleAds - 12.6.0

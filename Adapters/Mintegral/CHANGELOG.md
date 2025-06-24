@@ -1,7 +1,11 @@
 ## Mintegral iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMintegral', '7.7.8.0'
+pod 'CASMediationMintegral', '7.7.8.1'
 ```
+
+### 7.7.8.1
+- Fixed support for loading inline banner sizes.
+- Fixed support for adaptive banner sizes.
 
 ### 7.7.8.0
 - Certified with Mintegral - 7.7.8

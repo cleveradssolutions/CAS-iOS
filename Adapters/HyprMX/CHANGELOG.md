@@ -1,7 +1,10 @@
 ## HyprMX iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationHyprMX', '6.4.2.1'
+pod 'CASMediationHyprMX', '6.4.2.2'
 ```
+
+### 6.4.2.2
+- Minor performance optimizations.
 
 ### 6.4.2.1
 - Added Swift Package Manager integration support.
