@@ -1,6 +1,6 @@
 ## InMobi iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationInMobi', '10.8.3.0'
+pod 'CASMediationInMobi', '10.8.3.1'
 ```
 
 ### 10.8.3.1

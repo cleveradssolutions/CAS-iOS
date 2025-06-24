@@ -6,7 +6,7 @@
 | `pod 'CASMediationUnityAds', '4.15.0.0'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](UnityAds/CHANGELOG.md) | [link](https://docs.unity.com/ads/en-us/manual/Changelog) |
 | `pod 'CASMediationGoogleAds', '12.6.0.1'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](GoogleAds/CHANGELOG.md) | [link](https://developers.google.com/admob/ios/rel-notes?hl=en) |
 | `pod 'CASMediationLiftoffMonetize', '7.5.1.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](LiftoffMonetize/CHANGELOG.md) | [link](https://support.vungle.com/hc/en-us/articles/15718672681883) |
-| `pod 'CASMediationInMobi', '10.8.3.0'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](InMobi/CHANGELOG.md) | [link](https://support.inmobi.com/monetize/sdk-documentation/ios-guidelines/changelogs) |
+| `pod 'CASMediationInMobi', '10.8.3.1'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](InMobi/CHANGELOG.md) | [link](https://support.inmobi.com/monetize/sdk-documentation/ios-guidelines/changelogs) |
 | `pod 'CASMediationChartboost', '9.9.0.1'` | Banner, Interstitial, Rewarded | No | Yes | [view](Chartboost/CHANGELOG.md) | [link](https://docs.chartboost.com/en/monetization/integrate/ios/changelog/) |
 | `pod 'CASMediationDTExchange', '8.3.7.0'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](DTExchange/CHANGELOG.md) | [link](https://developer.digitalturbine.com/hc/en-us/articles/360010922578-DT-Exchange-iOS-Changelog) |
 | `pod 'CASMediationKidoz', '10.0.3.0'` | Banner, Interstitial, Rewarded | Yes | No | [view](Kidoz/CHANGELOG.md) | [link](https://github.com/Kidoz-SDK/kidoz-mobile-sdk/tree/release/10.0.0/Kidoz%20Direct/iOS) |
