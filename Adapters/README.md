@@ -11,7 +11,7 @@
 | `pod 'CASMediationDTExchange', '8.3.7.1'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](DTExchange/CHANGELOG.md) | [link](https://developer.digitalturbine.com/hc/en-us/articles/360010922578-DT-Exchange-iOS-Changelog) |
 | `pod 'CASMediationKidoz', '10.0.3.0'` | Banner, Interstitial, Rewarded | Yes | No | [view](Kidoz/CHANGELOG.md) | [link](https://github.com/Kidoz-SDK/kidoz-mobile-sdk/tree/release/10.0.0/Kidoz%20Direct/iOS) |
 | `pod 'CASMediationMintegral', '7.7.8.2'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](Mintegral/CHANGELOG.md) | [link](https://dev.mintegral.com/doc/index.html?file=sdk-m_sdk-ios&lang=en) |
-| `pod 'CASMediationAppLovin', '13.3.1.1'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
+| `pod 'CASMediationAppLovin', '13.3.1.2'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
 | `pod 'CASMediationPangle', '7.4.0.8.1'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](Pangle/CHANGELOG.md) | [link](https://github.com/bytedance/Bytedance-UnionAD) |
 | `pod 'CASMediationBigo', '4.8.1.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | No | Yes | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
 | `pod 'CASMediationYandexAds', '7.14.1.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](YandexAds/CHANGELOG.md) | [link](https://github.com/yandexmobile/yandex-ads-sdk-ios/blob/master/changelog/mobileads/CHANGELOG.md) |

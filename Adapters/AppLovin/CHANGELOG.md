@@ -1,9 +1,9 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.3.1.1'
+pod 'CASMediationAppLovin', '13.3.1.2'
 ```
 
-### 13.3.1.1
+### 13.3.1.2
 - The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 13.3.1.0
