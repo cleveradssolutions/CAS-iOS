@@ -1,7 +1,11 @@
 ## Yandex Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationYandexAds', '7.14.0.0'
+pod 'CASMediationYandexAds', '7.14.1.0'
 ```
+
+### 7.14.1.0
+- Certified with YandexAds - 7.14.1
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 7.14.0.0
 - Certified with YandexAds - 7.14.0

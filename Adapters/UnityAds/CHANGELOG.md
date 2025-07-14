@@ -1,7 +1,11 @@
 ## Unity Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationUnityAds', '4.15.0.0'
+pod 'CASMediationUnityAds', '4.15.1.0'
 ```
+
+### 4.15.1.0
+- Certified with UnityAds - 4.15.1 (no changes)
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 4.15.0.0
 - Certified with UnityAds - 4.15.0

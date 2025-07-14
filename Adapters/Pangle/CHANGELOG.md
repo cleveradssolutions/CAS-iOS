@@ -1,7 +1,12 @@
 ## Pangle iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPangle', '7.2.0.5.0'
+pod 'CASMediationPangle', '7.4.0.8.1'
 ```
+
+### 7.4.0.8.1
+- Certified with Pangle - 7.4.0.8
+- Added Swift Package Manager integration support.
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 7.2.0.5.0
 - Certified with Pangle - 7.2.0.5

@@ -1,7 +1,10 @@
 ## InMobi iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationInMobi', '10.8.3.1'
+pod 'CASMediationInMobi', '10.8.3.2'
 ```
+
+### 10.8.3.2
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 10.8.3.1
 - Fixed support for loading inline banner sizes.

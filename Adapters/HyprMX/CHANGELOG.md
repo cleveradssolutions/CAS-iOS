@@ -1,7 +1,11 @@
 ## HyprMX iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationHyprMX', '6.4.2.2'
+pod 'CASMediationHyprMX', '6.4.3.0'
 ```
+
+### 6.4.3.0
+- Certified with HyprMX - 6.4.3
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 6.4.2.2
 - Minor performance optimizations.

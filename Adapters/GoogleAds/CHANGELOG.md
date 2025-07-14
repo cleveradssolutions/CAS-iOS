@@ -1,7 +1,12 @@
 ## Google Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationGoogleAds', '12.6.0.1'
+pod 'CASMediationGoogleAds', '12.7.0.0'
 ```
+
+### 12.7.0.0
+- Certified with GoogleAds - 12.7.0
+- Force Impression callback after a bit in case impression data does not arrive.
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 12.6.0.1
 - Added Max ad content rating flag for Google Ads requests (Closed beta)

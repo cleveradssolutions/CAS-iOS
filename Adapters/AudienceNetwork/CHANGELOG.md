@@ -1,7 +1,10 @@
 ## Meta Audience Network iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAudienceNetwork', '6.20.0.1'
+pod 'CASMediationAudienceNetwork', '6.20.0.2'
 ```
+
+### 6.20.0.2
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 6.20.0.1
 - Minor performance optimizations.

@@ -1,7 +1,10 @@
 ## Chartboost iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationChartboost', '9.9.0.1'
+pod 'CASMediationChartboost', '9.9.0.2'
 ```
+
+### 9.9.0.2
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 9.9.0.1
 - Rollback Chartboost 9.8.1 to avoid an issue with CallKit.

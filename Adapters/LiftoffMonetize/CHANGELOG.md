@@ -1,7 +1,10 @@
 ## LiftoffMonetize iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationLiftoffMonetize', '7.5.1.0'
+pod 'CASMediationLiftoffMonetize', '7.5.1.1'
 ```
+
+### 7.5.1.1
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 7.5.1.0
 - Certified with LiftoffMonetize - 7.5.1

@@ -1,7 +1,11 @@
 ## IronSource iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationIronSource', '8.9.1.1'
+pod 'CASMediationIronSource', '8.10.0.0'
 ```
+
+### 8.10.0.0
+- Certified with IronSource - 8.10.0
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 8.9.1.1
 - Fixed support for loading inline banner sizes.

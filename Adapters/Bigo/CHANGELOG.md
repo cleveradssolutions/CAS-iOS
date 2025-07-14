@@ -1,7 +1,11 @@
 ## Bigo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBigo', '4.8.0.1'
+pod 'CASMediationBigo', '4.8.1.0'
 ```
+
+### 4.8.1.0
+- Certified with Bigo - 4.8.1
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 4.8.0.1
 - Fixed support for loading inline banner sizes.

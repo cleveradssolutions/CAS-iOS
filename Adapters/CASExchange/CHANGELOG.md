@@ -1,7 +1,10 @@
 ## CAS Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationCASExchange', '4.1.0.0'
+pod 'CASMediationCASExchange', '4.2.0.0'
 ```
+
+### 4.2.0.0
+- Fixed video ads endcard.
 
 ### 4.1.0.0
 - Added Swift Package Manager integration support.

@@ -1,7 +1,10 @@
 ## Mintegral iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMintegral', '7.7.8.1'
+pod 'CASMediationMintegral', '7.7.8.2'
 ```
+
+### 7.7.8.2
+- The AppLovin dependency is no longer required for other CAS adapters.
 
 ### 7.7.8.1
 - Fixed support for loading inline banner sizes.

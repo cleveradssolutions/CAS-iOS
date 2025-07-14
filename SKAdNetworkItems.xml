@@ -458,10 +458,6 @@
 		</dict>
 		<dict>
 			<key>SKAdNetworkIdentifier</key>
-			<string>dcc9l689qj.skadnetwork</string>
-		</dict>
-		<dict>
-			<key>SKAdNetworkIdentifier</key>
 			<string>dd3a75yxkv.skadnetwork</string>
 		</dict>
 		<dict>
@@ -511,6 +507,10 @@
 		<dict>
 			<key>SKAdNetworkIdentifier</key>
 			<string>eqhxz8m8av.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>f2zub97jtl.skadnetwork</string>
 		</dict>
 		<dict>
 			<key>SKAdNetworkIdentifier</key>
@@ -726,6 +726,10 @@
 		</dict>
 		<dict>
 			<key>SKAdNetworkIdentifier</key>
+			<string>ns5j362hk7.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
 			<string>nu4557a4je.skadnetwork</string>
 		</dict>
 		<dict>
@@ -747,6 +751,10 @@
 		<dict>
 			<key>SKAdNetworkIdentifier</key>
 			<string>prcb7njmu6.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>pt89h2hlb7.skadnetwork</string>
 		</dict>
 		<dict>
 			<key>SKAdNetworkIdentifier</key>
