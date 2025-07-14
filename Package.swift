@@ -648,7 +648,7 @@ let package = Package(
             name: "CASMediationAudienceNetwork",
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.2.0/CASMediationAudienceNetwork-6.20.0.2.zip",
             checksum: "f502fc936f3ea2c975b5122aa2aa0d0f79e15c87eaf9348805e88d5588f6f709"
-        )
+        ),
 
         .binaryTarget(
             name: "CASMediationPangle",
