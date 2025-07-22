@@ -1,5 +1,7 @@
 ## CAS.AI Mediation adapters
 
+All adapters for supported networks have the `CASMediation` prefix, and do not require additional frameworks dependencies to be added.  
+
 | Pod | Supported Formats | SPM | Bidding | Changelog | SDK Versions |
 | --- | :---------------: | :-: | :-----: | :-------: | :----------: |
 | `pod 'CASMediationIronSource', '8.10.0.0'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](IronSource/CHANGELOG.md) | [link](https://developers.ironsrc.com/ironsource-mobile/ios/sdk-change-log/) |
@@ -25,4 +27,43 @@
 | `pod 'CASMediationMadex', '1.7.2.0'` (Beta) | Banner, Interstitial, Rewarded | No | No | [view](Madex/CHANGELOG.md) | [link](https://madex.gitbook.io/madex-documentation/ios-sdk/change-log) |
 | `pod 'CASMediationPrado', '10.0.3.0'` (Beta) | Banner, Interstitial, Rewarded | Yes | No | [view](Prado/CHANGELOG.md) | [link](https://github.com/Prado-SDK/prado-mobile-sdk/blob/release/10.0.0/Prado%20Direct/iOS) |
 | `pod 'CASMediationSmaato', '22.9.3.0'` (Beta) | Banner, Interstitial, Rewarded | No | Yes | [view](Smaato/CHANGELOG.md) | [link](https://developers.smaato.com/publishers/nextgen-sdk-ios-changelog/) |
+
+
+## Adapter versioning
+The adapter versioning scheme for versioned adapters is `<third-party SDK version>.<adapter patch version>`. For example, if an ad network releases a new SDK version `1.2.3`, a new adapter version `1.2.3.0` will be released to Bintray after being tested against that new SDK.
+
+If an adapter needs updating outside the lifecycle of a third-party SDK release, the patch version will increase. A bug fix for adapter version `1.2.3.0` will be released in version `1.2.3.1`.
+
+## CAS compatible versions
+Each adapter is updated separately from the SDK update and has its own version. However, you have the option to use compatible adapter versions for the CAS version you are using. Just use `CleverAdsSolutions-SDK` and with the CAS version for all adapters added in this way. CocoaPods will select adapter versions that are compatible with the specified CAS version.
+
+```ruby
+$casVersion = ...
+
+pod 'CleverAdsSolutions-Base', $casVersion
+
+pod 'CleverAdsSolutions-SDK/GoogleAds', $casVersion
+pod 'CleverAdsSolutions-SDK/UnityAds', $casVersion
+pod 'CleverAdsSolutions-SDK/IronSource', $casVersion
+pod 'CleverAdsSolutions-SDK/LiftoffMonetize', $casVersion
+pod 'CleverAdsSolutions-SDK/InMobi', $casVersion
+pod 'CleverAdsSolutions-SDK/Kidoz', $casVersion
+pod 'CleverAdsSolutions-SDK/Mintegral', $casVersion
+pod 'CleverAdsSolutions-SDK/Chartboost', $casVersion
+pod 'CleverAdsSolutions-SDK/DTExchange', $casVersion
+pod 'CleverAdsSolutions-SDK/AppLovin', $casVersion
+pod 'CleverAdsSolutions-SDK/YandexAds', $casVersion
+pod 'CleverAdsSolutions-SDK/Pangle', $casVersion
+pod 'CleverAdsSolutions-SDK/AudienceNetwork', $casVersion
+pod 'CleverAdsSolutions-SDK/Bigo', $casVersion
+pod 'CleverAdsSolutions-SDK/CASExchange', $casVersion
+pod 'CleverAdsSolutions-SDK/YsoNetwork', $casVersion
+pod 'CleverAdsSolutions-SDK/Ogury', $casVersion
+pod 'CleverAdsSolutions-SDK/StartIO', $casVersion
+pod 'CleverAdsSolutions-SDK/HyprMX', $casVersion
+pod 'CleverAdsSolutions-SDK/Prado', $casVersion
+pod 'CleverAdsSolutions-SDK/Madex', $casVersion
+pod 'CleverAdsSolutions-SDK/Smaato', $casVersion
+pod 'CleverAdsSolutions-SDK/CrossPromo', $casVersion
+```
 
