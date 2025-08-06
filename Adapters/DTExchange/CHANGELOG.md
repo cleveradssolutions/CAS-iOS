@@ -1,7 +1,10 @@
 ## DT Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationDTExchange', '8.3.7.1'
+pod 'CASMediationDTExchange', '8.3.8.0'
 ```
+
+### 8.3.8.0
+- Certified with DTExchange - 8.3.8
 
 ### 8.3.7.1
 - The AppLovin dependency is no longer required for other CAS adapters.

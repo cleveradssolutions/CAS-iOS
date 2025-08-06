@@ -1,7 +1,10 @@
 ## Mintegral iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMintegral', '7.7.8.2'
+pod 'CASMediationMintegral', '7.7.9.0'
 ```
+
+### 7.7.9.0
+- Certified with Mintegral - 7.7.9
 
 ### 7.7.8.2
 - The AppLovin dependency is no longer required for other CAS adapters.

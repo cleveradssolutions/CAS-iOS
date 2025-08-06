@@ -1,7 +1,11 @@
 ## Unity Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationUnityAds', '4.15.1.0'
+pod 'CASMediationUnityAds', '4.16.0.0'
 ```
+
+### 4.16.0.0
+- Certified with UnityAds - 4.16.0
+- Fixed issue with invisible banner ads.
 
 ### 4.15.1.0
 - Certified with UnityAds - 4.15.1 (no changes)

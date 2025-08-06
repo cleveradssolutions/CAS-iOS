@@ -1,7 +1,11 @@
 ## InMobi iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationInMobi', '10.8.3.2'
+pod 'CASMediationInMobi', '10.8.6.0'
 ```
+
+### 10.8.6.0
+- Certified with InMobi - 10.8.6
+- Improved performance of bidding requests.
 
 ### 10.8.3.2
 - The AppLovin dependency is no longer required for other CAS adapters.

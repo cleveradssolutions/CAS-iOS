@@ -1,7 +1,12 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.3.1.2'
+pod 'CASMediationAppLovin', '13.3.1.3'
 ```
+
+### 13.3.1.3
+- Workaround for rare crashes originating from `CASBridgeMediation`.
+- Fixed a crash caused by `NSInvalidArgumentException` crash.
+- Resolved a crash occurring in `ALHealthEventsReporter`.
 
 ### 13.3.1.2
 - The AppLovin dependency is no longer required for other CAS adapters.

@@ -1,7 +1,10 @@
 ## Yandex Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationYandexAds', '7.14.1.0'
+pod 'CASMediationYandexAds', '7.14.1.1'
 ```
+
+### 7.14.1.1
+- Fixed a compilation error for SPM integration.
 
 ### 7.14.1.0
 - Certified with YandexAds - 7.14.1

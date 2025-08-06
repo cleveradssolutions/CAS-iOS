@@ -1,7 +1,10 @@
 ## CAS Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationCASExchange', '4.2.0.0'
+pod 'CASMediationCASExchange', '4.3.0.0'
 ```
+
+### 4.3.0.0
+- Improved impression detection for native ads.
 
 ### 4.2.0.0
 - Fixed video ads endcard.
