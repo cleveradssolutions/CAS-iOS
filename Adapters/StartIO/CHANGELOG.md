@@ -1,7 +1,11 @@
 ## StartIO iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationStartIO', '4.10.5.1'
+pod 'CASMediationStartIO', '4.11.0.0'
 ```
+
+### 4.11.0.0
+- Certified with StartIO - 4.11.0
+- Added Native Ad support
 
 ### 4.10.5.1
 - Added Swift Package Manager integration support.

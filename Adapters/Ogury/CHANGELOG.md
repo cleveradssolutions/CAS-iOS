@@ -1,7 +1,10 @@
 ## Ogury iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationOgury', '5.0.2.1'
+pod 'CASMediationOgury', '5.1.0.0'
 ```
+
+### 5.1.0.0
+- Certified with Ogury - 5.1.0
 
 ### 5.0.2.1
 - The AppLovin dependency is no longer required for other CAS adapters.

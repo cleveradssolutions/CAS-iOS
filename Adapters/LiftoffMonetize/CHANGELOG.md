@@ -1,7 +1,10 @@
 ## LiftoffMonetize iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationLiftoffMonetize', '7.5.2.0'
+pod 'CASMediationLiftoffMonetize', '7.5.3.0'
 ```
+
+### 7.5.3.0
+- Certified with LiftoffMonetize - 7.5.3
 
 ### 7.5.2.0
 - Certified with LiftoffMonetize - 7.5.2

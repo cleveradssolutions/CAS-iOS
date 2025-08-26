@@ -1,7 +1,10 @@
 ## Chartboost iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationChartboost', '9.9.2.0'
+pod 'CASMediationChartboost', '9.9.2.1'
 ```
+
+### 9.9.2.1
+- Removed `isCached` checks to prevent valid ads from being blocked.
 
 ### 9.9.2.0
 - Certified with Chartboost - 9.9.2
