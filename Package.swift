@@ -530,7 +530,7 @@ let package = Package(
         .binaryTarget(
             name: "HyprMXSPM",
             url: "https://s3.amazonaws.com/cocoapods-files/HyprMX/6.4.3/HyprMX_iOS_v6-4-3.zip",
-            checksum: "c2c67e12607f01532b608690743e39f1d747b6d92eccf56d3d41085e14393f99"
+            checksum: "2fcfce9a3a05dbbe7f236814bf3810de71861384fbe46fb240dad02b03d8d554"
         ),
         .binaryTarget(
             name: "CASMediationHyprMX",
