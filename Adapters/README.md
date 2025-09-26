@@ -23,7 +23,7 @@ All adapters for supported networks have the `CASMediation` prefix, and do not r
 | `pod 'CASMediationCrossPromo', '4.1.0.0'` | Banner, Interstitial, Rewarded | Yes | No | [view](CrossPromo/CHANGELOG.md) | [link]() |
 | `pod 'CASMediationStartIO', '4.11.0.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | No | [view](StartIO/CHANGELOG.md) | [link](https://support.start.io/hc/en-us/articles/6827061324434-iOS-SDK-Change-Log) |
 | `pod 'CASMediationHyprMX', '6.4.3.0'` | Banner, Interstitial, Rewarded | Yes | No | [view](HyprMX/CHANGELOG.md) | [link](https://documentation.hyprmx.com/ios-hyprmx-sdk/downloads-change-log/change-log/ios-sdk-change-log) |
-| `pod 'CASMediationOgury', '5.1.0.0'` | Banner, Interstitial, Rewarded | No | Yes | [view](Ogury/CHANGELOG.md) | [link](https://support.ogury.com/inapp/release-notes/ogury-sdk/ios) |
+| `pod 'CASMediationOgury', '5.1.1.0'` | Banner, Interstitial, Rewarded | No | Yes | [view](Ogury/CHANGELOG.md) | [link](https://support.ogury.com/inapp/release-notes/ogury-sdk/ios) |
 | `pod 'CASMediationMadex', '1.7.3.0'` (Beta) | Banner, Interstitial, Rewarded | No | No | [view](Madex/CHANGELOG.md) | [link](https://madex.gitbook.io/madex-documentation/ios-sdk/change-log) |
 | `pod 'CASMediationPrado', '10.0.3.0'` (Beta) | Banner, Interstitial, Rewarded | Yes | No | [view](Prado/CHANGELOG.md) | [link](https://github.com/Prado-SDK/prado-mobile-sdk/blob/release/10.0.0/Prado%20Direct/iOS) |
 | `pod 'CASMediationSmaato', '22.9.3.0'` (Beta) | Banner, Interstitial, Rewarded | No | Yes | [view](Smaato/CHANGELOG.md) | [link](https://developers.smaato.com/publishers/nextgen-sdk-ios-changelog/) |
