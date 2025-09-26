@@ -3,6 +3,10 @@
 pod 'CASMediationOgury', '5.1.0.0'
 ```
 
+### 5.1.1.0
+- Certified with Ogury - 5.1.1
+- Resolved internal configuration issue causing App Store validation errors.
+
 ### 5.1.0.0
 - Certified with Ogury - 5.1.0
 
