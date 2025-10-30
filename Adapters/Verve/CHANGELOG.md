@@ -1,7 +1,11 @@
 ## Maticoo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationVerve', '3.6.1.0'
+pod 'CASMediationVerve', '3.7.0.0'
 ```
+
+### 3.7.0.0
+- Certified with Verve - 3.7.0
+- Compatibility improvements for CAS 4.4.1.
 
 ### 3.6.1.0
 - Certified with Verve - 3.6.1

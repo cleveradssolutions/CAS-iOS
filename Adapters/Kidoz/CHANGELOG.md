@@ -1,7 +1,11 @@
 ## Kidoz iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationKidoz', '10.0.3.0'
+pod 'CASMediationKidoz', '10.1.0.0'
 ```
+
+### 10.1.0.0
+- Certified with Kidoz - 10.1.0
+- Added support Bidding requests with CAS 4.4.1. (Closed beta)
 
 ### 10.0.3.0
 - Certified with Kidoz - 10.0.3

@@ -1,7 +1,14 @@
 ## Pangle iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPangle', '7.5.0.6.0'
+pod 'CASMediationPangle', '7.7.0.6.0'
 ```
+
+### 7.7.0.6.0
+- Certified with Pangle - 7.7.0.6
+- Added support alternative Bidding system with CAS 4.4.1. (Closed beta)
+
+### 7.7.0.5.0
+- Certified with Pangle - 7.7.0.5
 
 ### 7.5.0.6.0
 - Certified with Pangle - 7.5.0.6

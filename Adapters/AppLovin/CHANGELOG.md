@@ -1,7 +1,11 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.3.1.4'
+pod 'CASMediationAppLovin', '13.5.0.0'
 ```
+
+### 13.5.0.0
+- Certified with AppLovin - 13.5.0
+- Workaround for a crash caused by ALCASBridge.
 
 ### 13.3.1.4
 - Fixed a rare issue where information about displayed ads could be lost, preventing ILRD from being sent.

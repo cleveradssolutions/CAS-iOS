@@ -1,7 +1,11 @@
 ## IronSource iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationIronSource', '8.11.0.0'
+pod 'CASMediationIronSource', '9.0.0.0'
 ```
+
+### 9.0.0.0
+- Certified with IronSource - 9.0.0
+- Added IronSource AdQuality framework for SPM integration.
 
 ### 8.11.0.0
 - Certified with IronSource - 8.11.0
