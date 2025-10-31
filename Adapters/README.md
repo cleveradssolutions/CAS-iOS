@@ -4,12 +4,12 @@ All adapters for supported networks have the `CASMediation` prefix, and do not r
 
 | Pod | Supported Formats | SPM | Bidding | Changelog | SDK Versions |
 | --- | :---------------: | :-: | :-----: | :-------: | :----------: |
-| `pod 'CASMediationIronSource', '9.0.0.0'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](IronSource/CHANGELOG.md) | [link](https://developers.ironsrc.com/ironsource-mobile/ios/sdk-change-log/) |
+| `pod 'CASMediationIronSource', '9.0.0.1'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](IronSource/CHANGELOG.md) | [link](https://developers.ironsrc.com/ironsource-mobile/ios/sdk-change-log/) |
 | `pod 'CASMediationUnityAds', '4.16.3.0'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](UnityAds/CHANGELOG.md) | [link](https://docs.unity.com/ads/en-us/manual/Changelog) |
 | `pod 'CASMediationGoogleAds', '12.12.0.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](GoogleAds/CHANGELOG.md) | [link](https://developers.google.com/admob/ios/rel-notes?hl=en) |
 | `pod 'CASMediationLiftoffMonetize', '7.6.1.0'` | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](LiftoffMonetize/CHANGELOG.md) | [link](https://support.vungle.com/hc/en-us/articles/15718672681883) |
 | `pod 'CASMediationInMobi', '10.8.8.0'` | Banner, Interstitial, Rewarded, Native | Yes | Yes | [view](InMobi/CHANGELOG.md) | [link](https://support.inmobi.com/monetize/sdk-documentation/ios-guidelines/changelogs) |
-| `pod 'CASMediationChartboost', '9.10.0.0'` | Banner, Interstitial, Rewarded | No | Yes | [view](Chartboost/CHANGELOG.md) | [link](https://docs.chartboost.com/en/monetization/integrate/ios/changelog/) |
+| `pod 'CASMediationChartboost', '9.10.1.0'` | Banner, Interstitial, Rewarded | No | Yes | [view](Chartboost/CHANGELOG.md) | [link](https://docs.chartboost.com/en/monetization/integrate/ios/changelog/) |
 | `pod 'CASMediationDTExchange', '8.4.1.0'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](DTExchange/CHANGELOG.md) | [link](https://developer.digitalturbine.com/hc/en-us/articles/360010922578-DT-Exchange-iOS-Changelog) |
 | `pod 'CASMediationKidoz', '10.1.0.0'` | Banner, Interstitial, Rewarded | Yes | Yes | [view](Kidoz/CHANGELOG.md) | [link](https://github.com/Kidoz-SDK/kidoz-mobile-sdk/tree/main/Kidoz%20Direct/iOS) |
 | `pod 'CASMediationSuperAwesome', '9.4.0.1'` | Interstitial, Rewarded | No | Yes | [view](SuperAwesome/CHANGELOG.md) | [link](https://sdks.superawesome.com/docs/ios/releases) |

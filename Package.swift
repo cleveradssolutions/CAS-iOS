@@ -483,8 +483,8 @@ let package = Package(
                         
         .binaryTarget(
             name: "CleverAdsSolutions",
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.4.1/CleverAdsSolutions-4.4.1.zip",
-            checksum: "4534108492a71c4dadc92a7bd3570ae9457d2d1c1098d19ea6526eca4b404bf7"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.4.2/CleverAdsSolutions-4.4.2.zip",
+            checksum: "f87357f2d87ffc1fbc9d3e053010069a8c5ef76ffc82d4727f75752b0a6bb3ec"
         ),
                 
         .binaryTarget(
@@ -499,8 +499,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "CASMediationIronSource",
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.4.1/CASMediationIronSource-9.0.0.0.zip",
-            checksum: "bc4c7fe4cb5ddb2980d26940cb247b6d210bde6c23c2aac784cfbe146da795a3"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.4.2/CASMediationIronSource-9.0.0.1.zip",
+            checksum: "3db1bf9946a7415c635aed5441d4e68b7960caf9438367f207fa2bfa196009c9"
         ),
         
         .binaryTarget(
