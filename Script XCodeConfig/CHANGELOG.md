@@ -1,5 +1,9 @@
 # CAS.AI iOS XCode Config script change log
 
+# [1.5] - Nov 20, 2025
+- Fixed an error in the script’s behavior when the parameter `--project=` is specified. When the full path to the project is provided, the script’s location no longer matters.
+- Error messages are now output to `STDERR`.
+
 # [1.4] - June 16, 2025
 - Added automatic setting of `$(inherited)` and `-ObjC` to `OTHER_LDFLAGS` project settings.
 - Aaded `demo` support as CAS ID for testing.

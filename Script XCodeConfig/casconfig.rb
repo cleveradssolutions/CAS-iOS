@@ -14,7 +14,7 @@ module CASConfig
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '1.4'
+    SCRIPT_VERSION = '1.5'
 
     class << self
         attr_accessor :casId, :project_path, :gad_included, :clean_install
@@ -100,6 +100,9 @@ module CASConfig
                     unless @project_path.end_with?(XC_PROJECT_FILE)
                         @project_path = @project_path + XC_PROJECT_FILE
                     end
+                    if Pathname.new(@project_path).absolute?
+                        Dir.chdir File.dirname(@project_path)
+                    end
                     unless File.exist?(@project_path)
                         Dir.chdir File.expand_path('../')
                         unless File.exist?(@project_path)
@@ -129,7 +132,7 @@ module CASConfig
         end
 
         def error(message)
-            puts colortxt(message, 31)
+            STDERR.puts colortxt(message, 31)
         end
 
         def success(message)

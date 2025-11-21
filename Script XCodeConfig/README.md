@@ -15,10 +15,10 @@ The script automatically performs the following integration steps:
 > Read more about it on [wiki page](https://github.com/cleveradssolutions/CAS-iOS/wiki/Manually-configure-project).
 
 ## Getting Started 
-1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.1.0.1/casconfig.rb)  
+1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.5.0/casconfig.rb)  
 3. Place the script in directory with the app `.xcodeproj` 
 4. Open the terminal window and run command:
-```
+```sh
 ruby casconfig.rb CASID
 ```
 
@@ -27,16 +27,19 @@ ruby casconfig.rb CASID
 > You can find an app store ID in the URL of your app’s Apple App Store URL. For example, the URL is `apps.apple.com/us/app/id123456789` then app store ID is `123456789`.
 
 Check the additional features of the script by running the command:
-```
+```sh
 ruby casconfig.rb --help
 ```
 
 > [!NOTE]  
 > Repeat the script before every update of the application to make sure you are using up-to-date configurations.
 
+## Project path
+The script can be located anywhere, provided that the full path to the project is specified using the `--project` parameter.
+```sh
+ruby /path1/to/casconfig.rb CASID --project=/path2/to/MyApp.xcodeproj
+```
 
 ## GitHub issue tracker
 To file bugs, make feature requests, or suggest improvements for the script, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
 
-## Support
-mailto:support@cas.ai
