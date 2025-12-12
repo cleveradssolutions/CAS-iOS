@@ -16,7 +16,7 @@ All adapters for supported networks have the `CASMediation` prefix, and do not r
 | AppLovin | 13.5.1.0 | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
 | Pangle | 7.8.0.3.0 | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](Pangle/CHANGELOG.md) | [link](https://github.com/bytedance/Bytedance-UnionAD) |
 | Bigo | 5.0.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | No | Yes | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
-| YangoAds | 7.17.1.0 | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](YangoAds/CHANGELOG.md) | [link](https://github.com/yandexmobile/yandex-ads-sdk-ios/blob/master/changelog/mobileads/CHANGELOG.md) |
+| YangoAds | 7.18.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | Yes | Yes | [view](YangoAds/CHANGELOG.md) | [link](https://github.com/yandexmobile/yandex-ads-sdk-ios/blob/master/changelog/mobileads/CHANGELOG.md) |
 | AudienceNetwork | 6.20.1.1 | Banner, Interstitial, Rewarded, Native | Yes | Yes | [view](AudienceNetwork/CHANGELOG.md) | [link](https://developers.facebook.com/docs/audience-network/setting-up/platform-setup/ios/changelog?locale=en_US) |
 | YsoNetwork | 1.1.31.2 | Banner, Interstitial, Rewarded | Yes | Yes | [view](YsoNetwork/CHANGELOG.md) | [link]() |
 | CASExchange | 4.3.0.0 | Banner, Interstitial, Rewarded, Native | Yes | Yes | [view](CASExchange/CHANGELOG.md) | [link]() |
