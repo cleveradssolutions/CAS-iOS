@@ -18,17 +18,17 @@ The adapters in the table are listed in alphabetical order.
 | Kidoz | 10.1.3.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✓** | [view](Kidoz/CHANGELOG.md) | [link](https://github.com/Kidoz-SDK/kidoz-mobile-sdk/tree/main/Direct/iOS) |
 | LiftoffMonetize | 7.6.3.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | [view](LiftoffMonetize/CHANGELOG.md) | [link](https://support.vungle.com/hc/en-us/articles/15718672681883) |
 | Madex 🧪 | 1.7.3.0 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | [view](Madex/CHANGELOG.md) | [link](https://madex.gitbook.io/madex-documentation/ios-sdk/change-log) |
-| Maticoo 🧪 | 1.5.4.5 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✗** | **✗** | [view](Maticoo/CHANGELOG.md) | [link](https://www.yuque.com/maticoo/ivzbqi/ue26t14iwew5mbto) |
+| Maticoo | 1.5.4.5 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✗** | **✗** | [view](Maticoo/CHANGELOG.md) | [link](https://www.yuque.com/maticoo/ivzbqi/ue26t14iwew5mbto) |
 | Mintegral | 8.0.4.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | [view](Mintegral/CHANGELOG.md) | [link](https://dev.mintegral.com/doc/index.html?file=sdk-m_sdk-ios&lang=en) |
 | Ogury | 5.1.1.1 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | [view](Ogury/CHANGELOG.md) | [link](https://support.ogury.com/inapp/release-notes/ogury-sdk/ios) |
 | Pangle | 7.8.0.6.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | [view](Pangle/CHANGELOG.md) | [link](https://github.com/bytedance/Bytedance-UnionAD) |
 | Prado | 10.1.3.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | [view](Prado/CHANGELOG.md) | [link](https://github.com/Prado-SDK/prado-mobile-sdk/tree/main/Direct/iOS) |
 | PubMatic 🧪 | 4.10.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | [view](PubMatic/CHANGELOG.md) | [link](https://help.pubmatic.com/openwrap/reference/changelog-5) |
-| Smaato 🧪 | 22.9.3.1 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | [view](Smaato/CHANGELOG.md) | [link](https://developers.smaato.com/publishers/nextgen-sdk-ios-changelog/) |
+| Smaato | 22.9.3.1 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | [view](Smaato/CHANGELOG.md) | [link](https://developers.smaato.com/publishers/nextgen-sdk-ios-changelog/) |
 | StartIO | 4.11.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✗** | **✗** | [view](StartIO/CHANGELOG.md) | [link](https://support.start.io/hc/en-us/articles/6827061324434-iOS-SDK-Change-Log) |
 | SuperAwesome | 9.4.0.1 | Interstitial, Rewarded | **✗** | **✗** | **✗** | [view](SuperAwesome/CHANGELOG.md) | [link](https://sdks.superawesome.com/docs/ios/releases) |
 | UnityAds | 4.16.5.0 | Banner, Interstitial, Rewarded | **✓** | **✓** | **✓** | [view](UnityAds/CHANGELOG.md) | [link](https://docs.unity.com/ads/en-us/manual/Changelog) |
-| Verve 🧪 | 3.7.1.0 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | [view](Verve/CHANGELOG.md) | [link](https://github.com/pubnative/pubnative-hybid-ios-sdk/releases) |
+| Verve | 3.7.1.0 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | [view](Verve/CHANGELOG.md) | [link](https://github.com/pubnative/pubnative-hybid-ios-sdk/releases) |
 | YangoAds | 7.18.1.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | [view](YangoAds/CHANGELOG.md) | [link](https://github.com/yandexmobile/yandex-ads-sdk-ios/blob/master/changelog/mobileads/CHANGELOG.md) |
 | YsoNetwork | 1.1.31.2 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | [view](YsoNetwork/CHANGELOG.md) | [link]() |
 
