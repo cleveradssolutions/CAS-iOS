@@ -1,7 +1,11 @@
 ## Prado Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPrado', '10.1.2.0'
+pod 'CASMediationPrado', '10.1.3.0'
 ```
+
+### 10.1.3.0
+- Certified with Prado - 10.1.3
+- Moved to the official SPM repository: https://github.com/Prado-SDK/prado-sdk-swift-package
 
 ### 10.1.2.0
 - Certified with Prado - 10.1.2

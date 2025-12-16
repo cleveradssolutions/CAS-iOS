@@ -2,7 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 
 platform :ios, '13.0'
-$casVersion = '~> 4.5.0'
+$casVersion = '~> 4.5.2'
 
 target 'CASSample' do
   pod 'CleverAdsSolutions-Base', $casVersion

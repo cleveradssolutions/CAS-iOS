@@ -1,7 +1,11 @@
 ## Kidoz iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationKidoz', '10.1.2.0'
+pod 'CASMediationKidoz', '10.1.3.0'
 ```
+
+### 10.1.3.0
+- Certified with Kidoz - 10.1.3
+- Moved to the official SPM repository: https://github.com/Kidoz-SDK/kidoz-sdk-swift-package
 
 ### 10.1.2.0
 - Certified with Kidoz - 10.1.2
