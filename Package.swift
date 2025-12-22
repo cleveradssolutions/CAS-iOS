@@ -468,8 +468,8 @@ let package = Package(
                         
         .binaryTarget(
             name: "CleverAdsSolutions",
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.5.2/CleverAdsSolutions-4.5.2.zip",
-            checksum: "14e70feabbe7c2bfa8dfb34ff5efa07049394229514ea5dcb7eae0eae3ecd134"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.5.4/CleverAdsSolutions-4.5.4.zip",
+            checksum: "0a1af5ddf3f1e214e83bfa2e83fc1d663124e7f2b78ece38da095fd4b8617669"
         ),
                 
         .binaryTarget(
@@ -614,8 +614,8 @@ let package = Package(
 
         .binaryTarget(
             name: "CASMediationPangle",
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.5.2/CASMediationPangle-7.8.0.6.0.zip",
-            checksum: "fd964a34a254b1cad81584612be33143b4fecc1cf9f1b7e82cbdf7a168846c23"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.5.4/CASMediationPangle-7.8.0.7.0.zip",
+            checksum: "475a2b395135a2adaed3c98df12ce2a38def4d6d28f281fed8f2c0b23c82c3ef"
         ),
         
         .binaryTarget(

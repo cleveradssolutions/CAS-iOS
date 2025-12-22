@@ -21,7 +21,7 @@ The adapters in the table are listed in alphabetical order.
 | Maticoo | 1.5.4.5 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✗** | **✗** | [view](Maticoo/CHANGELOG.md) | [link](https://www.yuque.com/maticoo/ivzbqi/ue26t14iwew5mbto) |
 | Mintegral | 8.0.4.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | [view](Mintegral/CHANGELOG.md) | [link](https://dev.mintegral.com/doc/index.html?file=sdk-m_sdk-ios&lang=en) |
 | Ogury | 5.1.1.1 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | [view](Ogury/CHANGELOG.md) | [link](https://support.ogury.com/inapp/release-notes/ogury-sdk/ios) |
-| Pangle | 7.8.0.6.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | [view](Pangle/CHANGELOG.md) | [link](https://github.com/bytedance/Bytedance-UnionAD) |
+| Pangle | 7.8.0.7.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | [view](Pangle/CHANGELOG.md) | [link](https://github.com/bytedance/Bytedance-UnionAD) |
 | Prado | 10.1.3.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | [view](Prado/CHANGELOG.md) | [link](https://github.com/Prado-SDK/prado-mobile-sdk/tree/main/Direct/iOS) |
 | PubMatic 🧪 | 4.10.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | [view](PubMatic/CHANGELOG.md) | [link](https://help.pubmatic.com/openwrap/reference/changelog-5) |
 | Smaato | 22.9.3.1 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | [view](Smaato/CHANGELOG.md) | [link](https://developers.smaato.com/publishers/nextgen-sdk-ios-changelog/) |
