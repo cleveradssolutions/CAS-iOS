@@ -319,7 +319,7 @@ let package = Package(
             dependencies: [
                 .target(name: "CASMediationPrado"),
                 .target(name: "CASBaseResources"),
-                .product(name: "PradoSDK", package: "kidoz-sdk-swift-package"),
+                .product(name: "PradoSDK", package: "prado-sdk-swift-package"),
             ],
             path: "Adapters/Prado",
             linkerSettings: [
