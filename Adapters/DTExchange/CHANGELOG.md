@@ -1,7 +1,10 @@
 ## DT Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationDTExchange', '8.4.2.1'
+pod 'CASMediationDTExchange', '8.4.4.0'
 ```
+
+### 8.4.4.0
+- Certified with DTExchange - 8.4.4
 
 ### 8.4.2.1
 - Fixed ILRD values from Waterfall.

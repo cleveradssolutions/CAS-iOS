@@ -1,7 +1,11 @@
 ## Maticoo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMaticoo', '1.5.4.5'
+pod 'CASMediationMaticoo', '1.5.6.0'
 ```
+
+### 1.5.6.0
+- Certified with Maticoo - 1.5.6
+- Fixed Ad Framework version issue in SPM integration.
 
 ### 1.5.4.5
 - Certified with Maticoo - 1.5.4.5

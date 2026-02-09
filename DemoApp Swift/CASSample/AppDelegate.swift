@@ -10,7 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    static let casId = "demo"
+    static let casId = "6740317473"
 
     var window: UIWindow?
 
@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Configure CAS.settings before initialize
         // Configure CAS.targetingOptions before initialize
 
+        CAS.settings.debugMode = true
+        
         let builder = CAS.buildManager()
         builder.withCompletionHandler { config in
             // The CAS SDK initializes if the error is `nil`
@@ -36,9 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let consentStatus = config.consentFlowStatus
             let trackingAuthorized: Bool = config.isATTrackingAuthorized
         }
-        #if DEBUG
+        //#if DEBUG
             builder.withTestAdMode(true)
-        #endif
+        //#endif
 
         builder.create(withCasId: AppDelegate.casId)
     }

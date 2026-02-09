@@ -1,7 +1,11 @@
 ## Ogury iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationOgury', '5.1.1.1'
+pod 'CASMediationOgury', '5.2.0.0'
 ```
+
+### 5.2.0.0
+- Certified with Ogury - 5.2.0
+- Added Swift Package Manager integration support.
 
 ### 5.1.1.1
 - Improvements for Bidding requests.

@@ -1,7 +1,10 @@
 ## Meta Audience Network iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAudienceNetwork', '6.20.1.1'
+pod 'CASMediationAudienceNetwork', '6.21.0.0'
 ```
+
+### 6.21.0.0
+- Certified with AudienceNetwork - 6.21.0
 
 ### 6.20.1.1
 - Compatibility improvements for CAS 4.4.1.

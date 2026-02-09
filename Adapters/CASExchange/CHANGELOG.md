@@ -1,7 +1,10 @@
 ## CAS Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationCASExchange', '4.3.0.0'
+pod 'CASMediationCASExchange', '4.6.0.0'
 ```
+
+### 4.6.0.0
+- Fixed reward issuance for watching rewarded videos, including server-side fixes for older versions.
 
 ### 4.3.0.0
 - Improved impression detection for native ads.

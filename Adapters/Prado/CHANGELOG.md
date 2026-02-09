@@ -1,7 +1,10 @@
 ## Prado Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPrado', '10.1.3.0'
+pod 'CASMediationPrado', '10.1.5.0'
 ```
+
+### 10.1.5.0
+- Certified with Prado - 10.1.5
 
 ### 10.1.3.0
 - Certified with Prado - 10.1.3

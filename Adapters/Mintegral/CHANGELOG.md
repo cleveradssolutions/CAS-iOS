@@ -1,7 +1,11 @@
 ## Mintegral iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMintegral', '8.0.4.0'
+pod 'CASMediationMintegral', '8.0.7.0'
 ```
+
+### 8.0.7.0
+- Certified with Mintegral - 8.0.7
+- Fixed Placement ID lookup for Native ads in screen ad formats.
 
 ### 8.0.4.0
 - Certified with Mintegral - 8.0.4

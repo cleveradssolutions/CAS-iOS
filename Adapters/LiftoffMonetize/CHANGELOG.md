@@ -1,7 +1,11 @@
 ## LiftoffMonetize iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationLiftoffMonetize', '7.6.3.0'
+pod 'CASMediationLiftoffMonetize', '7.7.0.0'
 ```
+
+### 7.7.0.0
+- Certified with LiftoffMonetize - 7.7.0
+- Added support for video in Native Ads.
 
 ### 7.6.3.0
 - Certified with LiftoffMonetize - 7.6.3

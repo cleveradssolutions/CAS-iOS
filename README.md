@@ -19,6 +19,10 @@ Each iOS example app on this repository includes a Podfile and a **Podfile.lock*
 
 See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on installing and updating pods.
 
+## Supported architectures
+- Device: arm64
+- Simulator: arm64, x86_64
+
 ## Feedback & Contributions
 Found a bug? Have a feature request or suggestion?
 Please open an issue using [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).

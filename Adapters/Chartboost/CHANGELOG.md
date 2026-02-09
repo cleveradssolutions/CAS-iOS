@@ -1,7 +1,11 @@
 ## Chartboost iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationChartboost', '9.10.1.0'
+pod 'CASMediationChartboost', '9.11.0.0'
 ```
+
+### 9.11.0.0
+- Certified with Chartboost - 9.11.0
+- Added Swift Package Manager integration support.
 
 ### 9.10.1.0
 - Certified with Chartboost - 9.10.1

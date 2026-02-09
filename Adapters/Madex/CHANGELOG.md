@@ -1,7 +1,11 @@
 ## Madex iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMadex', '1.7.3.0'
+pod 'CASMediationMadex', '1.7.5.0'
 ```
+
+### 1.7.5.0
+- Certified with Madex - 1.7.5
+- Fixed the banner position on the screen
 
 ### 1.7.3.0
 - Certified with Madex - 1.7.3

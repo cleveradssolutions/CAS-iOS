@@ -1,4 +1,4 @@
 //
 //  Target.swift
-//  CleverAdsSolutions
+//  cas-ios-spm
 //
