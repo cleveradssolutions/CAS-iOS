@@ -421,8 +421,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.DTExchange.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationDTExchange-8.4.4.0.zip",
-            checksum: "48b470d6d31ca90b366fbfee0a05d872d29f3fa742ea4074aebedf93a1dff7d3"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationDTExchange-8.4.4.1.zip",
+            checksum: "ec657790242f5bf373b63a90b07738b6ba37ab8cce0371ba27635242206207a6"
         ),
 
         // MARK: - CASExchange
