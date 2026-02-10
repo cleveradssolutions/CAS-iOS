@@ -110,7 +110,12 @@ enum CAS: String, CaseIterable {
     var binaryAdapter: String { "CASMediation" + rawValue }
     var targetSDK: String { binarySDK + "Target" }
     var binarySDK: String { rawValue + "SPM" }
-    var pathAdapter: String { "Adapters/" + rawValue }
+    var pathAdapter: String {
+        if self == CAS.Exchange {
+            return "Adapters/CAS" + rawValue
+        }
+        return "Adapters/" + rawValue
+    }
 }
 
 let package = Package(
