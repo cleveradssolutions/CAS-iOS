@@ -123,7 +123,7 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: CAS.allProducts,
     dependencies: [
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "12.14.0"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "13.0.0"),
         .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", exact: "7.7.0"),
         .package(url: "https://github.com/Kidoz-SDK/kidoz-sdk-swift-package", exact: "10.1.5"),
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", exact: "8.0.7"),
@@ -162,8 +162,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: baseBinary,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CleverAdsSolutions-4.6.0.zip",
-            checksum: "ff58bdd965fbba2a27df2f6db81d4d6d310eb8fbf03f618e43807e9e8cd9fdde"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.2/CleverAdsSolutions-4.6.2.zip",
+            checksum: "6adea91d4c6a7cf4c1daa2ddae50ef37b329b16c1aa7def47f3332d18b6bdc18"
         ),
 
         // MARK: - IronSource
@@ -346,9 +346,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.GoogleAds.binaryAdapter,
-            url:
-                "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.5.0/CASMediationGoogleAds-12.14.0.0.zip",
-            checksum: "01dca391cc3949dd1bd414c942b7096fe2b205a0cf2bd0431c59c64857b6d138"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.2/CASMediationGoogleAds-13.0.0.0.zip",
+            checksum: "af854575ecb32a7546d126ff95ed5cb2060989af0fe41d515c7cf6a185a993e0"
         ),
 
         // MARK: LiftoffMonetize

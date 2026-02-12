@@ -11,7 +11,7 @@ The adapters in the table are listed in alphabetical order.
 | Chartboost | 9.11.0.0 | Banner, Interstitial, Rewarded | **✓** | **✓** | **✓** | [view](Chartboost/CHANGELOG.md) | [link](https://docs.chartboost.com/en/monetization/integrate/ios/changelog/) |
 | CrossPromo | 4.1.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | [view](CrossPromo/CHANGELOG.md) | [link]() |
 | DTExchange | 8.4.4.1 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | [view](DTExchange/CHANGELOG.md) | [link](https://developer.digitalturbine.com/hc/en-us/articles/360010922578-DT-Exchange-iOS-Changelog) |
-| GoogleAds | 12.14.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | [view](GoogleAds/CHANGELOG.md) | [link](https://developers.google.com/admob/ios/rel-notes?hl=en) |
+| GoogleAds | 13.0.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | [view](GoogleAds/CHANGELOG.md) | [link](https://developers.google.com/admob/ios/rel-notes?hl=en) |
 | HyprMX | 6.4.5.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | [view](HyprMX/CHANGELOG.md) | [link](https://documentation.hyprmx.com/ios-hyprmx-sdk/downloads-change-log/change-log/ios-sdk-change-log) |
 | InMobi | 11.1.1.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✓** | [view](InMobi/CHANGELOG.md) | [link](https://support.inmobi.com/monetize/sdk-documentation/ios-guidelines/changelogs) |
 | IronSource | 9.3.0.0 | Banner, Interstitial, Rewarded | **✓** | **✓** | **✓** | [view](IronSource/CHANGELOG.md) | [link](https://developers.ironsrc.com/ironsource-mobile/ios/sdk-change-log/) |
