@@ -14,7 +14,7 @@ module CASConfig
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '1.5'
+    SCRIPT_VERSION = '1.6'
 
     class << self
         attr_accessor :casId, :project_path, :gad_included, :clean_install
@@ -32,6 +32,7 @@ module CASConfig
                 
                 update_plist(project.get_plist_path()) do |plist|
                     plist.check_sk_ad_networks()
+                    plist.check_ad_networks()
                     plist.check_google_app_Id(cas_config)
                     plist.check_transport_security()
                     plist.check_tracking_usage_description()
@@ -225,12 +226,24 @@ module CASConfig
         end
 
         def load_sk_ad_networks_set()
-            url = 'https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/master/SKAdNetworkCompact.txt'
+            url = 'https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/master/AdNetworkIdentifiers/SKAdNetworkCompact.txt'
             data = load_with_cache(url)
             if data.empty?
                 return set()
             else
-                return data.split("\n").map{|item| item + ".skadnetwork"}.to_set
+                return data.split("\n").map { |item| item + ".skadnetwork" }.to_set
+            end
+        end
+
+        # Load AdAttributionKit network IDs from public repo.
+        # Returns a Set of full IDs with .adattributionkit suffix.
+        def load_ad_networks_set()
+            url = 'https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/master/AdNetworkIdentifiers/AdNetworkCompact.txt'
+            data = load_with_cache(url)
+            if data.empty?
+                return set()
+            else
+                return data.split("\n").map { |item| item + ".adattributionkit" }.to_set
             end
         end
 
@@ -385,6 +398,7 @@ module CASConfig
     class ProjectPlist
         KEY_SKAD_ARRAY = "SKAdNetworkItems"
         KEY_SKAD = "SKAdNetworkIdentifier"
+        KEY_AD_NETWORK_ARRAY = "AdNetworkIdentifiers"   # AdAttributionKit (iOS 17.4+)
         KEY_SECURITY = "NSAppTransportSecurity"
         KEY_ALLOWS_LOADS = "NSAllowsArbitraryLoads"
         KEY_GAD_APP_ID = "GADApplicationIdentifier"
@@ -423,6 +437,43 @@ module CASConfig
                 @is_dirt = true
             else
                 puts "- " + KEY_SKAD_ARRAY + " is up-to-date"
+            end
+        end
+
+        # AdAttributionKit (iOS 17.4+)
+        # Info.plist structure:
+        #   <key>AdNetworkIdentifiers</key>
+        #   <array>
+        #     <string>raa6f494kr.adattributionkit</string>
+        #     ...
+        #   </array>
+        def check_ad_networks()
+            requiredIds = CASConfig.load_ad_networks_set()
+
+            if requiredIds.empty?
+                puts "- " + KEY_AD_NETWORK_ARRAY + " source is empty, skipping"
+                return
+            end
+
+            adArray = @plist[KEY_AD_NETWORK_ARRAY]
+
+            if adArray.nil? || CASConfig.clean_install?
+                adArray = []
+                @plist[KEY_AD_NETWORK_ARRAY] = adArray
+            else                
+                adArray.each do |item|
+                    requiredIds.delete(item)
+                end
+            end
+
+            if requiredIds.count > 0
+                requiredIds.each do |item|
+                    adArray.push(item)
+                end
+                CASConfig.success("- " + KEY_AD_NETWORK_ARRAY + " has added " + requiredIds.count.to_s + " new items")
+                @is_dirt = true
+            else
+                puts "- " + KEY_AD_NETWORK_ARRAY + " is up-to-date"
             end
         end
 
