@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AdNetworkIdentifiers</key>
+	<array>
+		<string>6lz2ygh3q6.adattributionkit</string>
+		<string>77y3x8wds4.adattributionkit</string>
+		<string>m2jqnlggk3.adattributionkit</string>
+		<string>pg7ctvrt6f.adattributionkit</string>
+		<string>raa6f494kr.adattributionkit</string>
+		<string>thzdn4h5nc.adattributionkit</string>
+	</array>
+</dict>
+</plist>

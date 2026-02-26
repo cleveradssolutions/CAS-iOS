@@ -1,7 +1,7 @@
 # CAS.AI Framework for iOS 
 [![Cocoapods](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-Specs/master/CAS.json)](https://github.com/cleveradssolutions/CAS-Specs/tree/master/Specs/CleverAdsSolutions-SDK)
-[![SKAdNetworksID](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/master/SKAdNetworksShield.json)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/SKAdNetworkItems.xml)
-[![App-ads.txt](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/App-ads.txt/master/Shield.json)](https://github.com/cleveradssolutions/App-ads.txt)
+[![SKAdNetworksID](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/master/AdNetworkIdentifiers/SKAdNetworksShield.json)](https://github.com/cleveradssolutions/CAS-iOS/blob/master/AdNetworkIdentifiers/SKAdNetworkItems.xml)
+[![App-ads.txt](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/cleveradssolutions/App-ads.txt/master/Shield.json)](https://docs.page/cleveradssolutions/docs/general/Authorized-Sellers-for-Apps)
 
 The CAS.AI Mobile Ads Framework (by CleverAdsSolutions) offers advanced mobile advertising capabilities with refined ad formats and streamlined APIs to access multiple ad networks and maximize monetization in mobile apps.
 

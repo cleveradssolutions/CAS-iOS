@@ -227,7 +227,7 @@ module CASConfig
         end
 
         def load_sk_ad_networks_set()
-            url = 'https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/refs/heads/adnetworkidentifiers/AdNetworkIdentifiers/SKAdNetworkCompact.txt'
+            url = 'https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/master/AdNetworkIdentifiers/SKAdNetworkCompact.txt'
             data = load_with_cache(url)
             if data.empty?
                 return set()
@@ -237,7 +237,7 @@ module CASConfig
         end
 
         def load_att_ad_networks_set()
-            url = 'https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/refs/heads/adnetworkidentifiers/AdNetworkIdentifiers/AdNetworkCompact.txt'
+            url = 'https://raw.githubusercontent.com/cleveradssolutions/CAS-iOS/master/AdNetworkIdentifiers/AdNetworkCompact.txt'
             data = load_with_cache(url)
             if data.empty?
                 return set()
