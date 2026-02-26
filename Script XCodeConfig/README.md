@@ -4,18 +4,19 @@ Your project requires additional configurations that can be performed automatica
 
 The script automatically performs the following integration steps:
 - [x] SKAdNetwork Support
+- [x] AdNetworkIdentifiers Support (AdAttributionKit)
 - [x] App Transport Security
 - [x] Link the CAS project
 - [X] Set User Tracking usage description
 - [x] Set Google Ads App ID
-- [x] Set Delay app measurement
+- [x] Set Google Delay app measurement
 - [x] Set `$(inherited)` and `-ObjC` to `OTHER_LDFLAGS` project settings
 
 > [!NOTE]
 > Read more about it on [wiki page](https://github.com/cleveradssolutions/CAS-iOS/wiki/Manually-configure-project).
 
 ## Getting Started 
-1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.5.0/casconfig.rb)  
+1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/casconfig.rb)  
 3. Place the script in directory with the app `.xcodeproj` 
 4. Open the terminal window and run command:
 ```sh

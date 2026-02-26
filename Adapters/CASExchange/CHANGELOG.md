@@ -1,7 +1,10 @@
 ## CAS Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationCASExchange', '4.6.0.0'
+pod 'CASMediationCASExchange', '4.6.3.0'
 ```
+
+### 4.6.3.0
+- Added support for the `[ERRORCODE]` macro for the VAST error URL.
 
 ### 4.6.0.0
 - Fixed reward issuance for watching rewarded videos, including server-side fixes for older versions.

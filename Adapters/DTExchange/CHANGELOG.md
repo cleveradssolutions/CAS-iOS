@@ -1,7 +1,10 @@
 ## DT Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationDTExchange', '8.4.4.1'
+pod 'CASMediationDTExchange', '8.4.5.0'
 ```
+
+### 8.4.5.0
+- Certified with DTExchange - 8.4.5
 
 ### 8.4.4.1
 - Fixed UI API called on a background thread.

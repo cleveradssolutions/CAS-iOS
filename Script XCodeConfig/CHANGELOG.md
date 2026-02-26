@@ -1,5 +1,9 @@
 # CAS.AI iOS XCode Config script change log
 
+# [1.6] - Feb 25, 2026
+- Added automatic population of `AdNetworkIdentifiers` in `Info.plist`.
+- Added automatic population of `CASAIAppIdentifier` in `Info.plist` (optional for some multiplatform frameworks).
+
 # [1.5] - Nov 20, 2025
 - Fixed an error in the script’s behavior when the parameter `--project=` is specified. When the full path to the project is provided, the script’s location no longer matters.
 - Error messages are now output to `STDERR`.

@@ -1,7 +1,10 @@
 ## Unity Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPubMatic', '4.12.0.0'
+pod 'CASMediationPubMatic', '4.12.0.1'
 ```
+
+### 4.12.0.1
+- Added support Native Ads.
 
 ### 4.12.0.0
 - Certified with PubMatic - 4.12.0

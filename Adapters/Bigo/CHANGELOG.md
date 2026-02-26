@@ -1,7 +1,11 @@
 ## Bigo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBigo', '5.0.6.0'
+pod 'CASMediationBigo', '5.1.0.0'
 ```
+
+### 5.1.0.0
+- Certified with Bigo - 5.1.0
+- Added support alternative Bidding system with CAS 4.6.3. (Closed beta)
 
 ### 5.0.6.0
 - Certified with Bigo - 5.0.6
