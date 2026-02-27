@@ -14,7 +14,7 @@ module CASConfig
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '1.6'
+    SCRIPT_VERSION = '1.7'
 
     class << self
         attr_accessor :casId, :project_path, :gad_included, :clean_install
@@ -316,6 +316,8 @@ module CASConfig
 
         def get_setting(key)
             @mainTarget.build_configurations.each do |config|
+                # not resolve some variables, just remove it, for example $(TARGET_NAME)
+                # prop = config.resolve_build_setting(key, @mainTarget)
                 prop = config.build_settings[key]
                 return prop unless prop.nil? || prop.empty?
             end
@@ -352,6 +354,11 @@ module CASConfig
             if path.start_with?("$(SRCROOT)/")
                 return path["$(SRCROOT)/".length..]
             end
+            if path.start_with?("$(PROJECT_DIR)/")
+                return path["$(PROJECT_DIR)/".length..]
+            end
+            path = path.gsub("$(TARGET_NAME)", @mainTarget.name)
+            path = path.gsub("$(CONFIGURATION)", "Release")
             return path
         end
 

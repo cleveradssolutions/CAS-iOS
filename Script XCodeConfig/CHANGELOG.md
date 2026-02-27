@@ -1,5 +1,8 @@
 # CAS.AI iOS XCode Config script change log
 
+# [1.7] - Feb 27, 2026
+- - Added support for additional variables in the Info.plist path: `$(PROJECT_DIR)`, `$(TARGET_NAME)`, `$(CONFIGURATION)`.
+
 # [1.6] - Feb 25, 2026
 - Added automatic population of `AdNetworkIdentifiers` in `Info.plist`.
 - Added automatic population of `CASAIAppIdentifier` in `Info.plist` (optional for some multiplatform frameworks).
