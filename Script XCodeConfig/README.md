@@ -1,6 +1,6 @@
 # CAS.AI Automatically configure project
 
-Your project requires additional configurations that can be performed automatically by a special script. 
+The Xcode project requires additional configurations that can be performed automatically by a special script. 
 
 The script automatically performs the following integration steps:
 - [x] SKAdNetwork Support
@@ -13,7 +13,7 @@ The script automatically performs the following integration steps:
 - [x] Set `$(inherited)` and `-ObjC` to `OTHER_LDFLAGS` project settings
 
 > [!NOTE]
-> Read more about it on [wiki page](https://github.com/cleveradssolutions/CAS-iOS/wiki/Manually-configure-project).
+> Read more about it on [docs page](https://docs.page/cleveradssolutions/docs/iOS/Manually-configure-project).
 
 ## Getting Started 
 1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/casconfig.rb)  
@@ -41,6 +41,9 @@ The script can be located anywhere, provided that the full path to the project i
 ruby /path1/to/casconfig.rb CASID --project=/path2/to/MyApp.xcodeproj
 ```
 
-## GitHub issue tracker
-To file bugs, make feature requests, or suggest improvements for the script, please use [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
+## Feedback & Contributions
+Found a bug? Have a feature request or suggestion?
+Please open an issue using [GitHub's issue tracker](https://github.com/cleveradssolutions/CAS-iOS/issues).
 
+## License
+The CAS.AI iOS-SDK is available under a commercial license. See the LICENSE file for more info.
