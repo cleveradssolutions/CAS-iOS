@@ -126,13 +126,13 @@ let package = Package(
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "13.1.0"),
         .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", exact: "7.7.0"),
         .package(url: "https://github.com/Kidoz-SDK/kidoz-sdk-swift-package", exact: "10.1.5"),
-        .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", exact: "8.0.7"),
+        .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", exact: "8.0.8"),
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", exact: "13.6.0"),
         .package(url: "https://github.com/bytedance/AdsGlobalPackage", exact: "7.6.0-release.6"),
         .package(url: "https://github.com/divkit/divkit-ios-facade", .upToNextMinor(from: "5.2.1")),
         .package(url: "https://github.com/appmetrica/appmetrica-sdk-ios", .upToNextMinor(from: "5.14.0")),
         .package(url: "https://github.com/StartApp-SDK/StartAppSDK-SwiftPackage", exact: "4.13.0"),
-        .package(url: "https://github.com/Ogury/ogury-sdk-spm", exact: "5.2.0"),
+        .package(url: "https://github.com/Ogury/ogury-sdk-spm", exact: "5.2.1"),
         .package(url: "https://github.com/Prado-SDK/prado-sdk-swift-package", exact: "10.1.5"),
         .package(url: "https://github.com/vervegroup/hybid-ios-spm-sdk", exact: "3.7.1"),
         .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package", exact: "4.12.0"),
@@ -241,13 +241,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.UnityAds.binarySDK,
-            url: "https://github.com/Unity-Technologies/unity-ads-ios/releases/download/4.16.6/UnityAds.zip",
-            checksum: "f844ff77d03e07a196557e62cd5f0a46df04bc5029db12dcc63be90f28192e45"
+            url: "https://github.com/Unity-Technologies/unity-ads-ios/releases/download/4.17.0/UnityAds.zip",
+            checksum: "8a40e6c779353e4ead87d4d635480cdae46f0b708763460dc002103e35ce8ba7"
         ),
         .binaryTarget(
             name: CAS.UnityAds.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationUnityAds-4.16.6.0.zip",
-            checksum: "c93fbdef5754a8b43ca774ca196a1557e07aa5d04a8f9e0a1c14b13a34b757d8"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationUnityAds-4.17.0.0.zip",
+            checksum: "f92e112c7fca2624ce9b5fb984ff6cf88070ed3947dc6ecd93162358d9b2a2bf"
         ),
 
         // MARK: HyprMX
@@ -397,8 +397,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Mintegral.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationMintegral-8.0.7.0.zip",
-            checksum: "ef2ccf58c10af4b173f7ed2205fc4e5f61c2047143169403c5363f96a853b22e"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationMintegral-8.0.8.0.zip",
+            checksum: "f0a8c866c7786f7c28c483b696db6a976ce78de7d86c486c0fbf632c577e1460"
         ),
 
         // MARK: - DTExchange
@@ -610,8 +610,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Pangle.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationPangle-7.9.0.6.0.zip",
-            checksum: "95d8baf5b00423cb50bdbd55d5b0f8ddabccb8d19f36a35e4f795f95ea71a608"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationPangle-7.9.0.7.0.zip",
+            checksum: "4d845360687aabe6bd63034c57031c2e06db8a16db8b72585ebc8da54566b292"
         ),
 
         // MARK: - Maticoo
@@ -666,8 +666,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Ogury.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationOgury-5.2.0.0.zip",
-            checksum: "a2ed6c81f42bfe470a3c95ed61d6a4242ec8db4fa6d571e64acd68bd106e3526"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationOgury-5.2.1.0.zip",
+            checksum: "3e7c912b3f8bf21c018603226b3e3169b8ff13ae8f8e949fc464d94d578319f9"
         ),
 
         // MARK: - Chartboost

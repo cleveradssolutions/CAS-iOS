@@ -1,7 +1,11 @@
 ## Ogury iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationOgury', '5.2.0.0'
+pod 'CASMediationOgury', '5.2.1.0'
 ```
+
+### 5.2.1.0
+- Certified with Ogury - 5.2.1
+- Removed main thread dispatch workaround introduced in 5.2.0
 
 ### 5.2.0.0
 - Certified with Ogury - 5.2.0
