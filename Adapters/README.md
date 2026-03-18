@@ -4,7 +4,7 @@ The adapters in the table are listed in alphabetical order.
 
 | Name | Version | Supported Formats | SPM | Optimal | Families | VPN | Changelog | SDK |
 | ---- | :-----: | :---------------: | :-: | :-----: | :------: | :-: | :-------: | :-: |
-| AppLovin | 13.6.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
+| AppLovin | 13.6.1.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
 | AudienceNetwork | 6.21.1.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](AudienceNetwork/CHANGELOG.md) | [link](https://developers.facebook.com/docs/audience-network/setting-up/platform-setup/ios/changelog?locale=en_US) |
 | Bigo | 5.1.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✗** | **✓** | **✗** | **✓** | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
 | CASExchange | 4.6.3.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](CASExchange/CHANGELOG.md) | [link]() |
@@ -21,7 +21,7 @@ The adapters in the table are listed in alphabetical order.
 | Maticoo | 1.5.6.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✗** | **✗** | **✗** | [view](Maticoo/CHANGELOG.md) | [link](https://www.yuque.com/maticoo/ivzbqi/ue26t14iwew5mbto) |
 | Mintegral | 8.0.8.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | **✓** | [view](Mintegral/CHANGELOG.md) | [link](https://dev.mintegral.com/doc/index.html?file=sdk-m_sdk-ios&lang=en) |
 | Ogury | 5.2.1.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](Ogury/CHANGELOG.md) | [link](https://support.ogury.com/inapp/release-notes/ogury-sdk/ios) |
-| Pangle | 7.9.0.7.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](Pangle/CHANGELOG.md) | [link](https://github.com/bytedance/Bytedance-UnionAD) |
+| Pangle | 7.9.0.8.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](Pangle/CHANGELOG.md) | [link](https://github.com/bytedance/Bytedance-UnionAD) |
 | Prado | 10.1.5.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](Prado/CHANGELOG.md) | [link](https://github.com/Prado-SDK/prado-mobile-sdk/tree/main/Direct/iOS) |
 | PubMatic 🧪 | 4.12.0.1 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](PubMatic/CHANGELOG.md) | [link](https://help.pubmatic.com/openwrap/reference/changelog-5) |
 | Smaato | 22.9.3.1 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | **✗** | [view](Smaato/CHANGELOG.md) | [link](https://developers.smaato.com/publishers/nextgen-sdk-ios-changelog/) |

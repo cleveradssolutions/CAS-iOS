@@ -127,7 +127,7 @@ let package = Package(
         .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", exact: "7.7.0"),
         .package(url: "https://github.com/Kidoz-SDK/kidoz-sdk-swift-package", exact: "10.1.5"),
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", exact: "8.0.8"),
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", exact: "13.6.0"),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", exact: "13.6.1"),
         .package(url: "https://github.com/bytedance/AdsGlobalPackage", exact: "7.6.0-release.6"),
         .package(url: "https://github.com/divkit/divkit-ios-facade", .upToNextMinor(from: "5.2.1")),
         .package(url: "https://github.com/appmetrica/appmetrica-sdk-ios", .upToNextMinor(from: "5.14.0")),
@@ -325,8 +325,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.AppLovin.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationAppLovin-13.6.0.0.zip",
-            checksum: "9b2b712321f6c3472ef27ac4399c55022eb2ca2989d4ee96f4d4d780c713d8ed"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationAppLovin-13.6.1.0.zip",
+            checksum: "ff6f392c911b326d7fe1010d4e259b25463c2292e9c075e828533a2bfd1ed1dc"
         ),
 
         // MARK: GoogleAds
@@ -610,8 +610,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Pangle.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationPangle-7.9.0.7.0.zip",
-            checksum: "4d845360687aabe6bd63034c57031c2e06db8a16db8b72585ebc8da54566b292"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationPangle-7.9.0.8.0.zip",
+            checksum: "16dccf177caf84ec17a847d50ec11bbfc327ecf235fea0f706bd43dc6ecf3465"
         ),
 
         // MARK: - Maticoo
