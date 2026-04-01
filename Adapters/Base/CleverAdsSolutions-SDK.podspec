@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'DTExchange' do |b|
-    b.dependency 'CASMediationDTExchange', '8.4.5.0'
+    b.dependency 'CASMediationDTExchange', '8.4.6.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.3'
   end
 
@@ -63,17 +63,17 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AppLovin' do |b|
-    b.dependency 'CASMediationAppLovin', '13.6.1.0'
+    b.dependency 'CASMediationAppLovin', '13.6.2.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.3'
   end
 
   s.subspec 'Pangle' do |b|
-    b.dependency 'CASMediationPangle', '7.9.0.9.0'
+    b.dependency 'CASMediationPangle', '7.9.1.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.3'
   end
 
   s.subspec 'Bigo' do |b|
-    b.dependency 'CASMediationBigo', '5.1.0.0'
+    b.dependency 'CASMediationBigo', '5.1.1.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.3'
   end
 
@@ -143,7 +143,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'PubMatic' do |b|
-    b.dependency 'CASMediationPubMatic', '5.0.0.0'
+    b.dependency 'CASMediationPubMatic', '5.0.1.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.3'
   end
 

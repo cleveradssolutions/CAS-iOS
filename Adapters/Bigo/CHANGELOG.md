@@ -1,7 +1,11 @@
 ## Bigo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBigo', '5.1.0.0'
+pod 'CASMediationBigo', '5.1.1.0'
 ```
+
+### 5.1.1.0
+- Certified with Bigo - 5.1.1
+- Fix: Landingpage redirection issue.
 
 ### 5.1.0.0
 - Certified with Bigo - 5.1.0

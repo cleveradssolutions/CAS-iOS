@@ -127,7 +127,7 @@ let package = Package(
         .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", exact: "7.7.0"),
         .package(url: "https://github.com/Kidoz-SDK/kidoz-sdk-swift-package", exact: "10.1.5"),
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", exact: "8.0.9"),
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", exact: "13.6.1"),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", exact: "13.6.2"),
         .package(url: "https://github.com/bytedance/AdsGlobalPackage", exact: "7.6.0-release.6"),
         .package(url: "https://github.com/divkit/divkit-ios-facade", .upToNextMinor(from: "5.2.1")),
         .package(url: "https://github.com/appmetrica/appmetrica-sdk-ios", .upToNextMinor(from: "5.14.0")),
@@ -135,7 +135,7 @@ let package = Package(
         .package(url: "https://github.com/Ogury/ogury-sdk-spm", exact: "5.2.1"),
         .package(url: "https://github.com/Prado-SDK/prado-sdk-swift-package", exact: "10.1.5"),
         .package(url: "https://github.com/vervegroup/hybid-ios-spm-sdk", exact: "3.7.1"),
-        .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package", exact: "5.0.0"),
+        .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package", exact: "5.0.1"),
     ],
 
     targets: [
@@ -325,8 +325,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.AppLovin.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationAppLovin-13.6.1.0.zip",
-            checksum: "ff6f392c911b326d7fe1010d4e259b25463c2292e9c075e828533a2bfd1ed1dc"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationAppLovin-13.6.2.0.zip",
+            checksum: "e11c85287ceec4d67b2ba5a40dddae8369f6e1c4d8825be87476517045dc82dc"
         ),
 
         // MARK: GoogleAds
@@ -415,13 +415,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.DTExchange.binarySDK,
-            url: "https://github.com/inner-active/InneractiveAdSDK-iOS/archive/refs/heads/8.4.5.zip",
-            checksum: "53aa3161a26652c2e984f7e42af09065701cd4c8708031d07045bd920b435186"
+            url: "https://github.com/inner-active/InneractiveAdSDK-iOS/archive/refs/heads/8.4.6.zip",
+            checksum: "4e5d0ace63d91934ccebf467bf9041fc9ade0c8401c4a4161e8e3907d4179c6f"
         ),
         .binaryTarget(
             name: CAS.DTExchange.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationDTExchange-8.4.5.0.zip",
-            checksum: "4291c9fdaaf0cc10f9199b618c772949b0a93c69dd244d95298b3484ec7b4954"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationDTExchange-8.4.6.0.zip",
+            checksum: "d08f1a5177a2cb34ed4541fb82ceabd6c403e43d1cb04fd5f2272547b8758808"
         ),
 
         // MARK: - CASExchange
@@ -610,8 +610,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Pangle.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationPangle-7.9.0.9.0.zip",
-            checksum: "1c1ed8025a9399303f28ae32e16198f2f525ae43095d892f99afedd8c50e1b6b"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationPangle-7.9.1.0.0.zip",
+            checksum: "efd4286d95fddc0281bd36a9979339d048dd6be221637dbd70d86ea13e22659f"
         ),
 
         // MARK: - Maticoo
@@ -649,8 +649,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.PubMatic.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationPubMatic-5.0.0.0.zip",
-            checksum: "d771fd3cffd2a08fb70b08e0796a5a36cded7fd8c1ae6ade74f38e572478710a"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationPubMatic-5.0.1.0.zip",
+            checksum: "304363a28dfea1647fdc24fae8623d5ef283d40cce645c882237f8a49f3dd463"
         ),
 
         // MARK: - Ogury

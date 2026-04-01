@@ -1,7 +1,12 @@
 ## DT Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationDTExchange', '8.4.5.0'
+pod 'CASMediationDTExchange', '8.4.6.0'
 ```
+
+### 8.4.6.0
+- Certified with DTExchange - 8.4.6
+- Added Support for IAB’s Global Privacy Platform
+- Added Support for Google Mobile Ads SDK 13.0.0
 
 ### 8.4.5.0
 - Certified with DTExchange - 8.4.5
