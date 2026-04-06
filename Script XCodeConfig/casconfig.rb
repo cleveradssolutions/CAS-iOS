@@ -11,13 +11,14 @@ module CASConfig
     ARG_PROJECT = '--project='
     ARG_NO_GAD = '--no-gad'
     ARG_CLEAN = '--clean'
+    ARG_IGNORE_ID = '--ignore-id'
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '1.7'
+    SCRIPT_VERSION = '2.0'
 
     class << self
-        attr_accessor :casId, :project_path, :gad_included, :clean_install
+        attr_accessor :casId, :project_path, :gad_included, :clean_install, :require_id
 
         def config
             Dir.chdir __dir__
@@ -26,14 +27,22 @@ module CASConfig
             end
 
             update_project() do |project|
-                cas_config, cas_config_name = load_configuration()
-                project.check_config_file(cas_config, cas_config_name)
-                project.ensure_ldflags
-                
                 update_plist(project.get_plist_path()) do |plist|
+                    if @casId.empty?
+                        @casId = plist.get_cas_app_id()
+                    end
+                    if @casId.empty? && @require_id
+                        error("[!] You must specify an CAS Id to complete the configuration.")
+                        exit_with_help()
+                    end
+                    
+                    cas_config, cas_config_name = load_configuration()
+                    project.check_config_file(cas_config, cas_config_name)
+                    project.ensure_ldflags
+                
                     plist.check_sk_ad_networks()
                     plist.check_att_ad_networks()
-                    plist.check_cas_app_id(casId)
+                    plist.check_cas_app_id(@casId)
                     plist.check_google_app_id(cas_config)
                     plist.check_transport_security()
                     plist.check_tracking_usage_description()
@@ -49,6 +58,10 @@ module CASConfig
             if instance.dirt?
                 instance.project.save()
                 puts "Updated: " + relative_path(instance.project.path)
+                if running_in_xcode?
+                    error("The build was cancelled to complete the project modification for CAS.AI Mediation. Please run the build again. If this message appears more than once, please contact support.")
+                    exit 1
+                end
             end
         end
 
@@ -80,28 +93,34 @@ module CASConfig
         end
 
         def read_from_args
-            if ARGV.count == 0
-                error("[!] You must specify an CAS Id to complete the configuration.")
-                print_help()
-            end
-            
             @casId = ""
-            @project_path = ""
+            @project_path = ENV['PROJECT_FILE_PATH'].to_s
             @gad_included = true
             @clean_install = false
+            @require_id = true
             
+            if !@project_path.empty? && Pathname.new(@project_path).absolute?
+                Dir.chdir File.dirname(@project_path)
+                @require_id = false
+            end
+
+            if @require_id && ARGV.count == 0
+                error("[!] You must specify an CAS Id to complete the configuration.")
+                exit_with_help()
+            end
+
             ARGV.each do |arg|
                 if arg == ARG_HELP
-                    print_help()
+                    exit_with_help()
                 elsif arg == ARG_NO_GAD
                     @gad_included = false
                 elsif arg == ARG_CLEAN
                     @clean_install = true
+                elsif arg == ARG_IGNORE_ID
+                    @require_id = false
                 elsif arg.start_with?(ARG_PROJECT)
-                    @project_path = sub_between(arg, ARG_PROJECT, ' ')
-                    unless @project_path.end_with?(XC_PROJECT_FILE)
-                        @project_path = @project_path + XC_PROJECT_FILE
-                    end
+                    @project_path = arg.split('=', 2)[1]
+                    @project_path += XC_PROJECT_FILE unless @project_path.end_with?(XC_PROJECT_FILE)
                     if Pathname.new(@project_path).absolute?
                         Dir.chdir File.dirname(@project_path)
                     end
@@ -109,7 +128,7 @@ module CASConfig
                         Dir.chdir File.expand_path('../')
                         unless File.exist?(@project_path)
                             error("[!] Not found project: " + @project_path)
-                            print_help()
+                            exit_with_help()
                         end
                     end
                 elsif !arg.empty? && (arg == 'demo' || arg.scan(/\D/).empty?)
@@ -120,7 +139,7 @@ module CASConfig
                     else
                         error("[!] Invalid CAS Id: " + arg)
                     end
-                    print_help()
+                    exit_with_help()
                 end
             end
         end
@@ -133,20 +152,40 @@ module CASConfig
             source.split(startStr).last.split(endStr).first
         end
 
+        def running_in_xcode?
+            !ENV['PROJECT_FILE_PATH'].nil?
+        end
+
         def error(message)
-            STDERR.puts colortxt(message, 31)
+            if running_in_xcode?
+                STDERR.puts "error: " + message 
+            else
+                STDERR.puts colortxt(message, 31)
+            end
         end
 
         def success(message)
-            puts colortxt(message, 32)
+            if running_in_xcode?
+                puts "note: " + message 
+            else
+                puts colortxt(message, 32)
+            end
         end
 
         def warning(message)
-            puts colortxt(message, 33)
+            if running_in_xcode?
+                puts "warning: " + message 
+            else
+                puts colortxt(message, 33)
+            end
         end
 
         def thin_text(message)
-            colortxt(message, 2)
+            if running_in_xcode?
+                return message
+            else
+                return colortxt(message, 2)
+            end
         end
 
         def colortxt(txt, term_color_code)
@@ -154,12 +193,14 @@ module CASConfig
         end
 
         def print_footer
+            return if running_in_xcode?
             puts ""
             puts thin_text("XCode project configuration script version " + SCRIPT_VERSION)
             puts thin_text("   Powered by ") + colortxt("CAS.ai", 36)
         end
 
-        def print_help
+        def exit_with_help
+            return if running_in_xcode?
             puts ""
             warning "Usage:"
             puts "   Place the script in the directory with the " + XC_PROJECT_FILE + " file"
@@ -247,18 +288,14 @@ module CASConfig
         end
 
         def load_configuration()
-            if casId.empty?
-                error("[!] You must specify an CAS Id to complete the configuration.")
-                print_help()
-            end
-            if casId == "demo"
+            if casId.empty? || casId == "demo"
                 return "", ""
             end
             url = 'https://psvpromo.psvgamestudio.com/cas-settings.php?platform=1&apply=config&bundle=' + @casId
             data = load_with_cache(url) do |res|
                 if res.is_a?(Net::HTTPNoContent)
                     error("[!] CAS Id " + casId + " not registered.")
-                    print_help()
+                    exit_with_help()
                 end
                 if res.is_a?(Net::HTTPSuccess)
                     configName = sub_between(res['content-disposition'], 'filename="', '"')
@@ -290,7 +327,7 @@ module CASConfig
                     foundProjects = Dir.glob("*" + XC_PROJECT_FILE)
                     if foundProjects.empty?
                         CASConfig.error("[!] XCode project not found")
-                        CASConfig.print_help
+                        CASConfig.exit_with_help
                     end
                 end
                 if foundProjects.count == 1
@@ -329,7 +366,17 @@ module CASConfig
             @is_dirt = true
         end
 
-        def get_path_to_new_file(name, group)
+        def get_file_path_in_group(name, group)
+            if group.nil?
+                return File.join(@project.path.dirname, name)
+            elsif group.isa == 'PBXFileSystemSynchronizedRootGroup'
+                return File.join(@project.path.dirname, group.display_name, name)
+            else
+                return File.join(group.real_path, name)
+            end
+        end
+
+        def create_new_resource_file(name, group)
             @is_dirt = true
             if group.nil?
                 xcFile = @project.new_file(name)
@@ -347,7 +394,7 @@ module CASConfig
         def get_plist_path()
             path = get_setting("INFOPLIST_FILE")
             if path.empty?
-                path = get_path_to_new_file("Info.plist", @project.groups.find{ |group| !group.path.empty? })
+                path = create_new_resource_file("Info.plist", @project.groups.find{ |group| !group.path.empty? })
                 set_setting("INFOPLIST_FILE", path)
                 return path
             end
@@ -366,11 +413,12 @@ module CASConfig
             return if configBody.empty?
             configName = "cas_settings.json" if configName.empty?
             groupPath = File.dirname(get_plist_path())
-            filePath = groupPath + "/" + configName
+            xGroup = @project[groupPath]
+            filePath = get_file_path_in_group(configName, xGroup)
 
             if CASConfig.file_expired?(filePath)
                 CASConfig.success "- Config file has been " + (if File.exist?(filePath) then "updated" else "created" end)
-                newFilePath = get_path_to_new_file(configName, @project[groupPath])
+                newFilePath = create_new_resource_file(configName, xGroup)
                 puts "   " + CASConfig.thin_text(newFilePath)
                 File.open(newFilePath, 'w') { |file| file.write(configBody) }
             else
@@ -492,7 +540,7 @@ module CASConfig
         end
 
         def check_cas_app_id(casId)
-            if casId == "demo"
+            if casId.empty? || casId == "demo"
                 return
             end
             currAppId = @plist[KEY_CAS_APP_ID]
@@ -503,6 +551,10 @@ module CASConfig
             else
                 puts "- " + KEY_CAS_APP_ID + " is up-to-date"
             end
+        end
+
+        def get_cas_app_id
+            return @plist[KEY_CAS_APP_ID].to_s
         end
 
         def check_google_app_id(casConfig)

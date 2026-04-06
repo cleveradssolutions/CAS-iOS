@@ -5,8 +5,7 @@ pod 'CASMediationHyprMX', '6.4.6.0'
 
 ### 6.4.6.0
 - Certified with HyprMX - 6.4.6
-- Resolved crashes
-- Added Swift Package Manager support
+- Moved to the official SPM repository.
 
 ### 6.4.5.0
 - Certified with HyprMX - 6.4.5

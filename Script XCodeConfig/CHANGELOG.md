@@ -1,7 +1,10 @@
 # CAS.AI iOS XCode Config script change log
 
+# [2.0] - Mar 10, 2026
+- Added support for running the script in the Xcode Build Phase. The CAS ID is read from the `CASAIAppIdentifier` parameter in Info.plist.
+
 # [1.7] - Feb 27, 2026
-- - Added support for additional variables in the Info.plist path: `$(PROJECT_DIR)`, `$(TARGET_NAME)`, `$(CONFIGURATION)`.
+- Added support for additional variables in the Info.plist path: `$(PROJECT_DIR)`, `$(TARGET_NAME)`, `$(CONFIGURATION)`.
 
 # [1.6] - Feb 25, 2026
 - Added automatic population of `AdNetworkIdentifiers` in `Info.plist`.

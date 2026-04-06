@@ -1,7 +1,10 @@
 ## Bigo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBigo', '5.1.1.0'
+pod 'CASMediationBigo', '5.1.2.0'
 ```
+
+### 5.1.2.0
+- Certified with Bigo - 5.1.2
 
 ### 5.1.1.0
 - Certified with Bigo - 5.1.1
