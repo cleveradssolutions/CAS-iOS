@@ -365,7 +365,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.LiftoffMonetize.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationLiftoffMonetize-7.7.2.0.zip",
-            checksum: "f7b6f97abcb60c935ea66ab4f716e5c7adde4a841cc2c4ebbbbf60386c609a40"
+            checksum: "c21a4310d03186081b1d9f85f6368daf79eda0b78705a8a2a3d5822b593578e2"
         ),
 
         // MARK: - StartIO
@@ -399,7 +399,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.Mintegral.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationMintegral-8.1.1.0.zip",
-            checksum: "dc93b1ea8988f3c6e52596d4d2c681f8e161fc573420a228479435ccb9d4ddc4"
+            checksum: "4f683e27a735a948e305813b4548b4926b392c589f0be0824b9150b89da1b906"
         ),
 
         // MARK: - DTExchange
@@ -723,7 +723,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.Verve.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationVerve-3.8.0.0.zip",
-            checksum: "a6865c329cb19e284f5e686d539e3cfab5c317a31ff18f23acac3dbe10fdf445"
+            checksum: "0e1d3f7f6b7f52ae707721445a221397e6fd6251ac86de2629c27bb9c0d729a5"
         ),
 
     ]
