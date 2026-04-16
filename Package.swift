@@ -124,9 +124,9 @@ let package = Package(
     products: CAS.allProducts,
     dependencies: [
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "13.2.0"),
-        .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", exact: "7.7.1"),
+        .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", exact: "7.7.2"),
         .package(url: "https://github.com/Kidoz-SDK/kidoz-sdk-swift-package", exact: "10.1.5"),
-        .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", exact: "8.1.0"),
+        .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", exact: "8.1.1"),
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", exact: "13.6.2"),
         .package(url: "https://github.com/bytedance/AdsGlobalPackage", exact: "7.9.0-release.8"),
         .package(url: "https://github.com/divkit/divkit-ios-facade", .upToNextMinor(from: "5.2.1")),
@@ -135,7 +135,7 @@ let package = Package(
         .package(url: "https://github.com/JunGroupProductions/HyprMX-SDK-SPM", exact: "6.4.6"),
         .package(url: "https://github.com/Ogury/ogury-sdk-spm", exact: "5.2.1"),
         .package(url: "https://github.com/Prado-SDK/prado-sdk-swift-package", exact: "10.1.5"),
-        .package(url: "https://github.com/vervegroup/hybid-ios-spm-sdk", exact: "3.7.1"),
+        .package(url: "https://github.com/vervegroup/hybid-ios-spm-sdk", exact: "3.8.0"),
         .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package", exact: "5.0.1"),
     ],
 
@@ -364,8 +364,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.LiftoffMonetize.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationLiftoffMonetize-7.7.1.0.zip",
-            checksum: "3d3f83da1939f5db0132c9c4d1ca29b6dd5e84dabd1d0625bbe3515576376584"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationLiftoffMonetize-7.7.2.0.zip",
+            checksum: "f7b6f97abcb60c935ea66ab4f716e5c7adde4a841cc2c4ebbbbf60386c609a40"
         ),
 
         // MARK: - StartIO
@@ -398,8 +398,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Mintegral.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationMintegral-8.1.0.0.zip",
-            checksum: "6b3152174ef92ab9ff39806d15a58d7c3bdd7cfebbc228364a6264588eeab24f"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationMintegral-8.1.1.0.zip",
+            checksum: "dc93b1ea8988f3c6e52596d4d2c681f8e161fc573420a228479435ccb9d4ddc4"
         ),
 
         // MARK: - DTExchange
@@ -722,9 +722,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Verve.binaryAdapter,
-            url:
-                "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.5.0/CASMediationVerve-3.7.1.0.zip",
-            checksum: "07d545f7bbd7d0cf4ed359b5289ef40f64f39654ba7bb2405364ffa817e5e0b2"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationVerve-3.8.0.0.zip",
+            checksum: "a6865c329cb19e284f5e686d539e3cfab5c317a31ff18f23acac3dbe10fdf445"
         ),
 
     ]

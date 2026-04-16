@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'LiftoffMonetize' do |b|
-    b.dependency 'CASMediationLiftoffMonetize', '7.7.1.0'
+    b.dependency 'CASMediationLiftoffMonetize', '7.7.2.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.5'
   end
 
@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Mintegral' do |b|
-    b.dependency 'CASMediationMintegral', '8.1.0.0'
+    b.dependency 'CASMediationMintegral', '8.1.1.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.5'
   end
 
@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Verve' do |b|
-    b.dependency 'CASMediationVerve', '3.7.1.0'
+    b.dependency 'CASMediationVerve', '3.8.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.5'
   end
 

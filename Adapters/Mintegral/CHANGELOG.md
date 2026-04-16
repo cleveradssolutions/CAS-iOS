@@ -1,7 +1,10 @@
 ## Mintegral iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMintegral', '8.1.0.0'
+pod 'CASMediationMintegral', '8.1.1.0'
 ```
+
+### 8.1.1.0
+- Certified with Mintegral - 8.1.1
 
 ### 8.1.0.0
 - Certified with Mintegral - 8.1.0
