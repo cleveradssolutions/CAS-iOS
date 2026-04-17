@@ -163,8 +163,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: baseBinary,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CleverAdsSolutions-4.6.5.zip",
-            checksum: "3b196fe6760bee2ef409185b1b3fb4dcc5c3a02592f832244e91b52b9664bd58"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CleverAdsSolutions-4.6.6.zip",
+            checksum: "1ef13f0764070caad28722df1963729caf0e3bb0dd7bd4d44ff859ac4c7e0a06"
         ),
 
         // MARK: - IronSource
@@ -487,13 +487,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.InMobi.binarySDK,
-            url: "https://dl.inmobi.com/inmobi-sdk/IM/InMobi-iOS-SDK-11.1.1.zip",
-            checksum: "578dd32285cc8cea05e04ef3ffd03ccf0c93bc010d1e3abbed28690fe0dfffb2"
+            url: "https://dl.inmobi.com/inmobi-sdk/IM/InMobi-iOS-SDK-11.2.0.zip",
+            checksum: "6013c4f6d5bb170f9a4931512e1f9623b5b3ed3a5ed59a442c6c234665af4e89"
         ),
         .binaryTarget(
             name: CAS.InMobi.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationInMobi-11.1.1.0.zip",
-            checksum: "d481e5549072fe5c58ce0d958ac0fba054646f34b08e97d0a09ede709635da47"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationInMobi-11.2.0.0.zip",
+            checksum: "41dfe090391d17e8bef05f00af9018957e8ac3198ee82693bc5c6237ba20fa95"
         ),
 
         // MARK: - Yango Ads
@@ -611,8 +611,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Pangle.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationPangle-7.9.1.1.0.zip",
-            checksum: "5359fd1d4c5302c651aae3c0b69911ba2052c23536e750528225d331eab335bb"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationPangle-7.9.1.2.0.zip",
+            checksum: "d0579aad280374d74228ffbfd2f30e0916cd4dfebdf0523dfb168c3b36b249ad"
         ),
 
         // MARK: - Maticoo
