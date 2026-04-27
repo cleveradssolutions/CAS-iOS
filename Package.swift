@@ -81,9 +81,8 @@ enum CAS: String, CaseIterable {
     /// https://github.com/vervegroup/hybid-ios-spm-sdk
     case Verve
 
-    /// Not supported: Required resources
-    /// https://github.com/CocoaPods/Specs/tree/master/Specs/a/5/5/BigoADS/
-    //case BigoAds
+    /// https://github.com/CocoaPods/Specs/tree/master/Specs/a/5/5/Bigo/
+    case Bigo
 
     /// Not supported:  Many separate frameworks
     //case Smaato
@@ -113,7 +112,7 @@ enum CAS: String, CaseIterable {
     var pathAdapter: String {
         if self == CAS.Exchange {
             return "Adapters/CAS" + rawValue
-        }
+        }
         return "Adapters/" + rawValue
     }
 }
@@ -163,8 +162,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: baseBinary,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CleverAdsSolutions-4.6.6.zip",
-            checksum: "1ef13f0764070caad28722df1963729caf0e3bb0dd7bd4d44ff859ac4c7e0a06"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0-alpha1/CleverAdsSolutions-4.7.0-alpha1.zip",
+            checksum: "2543a1c06ab189502734ca0860f77a2c2663b075b0933957d9db225e70e12853"
         ),
 
         // MARK: - IronSource
@@ -208,8 +207,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.IronSource.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.5/CASMediationIronSource-9.4.0.0.zip",
-            checksum: "2765e3bc22f6745b683f37a30d50769b55e016e34c76194abb598dcd857c14b6"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0-alpha1/CASMediationIronSource-9.4.0.1.zip",
+            checksum: "3aac314a1875b2a0f93e72aa6096b2cca9b53bea4774406b15969f43bae569ec"
         ),
 
         // MARK: - UnityAds
@@ -726,5 +725,29 @@ let package = Package(
             checksum: "0e1d3f7f6b7f52ae707721445a221397e6fd6251ac86de2629c27bb9c0d729a5"
         ),
 
+        // MARK: - Bigo Ads
+
+        .target(
+            name: CAS.Bigo.target,
+            dependencies: [
+                .target(name: CAS.Bigo.binarySDK),
+                .target(name: CAS.Bigo.binaryAdapter),
+                .target(name: baseTarget),
+            ],
+            path: CAS.Bigo.pathAdapter,
+            linkerSettings: [
+                .linkedLibrary("c++"),
+            ]
+        ),
+        .binaryTarget(
+            name: CAS.Bigo.binarySDK,
+            url: "https://static-fed-oss.adsbigo.com/bigoads-framework/BigoADS_50102_84.zip",
+            checksum: "409659cd4db163ff0ea52e4fbbb5b667bb9f6830b2d63be71eb13f126d60280f"
+        ),
+        .binaryTarget(
+            name: CAS.Bigo.binaryAdapter,
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0-alpha1/CASMediationBigo-5.1.2.1.zip",
+            checksum: "d24b589367fd06a45e622ca12ff9934806866c9f58fa16e3d1a65f8412b4cb98"
+        ),
     ]
 )

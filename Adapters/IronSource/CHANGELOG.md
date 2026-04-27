@@ -3,6 +3,9 @@
 pod 'CASMediationIronSource', '9.4.0.0'
 ```
 
+### 9.4.0.1
+- Fixed a rare issue with BURL being called for the wrong ad source.
+
 ### 9.4.0.0
 - Certified with IronSource - 9.4.0
 

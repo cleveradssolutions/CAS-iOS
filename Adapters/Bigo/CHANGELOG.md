@@ -3,6 +3,10 @@
 pod 'CASMediationBigo', '5.1.2.0'
 ```
 
+### 5.1.2.1
+- Fixed AppOpen load for Bidding.
+- Added Swift Package Manager integration support.
+
 ### 5.1.2.0
 - Certified with Bigo - 5.1.2
 

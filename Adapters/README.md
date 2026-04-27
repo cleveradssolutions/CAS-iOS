@@ -6,7 +6,7 @@ The adapters in the table are listed in alphabetical order.
 | ---- | :-----: | :---------------: | :-: | :-----: | :------: | :-: | :-------: | :-: |
 | AppLovin | 13.6.2.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
 | AudienceNetwork | 6.21.1.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](AudienceNetwork/CHANGELOG.md) | [link](https://developers.facebook.com/docs/audience-network/setting-up/platform-setup/ios/changelog?locale=en_US) |
-| Bigo | 5.1.2.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✗** | **✓** | **✗** | **✓** | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
+| Bigo | 5.1.2.1 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✓** | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
 | CASExchange | 4.6.3.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](CASExchange/CHANGELOG.md) | [link]() |
 | Chartboost | 9.11.0.0 | Banner, Interstitial, Rewarded | **✓** | **✓** | **✓** | **✓** | [view](Chartboost/CHANGELOG.md) | [link](https://docs.chartboost.com/en/monetization/integrate/ios/changelog/) |
 | CrossPromo | 4.1.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](CrossPromo/CHANGELOG.md) | [link]() |
@@ -14,7 +14,7 @@ The adapters in the table are listed in alphabetical order.
 | GoogleAds | 13.2.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | **✓** | [view](GoogleAds/CHANGELOG.md) | [link](https://developers.google.com/admob/ios/rel-notes?hl=en) |
 | HyprMX | 6.4.6.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](HyprMX/CHANGELOG.md) | [link](https://documentation.hyprmx.com/ios-hyprmx-sdk/downloads-change-log/change-log/ios-sdk-change-log) |
 | InMobi | 11.2.0.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✓** | **✓** | [view](InMobi/CHANGELOG.md) | [link](https://support.inmobi.com/monetize/sdk-documentation/ios-guidelines/changelogs) |
-| IronSource | 9.4.0.0 | Banner, Interstitial, Rewarded | **✓** | **✓** | **✓** | **✓** | [view](IronSource/CHANGELOG.md) | [link](https://docs.unity.com/en-us/grow/levelplay/sdk/ios/changelog) |
+| IronSource | 9.4.0.1 | Banner, Interstitial, Rewarded | **✓** | **✓** | **✓** | **✓** | [view](IronSource/CHANGELOG.md) | [link](https://docs.unity.com/en-us/grow/levelplay/sdk/ios/changelog) |
 | Kidoz | 10.1.5.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✓** | **✗** | [view](Kidoz/CHANGELOG.md) | [link](https://github.com/Kidoz-SDK/kidoz-mobile-sdk/tree/main/Direct/iOS) |
 | LiftoffMonetize | 7.7.2.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | **✓** | [view](LiftoffMonetize/CHANGELOG.md) | [link](https://support.vungle.com/hc/en-us/articles/15718672681883) |
 | Madex 🧪 | 1.7.5.0 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | **✗** | [view](Madex/CHANGELOG.md) | [link](https://madex.gitbook.io/madex-documentation/ios-sdk/change-log) |
