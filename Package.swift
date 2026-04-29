@@ -162,8 +162,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: baseBinary,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0-alpha1/CleverAdsSolutions-4.7.0-alpha1.zip",
-            checksum: "2543a1c06ab189502734ca0860f77a2c2663b075b0933957d9db225e70e12853"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0-alpha2/CleverAdsSolutions-4.7.0-alpha2.zip",
+            checksum: "d3e3f0086eb36de4247704d5f9505d62575b608435e23cf58f3396654e569b79"
         ),
 
         // MARK: - IronSource
