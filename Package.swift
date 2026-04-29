@@ -162,8 +162,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: baseBinary,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0-alpha2/CleverAdsSolutions-4.7.0-alpha2.zip",
-            checksum: "d3e3f0086eb36de4247704d5f9505d62575b608435e23cf58f3396654e569b79"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CleverAdsSolutions-4.6.6.zip",
+            checksum: "d7395f7d86f90b15546ec892b1443c512c0925b774e65014df7e86464bc13a78"
         ),
 
         // MARK: - IronSource
@@ -208,7 +208,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.IronSource.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationIronSource-9.4.0.1.zip",
-            checksum: "270086a7985f79618317bc303ea97850ffb6c7f7dff0ba7c5cfb84f55b16ea87"
+            checksum: "be5dc78e41e6a4bf2f6f4601170f8dbbf444aa494d840a7a6f2656677050d1bb"
         ),
 
         // MARK: - UnityAds
@@ -347,7 +347,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.GoogleAds.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationGoogleAds-13.3.0.0.zip",
-            checksum: "697005f4a8bf7245f4eda19f7afb82d01bb5dd5d183f3ddc6987bfa4a06ff233"
+            checksum: "520785a49155afaab48e6eb2c4687e8601fa0473cb986efd7230e3eaf7767c73"
         ),
 
         // MARK: LiftoffMonetize
@@ -381,7 +381,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.StartIO.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationStartIO-4.13.1.0.zip",
-            checksum: "6552c78c326175bd34af0d7d50e1be9d4c922e19ee98303e06f6ca06264c5a81"
+            checksum: "dc6f02dd0b14836ddc0562db69421f4d0661c5bcd72eaf7a386fd43f9b9d43a0"
         ),
 
         // MARK: - Mintegral
@@ -492,7 +492,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.InMobi.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationInMobi-11.2.0.0.zip",
-            checksum: "41dfe090391d17e8bef05f00af9018957e8ac3198ee82693bc5c6237ba20fa95"
+            checksum: "38df856aa625c2a407f5aa9ea51818af7d4772bee97c21f0741218d763bc2320"
         ),
 
         // MARK: - Yango Ads
@@ -523,7 +523,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.YangoAds.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationYangoAds-7.18.4.0.zip",
-            checksum: "0067246697b623d2b806723c0dc8ab0a8406e903052fe411020a81872213e365"
+            checksum: "d90ae9b8798eb086a64752f03d6e74e7502f401ad1c6188673829ce7cf561c52"
         ),
 
         // MARK: - YsoNetwork
@@ -611,7 +611,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.Pangle.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationPangle-8.0.0.7.0.zip",
-            checksum: "4c28772b65f90534279eb9434e5be88d6243201447e9db067ab04b467c7103f6"
+            checksum: "7e87859e97b434061c13172504f6944889df07ba4e835bf15358b2aec7da9060"
         ),
 
         // MARK: - Maticoo
@@ -650,7 +650,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.PubMatic.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationPubMatic-5.1.0.0.zip",
-            checksum: "a31ca12a2635d2dfd1c3fee4781f01732b213b04f565df4cf46b552590f955ec"
+            checksum: "a0295555f926940e6dc7f236492860cb9bec3b63e4908b056c5223a093406708"
         ),
 
         // MARK: - Ogury
@@ -667,7 +667,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.Ogury.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationOgury-5.2.2.0.zip",
-            checksum: "2cc861becad10531468d04e73b12e83d2a21864dcd0687347e4e3d3a70d00284"
+            checksum: "8d96943caa1dd118b9d6c622205443ebc04f78ee16dc9a3cd4a0f37ec644cb3e"
         ),
 
         // MARK: - Chartboost
@@ -747,7 +747,7 @@ let package = Package(
         .binaryTarget(
             name: CAS.Bigo.binaryAdapter,
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationBigo-5.1.2.1.zip",
-            checksum: "462a49b14a1c9721a4c4008292e0f85361bb09991700161244cfa8a64b876141"
+            checksum: "8e6063a8cd5047eee06cbd1b86f92166c89aae77d4feec17f116c3de19a719a3"
         ),
     ]
 )
