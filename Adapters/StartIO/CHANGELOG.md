@@ -1,7 +1,10 @@
 ## StartIO iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationStartIO', '4.13.0.0'
+pod 'CASMediationStartIO', '4.13.1.0'
 ```
+
+### 4.13.1.0
+- Certified with StartIO - 4.13.1
 
 ### 4.13.0.0
 - Certified with StartIO - 4.13.0

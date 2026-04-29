@@ -1,7 +1,10 @@
-## Unity Ads iOS Mediation Adapter Changelog
+## PubMatic iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPubMatic', '5.0.1.0'
+pod 'CASMediationPubMatic', '5.1.0.0'
 ```
+
+### 5.1.0.0
+- Certified with PubMatic - 5.1.0
 
 ### 5.0.1.0
 - Certified with PubMatic - 5.0.1
