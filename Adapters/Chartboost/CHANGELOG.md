@@ -1,7 +1,11 @@
 ## Chartboost iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationChartboost', '9.11.0.0'
+pod 'CASMediationChartboost', '9.12.0.0'
 ```
+
+### 9.12.0.0
+- Certified with Chartboost - 9.12.0
+- VAST improvements and bug fixes.
 
 ### 9.11.0.0
 - Certified with Chartboost - 9.11.0

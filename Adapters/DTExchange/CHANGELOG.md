@@ -1,7 +1,12 @@
 ## DT Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationDTExchange', '8.4.6.0'
+pod 'CASMediationDTExchange', '8.4.7.0'
 ```
+
+### 8.4.7.0
+- Certified with DTExchange - 8.4.7
+- Added Support for SKOverlay in Embedded Browser
+- Added support for Vietnam's Amended Law on Advertising
 
 ### 8.4.6.0
 - Certified with DTExchange - 8.4.6
