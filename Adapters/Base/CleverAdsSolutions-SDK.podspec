@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'UnityAds' do |b|
-    b.dependency 'CASMediationUnityAds', '4.17.0.0'
+    b.dependency 'CASMediationUnityAds', '4.18.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.6'
   end
 
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'InMobi' do |b|
-    b.dependency 'CASMediationInMobi', '11.2.0.0'
+    b.dependency 'CASMediationInMobi', '11.3.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.6.6'
   end
 
@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Kidoz' do |b|
-    b.dependency 'CASMediationKidoz', '10.1.5.0'
+    b.dependency 'CASMediationKidoz', '10.1.5.1'
     b.dependency 'CleverAdsSolutions-Base', '4.6.6'
   end
 
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Prado' do |b|
-    b.dependency 'CASMediationPrado', '10.1.5.0'
+    b.dependency 'CASMediationPrado', '10.1.5.1'
     b.dependency 'CleverAdsSolutions-Base', '4.6.6'
   end
 

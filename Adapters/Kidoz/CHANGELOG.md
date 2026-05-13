@@ -1,7 +1,11 @@
 ## Kidoz iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationKidoz', '10.1.5.0'
+pod 'CASMediationKidoz', '10.1.5.1'
 ```
+
+### 10.1.5.1
+- Certified with Kidoz - 10.1.5
+- Kidoz banner reload fix.
 
 ### 10.1.5.0
 - Certified with Kidoz - 10.1.5

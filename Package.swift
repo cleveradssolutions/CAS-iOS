@@ -241,13 +241,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.UnityAds.binarySDK,
-            url: "https://github.com/Unity-Technologies/unity-ads-ios/releases/download/4.17.0/UnityAds.zip",
-            checksum: "8a40e6c779353e4ead87d4d635480cdae46f0b708763460dc002103e35ce8ba7"
+            url: "https://github.com/Unity-Technologies/unity-ads-ios/releases/download/4.18.0/UnityAds.zip",
+            checksum: "e027a0ab66f7d57a7e59855c20d7793b30a5a25b1f1339412970c8a2ef932b6f"
         ),
         .binaryTarget(
             name: CAS.UnityAds.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/CASMediationUnityAds-4.17.0.0.zip",
-            checksum: "f92e112c7fca2624ce9b5fb984ff6cf88070ed3947dc6ecd93162358d9b2a2bf"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationUnityAds-4.18.0.0.zip",
+            checksum: "afe79ce592b84b81b47dd1aa221e6a4223f63feedcfa125011381e9db9fabd9a"
         ),
 
         // MARK: HyprMX
@@ -288,8 +288,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Kidoz.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationKidoz-10.1.5.0.zip",
-            checksum: "43ff6a09ca8227fe92e1d76255bcec0d8904bff717b251f04eaf93590734600f"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationKidoz-10.1.5.1.zip",
+            checksum: "042933c2e5b82b3b8c0e50177e110670a923e947f752036e72e503e935bd81b9"
         ),
 
         // MARK: - Prado
@@ -308,8 +308,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Prado.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationPrado-10.1.5.0.zip",
-            checksum: "55e369c86c59690c4dc65169b5655443e170b321e2b1c8c7fbe33da750a9ff90"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationPrado-10.1.5.1.zip",
+            checksum: "4b0de5f438d8c6ccdb6d501b52bf2450b0163d0c35d0491ea71326985f7ef78d"
         ),
 
         // MARK: AppLovin
@@ -486,13 +486,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.InMobi.binarySDK,
-            url: "https://dl.inmobi.com/inmobi-sdk/IM/InMobi-iOS-SDK-11.2.0.zip",
-            checksum: "6013c4f6d5bb170f9a4931512e1f9623b5b3ed3a5ed59a442c6c234665af4e89"
+            url: "https://dl.inmobi.com/inmobi-sdk/IM/InMobi-iOS-SDK-11.3.0.zip",
+            checksum: "1dc4583ad8718845180903bfa6accc17c5248eca6d0aabbd43b9fb0dad1f58ce"
         ),
         .binaryTarget(
             name: CAS.InMobi.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationInMobi-11.2.0.0.zip",
-            checksum: "38df856aa625c2a407f5aa9ea51818af7d4772bee97c21f0741218d763bc2320"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationInMobi-11.3.0.0.zip",
+            checksum: "882fafb6488784aed214e16a4555261318eee543182f00881fd45b2b61b09ff6"
         ),
 
         // MARK: - Yango Ads
