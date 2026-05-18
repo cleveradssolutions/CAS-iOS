@@ -1,5 +1,9 @@
 # CAS.AI iOS XCode Config script change log
 
+# [2.1] - Mar 10, 2026
+- Use AWS endpoint for configuration.
+- Remove `NSAllowsArbitraryLoads` disabled warning.
+
 # [2.0] - Mar 10, 2026
 - Added support for running the script in the Xcode Build Phase. The CAS ID is read from the `CASAIAppIdentifier` parameter in Info.plist.
 

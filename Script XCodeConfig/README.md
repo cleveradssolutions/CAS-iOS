@@ -16,7 +16,7 @@ The script automatically performs the following integration steps:
 > Read more about it on [docs page](https://docs.page/cleveradssolutions/docs/iOS/Manually-configure-project).
 
 ## Getting Started 
-1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.3/casconfig.rb)  
+1. Download the [casconfig.rb](https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0/casconfig.rb)  
 3. Place the script in directory with the app `.xcodeproj` 
 4. Open the terminal window and run command:
 ```sh

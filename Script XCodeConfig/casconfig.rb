@@ -15,7 +15,7 @@ module CASConfig
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '2.0'
+    SCRIPT_VERSION = '2.1'
 
     class << self
         attr_accessor :casId, :project_path, :gad_included, :clean_install, :require_id
@@ -291,7 +291,7 @@ module CASConfig
             if casId.empty? || casId == "demo"
                 return "", ""
             end
-            url = 'https://psvpromo.psvgamestudio.com/cas-settings.php?platform=1&apply=config&bundle=' + @casId
+            url = 'https://promo.psvgamestudio.com/cas-settings.php?platform=1&apply=config&bundle=' + @casId
             data = load_with_cache(url) do |res|
                 if res.is_a?(Net::HTTPNoContent)
                     error("[!] CAS Id " + casId + " not registered.")
@@ -524,6 +524,7 @@ module CASConfig
             security = plist[KEY_SECURITY]
             allowLoad = security && security[KEY_ALLOWS_LOADS]
             if security.nil? || allowLoad.nil?
+                # IronSource requires
                 plist[KEY_SECURITY] = {KEY_ALLOWS_LOADS=>true}
                 @is_dirt = true
                 CASConfig.success("- " + KEY_SECURITY + " has been added")
@@ -531,9 +532,7 @@ module CASConfig
                 return
             end
             if allowLoad == false
-                CASConfig.warning("- " + KEY_ALLOWS_LOADS + " is disabled")
-                CASConfig.warning("   App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure")
-                CASConfig.warning("   Set " + KEY_ALLOWS_LOADS + " = YES to make sure your ads are not impacted by ATS")
+                puts "- " + KEY_ALLOWS_LOADS + " is disabled"
             else
                 puts "- " + KEY_SECURITY + " is defined"
             end

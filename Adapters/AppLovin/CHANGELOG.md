@@ -1,7 +1,11 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.6.2.0'
+pod 'CASMediationAppLovin', '13.6.2.1'
 ```
+
+### 13.6.2.1
+- Optimized Native Ads rendering.
+- Compatibility improvements for CAS 4.7.0.
 
 ### 13.6.2.0
 - Certified with AppLovin - 13.6.2
