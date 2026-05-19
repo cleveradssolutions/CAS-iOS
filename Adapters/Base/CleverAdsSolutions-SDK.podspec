@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
 
   s.subspec 'IronSource' do |b|
-    b.dependency 'CASMediationIronSource', '9.4.1.1'
+    b.dependency 'CASMediationIronSource', '9.4.1.2'
     b.dependency 'CleverAdsSolutions-Base', '4.7.0'
   end
 

@@ -207,8 +207,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.IronSource.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0/CASMediationIronSource-9.4.1.1.zip",
-            checksum: "a81b5b3b1a79f9462db732c5db6f8e198a993123b1027c894bfbfff6e45b5865"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0/CASMediationIronSource-9.4.1.2.zip",
+            checksum: "cd56354bfc69b2267d40c40d9789584e48470c5da30364c489d9cc703f5c5792"
         ),
 
         // MARK: - UnityAds
