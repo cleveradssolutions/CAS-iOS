@@ -464,9 +464,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.CrossPromo.binaryAdapter,
-            url:
-                "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.1.0/CASMediationCrossPromo-4.1.0.0.zip",
-            checksum: "ddd50c5be23d1da33b1ac7799d3e12d08635687425055e07bb9a2a387b8a32e0"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.0/CASMediationCrossPromo-4.1.0.1.zip",
+            checksum: "d7a6b7a88ed3b0dd8d3fe3944f5356ac2d039a1de47087d8bfe2f4d1595e8dc5"
         ),
 
         // MARK: - InMobi

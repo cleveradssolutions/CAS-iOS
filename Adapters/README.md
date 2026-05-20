@@ -9,7 +9,7 @@ The adapters in the table are listed in alphabetical order.
 | Bigo | 5.1.2.1 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✓** | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
 | CASExchange | 4.6.3.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](CASExchange/CHANGELOG.md) | [link]() |
 | Chartboost | 9.12.0.0 | Banner, Interstitial, Rewarded | **✓** | **✓** | **✓** | **✓** | [view](Chartboost/CHANGELOG.md) | [link](https://docs.chartboost.com/en/monetization/integrate/ios/changelog/) |
-| CrossPromo | 4.1.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](CrossPromo/CHANGELOG.md) | [link]() |
+| CrossPromo | 4.1.0.1 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](CrossPromo/CHANGELOG.md) | [link]() |
 | DTExchange | 8.4.7.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](DTExchange/CHANGELOG.md) | [link](https://developer.digitalturbine.com/hc/en-us/articles/360010922578-DT-Exchange-iOS-Changelog) |
 | GoogleAds | 13.3.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | **✓** | [view](GoogleAds/CHANGELOG.md) | [link](https://developers.google.com/admob/ios/rel-notes?hl=en) |
 | HyprMX | 6.4.6.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](HyprMX/CHANGELOG.md) | [link](https://documentation.hyprmx.com/ios-hyprmx-sdk/downloads-change-log/change-log/ios-sdk-change-log) |

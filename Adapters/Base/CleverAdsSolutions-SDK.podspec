@@ -98,7 +98,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'CrossPromo' do |b|
-    b.dependency 'CASMediationCrossPromo', '4.1.0.0'
+    b.dependency 'CASMediationCrossPromo', '4.1.0.1'
     b.dependency 'CleverAdsSolutions-Base', '4.7.0'
   end
 
