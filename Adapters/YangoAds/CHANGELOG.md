@@ -1,7 +1,11 @@
 ## Yango Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationYangoAds', '7.18.4.0'
+pod 'CASMediationYangoAds', '8.0.0.0'
 ```
+
+### 8.0.0.0
+- Certified with YangoAds - 8.0.0
+- Required minimum AppMetrica version 6.0.0
 
 ### 7.18.4.0
 - Certified with YangoAds - 7.18.4

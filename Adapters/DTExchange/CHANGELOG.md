@@ -5,13 +5,9 @@ pod 'CASMediationDTExchange', '8.4.7.0'
 
 ### 8.4.7.0
 - Certified with DTExchange - 8.4.7
-- Added Support for SKOverlay in Embedded Browser
-- Added support for Vietnam's Amended Law on Advertising
 
 ### 8.4.6.0
 - Certified with DTExchange - 8.4.6
-- Added Support for IAB’s Global Privacy Platform
-- Added Support for Google Mobile Ads SDK 13.0.0
 
 ### 8.4.5.0
 - Certified with DTExchange - 8.4.5

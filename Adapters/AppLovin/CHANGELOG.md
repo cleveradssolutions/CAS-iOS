@@ -1,7 +1,10 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.6.2.1'
+pod 'CASMediationAppLovin', '13.6.2.2'
 ```
+
+### 13.6.2.2
+- Reverted "Optimized Native Ads rendering" due to a regression in ad click handling.
 
 ### 13.6.2.1
 - Optimized Native Ads rendering.
