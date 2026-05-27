@@ -148,7 +148,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'DisplayIO' do |b|
-    b.dependency 'CASMediationDisplayIO', '4.7.0.0'
+    b.dependency 'CASMediationDisplayIO', '4.7.1.0'
     b.dependency 'CleverAdsSolutions-Base', '4.7.1'
   end
 

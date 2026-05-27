@@ -139,7 +139,7 @@ let package = Package(
         .package(url: "https://github.com/Prado-SDK/prado-sdk-swift-package", exact: "10.1.5"),
         .package(url: "https://github.com/vervegroup/hybid-ios-spm-sdk", exact: "3.8.1"),
         .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package", exact: "5.1.1"),
-        .package(url: "https://github.com/displayio/DIOSDK", exact: "4.7.0"),
+        .package(url: "https://github.com/displayio/DIOSDK", exact: "4.7.1"),
     ],
 
     targets: [
@@ -766,8 +766,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.DisplayIO.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.1/CASMediationDisplayIO-4.7.0.0.zip",
-            checksum: "18ff7b9aad84cfe928fb9bb53360258e2dab06e1dd95455ed748caa7f65e5f34"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.1/CASMediationDisplayIO-4.7.1.0.zip",
+            checksum: "a6ee47aa18f68a928743b10fc214ad27d7e89b8d241e5240058f9f8b0ed9905f"
         ),
 
     ]
