@@ -69,6 +69,23 @@
         }
       }
     },
+    "Age Restricted User" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Age Restricted User"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пользователь с возрастными ограничениями"
+          }
+        }
+      }
+    },
     "App Review Status" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -426,6 +443,23 @@
         }
       }
     },
+    "Mediation Type" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип"
+          }
+        }
+      }
+    },
     "Missing Integration" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -626,23 +660,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "TCF Consent"
-          }
-        }
-      }
-    },
-    "Type" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Type"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Тип"
           }
         }
       }

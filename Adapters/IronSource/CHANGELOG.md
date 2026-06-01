@@ -1,7 +1,10 @@
 ## IronSource iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationIronSource', '9.4.1.2'
+pod 'CASMediationIronSource', '9.4.1.3'
 ```
+
+### 9.4.1.3
+- Compatibility improvements for CAS 4.7.3.
 
 ### 9.4.1.2
 - Fixed an issue where the reward was not granted after watching the Rewarded Ad.
