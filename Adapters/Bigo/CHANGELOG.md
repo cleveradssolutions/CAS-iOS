@@ -1,7 +1,11 @@
 ## Bigo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBigo', '5.2.0.0'
+pod 'CASMediationBigo', '5.2.1.0'
 ```
+
+### 5.2.1.0
+- Certified with Bigo - 5.2.1
+- Drop Swift Package Manager support due to Bigo SDK reverting to a static framework with bundled resources.
 
 ### 5.2.0.0
 - Certified with Bigo - 5.2.0

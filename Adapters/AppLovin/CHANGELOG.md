@@ -1,7 +1,10 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.6.2.3'
+pod 'CASMediationAppLovin', '13.6.3.0'
 ```
+
+### 13.6.3.0
+- Certified with AppLovin - 13.6.3
 
 ### 13.6.2.3
 - Compatibility improvements for CAS 4.7.3.
