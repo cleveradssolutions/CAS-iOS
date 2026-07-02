@@ -1,7 +1,11 @@
 ## Maticoo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMaticoo', '1.5.6.0'
+pod 'CASMediationMaticoo', '2.2.0.0'
 ```
+
+### 2.2.0.0
+- Certified with Maticoo - 2.2.0
+- Drop Swift Package Manager support due to Maticoo SDK reverting to a static framework with bundled resources.
 
 ### 1.5.6.0
 - Certified with Maticoo - 1.5.6

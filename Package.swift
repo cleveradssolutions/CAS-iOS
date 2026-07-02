@@ -68,7 +68,7 @@ enum CAS: String, CaseIterable {
     case Pangle
 
     /// https://github.com/cloudadrd/zMaticooPodSpec/blob/main/zMaticoo.podspec
-    case Maticoo
+    //case Maticoo
 
     /// https://github.com/PubMatic/OpenWrapSDK-Swift-Package
     case PubMatic
@@ -125,12 +125,12 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: CAS.allProducts,
     dependencies: [
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "13.3.0"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "13.6.0"),
         .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager", exact: "7.7.4"),
         .package(url: "https://github.com/Kidoz-SDK/kidoz-sdk-swift-package", exact: "10.1.5"),
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package", exact: "8.1.5"),
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", exact: "13.6.3"),
-        .package(url: "https://github.com/bytedance/AdsGlobalPackage", exact: "8.1.0-release.6"),
+        .package(url: "https://github.com/bytedance/AdsGlobalPackage", exact: "8.1.1-release.0"),
         .package(url: "https://github.com/appmetrica/appmetrica-sdk-ios", .upToNextMinor(from: "6.3.0")),
         .package(url: "https://github.com/StartApp-SDK/StartAppSDK-SwiftPackage", exact: "4.13.0"),
         .package(url: "https://github.com/JunGroupProductions/HyprMX-SDK-SPM", exact: "6.4.6"),
@@ -138,7 +138,7 @@ let package = Package(
         .package(url: "https://github.com/Prado-SDK/prado-sdk-swift-package", exact: "10.1.5"),
         .package(url: "https://github.com/vervegroup/hybid-ios-spm-sdk", exact: "3.8.1"),
         .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package", exact: "5.1.1"),
-        .package(url: "https://github.com/displayio/DIOSDK", exact: "4.7.3"),
+        .package(url: "https://github.com/displayio/DIOSDK", exact: "4.7.4"),
     ],
 
     targets: [
@@ -165,8 +165,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: baseBinary,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.4/CleverAdsSolutions-4.7.4.zip",
-            checksum: "72839b1255eb4046f9b340725f42f319e14bc53f76a89850af13cec38a73a7dc"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.0-beta1/CleverAdsSolutions-4.8.0-beta1.zip",
+            checksum: "450f9a637971733c61958096f4ab0aa10d3efe5b90cddddad4fdadda997b67b3"
         ),
 
         // MARK: - IronSource
@@ -200,18 +200,18 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.IronSource.binarySDK,
-            url: "https://github.com/ironsource-mobile/iOS-sdk/raw/master/9.4.1/IronSource9.4.1.zip",
-            checksum: "bbf6c7fa509a346ca126082a711ff30eeebfa0b557098d2b5c1e470f40626fe7"
+            url: "https://github.com/ironsource-mobile/iOS-sdk/raw/master/9.5.0/IronSource9.5.0.zip",
+            checksum: "925ec91a408809da6021b8cb2f7abb6b463521872ec8952cdf29ed636e65aa3b"
         ),
         .binaryTarget(
             name: "IronSourceAdQualitySPM",
-            url: "https://github.com/ironsource-mobile/iOS-adqualitysdk/releases/download/9.5.0/IronSourceAdQualitySDK-ios-v9.5.0.zip",
-            checksum: "8342ea654c6fe53d9d655a235192df6eb35457fcee6e63e6cd25b93a889c5681"
+            url: "https://github.com/ironsource-mobile/iOS-adqualitysdk/releases/download/9.7.0/IronSourceAdQualitySDK-ios-v9.7.0.zip",
+            checksum: "5962af8d75db7156cfc4fcb7c7c5b006c236cfa5287518367c4c481bad1f4c3d"
         ),
         .binaryTarget(
             name: CAS.IronSource.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.3/CASMediationIronSource-9.4.1.3.zip",
-            checksum: "0a1cf2e98931413d8c8f92a4fb49e7866791b44ccedbe348652c4048611e6388"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.0-beta1/CASMediationIronSource-9.5.0.0.zip",
+            checksum: "006d6a2d026c9845d46e4546563e79c66ee18be7030080110def19eeeddbce67"
         ),
 
         // MARK: - UnityAds
@@ -328,8 +328,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.AppLovin.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.4/CASMediationAppLovin-13.6.3.0.zip",
-            checksum: "705232914521b383eb17a30929d62fd8805299ec222fe1fc4abea4d853724a90"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.0-beta1/CASMediationAppLovin-13.6.3.1.zip",
+            checksum: "aeb66ab705c7ea1e08f199e73863c1033b2416c2ce8b120d2eca34bd94bcdae5"
         ),
 
         // MARK: GoogleAds
@@ -349,8 +349,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.GoogleAds.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.6/CASMediationGoogleAds-13.3.0.0.zip",
-            checksum: "520785a49155afaab48e6eb2c4687e8601fa0473cb986efd7230e3eaf7767c73"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.0-beta1/CASMediationGoogleAds-13.6.0.0.zip",
+            checksum: "69c29ea852e5020b1286229320ccdfcb94a87bb345c441dc45973ae1a114ac4f"
         ),
 
         // MARK: LiftoffMonetize
@@ -611,12 +611,12 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Pangle.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.4/CASMediationPangle-8.1.0.8.0.zip",
-            checksum: "c6deb5c9a30359e3a0ee045f3270b40e0f8442cc216145e3ae5e97f672c438d3"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.0-beta1/CASMediationPangle-8.1.1.0.0.zip",
+            checksum: "02576f04030a9e40ebce1b8af118d6fd92c73c975376faed3f6d4d445e5e44b6"
         ),
 
         // MARK: - Maticoo
-
+        /*
         .target(
             name: CAS.Maticoo.target,
             dependencies: [
@@ -636,6 +636,7 @@ let package = Package(
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.6.0/CASMediationMaticoo-1.5.6.0.zip",
             checksum: "6f83092ad32463b4b3c49ee555eca1c9fa19c0585c562b143b270902e083b26f"
         ),
+        */
 
         // MARK: - PubMatic
 
@@ -765,8 +766,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.DisplayIO.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.7.3/CASMediationDisplayIO-4.7.3.0.zip",
-            checksum: "25d56b81b8d02e5b548981fd23308366176b0a9dc18b883cc766ae4178167615"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.0-beta1/CASMediationDisplayIO-4.7.4.0.zip",
+            checksum: "b51c2109552732e36033a6b4f5e38550838bedb71b2e3c3becffc7db9569735d"
         ),
 
     ]
