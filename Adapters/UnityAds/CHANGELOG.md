@@ -1,7 +1,12 @@
 ## Unity Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationUnityAds', '4.18.1.0'
+pod 'CASMediationUnityAds', '4.19.0.1'
 ```
+
+### 4.19.0.1
+- Certified with UnityAds - 4.19.0
+- Added Adaptive banner size support
+- Replaced the dependency with the official SPM git.
 
 ### 4.18.1.0
 - Certified with UnityAds - 4.18.1

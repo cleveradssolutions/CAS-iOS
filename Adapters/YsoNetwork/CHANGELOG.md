@@ -1,7 +1,11 @@
 ## Yso Network iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationYsoNetwork', '1.1.31.2'
+pod 'CASMediationYsoNetwork', '1.2.1.0'
 ```
+
+### 1.2.1.0
+- Certified with YsoNetwork - 1.2.1
+- Replaced the dependency with the official SPM git.
 
 ### 1.1.31.2
 - The AppLovin dependency is no longer required for other CAS adapters.

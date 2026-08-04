@@ -1,7 +1,11 @@
 ## Maticoo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationVerve', '3.8.1.0'
+pod 'CASMediationVerve', '3.9.0.1'
 ```
+
+### 3.9.0.1
+- Certified with Verve - 3.9.0
+- The AppLovin dependency is no longer required.
 
 ### 3.8.1.0
 - Certified with Verve - 3.8.1

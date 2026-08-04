@@ -1,7 +1,12 @@
 ## Smaato iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationSmaato', '23.1.0.0'
+pod 'CASMediationSmaato', '23.2.0.1'
 ```
+
+### 23.2.0.1
+- Certified with Smaato - 23.2.0
+- Added Swift Package Manager integration support.
+- The AppLovin dependency is no longer required.
 
 ### 23.1.0.0
 - Certified with Smaato - 23.1.0

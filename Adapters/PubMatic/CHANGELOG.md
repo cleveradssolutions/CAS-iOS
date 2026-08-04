@@ -1,7 +1,11 @@
 ## PubMatic iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPubMatic', '5.1.1.0'
+pod 'CASMediationPubMatic', '5.2.0.1'
 ```
+
+### 5.2.0.1
+- Certified with PubMatic - 5.2.0
+- The AppLovin dependency is no longer required.
 
 ### 5.1.1.0
 - Certified with PubMatic - 5.1.1

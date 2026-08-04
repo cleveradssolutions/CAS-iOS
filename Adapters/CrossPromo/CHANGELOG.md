@@ -1,7 +1,11 @@
 ## Cross Promo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationCrossPromo', '4.1.0.1'
+pod 'CASMediationCrossPromo', '4.8.0.0'
 ```
+
+### 4.8.0.0
+- Updated error handling.
+- Updated ad loading for CAS 4.8.
 
 ### 4.1.0.1
 - Fixed podspec link to framework.

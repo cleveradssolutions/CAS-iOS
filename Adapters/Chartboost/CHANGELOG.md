@@ -1,7 +1,11 @@
 ## Chartboost iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationChartboost', '9.12.0.0'
+pod 'CASMediationChartboost', '9.13.0.0'
 ```
+
+### 9.13.0.0
+- Certified with Chartboost - 9.13.0
+- Replaced the dependency with the official SPM git.
 
 ### 9.12.0.0
 - Certified with Chartboost - 9.12.0

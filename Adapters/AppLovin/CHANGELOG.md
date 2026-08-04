@@ -1,7 +1,10 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.6.3.1'
+pod 'CASMediationAppLovin', '13.6.3.2'
 ```
+
+### 13.6.3.2
+- Fixed a rare loading freeze that occurred in some configurations.
 
 ### 13.6.3.1
 - Improved performance.

@@ -1,7 +1,11 @@
 ## Yango Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationYangoAds', '8.1.0.0'
+pod 'CASMediationYangoAds', '8.3.0.0'
 ```
+
+### 8.3.0.0
+- Certified with YangoAds - 8.3.0
+- Replaced the dependency with the official SPM git.
 
 ### 8.1.0.1
 - Fixed minor issues with ad loading.

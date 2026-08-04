@@ -1,7 +1,12 @@
 ## DT Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationDTExchange', '8.4.7.0'
+pod 'CASMediationDTExchange', '8.4.9.0'
 ```
+
+### 8.4.9.0
+- Certified with DTExchange - 8.4.9
+- Replaced the dependency with the official SPM git.
+- Minimum supported iOS 15
 
 ### 8.4.7.0
 - Certified with DTExchange - 8.4.7
