@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "CleverAdsSolutions-SDK"
-  s.version               = "4.8.1-beta1"
+  s.version               = "4.9.0-alpha2"
   s.summary               = "Monetize your mobile applications easy with CAS.AI iOS mediation"
   s.homepage              = "https://github.com/cleveradssolutions/CAS-iOS"
   s.license               = { :type => "Commercial License", :file => "LICENSE.md" }
@@ -13,225 +13,225 @@ Pod::Spec.new do |s|
 
 
   s.subspec 'IronSource' do |b|
-    b.dependency 'CASMediationIronSource', '9.5.0.1'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CASMediationIronSource', '9.5.0.1-alpha49'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'UnityAds' do |b|
     b.dependency 'CASMediationUnityAds', '4.19.0.1'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'GoogleAds' do |b|
-    b.dependency 'CASMediationGoogleAds', '13.7.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CASMediationGoogleAds', '13.7.0.0-alpha49'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'LiftoffMonetize' do |b|
     b.dependency 'CASMediationLiftoffMonetize', '7.7.6.1'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'InMobi' do |b|
     b.dependency 'CASMediationInMobi', '11.4.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Chartboost' do |b|
     b.dependency 'CASMediationChartboost', '9.13.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'DTExchange' do |b|
     b.dependency 'CASMediationDTExchange', '8.4.9.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Kidoz' do |b|
     b.dependency 'CASMediationKidoz', '10.1.5.1'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'SuperAwesome' do |b|
     b.dependency 'CASMediationSuperAwesome', '9.4.0.1'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Mintegral' do |b|
     b.dependency 'CASMediationMintegral', '8.1.6.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'AppLovin' do |b|
-    b.dependency 'CASMediationAppLovin', '13.6.3.2'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CASMediationAppLovin', '13.6.3.2-alpha49'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Pangle' do |b|
     b.dependency 'CASMediationPangle', '8.2.0.8.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Bigo' do |b|
     b.dependency 'CASMediationBigo', '5.3.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'YangoAds' do |b|
     b.dependency 'CASMediationYangoAds', '8.3.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'AudienceNetwork' do |b|
     b.dependency 'CASMediationAudienceNetwork', '6.22.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'YsoNetwork' do |b|
     b.dependency 'CASMediationYsoNetwork', '1.2.1.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'CASExchange' do |b|
     b.dependency 'CASMediationCASExchange', '4.6.3.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'CrossPromo' do |b|
     b.dependency 'CASMediationCrossPromo', '4.8.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'StartIO' do |b|
     b.dependency 'CASMediationStartIO', '4.14.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'HyprMX' do |b|
     b.dependency 'CASMediationHyprMX', '6.4.6.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Ogury' do |b|
     b.dependency 'CASMediationOgury', '5.2.3.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Prado' do |b|
     b.dependency 'CASMediationPrado', '10.1.5.1'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Smaato' do |b|
     b.dependency 'CASMediationSmaato', '23.2.0.1'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Maticoo' do |b|
     b.dependency 'CASMediationMaticoo', '2.2.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Verve' do |b|
     b.dependency 'CASMediationVerve', '3.9.0.1'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Monetrix' do |b|
     b.dependency 'CASMediationMonetrix', '1.2.0.5'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'MonetrixVPN' do |b|
     b.dependency 'CASMediationMonetrixVPN', '1.2.0.5'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'PubMatic' do |b|
     b.dependency 'CASMediationPubMatic', '5.2.0.1'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'DisplayIO' do |b|
     b.dependency 'CASMediationDisplayIO', '4.7.5.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Bidease' do |b|
     b.dependency 'CASMediationBidease', '2.2.7.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Moloco' do |b|
     b.dependency 'CASMediationMoloco', '4.9.0.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Tenjin' do |b|
     b.dependency 'TenjinSDK', '1.18.0'
-    b.dependency 'CleverAdsSolutions-Base', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-Base', '4.9.0-alpha2'
   end
 
   s.subspec 'Optimal' do |b|
-    b.dependency 'CleverAdsSolutions-SDK/IronSource', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/UnityAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/InMobi', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/AppLovin', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Pangle', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Bigo', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/AudienceNetwork', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/CASExchange', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Maticoo', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-SDK/IronSource', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/UnityAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/InMobi', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/AppLovin', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Pangle', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Bigo', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/AudienceNetwork', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/CASExchange', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Maticoo', '4.9.0-alpha2'
   end
 
   s.subspec 'Families' do |b|
-    b.dependency 'CleverAdsSolutions-SDK/IronSource', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/UnityAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/InMobi', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Chartboost', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Kidoz', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-SDK/IronSource', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/UnityAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/InMobi', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Chartboost', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Kidoz', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.9.0-alpha2'
   end
 
   s.subspec 'VPNCompliant' do |b|
-    b.dependency 'CleverAdsSolutions-SDK/IronSource', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/UnityAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/InMobi', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Bigo', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/MonetrixVPN', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-SDK/IronSource', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/UnityAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/InMobi', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Bigo', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/MonetrixVPN', '4.9.0-alpha2'
   end
 
   s.subspec 'Publishing' do |b|
-    b.dependency 'CleverAdsSolutions-SDK/IronSource', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/UnityAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/InMobi', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Chartboost', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/AppLovin', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Pangle', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Bigo', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/AudienceNetwork', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/CASExchange', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Ogury', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Maticoo', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Monetrix', '4.8.1-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Moloco', '4.8.1-beta1'
+    b.dependency 'CleverAdsSolutions-SDK/IronSource', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/UnityAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/InMobi', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Chartboost', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/AppLovin', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Pangle', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Bigo', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/AudienceNetwork', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/CASExchange', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Ogury', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Maticoo', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Monetrix', '4.9.0-alpha2'
+    b.dependency 'CleverAdsSolutions-SDK/Moloco', '4.9.0-alpha2'
   end
 end

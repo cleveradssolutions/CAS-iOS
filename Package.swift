@@ -117,8 +117,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: baseBinary,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.1-beta1/CleverAdsSolutions-4.8.1-beta1.zip",
-            checksum: "3ed0e4f71d73b87284fa5580a10990d7f598a5d50a4f72ee9c71fe36550d0202"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-alpha2/CleverAdsSolutions-4.9.0-alpha2.zip",
+            checksum: "3aa73db67166537290cf8f5aac0f841e152be87598adea00832a609651522876"
         ),
 
         // MARK: - IronSource
@@ -134,8 +134,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.IronSource.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.1-beta1/CASMediationIronSource-9.5.0.1.zip",
-            checksum: "37f72151786691c2ac3cef4ba7d05305da7a1c1e979a774d6e494139d44eaabc"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-alpha2/CASMediationIronSource-9.5.0.1-alpha49.zip",
+            checksum: "d44c95ea25718294aa0212263f32b91b73f3942b7600119332665e8c1c4f6e23"
         ),
 
         // MARK: - UnityAds
@@ -226,8 +226,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.AppLovin.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.1-beta1/CASMediationAppLovin-13.6.3.2.zip",
-            checksum: "207fc857b2b0b96d94b677a13117849284602efd3af399c0dd9a6090f0c6ae0a"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-alpha2/CASMediationAppLovin-13.6.3.2-alpha49.zip",
+            checksum: "04a7da13b485a428489f72d74deb4adb61ac173809196714594dbc8767d4f896"
         ),
 
         // MARK: GoogleAds
@@ -244,8 +244,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.GoogleAds.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.1-beta1/CASMediationGoogleAds-13.7.0.0.zip",
-            checksum: "610d12085cccd7cf265ddced18b1cd2f4fcfc4ff7028f6ff96d13aac294af1a9"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-alpha2/CASMediationGoogleAds-13.7.0.0-alpha49.zip",
+            checksum: "59efb160e1f432568262f559caa523f08408bec9161cc68ab033f6590ef5d42d"
         ),
 
         // MARK: LiftoffMonetize
