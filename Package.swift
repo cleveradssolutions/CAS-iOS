@@ -226,8 +226,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.AppLovin.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.1-beta1/CASMediationAppLovin-13.6.3.2.zip",
-            checksum: "207fc857b2b0b96d94b677a13117849284602efd3af399c0dd9a6090f0c6ae0a"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.1-beta1/CASMediationAppLovin-13.6.3.3.zip",
+            checksum: "e23eaac3bb693c5a977a8ee62c5a1448aeefadd7fd018c9d5fd6d485e296219a"
         ),
 
         // MARK: GoogleAds

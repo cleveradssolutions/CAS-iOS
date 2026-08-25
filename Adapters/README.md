@@ -4,7 +4,7 @@ The adapters in the table are listed in alphabetical order.
 
 | Name | Version | Supported Formats | SPM | Optimal | Families | VPN | Changelog | SDK |
 | ---- | :-----: | :---------------: | :-: | :-----: | :------: | :-: | :-------: | :-: |
-| AppLovin | 13.6.3.2 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
+| AppLovin | 13.6.3.3 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
 | AudienceNetwork | 6.22.0.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](AudienceNetwork/CHANGELOG.md) | [link](https://developers.facebook.com/docs/audience-network/setting-up/platform-setup/ios/changelog?locale=en_US) |
 | Bidease 🧪 | 2.2.7.0 | Banner, Interstitial, Rewarded | **✗** | **✗** | **✗** | **✗** | [view](Bidease/CHANGELOG.md) | [link](https://devs.bidease.com/docs/changelogs/ios) |
 | Bigo | 5.3.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✗** | **✓** | **✗** | **✓** | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
