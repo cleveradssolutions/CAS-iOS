@@ -1,7 +1,10 @@
 ## PubMatic iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPubMatic', '5.2.0.1'
+pod 'CASMediationPubMatic', '5.3.0.0'
 ```
+
+### 5.3.0.0
+- Certified with PubMatic - 5.3.0
 
 ### 5.2.0.1
 - Certified with PubMatic - 5.2.0

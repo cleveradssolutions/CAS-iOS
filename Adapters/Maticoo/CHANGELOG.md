@@ -1,7 +1,10 @@
 ## Maticoo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMaticoo', '2.2.0.0'
+pod 'CASMediationMaticoo', '2.3.0.0'
 ```
+
+### 2.3.0.0
+- Certified with Maticoo - 2.3.0
 
 ### 2.2.0.0
 - Certified with Maticoo - 2.2.0

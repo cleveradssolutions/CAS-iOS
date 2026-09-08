@@ -1,7 +1,11 @@
 ## Bidease iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBidease', '2.2.7.0'
+pod 'CASMediationBidease', '2.2.8.0'
 ```
+
+### 2.2.8.0
+- Certified with Bidease - 2.2.8
+- Added Bidding loading support.
 
 ### 2.2.7.0
 - Certified with Bidease - 2.2.7

@@ -1,5 +1,8 @@
 # CAS.AI iOS XCode Config script change log
 
+# [2.2] - Mar 10, 2026
+- Support Ruby Gem bundler.
+
 # [2.1] - Mar 10, 2026
 - Use AWS endpoint for configuration.
 - Remove `NSAllowsArbitraryLoads` disabled warning.
