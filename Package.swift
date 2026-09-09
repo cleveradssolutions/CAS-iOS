@@ -64,7 +64,7 @@ enum CAS: String, CaseIterable {
 
 let package = Package(
     name: "CleverAdsSolutions",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: CAS.allProducts,
     dependencies: [
         .package(url: "https://github.com/ironsource-mobile/LevelPlay-Swift-Package.git", exact: "9.6.0"),
