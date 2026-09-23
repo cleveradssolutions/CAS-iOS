@@ -85,7 +85,7 @@ let package = Package(
         .package(url: "https://github.com/JunGroupProductions/HyprMX-SDK-SPM.git", exact: "6.4.6"),
         .package(url: "https://github.com/Ogury/ogury-sdk-spm.git", exact: "5.2.3"),
         .package(url: "https://github.com/Prado-SDK/prado-sdk-swift-package.git", exact: "10.1.5"),
-        .package(url: "https://github.com/vervegroup/Smaato-ios-sdk-standalone.git", exact: "23.2.0"),
+        .package(url: "https://github.com/vervegroup/Smaato-ios-sdk-standalone.git", exact: "23.2.1"),
         .package(url: "https://github.com/vervegroup/hybid-ios-spm-sdk.git", exact: "3.9.0"),
         .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package.git", exact: "5.2.0"),
         .package(url: "https://github.com/displayio/DIOSDK.git", exact: "4.7.5"),
@@ -597,8 +597,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Smaato.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.1-beta1/CASMediationSmaato-23.2.0.1.zip",
-            checksum: "7190ff69becb75e2d42b6fc50e357189c605f874894c6b2403742607bc96db5f"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.2-beta1/CASMediationSmaato-23.2.1.0.zip",
+            checksum: "e9ea42ea56b0167ef4b504fc20a2b13a42d978b75bc0576984ac0077649ba567"
         ),
 
         // MARK: - Moloco
