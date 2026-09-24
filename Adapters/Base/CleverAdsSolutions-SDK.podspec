@@ -18,12 +18,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'UnityAds' do |b|
-    b.dependency 'CASMediationUnityAds', '4.20.0.0'
+    b.dependency 'CASMediationUnityAds', '4.20.1.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
   s.subspec 'GoogleAds' do |b|
-    b.dependency 'CASMediationGoogleAds', '13.9.0.0'
+    b.dependency 'CASMediationGoogleAds', '13.10.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
@@ -38,12 +38,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Chartboost' do |b|
-    b.dependency 'CASMediationChartboost', '9.14.0.0'
+    b.dependency 'CASMediationChartboost', '9.14.1.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
   s.subspec 'DTExchange' do |b|
-    b.dependency 'CASMediationDTExchange', '8.4.10.0'
+    b.dependency 'CASMediationDTExchange', '8.5.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
@@ -68,17 +68,17 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Pangle' do |b|
-    b.dependency 'CASMediationPangle', '8.2.1.0.0'
+    b.dependency 'CASMediationPangle', '8.3.0.7.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
   s.subspec 'Bigo' do |b|
-    b.dependency 'CASMediationBigo', '5.3.0.0'
+    b.dependency 'CASMediationBigo', '6.1.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
   s.subspec 'YangoAds' do |b|
-    b.dependency 'CASMediationYangoAds', '8.4.0.0'
+    b.dependency 'CASMediationYangoAds', '8.5.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
@@ -108,12 +108,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'HyprMX' do |b|
-    b.dependency 'CASMediationHyprMX', '6.4.6.1'
+    b.dependency 'CASMediationHyprMX', '6.4.7.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
   s.subspec 'Ogury' do |b|
-    b.dependency 'CASMediationOgury', '5.3.0.0'
+    b.dependency 'CASMediationOgury', '5.3.1.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
@@ -123,17 +123,17 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Smaato' do |b|
-    b.dependency 'CASMediationSmaato', '23.2.1.0'
+    b.dependency 'CASMediationSmaato', '23.2.2.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
   s.subspec 'Maticoo' do |b|
-    b.dependency 'CASMediationMaticoo', '2.3.0.0'
+    b.dependency 'CASMediationMaticoo', '2.3.1.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
   s.subspec 'Verve' do |b|
-    b.dependency 'CASMediationVerve', '3.9.1.0'
+    b.dependency 'CASMediationVerve', '3.9.2.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
@@ -143,12 +143,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'PubMatic' do |b|
-    b.dependency 'CASMediationPubMatic', '5.3.0.0'
+    b.dependency 'CASMediationPubMatic', '5.4.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 
   s.subspec 'DisplayIO' do |b|
-    b.dependency 'CASMediationDisplayIO', '4.8.0.0'
+    b.dependency 'CASMediationDisplayIO', '4.8.1.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.2-beta1'
   end
 

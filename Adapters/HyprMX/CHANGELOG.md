@@ -1,7 +1,10 @@
 ## HyprMX iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationHyprMX', '6.4.6.1'
+pod 'CASMediationHyprMX', '6.4.7.0'
 ```
+
+### 6.4.7.0
+- Certified with HyprMX - 6.4.7
 
 ### 6.4.6.1
 - Internal improvements for Bidding integration.

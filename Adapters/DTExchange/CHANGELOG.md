@@ -1,7 +1,10 @@
 ## DT Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationDTExchange', '8.4.10.0'
+pod 'CASMediationDTExchange', '8.5.0.0'
 ```
+
+### 8.5.0.0
+- Certified with DTExchange - 8.5.0
 
 ### 8.4.10.0
 - Certified with DTExchange - 8.4.10

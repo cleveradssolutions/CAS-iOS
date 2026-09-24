@@ -1,7 +1,10 @@
 ## Pangle iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationPangle', '8.2.1.0.0'
+pod 'CASMediationPangle', '8.3.0.7.0'
 ```
+
+### 8.3.0.7.0
+- Certified with Pangle - 8.3.0.7
 
 ### 8.2.1.0.0
 - Certified with Pangle - 8.2.1.0

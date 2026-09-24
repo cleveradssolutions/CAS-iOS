@@ -1,7 +1,10 @@
 ## Ogury iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationOgury', '5.3.0.0'
+pod 'CASMediationOgury', '5.3.1.0'
 ```
+
+### 5.3.1.0
+- Certified with Ogury - 5.3.1
 
 ### 5.3.0.0
 - Certified with Ogury - 5.3.0
