@@ -1,7 +1,10 @@
 ## LiftoffMonetize iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationLiftoffMonetize', '7.7.7.0'
+pod 'CASMediationLiftoffMonetize', '7.7.7.1'
 ```
+
+### 7.7.7.1
+- Fixed an impression issues of Native Ads.
 
 ### 7.7.7.0
 - Certified with LiftoffMonetize - 7.7.7

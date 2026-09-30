@@ -1,7 +1,11 @@
 ## Bidease iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBidease', '2.2.8.0'
+pod 'CASMediationBidease', '3.0.0.0'
 ```
+
+### 3.0.0.0
+- Certified with Bidease - 3.0.0
+- Added Swift Package Manager integration support.
 
 ### 2.2.8.0
 - Certified with Bidease - 2.2.8
@@ -15,5 +19,3 @@ pod 'CASMediationBidease', '2.2.8.0'
 
 ### 2.2.1.0
 - Certified with Bidease - 2.2.1
-
-### 
