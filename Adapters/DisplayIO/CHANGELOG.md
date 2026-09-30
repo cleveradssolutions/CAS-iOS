@@ -1,7 +1,15 @@
 ## Display IO iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationDisplayIO', '4.7.5.0'
+pod 'CASMediationDisplayIO', '4.8.1.0'
 ```
+
+### 4.8.1.0
+- Certified with DisplayIO - 4.8.1
+- Added Icon asset support for Native Ads.
+
+### 4.8.0.0
+- Certified with DisplayIO - 4.8.0
+- Added Native Ads format support.
 
 ### 4.7.5.0
 - Certified with DisplayIO - 4.7.5
@@ -19,5 +27,3 @@ pod 'CASMediationDisplayIO', '4.7.5.0'
 ### 4.7.0.0
 - Certified with DisplayIO - 4.7.0
 - Added Swift Package Manager integration support.
-
-### 

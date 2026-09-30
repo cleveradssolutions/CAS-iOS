@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license             = { :type => "Commercial License", :file => "LICENSE.md" }
   s.author              = { "CleverAdsSolutions LTD" => "support@cas.ai" }
   s.source              = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.1-beta1/CASMediationYsoNetwork-1.2.1.0.zip" }
-  s.platform            = :ios, '13.0'
+  s.platform            = :ios, '15.0'
   s.swift_version       = '5.0'
   s.static_framework    = true
   s.vendored_frameworks = 'CASMediationYsoNetwork.xcframework'

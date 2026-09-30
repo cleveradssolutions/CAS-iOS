@@ -1,7 +1,13 @@
 ## Yango Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationYangoAds', '8.3.0.0'
+pod 'CASMediationYangoAds', '8.6.0.0'
 ```
+
+### 8.6.0.0
+- Certified with YangoAds - 8.6.0
+
+### 8.4.0.0
+- Certified with YangoAds - 8.4.0
 
 ### 8.3.0.0
 - Certified with YangoAds - 8.3.0

@@ -1,7 +1,13 @@
 ## Smaato iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationSmaato', '23.2.0.1'
+pod 'CASMediationSmaato', '23.2.2.0'
 ```
+
+### 23.2.2.0
+- Certified with Smaato - 23.2.2
+
+### 23.2.1.0
+- Certified with Smaato - 23.2.1
 
 ### 23.2.0.1
 - Certified with Smaato - 23.2.0

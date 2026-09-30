@@ -1,7 +1,13 @@
 ## Google Ads iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationGoogleAds', '13.7.0.0'
+pod 'CASMediationGoogleAds', '13.11.0.0'
 ```
+
+### 13.11.0.0
+- Certified with GoogleAds - 13.11.0
+
+### 13.9.0.0
+- Certified with GoogleAds - 13.9.0
 
 ### 13.7.0.0
 - Certified with GoogleAds - 13.7.0

@@ -1,7 +1,16 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.6.3.2'
+pod 'CASMediationAppLovin', '13.6.4.1'
 ```
+
+### 13.6.4.1
+- Compatibility improvements for CAS 4.8.3.
+
+### 13.6.4.0
+- Certified with AppLovin - 13.6.4
+
+### 13.6.3.3
+- Fixed an issue where the banner was invisible under rare configurations.
 
 ### 13.6.3.2
 - Fixed a rare loading freeze that occurred in some configurations.

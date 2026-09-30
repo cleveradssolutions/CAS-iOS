@@ -3,9 +3,24 @@
 require 'uri'
 require 'net/http'
 require 'set'
-require 'xcodeproj'
 require 'fileutils'
 require 'pathname'
+
+begin
+    require 'bundler/setup'
+rescue LoadError, StandardError
+end
+
+begin
+    require 'xcodeproj'
+rescue LoadError, StandardError
+    abort(
+        "[!] Could not load the 'xcodeproj' gem.\n" \
+        "    Install it where this Ruby can see it, e.g.:\n" \
+        "      gem install xcodeproj\n" \
+        "    or add it to your project's Gemfile used by CocoaPods."
+    )
+end
 
 module CASConfig
     ARG_PROJECT = '--project='
@@ -15,7 +30,7 @@ module CASConfig
     ARG_HELP = '--help'
 
     XC_PROJECT_FILE = '.xcodeproj'
-    SCRIPT_VERSION = '2.1'
+    SCRIPT_VERSION = '2.2'
 
     class << self
         attr_accessor :casId, :project_path, :gad_included, :clean_install, :require_id

@@ -1,7 +1,11 @@
 ## Bigo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBigo', '5.3.0.0'
+pod 'CASMediationBigo', '6.1.0.0'
 ```
+
+### 6.1.0.0
+- Certified with Bigo - 6.1.0
+- Added Swift Package Manager integration support.
 
 ### 5.3.0.0
 - Certified with Bigo - 5.3.0

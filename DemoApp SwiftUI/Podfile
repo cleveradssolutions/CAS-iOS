@@ -1,8 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/cleveradssolutions/CAS-Specs.git'
 
-platform :ios, '14.0'
-$casVersion = '~> 4.7.4'
+platform :ios, '15.0'
+$casVersion = '~> 4.8.0'
 
 target 'CASSwiftUIDemoApp' do
   pod 'CleverAdsSolutions-Base', $casVersion
