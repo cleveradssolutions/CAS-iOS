@@ -4,11 +4,11 @@ The adapters in the table are listed in alphabetical order.
 
 | Name | Version | Supported Formats | SPM | Optimal | Families | VPN | Changelog | SDK |
 | ---- | :-----: | :---------------: | :-: | :-----: | :------: | :-: | :-------: | :-: |
-| AppLovin | 13.6.4.1 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
+| AppLovin | 13.6.4.2 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
 | AudienceNetwork | 6.22.0.1 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](AudienceNetwork/CHANGELOG.md) | [link](https://developers.facebook.com/docs/audience-network/setting-up/platform-setup/ios/changelog?locale=en_US) |
 | Bidease 🧪 | 3.0.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](Bidease/CHANGELOG.md) | [link](https://devs.bidease.com/docs/changelogs/ios) |
 | Bigo | 6.1.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✓** | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
-| BlueSea | 1.9.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✗** | **✗** | **✗** | [view](BlueSea/CHANGELOG.md) | [link](https://docs.blueseasx.com/changelog/ios) |
+| BlueSea 🧪 | 1.9.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](BlueSea/CHANGELOG.md) | [link](https://docs.blueseasx.com/changelog/ios) |
 | CASExchange | 4.6.3.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](CASExchange/CHANGELOG.md) | [link]() |
 | Chartboost | 9.14.2.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✓** | **✗** | [view](Chartboost/CHANGELOG.md) | [link](https://docs.chartboost.com/en/monetization/integrate/ios/changelog/) |
 | CrossPromo | 4.8.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](CrossPromo/CHANGELOG.md) | [link]() |

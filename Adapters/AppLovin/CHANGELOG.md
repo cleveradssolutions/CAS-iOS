@@ -1,7 +1,10 @@
 ## AppLovin iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAppLovin', '13.6.4.1'
+pod 'CASMediationAppLovin', '13.6.4.2'
 ```
+
+### 13.6.4.2
+- Fixed an issue where Native Ads failed to display the ad view after updating to 13.6.4.1.
 
 ### 13.6.4.1
 - Compatibility improvements for CAS 4.8.3.

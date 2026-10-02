@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AppLovin' do |b|
-    b.dependency 'CASMediationAppLovin', '13.6.4.1'
+    b.dependency 'CASMediationAppLovin', '13.6.4.2'
     b.dependency 'CleverAdsSolutions-Base', '4.8.3-beta1'
   end
 
