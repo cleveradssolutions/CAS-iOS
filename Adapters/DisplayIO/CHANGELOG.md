@@ -1,7 +1,10 @@
 ## Display IO iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationDisplayIO', '4.8.1.0'
+pod 'CASMediationDisplayIO', '4.8.2.0'
 ```
+
+### 4.8.2.0
+- Certified with DisplayIO - 4.8.2
 
 ### 4.8.1.0
 - Certified with DisplayIO - 4.8.1

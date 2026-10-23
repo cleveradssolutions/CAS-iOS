@@ -1,7 +1,10 @@
 ## InMobi iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationInMobi', '11.5.0.0'
+pod 'CASMediationInMobi', '11.5.0.1'
 ```
+
+### 11.5.0.1
+- Fixed a `CALayerInvalidGeometry` crash when displaying InMobi native ads
 
 ### 11.5.0.0
 - Certified with InMobi - 11.5.0
