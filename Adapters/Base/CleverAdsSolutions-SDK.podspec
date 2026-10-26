@@ -77,6 +77,11 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-Base', '4.8.4-beta1'
   end
 
+  s.subspec 'BigoSpec' do |b|
+    b.dependency 'CASMediationBigoSpec', '6.1.0.0'
+    b.dependency 'CleverAdsSolutions-Base', '4.8.4-beta1'
+  end
+
   s.subspec 'YangoAds' do |b|
     b.dependency 'CASMediationYangoAds', '8.6.0.0'
     b.dependency 'CleverAdsSolutions-Base', '4.8.4-beta1'
@@ -213,7 +218,7 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.8.4-beta1'
     b.dependency 'CleverAdsSolutions-SDK/InMobi', '4.8.4-beta1'
     b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.8.4-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Bigo', '4.8.4-beta1'
+    b.dependency 'CleverAdsSolutions-SDK/BigoSpec', '4.8.4-beta1'
     b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.8.4-beta1'
     b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.8.4-beta1'
     b.dependency 'CleverAdsSolutions-SDK/Monetrix', '4.8.4-beta1'
