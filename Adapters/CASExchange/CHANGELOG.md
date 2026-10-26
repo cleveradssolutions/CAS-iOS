@@ -1,7 +1,10 @@
 ## CAS Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationCASExchange', '4.6.3.0'
+pod 'CASMediationCASExchange', '4.9.0.0'
 ```
+
+### 4.9.0.0
+- Major update of the CAS Exchange SDK
 
 ### 4.6.3.0
 - Added support for the `[ERRORCODE]` macro for the VAST error URL.

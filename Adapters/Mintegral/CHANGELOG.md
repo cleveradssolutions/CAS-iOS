@@ -1,7 +1,10 @@
 ## Mintegral iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMintegral', '8.1.7.1'
+pod 'CASMediationMintegral', '8.1.8.0'
 ```
+
+### 8.1.8.0
+- Certified with Mintegral - 8.1.8
 
 ### 8.1.7.1
 - Added Waterfall loading support.

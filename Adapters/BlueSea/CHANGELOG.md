@@ -1,7 +1,11 @@
 ## BlueSea iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBlueSea', '1.9.0.0'
+pod 'CASMediationBlueSea', '1.9.1.0'
 ```
+
+### 1.9.1.0
+- Certified with BlueSea - 1.9.1
+- Improved ad loading in bidding flow.
 
 ### 1.9.0.0
 - Certified with BlueSea - 1.9.0

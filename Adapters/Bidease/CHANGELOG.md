@@ -1,7 +1,10 @@
 ## Bidease iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationBidease', '3.0.0.0'
+pod 'CASMediationBidease', '3.0.2.0'
 ```
+
+### 3.0.2.0
+- Certified with Bidease - 3.0.2
 
 ### 3.0.0.0
 - Certified with Bidease - 3.0.0
