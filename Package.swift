@@ -160,7 +160,6 @@ let package = Package(
         .package(url: "https://github.com/vervegroup/Smaato-ios-sdk-standalone.git", exact: "23.2.3"),
         .package(url: "https://github.com/cloudadrd/zMaticooPodSpec.git", exact: "2.3.2"),
         .package(url: "https://github.com/vervegroup/hybid-ios-spm-sdk.git", exact: "3.9.3"),
-        .package(url: "https://gitee.com/monetrix/monetrix_sdk_ios.git", exact: "1.3.1"),
         .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package.git", exact: "5.4.1"),
         .package(url: "https://github.com/displayio/DIOSDK.git", exact: "4.8.2"),
         .package(url: "https://github.com/bidease/BideaseSDK-iOS.git", exact: "3.0.2"),
@@ -735,7 +734,7 @@ let package = Package(
             dependencies: [
                 .target(name: CAS.Monetrix.binaryAdapter),
                 .target(name: baseTarget),
-                .product(name: "MonetrixAds", package: "monetrix_sdk_ios"),
+                .target(name: "MonetrixAds"),
             ],
             path: CAS.Monetrix.pathAdapter
         ),
@@ -744,5 +743,10 @@ let package = Package(
             url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.4-beta1/CASMediationMonetrix-1.3.0.1.zip",
             checksum: "4568c7ca3f05f0848a9074011e3938cddb13c7774a1480e1be54dbde7619aa1f"
         ),
+        .binaryTarget(
+            name: "MonetrixAds",
+            url: "https://monetrix.ai/sdk/dl/1.3.0.1/MonetrixAdsSpm.zip",
+            checksum: "e95a9a912a40ee4fa20079ef98e46dd12e573094c3445cefce88aa15c3de0358"
+        )
     ]
 )
