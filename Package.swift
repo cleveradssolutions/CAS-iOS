@@ -416,7 +416,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Exchange.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta2/CASMediationExchange-4.9.0.0.zip",
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta.2/CASMediationExchange-4.9.0.0.zip",
             checksum: "85687f0dd90db510aaef5cf31885328787b31f8c88e57d94f79b80fd284a24dc"
         ),
 
