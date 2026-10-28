@@ -164,6 +164,7 @@ let package = Package(
         .package(url: "https://github.com/blueseasx/BlueSeaSDK-Swift-Package.git", exact: "1.9.1"),
         .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package.git", exact: "5.4.0"),
         .package(url: "https://github.com/displayio/DIOSDK.git", exact: "4.8.1"),
+        .package(url: "https://github.com/cloudadrd/zMaticooPodSpec.git", exact: "2.3.2"),
     ],
 
     targets: [
