@@ -1,0 +1,90 @@
+//
+//  Config.xcconfig
+//
+//  Created by Денис Ешенко on 23.11.2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Attention! Adapter project should have CAS prefix to avoid conflicts with original module names
+
+// Next error caused when BUILD_LIBRARIES_FOR_DISTRIBUTION = YES and ussed Bridging headers
+// Error: using bridging headers with module interfaces is unsupported
+
+// To use private module.modulemap you should also set:
+// SWIFT_INCLUDE_PATHS = $(SRCROOT)/LoopMe
+// MODULEMAP_PRIVATE_FILE = LoopMe/module.modulemap
+
+IPHONEOS_DEPLOYMENT_TARGET = 15.0
+SWIFT_VERSION = 5.0
+SKIP_INSTALL = NO
+BUILD_LIBRARY_FOR_DISTRIBUTION = YES
+SWIFT_INSTALL_MODULE = YES
+//STRIP_SWIFT_SYMBOLS = NO
+ONLY_ACTIVE_ARCH = NO
+GCC_WARN_ABOUT_MISSING_PROTOTYPE = YES
+PRODUCT_NAME = $(TARGET_NAME)
+GCC_GENERATE_DEBUGGING_SYMBOLS = YES
+DEBUG_INFORMATION_FORMAT = dwarf
+COPY_PHASE_STRIP = YES
+ENABLE_USER_SCRIPT_SANDBOXING = NO // Required to use Scripts in build phases with XCode 15+
+
+INFOPLIST_KEY_NSHumanReadableCopyright = Copyright © 2026 CleverAdsSolutions LTD, CAS.AI. All rights reserved.
+
+// Framework define
+INSTALL_PATH = $(LOCAL_LIBRARY_DIR)/Frameworks
+CURRENT_PROJECT_VERSION = 1
+MARKETING_VERSION = 1.0
+VERSIONING_SYSTEM = apple-generic
+PRIVATE_HEADERS_FOLDER_PATH = $(CONTENTS_FOLDER_PATH)/PrivateHeaders
+DYLIB_COMPATIBILITY_VERSION = 1
+DYLIB_CURRENT_VERSION = 1
+DYLIB_INSTALL_NAME_BASE = @rpath
+MACH_O_TYPE = staticlib
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+
+EXECUTABLE_EXTENSION =
+EXECUTABLE_PREFIX =
+GENERATE_INFOPLIST_FILE = YES
+PRODUCT_BUNDLE_IDENTIFIER = com.cleveradssolutions.$(PRODUCT_NAME)
+PUBLIC_HEADERS_FOLDER_PATH = $(CONTENTS_FOLDER_PATH)/Headers
+WRAPPER_EXTENSION = framework
+DEAD_CODE_STRIPPING = YES
+OTHER_LDFLAGS = -ObjC
+TARGETED_DEVICE_FAMILY = 1,2
+SWIFT_OPTIMIZATION_LEVEL = -O
+DEFINES_MODULE = YES
+CLANG_ENABLE_MODULES = YES
+
+SWIFT_INSTALL_OBJC_HEADER = NO
+
+// YES?
+SWIFT_EMIT_LOC_STRINGS = NO
+
+
+//BUILD_DIR = $(SRCROOT)/../../build/Products
+CAS_CONFIGURATION_BUILD_DIR = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+CAS_XCFRAMEWORK_EXTRACT_DIR = $(CAS_CONFIGURATION_BUILD_DIR)/CASXCFrameworks
+CAS_XCFRAMEWORK_INSTALL_SCRIPT = $(SRCROOT)/../InstallXCFramework.py
+CAS_XCFRAMEWORK_INSTALL_SCRIPT_SH = $(SRCROOT)/../InstallXCFramework.sh
+CAS_PODS_DIR = $(SRCROOT)/../../Pods
+
+// Where Xcode puts what SPM downloaded for the workspace. BUILD_DIR is
+// <DerivedData>/<project>/Build/Products, so two levels up is the project's own
+// DerivedData folder, which is also where SourcePackages lives.
+//
+// Two roots, not one: a package that ships its framework through
+// binaryTarget(url:) is unpacked under artifacts/<repo>/<product>/, while one that
+// keeps the framework inside its own repository (binaryTarget(path:)) is only ever
+// checked out, and never appears under artifacts at all.
+CAS_SPM_ARTIFACTS = $(BUILD_DIR)/../../SourcePackages/artifacts
+CAS_SPM_CHECKOUTS = $(BUILD_DIR)/../../SourcePackages/checkouts
+CAS_CROSSMEDIATION_DIR = $(SRCROOT)/../../CrossMediation
+
+PODS_ROOT = $(CAS_PODS_DIR)
+PODS_XCFRAMEWORKS_BUILD_DIR = ${CAS_CONFIGURATION_BUILD_DIR}/XCFrameworkIntermediates
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(CAS_XCFRAMEWORK_EXTRACT_DIR)" "$(SRCROOT)/../../libs" $(PROJECT_DIR) $(PROJECT_DIR)/Frameworks
+
+HEADER_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)" "$(CAS_XCFRAMEWORK_EXTRACT_DIR)**"

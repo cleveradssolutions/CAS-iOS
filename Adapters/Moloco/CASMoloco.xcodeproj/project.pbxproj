@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D7A37B82FE00E7B003C03D6 /* MolocoForIronSource.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7A37B72FE00E7B003C03D6 /* MolocoForIronSource.xcframework */; };
+		A047792C2FD985DB00BDEF4B /* CASMediationMoloco.h in Headers */ = {isa = PBXBuildFile; fileRef = A04778212FD9824400BDEF4B /* CASMediationMoloco.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04779312FD98FEA00BDEF4B /* CASMolocoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04778282FD982D600BDEF4B /* CASMolocoUtils.swift */; };
+		A04779322FD98FEA00BDEF4B /* CASMolocoNativeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04778272FD982CC00BDEF4B /* CASMolocoNativeLoader.swift */; };
+		A04779332FD98FEA00BDEF4B /* CASMolocoBannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04778232FD9829F00BDEF4B /* CASMolocoBannerAd.swift */; };
+		A04779342FD98FEA00BDEF4B /* CASMolocoScreenAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04778252FD982B900BDEF4B /* CASMolocoScreenAd.swift */; };
+		A04779352FD98FEA00BDEF4B /* CASMolocoAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04778222FD9828D00BDEF4B /* CASMolocoAdapter.swift */; };
+		A04779372FD98FEA00BDEF4B /* CASMolocoNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04778262FD982C300BDEF4B /* CASMolocoNativeAd.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D7A37B72FE00E7B003C03D6 /* MolocoForIronSource.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:CG78EM8VXT:CLEAR INVEST LTD"; lastKnownFileType = wrapper.xcframework; name = MolocoForIronSource.xcframework; path = ../../CrossMediation/IronSource/MolocoForIronSource.xcframework; sourceTree = "<group>"; };
+		9D7A37B92FE00E8A003C03D6 /* MolocoForAppLovin.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:CG78EM8VXT:CLEAR INVEST LTD"; lastKnownFileType = wrapper.xcframework; name = MolocoForAppLovin.xcframework; path = ../../CrossMediation/AppLovin/MolocoForAppLovin.xcframework; sourceTree = "<group>"; };
+		A04778012FD97B6F00BDEF4B /* CASMediationMoloco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CASMediationMoloco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04778212FD9824400BDEF4B /* CASMediationMoloco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CASMediationMoloco.h; sourceTree = "<group>"; };
+		A04778222FD9828D00BDEF4B /* CASMolocoAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASMolocoAdapter.swift; sourceTree = "<group>"; };
+		A04778232FD9829F00BDEF4B /* CASMolocoBannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASMolocoBannerAd.swift; sourceTree = "<group>"; };
+		A04778252FD982B900BDEF4B /* CASMolocoScreenAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASMolocoScreenAd.swift; sourceTree = "<group>"; };
+		A04778262FD982C300BDEF4B /* CASMolocoNativeAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASMolocoNativeAd.swift; sourceTree = "<group>"; };
+		A04778272FD982CC00BDEF4B /* CASMolocoNativeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASMolocoNativeLoader.swift; sourceTree = "<group>"; };
+		A04778282FD982D600BDEF4B /* CASMolocoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASMolocoUtils.swift; sourceTree = "<group>"; };
+		A047792B2FD984F800BDEF4B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../Config.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A04777FE2FD97B6F00BDEF4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7A37B82FE00E7B003C03D6 /* MolocoForIronSource.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D7A37B62FE00E7B003C03D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D7A37B92FE00E8A003C03D6 /* MolocoForAppLovin.xcframework */,
+				9D7A37B72FE00E7B003C03D6 /* MolocoForIronSource.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A04777F72FD97B6F00BDEF4B = {
+			isa = PBXGroup;
+			children = (
+				A04778202FD97CCD00BDEF4B /* Moloco */,
+				9D7A37B62FE00E7B003C03D6 /* Frameworks */,
+				A04778022FD97B6F00BDEF4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A04778022FD97B6F00BDEF4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A04778012FD97B6F00BDEF4B /* CASMediationMoloco.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A04778202FD97CCD00BDEF4B /* Moloco */ = {
+			isa = PBXGroup;
+			children = (
+				A04778212FD9824400BDEF4B /* CASMediationMoloco.h */,
+				A04778222FD9828D00BDEF4B /* CASMolocoAdapter.swift */,
+				A04778232FD9829F00BDEF4B /* CASMolocoBannerAd.swift */,
+				A04778252FD982B900BDEF4B /* CASMolocoScreenAd.swift */,
+				A04778262FD982C300BDEF4B /* CASMolocoNativeAd.swift */,
+				A04778272FD982CC00BDEF4B /* CASMolocoNativeLoader.swift */,
+				A04778282FD982D600BDEF4B /* CASMolocoUtils.swift */,
+				A047792B2FD984F800BDEF4B /* Config.xcconfig */,
+			);
+			path = Moloco;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A04777FC2FD97B6F00BDEF4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A047792C2FD985DB00BDEF4B /* CASMediationMoloco.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A04778002FD97B6F00BDEF4B /* CASMediationMoloco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04778082FD97B6F00BDEF4B /* Build configuration list for PBXNativeTarget "CASMediationMoloco" */;
+			buildPhases = (
+				A047792D2FD9868400BDEF4B /* [CAS] Install Moloco XCFramework */,
+				A04777FC2FD97B6F00BDEF4B /* Headers */,
+				A04777FD2FD97B6F00BDEF4B /* Sources */,
+				A04777FE2FD97B6F00BDEF4B /* Frameworks */,
+				A04777FF2FD97B6F00BDEF4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CASMediationMoloco;
+			packageProductDependencies = (
+			);
+			productName = CASMoloco;
+			productReference = A04778012FD97B6F00BDEF4B /* CASMediationMoloco.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A04777F82FD97B6F00BDEF4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					A04778002FD97B6F00BDEF4B = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A04777FB2FD97B6F00BDEF4B /* Build configuration list for PBXProject "CASMoloco" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A04777F72FD97B6F00BDEF4B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A04778022FD97B6F00BDEF4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A04778002FD97B6F00BDEF4B /* CASMediationMoloco */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A04777FF2FD97B6F00BDEF4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A047792D2FD9868400BDEF4B /* [CAS] Install Moloco XCFramework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(CAS_SPM_ARTIFACTS)/moloco-sdk-ios-spm/MolocoSDK/MolocoSDK.xcframework",
+			);
+			name = "[CAS] Install Moloco XCFramework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(CAS_XCFRAMEWORK_EXTRACT_DIR)/MolocoSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$CAS_XCFRAMEWORK_INSTALL_SCRIPT_SH\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A04777FD2FD97B6F00BDEF4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04779312FD98FEA00BDEF4B /* CASMolocoUtils.swift in Sources */,
+				A04779322FD98FEA00BDEF4B /* CASMolocoNativeLoader.swift in Sources */,
+				A04779332FD98FEA00BDEF4B /* CASMolocoBannerAd.swift in Sources */,
+				A04779342FD98FEA00BDEF4B /* CASMolocoScreenAd.swift in Sources */,
+				A04779352FD98FEA00BDEF4B /* CASMolocoAdapter.swift in Sources */,
+				A04779372FD98FEA00BDEF4B /* CASMolocoNativeAd.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A04778062FD97B6F00BDEF4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = CG78EM8VXT;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A04778072FD97B6F00BDEF4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = CG78EM8VXT;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A04778092FD97B6F00BDEF4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A047792B2FD984F800BDEF4B /* Config.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A047780A2FD97B6F00BDEF4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A047792B2FD984F800BDEF4B /* Config.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A04777FB2FD97B6F00BDEF4B /* Build configuration list for PBXProject "CASMoloco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04778062FD97B6F00BDEF4B /* Debug */,
+				A04778072FD97B6F00BDEF4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04778082FD97B6F00BDEF4B /* Build configuration list for PBXNativeTarget "CASMediationMoloco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04778092FD97B6F00BDEF4B /* Debug */,
+				A047780A2FD97B6F00BDEF4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A04777F82FD97B6F00BDEF4B /* Project object */;
+}
