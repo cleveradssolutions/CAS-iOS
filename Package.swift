@@ -318,7 +318,13 @@ let package = Package(
                 .target(name: CAS.IronSource.target),
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
             ],
-            path: CAS.GoogleAds.pathAdapter
+            path: CAS.GoogleAds.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("JavaScriptCore"),
+                .linkedFramework("MediaPlayer"),
+                .linkedFramework("MessageUI"),
+                .linkedFramework("SafariServices"),
+            ]
         ),
         .binaryTarget(
             name: CAS.GoogleAds.binaryAdapter,
@@ -335,7 +341,17 @@ let package = Package(
                 .target(name: baseTarget),
                 .product(name: "VungleAdsSDK", package: "VungleAdsSDK-SwiftPackageManager"),
             ],
-            path: CAS.LiftoffMonetize.pathAdapter
+            path: CAS.LiftoffMonetize.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("AdSupport"),
+                .linkedFramework("AudioToolbox"),
+                .linkedFramework("CFNetwork"),
+                .linkedFramework("CoreGraphics"),
+                .linkedFramework("CoreMedia"),
+                .linkedFramework("MediaPlayer"),
+                .linkedFramework("QuartzCore"),
+                .linkedFramework("SystemConfiguration"),
+            ]
         ),
         .binaryTarget(
             name: CAS.LiftoffMonetize.binaryAdapter,
@@ -369,7 +385,10 @@ let package = Package(
                 .target(name: baseTarget),
                 .product(name: "MintegralAdSDK", package: "MintegralAdSDK-Swift-Package"),
             ],
-            path: CAS.Mintegral.pathAdapter
+            path: CAS.Mintegral.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("QuartzCore"),
+            ]
         ),
         .binaryTarget(
             name: CAS.Mintegral.binaryAdapter,
@@ -387,7 +406,10 @@ let package = Package(
                 .target(name: CAS.IronSource.target),
                 .product(name: "DTExchangeSDK", package: "DTExchangeSDK-iOS-SPM"),
             ],
-            path: CAS.DTExchange.pathAdapter
+            path: CAS.DTExchange.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("MediaPlayer"),
+            ]
         ),
         .binaryTarget(
             name: CAS.DTExchange.binaryAdapter,
@@ -466,6 +488,9 @@ let package = Package(
                 .product(name: "YandexMobileAds", package: "yandex-ads-sdk-ios"),
             ],
             path: CAS.YangoAds.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("CoreImage"),
+            ]
         ),
         .binaryTarget(
             name: CAS.YangoAds.binaryAdapter,
@@ -500,6 +525,14 @@ let package = Package(
                 .product(name: "FBAudienceNetwork", package: "FBAudienceNetwork"),
             ],
             path: CAS.AudienceNetwork.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("AppTrackingTransparency"),
+                .linkedFramework("CoreImage"),
+                .linkedFramework("CoreMotion"),
+                .linkedFramework("LocalAuthentication"),
+                .linkedFramework("SafariServices"),
+                .linkedFramework("VideoToolbox"),
+            ]
         ),
         .binaryTarget(
             name: CAS.AudienceNetwork.binaryAdapter,
@@ -516,7 +549,10 @@ let package = Package(
                 .target(name: baseTarget),
                 .product(name: "AdsGlobalPackage", package: "AdsGlobalPackage"),
             ],
-            path: CAS.Pangle.pathAdapter
+            path: CAS.Pangle.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("CoreImage"),
+            ]
         ),
         .binaryTarget(
             name: CAS.Pangle.binaryAdapter,
@@ -550,7 +586,16 @@ let package = Package(
                 .target(name: baseTarget),
                 .product(name: "OpenWrapSDK", package: "OpenWrapSDK-Swift-Package"),
             ],
-            path: CAS.PubMatic.pathAdapter
+            path: CAS.PubMatic.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("AdSupport"),
+                .linkedFramework("CoreGraphics"),
+                .linkedFramework("CoreTelephony"),
+                .linkedFramework("EventKit"),
+                .linkedFramework("EventKitUI"),
+                .linkedFramework("MessageUI"),
+                .linkedFramework("SystemConfiguration"),
+            ]
         ),
         .binaryTarget(
             name: CAS.PubMatic.binaryAdapter,
@@ -585,6 +630,11 @@ let package = Package(
                 .product(name: "ChartboostSDK", package: "chartboost-monetization-ios-sdk"),
             ],
             path: CAS.Chartboost.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("AppTrackingTransparency"),
+                .linkedFramework("CoreFoundation"),
+                .linkedFramework("SafariServices"),
+            ]
         ),
         .binaryTarget(
             name: CAS.Chartboost.binaryAdapter,
@@ -669,7 +719,13 @@ let package = Package(
                 .target(name: CAS.IronSource.target),
                 .product(name: "MolocoSDK", package: "moloco-sdk-ios-spm"),
             ],
-            path: CAS.Moloco.pathAdapter
+            path: CAS.Moloco.pathAdapter,
+            linkerSettings: [
+                .linkedFramework("AVKit"),
+                .linkedFramework("Combine"),
+                .linkedFramework("CryptoKit"),
+                .linkedFramework("SafariServices"),
+            ]
         ),
         .binaryTarget(
             name: CAS.Moloco.binaryAdapter,
