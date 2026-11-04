@@ -349,7 +349,6 @@ let package = Package(
             ],
             path: CAS.LiftoffMonetize.pathAdapter,
             linkerSettings: [
-                .linkedFramework("AdSupport"),
                 .linkedFramework("AudioToolbox"),
                 .linkedFramework("CFNetwork"),
                 .linkedFramework("CoreGraphics"),
@@ -532,7 +531,6 @@ let package = Package(
             ],
             path: CAS.AudienceNetwork.pathAdapter,
             linkerSettings: [
-                .linkedFramework("AppTrackingTransparency"),
                 .linkedFramework("CoreImage"),
                 .linkedFramework("CoreMotion"),
                 .linkedFramework("LocalAuthentication"),
@@ -594,7 +592,6 @@ let package = Package(
             ],
             path: CAS.PubMatic.pathAdapter,
             linkerSettings: [
-                .linkedFramework("AdSupport"),
                 .linkedFramework("CoreGraphics"),
                 .linkedFramework("CoreTelephony"),
                 .linkedFramework("EventKit"),
@@ -637,7 +634,6 @@ let package = Package(
             ],
             path: CAS.Chartboost.pathAdapter,
             linkerSettings: [
-                .linkedFramework("AppTrackingTransparency"),
                 .linkedFramework("CoreFoundation"),
                 .linkedFramework("SafariServices"),
             ]
