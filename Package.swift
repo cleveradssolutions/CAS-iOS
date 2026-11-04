@@ -182,6 +182,12 @@ let package = Package(
                 .process("Resources")
             ],
             linkerSettings: [
+                // The SDK reaches the advertising id and the tracking authorization by
+                // class name, so the frameworks have to be loaded into the process for
+                // those lookups to find anything. Linking is what loads them: with
+                // CocoaPods the pod spec weak linked both, and nothing else does.
+                .linkedFramework("AdSupport"),
+                .linkedFramework("AppTrackingTransparency"),
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("CoreLocation"),
                 .linkedFramework("Foundation"),
