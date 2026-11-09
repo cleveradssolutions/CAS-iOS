@@ -5,6 +5,7 @@ pod 'CASMediationBidease', '3.0.3.0'
 
 ### 3.0.3.0
 - Certified with Bidease - 3.0.3
+- [SDK] Fixed crash from Banner ads
 
 ### 3.0.2.0
 - Certified with Bidease - 3.0.2

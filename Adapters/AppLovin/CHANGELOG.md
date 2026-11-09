@@ -4,7 +4,7 @@ pod 'CASMediationAppLovin', '13.6.4.3'
 ```
 
 ### 13.6.4.3
-- Certified with AppLovin - 13.6.4
+- Minor improvements
 
 ### 13.6.4.2
 - Fixed an issue where Native Ads failed to display the ad view after updating to 13.6.4.1.
