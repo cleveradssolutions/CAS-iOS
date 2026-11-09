@@ -1,7 +1,10 @@
 ## Moloco iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMoloco', '4.11.1.0'
+pod 'CASMediationMoloco', '4.12.0.0'
 ```
+
+### 4.12.0.0
+- Certified with Moloco - 4.12.0
 
 ### 4.11.1.0
 - Certified with Moloco - 4.11.1

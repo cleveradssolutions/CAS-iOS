@@ -1,7 +1,10 @@
 ## CAS Exchange iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationCASExchange', '4.9.0.0'
+pod 'CASMediationCASExchange', '4.9.1.0'
 ```
+
+### 4.9.1.0
+- Handle redirects on background
 
 ### 4.9.0.0
 - Major update of the CAS Exchange SDK
