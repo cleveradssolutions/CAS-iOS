@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D137CEC297ABE29007C7620 /* CASYangoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D137CEB297ABE29007C7620 /* CASYangoUtils.swift */; };
+		9D1D6358292E615F0086C9F3 /* CASYangoAdsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D6344292E5D780086C9F3 /* CASYangoAdsAdapter.swift */; };
+		9D6892EC2D27D18F00D46E68 /* CASYaRewardedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6892EB2D27D18F00D46E68 /* CASYaRewardedLoader.swift */; };
+		9D6892EE2D27D1DA00D46E68 /* CASYaRewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6892ED2D27D1D900D46E68 /* CASYaRewardedAd.swift */; };
+		9D6892F12D27D28400D46E68 /* CASYaAppOpenAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6892EF2D27D28400D46E68 /* CASYaAppOpenAd.swift */; };
+		9D6892F22D27D28400D46E68 /* CASYaAppOpenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6892F02D27D28400D46E68 /* CASYaAppOpenLoader.swift */; };
+		9D6892FC2D27DC0500D46E68 /* CASYaBannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6892FA2D27DC0500D46E68 /* CASYaBannerAd.swift */; };
+		9D6893062D27FE4200D46E68 /* CASYaNativeAdLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6893052D27FE4200D46E68 /* CASYaNativeAdLoader.swift */; };
+		9D6893082D28023700D46E68 /* CASYaNativeAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6893072D28023700D46E68 /* CASYaNativeAd.swift */; };
+		9D8DD3852DB7AFD000458755 /* YandexForIronSource.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4726042CDCDFF10087900E /* YandexForIronSource.xcframework */; };
+		9DE30A5F2D08AD470048E5EA /* CASYaInterstitialLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE30A5E2D08AD470048E5EA /* CASYaInterstitialLoader.swift */; };
+		9DE30A642D096E8A0048E5EA /* CASYaInterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE30A632D096E8A0048E5EA /* CASYaInterstitialAd.swift */; };
+		9DFCF92E2DDB79D600308B5A /* CASMediationYangoAds.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DFCF92C2DDB79B700308B5A /* CASMediationYangoAds.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D137CEB297ABE29007C7620 /* CASYangoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYangoUtils.swift; sourceTree = "<group>"; };
+		9D1D62EB292E566F0086C9F3 /* CASMediationYangoAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CASMediationYangoAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1D6302292E56D10086C9F3 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../Config.xcconfig; sourceTree = "<group>"; };
+		9D1D6344292E5D780086C9F3 /* CASYangoAdsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYangoAdsAdapter.swift; sourceTree = "<group>"; };
+		9D4726042CDCDFF10087900E /* YandexForIronSource.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:CG78EM8VXT:CLEAR INVEST LTD"; lastKnownFileType = wrapper.xcframework; name = YandexForIronSource.xcframework; path = ../../CrossMediation/IronSource/YandexForIronSource.xcframework; sourceTree = "<group>"; };
+		9D6892EB2D27D18F00D46E68 /* CASYaRewardedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYaRewardedLoader.swift; sourceTree = "<group>"; };
+		9D6892ED2D27D1D900D46E68 /* CASYaRewardedAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYaRewardedAd.swift; sourceTree = "<group>"; };
+		9D6892EF2D27D28400D46E68 /* CASYaAppOpenAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYaAppOpenAd.swift; sourceTree = "<group>"; };
+		9D6892F02D27D28400D46E68 /* CASYaAppOpenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYaAppOpenLoader.swift; sourceTree = "<group>"; };
+		9D6892FA2D27DC0500D46E68 /* CASYaBannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYaBannerAd.swift; sourceTree = "<group>"; };
+		9D6893052D27FE4200D46E68 /* CASYaNativeAdLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYaNativeAdLoader.swift; sourceTree = "<group>"; };
+		9D6893072D28023700D46E68 /* CASYaNativeAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYaNativeAd.swift; sourceTree = "<group>"; };
+		9DE30A5E2D08AD470048E5EA /* CASYaInterstitialLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYaInterstitialLoader.swift; sourceTree = "<group>"; };
+		9DE30A632D096E8A0048E5EA /* CASYaInterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASYaInterstitialAd.swift; sourceTree = "<group>"; };
+		9DE51C322D524B88009E3AE9 /* YandexForAppLovin.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:CG78EM8VXT:CLEAR INVEST LTD"; lastKnownFileType = wrapper.xcframework; name = YandexForAppLovin.xcframework; path = ../../CrossMediation/AppLovin/YandexForAppLovin.xcframework; sourceTree = "<group>"; };
+		9DFCF92C2DDB79B700308B5A /* CASMediationYangoAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CASMediationYangoAds.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D1D62E8292E566F0086C9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8DD3852DB7AFD000458755 /* YandexForIronSource.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D1D62E2292E566F0086C9F3 = {
+			isa = PBXGroup;
+			children = (
+				9D1D62ED292E566F0086C9F3 /* YangoAds */,
+				9D1D62EC292E566F0086C9F3 /* Products */,
+				9DF759F62AB4E22E00FE4671 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D1D62EC292E566F0086C9F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D1D62EB292E566F0086C9F3 /* CASMediationYangoAds.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D1D62ED292E566F0086C9F3 /* YangoAds */ = {
+			isa = PBXGroup;
+			children = (
+				9DFCF92C2DDB79B700308B5A /* CASMediationYangoAds.h */,
+				9D1D6344292E5D780086C9F3 /* CASYangoAdsAdapter.swift */,
+				9D6892EF2D27D28400D46E68 /* CASYaAppOpenAd.swift */,
+				9D6892F02D27D28400D46E68 /* CASYaAppOpenLoader.swift */,
+				9D6892FA2D27DC0500D46E68 /* CASYaBannerAd.swift */,
+				9DE30A632D096E8A0048E5EA /* CASYaInterstitialAd.swift */,
+				9DE30A5E2D08AD470048E5EA /* CASYaInterstitialLoader.swift */,
+				9D6893072D28023700D46E68 /* CASYaNativeAd.swift */,
+				9D6893052D27FE4200D46E68 /* CASYaNativeAdLoader.swift */,
+				9D6892ED2D27D1D900D46E68 /* CASYaRewardedAd.swift */,
+				9D6892EB2D27D18F00D46E68 /* CASYaRewardedLoader.swift */,
+				9D137CEB297ABE29007C7620 /* CASYangoUtils.swift */,
+				9D1D6302292E56D10086C9F3 /* Config.xcconfig */,
+			);
+			path = YangoAds;
+			sourceTree = "<group>";
+		};
+		9DF759F62AB4E22E00FE4671 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DE51C322D524B88009E3AE9 /* YandexForAppLovin.xcframework */,
+				9D4726042CDCDFF10087900E /* YandexForIronSource.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9DFCF92D2DDB79D400308B5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DFCF92E2DDB79D600308B5A /* CASMediationYangoAds.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9D1D62EA292E566F0086C9F3 /* CASMediationYangoAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D1D62F2292E566F0086C9F3 /* Build configuration list for PBXNativeTarget "CASMediationYangoAds" */;
+			buildPhases = (
+				9D62A5BD292FA495007523C3 /* [CAS] Install YandexAds XCFramework */,
+				9DFCF92D2DDB79D400308B5A /* Headers */,
+				9D1D62E7292E566F0086C9F3 /* Sources */,
+				9D1D62E8292E566F0086C9F3 /* Frameworks */,
+				9DFCFD9A2DDC6E7800308B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CASMediationYangoAds;
+			productName = YandexAds;
+			productReference = 9D1D62EB292E566F0086C9F3 /* CASMediationYangoAds.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D1D62E3292E566F0086C9F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = "CleverAdsSolutions LTD, CAS.AI";
+				TargetAttributes = {
+					9D1D62EA292E566F0086C9F3 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 9D1D62E6292E566F0086C9F3 /* Build configuration list for PBXProject "CASYangoAds" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D1D62E2292E566F0086C9F3;
+			productRefGroup = 9D1D62EC292E566F0086C9F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D1D62EA292E566F0086C9F3 /* CASMediationYangoAds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DFCFD9A2DDC6E7800308B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D62A5BD292FA495007523C3 /* [CAS] Install YandexAds XCFramework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(CAS_SPM_ARTIFACTS)/yandex-ads-sdk-ios/YandexMobileAds/YandexMobileAds.xcframework",
+			);
+			name = "[CAS] Install YandexAds XCFramework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(CAS_XCFRAMEWORK_EXTRACT_DIR)/YandexMobileAds.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$CAS_XCFRAMEWORK_INSTALL_SCRIPT_SH\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D1D62E7292E566F0086C9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1D6358292E615F0086C9F3 /* CASYangoAdsAdapter.swift in Sources */,
+				9D6892F12D27D28400D46E68 /* CASYaAppOpenAd.swift in Sources */,
+				9D6893082D28023700D46E68 /* CASYaNativeAd.swift in Sources */,
+				9D137CEC297ABE29007C7620 /* CASYangoUtils.swift in Sources */,
+				9D6892EC2D27D18F00D46E68 /* CASYaRewardedLoader.swift in Sources */,
+				9D6892EE2D27D1DA00D46E68 /* CASYaRewardedAd.swift in Sources */,
+				9DE30A642D096E8A0048E5EA /* CASYaInterstitialAd.swift in Sources */,
+				9D6892F22D27D28400D46E68 /* CASYaAppOpenLoader.swift in Sources */,
+				9D6892FC2D27DC0500D46E68 /* CASYaBannerAd.swift in Sources */,
+				9DE30A5F2D08AD470048E5EA /* CASYaInterstitialLoader.swift in Sources */,
+				9D6893062D27FE4200D46E68 /* CASYaNativeAdLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9D1D62F0292E566F0086C9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D1D62F1292E566F0086C9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D1D62F3292E566F0086C9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D1D6302292E56D10086C9F3 /* Config.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		9D1D62F4292E566F0086C9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D1D6302292E56D10086C9F3 /* Config.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D1D62E6292E566F0086C9F3 /* Build configuration list for PBXProject "CASYangoAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D1D62F0292E566F0086C9F3 /* Debug */,
+				9D1D62F1292E566F0086C9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D1D62F2292E566F0086C9F3 /* Build configuration list for PBXNativeTarget "CASMediationYangoAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D1D62F3292E566F0086C9F3 /* Debug */,
+				9D1D62F4292E566F0086C9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D1D62E3292E566F0086C9F3 /* Project object */;
+}

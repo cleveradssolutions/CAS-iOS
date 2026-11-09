@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		838E15ECA1B2036AB14F5321 /* libPods-CASSwiftUIDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030C678492C1A3EE3650C94 /* libPods-CASSwiftUIDemoApp.a */; };
+		05A5932E850B9E055EA39870 /* CleverAdsSolutionsSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 0990AA9512698FC523D16BC0 /* CleverAdsSolutionsSPM */; };
 		9D569C972DD1DB8E00095580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D569C962DD1DB8800095580 /* AppDelegate.swift */; };
 		9D857FBB2A9DD89E00A0C1DF /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D857FBA2A9DD89E00A0C1DF /* DemoApp.swift */; };
 		9D857FBF2A9DD89F00A0C1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D857FBE2A9DD89F00A0C1DF /* Assets.xcassets */; };
@@ -34,9 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07EDBB7371814E5244B8B449 /* Pods-CASSwiftUIDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSwiftUIDemoApp.release.xcconfig"; path = "Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp.release.xcconfig"; sourceTree = "<group>"; };
-		1030C678492C1A3EE3650C94 /* libPods-CASSwiftUIDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CASSwiftUIDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50073DC2603EBCE91B1639F8 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CASSwiftUIDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9D569C962DD1DB8800095580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D857FB72A9DD89E00A0C1DF /* CASSwiftUIDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASSwiftUIDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D857FBA2A9DD89E00A0C1DF /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
@@ -69,26 +66,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				838E15ECA1B2036AB14F5321 /* libPods-CASSwiftUIDemoApp.a in Frameworks */,
+				05A5932E850B9E055EA39870 /* CleverAdsSolutionsSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E71A6290C9314B4D08B8B4C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				50073DC2603EBCE91B1639F8 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */,
-				07EDBB7371814E5244B8B449 /* Pods-CASSwiftUIDemoApp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		98BEE311E2738646E2B7F33B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1030C678492C1A3EE3650C94 /* libPods-CASSwiftUIDemoApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,7 +85,6 @@
 			children = (
 				9D857FB92A9DD89E00A0C1DF /* CASSwiftUIDemoApp */,
 				9D857FB82A9DD89E00A0C1DF /* Products */,
-				3E71A6290C9314B4D08B8B4C /* Pods */,
 				98BEE311E2738646E2B7F33B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -213,17 +199,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D857FC52A9DD89F00A0C1DF /* Build configuration list for PBXNativeTarget "CASSwiftUIDemoApp" */;
 			buildPhases = (
-				7235841F14D92D9BF0E9B044 /* [CP] Check Pods Manifest.lock */,
 				9D857FB32A9DD89E00A0C1DF /* Sources */,
 				9D857FB42A9DD89E00A0C1DF /* Frameworks */,
 				9D857FB52A9DD89E00A0C1DF /* Resources */,
-				796A3A545EEB4D3590309346 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CASSwiftUIDemoApp;
+			packageProductDependencies = (
+				0990AA9512698FC523D16BC0 /* CleverAdsSolutionsSPM */,
+			);
 			productName = CASSwiftUIDemoApp;
 			productReference = 9D857FB72A9DD89E00A0C1DF /* CASSwiftUIDemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 9D857FAE2A9DD89E00A0C1DF;
+			packageReferences = (
+				318CE38BFE72025AB4FC8CE6 /* XCRemoteSwiftPackageReference "CAS-iOS" */,
+			);
 			productRefGroup = 9D857FB82A9DD89E00A0C1DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,48 +265,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7235841F14D92D9BF0E9B044 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CASSwiftUIDemoApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		796A3A545EEB4D3590309346 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CASSwiftUIDemoApp/Pods-CASSwiftUIDemoApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D857FB32A9DD89E00A0C1DF /* Sources */ = {
@@ -466,7 +414,6 @@
 		};
 		9D857FC62A9DD89F00A0C1DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50073DC2603EBCE91B1639F8 /* Pods-CASSwiftUIDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +436,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cleveradssolutions.app.demo.swiftui.CASSwiftUIDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -499,7 +450,6 @@
 		};
 		9D857FC72A9DD89F00A0C1DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07EDBB7371814E5244B8B449 /* Pods-CASSwiftUIDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -522,6 +472,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cleveradssolutions.app.demo.swiftui.CASSwiftUIDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -552,6 +506,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		318CE38BFE72025AB4FC8CE6 /* XCRemoteSwiftPackageReference "CAS-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cleveradssolutions/CAS-iOS.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0990AA9512698FC523D16BC0 /* CleverAdsSolutionsSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 318CE38BFE72025AB4FC8CE6 /* XCRemoteSwiftPackageReference "CAS-iOS" */;
+			productName = CleverAdsSolutionsSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D857FAF2A9DD89E00A0C1DF /* Project object */;
 }

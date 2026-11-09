@@ -11,13 +11,11 @@ This repository contains the official CAS.AI iOS Framework, enabling iOS develop
 For setup instructions, usage examples, and API details, refer to the [Developer Guide](https://docs.page/cleveradssolutions/docs/iOS).
 
 ## Demo application
-Each iOS example app on this repository includes a Podfile and a **Podfile.lock**. The Podfile.lock tracks the version of each Pod specified in the Podfile that was used to build the release of the iOS example apps. 
+Each iOS example app on this repository takes the CAS.AI Framework from this repository as a Swift Package, and adds the `CleverAdsSolutionsSPM` product alone. Mediation adapters are products of the same package: add the `CASMediation*` ones your app needs to the application target.
 
-1. Run `pod install` in the same directory as the Podfile.
-2. [Optional] Run `pod update` to get the latest version of the Framework.
-3. Open the `.xcworkspace` file with Xcode and run the app.
-
-See the [CocoaPods Guides](https://guides.cocoapods.org) for more information on installing and updating pods.
+1. Open the `.xcodeproj` file with Xcode.
+2. Wait for Xcode to resolve the package, then run the app.
+3. [Optional] **File > Packages > Update to Latest Package Versions** to move to the newest release of the Framework.
 
 ## Supported architectures
 - Device: arm64
