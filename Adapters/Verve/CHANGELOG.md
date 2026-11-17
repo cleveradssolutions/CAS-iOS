@@ -1,7 +1,10 @@
 ## Maticoo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationVerve', '3.9.3.0'
+pod 'CASMediationVerve', '3.9.3.1'
 ```
+
+### 3.9.3.1
+- Added support Native Ads format.
 
 ### 3.9.3.0
 - Certified with Verve - 3.9.3
