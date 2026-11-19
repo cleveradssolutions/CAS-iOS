@@ -1,7 +1,10 @@
 ## Meta Audience Network iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationAudienceNetwork', '6.22.0.1'
+pod 'CASMediationAudienceNetwork', '6.22.1.0'
 ```
+
+### 6.22.1.0
+- Certified with AudienceNetwork - 6.22.1
 
 ### 6.22.0.1
 - Migrated native AdOptions rendering to Facebook's preferred position API using AdChoicesPlacement.

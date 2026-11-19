@@ -1,7 +1,10 @@
 ## IronSource iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationIronSource', '9.7.0.0'
+pod 'CASMediationIronSource', '9.8.0.0'
 ```
+
+### 9.8.0.0
+- Certified with IronSource - 9.8.0
 
 ### 9.7.0.0
 - Certified with IronSource - 9.7.0
