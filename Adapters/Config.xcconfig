@@ -1,20 +1,6 @@
 //
 //  Config.xcconfig
 //
-//  Created by Денис Ешенко on 23.11.2022.
-//
-
-// Configuration settings file format documentation can be found at:
-// https://help.apple.com/xcode/#/dev745c5c974
-
-// Attention! Adapter project should have CAS prefix to avoid conflicts with original module names
-
-// Next error caused when BUILD_LIBRARIES_FOR_DISTRIBUTION = YES and ussed Bridging headers
-// Error: using bridging headers with module interfaces is unsupported
-
-// To use private module.modulemap you should also set:
-// SWIFT_INCLUDE_PATHS = $(SRCROOT)/LoopMe
-// MODULEMAP_PRIVATE_FILE = LoopMe/module.modulemap
 
 IPHONEOS_DEPLOYMENT_TARGET = 15.0
 SWIFT_VERSION = 5.0
@@ -70,14 +56,6 @@ CAS_XCFRAMEWORK_INSTALL_SCRIPT = $(SRCROOT)/../InstallXCFramework.py
 CAS_XCFRAMEWORK_INSTALL_SCRIPT_SH = $(SRCROOT)/../InstallXCFramework.sh
 CAS_PODS_DIR = $(SRCROOT)/../../Pods
 
-// Where Xcode puts what SPM downloaded for the workspace. BUILD_DIR is
-// <DerivedData>/<project>/Build/Products, so two levels up is the project's own
-// DerivedData folder, which is also where SourcePackages lives.
-//
-// Two roots, not one: a package that ships its framework through
-// binaryTarget(url:) is unpacked under artifacts/<repo>/<product>/, while one that
-// keeps the framework inside its own repository (binaryTarget(path:)) is only ever
-// checked out, and never appears under artifacts at all.
 CAS_SPM_ARTIFACTS = $(BUILD_DIR)/../../SourcePackages/artifacts
 CAS_SPM_CHECKOUTS = $(BUILD_DIR)/../../SourcePackages/checkouts
 CAS_CROSSMEDIATION_DIR = $(SRCROOT)/../../CrossMediation

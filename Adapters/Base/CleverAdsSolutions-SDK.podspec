@@ -191,7 +191,7 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/AudienceNetwork', '4.8.5-beta1'
     b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.8.5-beta1'
     b.dependency 'CleverAdsSolutions-SDK/CASExchange', '4.8.5-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Maticoo', '4.8.5-beta1'
+    b.dependency 'CleverAdsSolutions-SDK/Moloco', '4.8.5-beta1'
   end
 
   s.subspec 'Families' do |b|
@@ -217,6 +217,8 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/YangoAds', '4.8.5-beta1'
     b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.8.5-beta1'
     b.dependency 'CleverAdsSolutions-SDK/Monetrix', '4.8.5-beta1'
+    b.dependency 'CleverAdsSolutions-SDK/Bidease', '4.8.5-beta1'
+    b.dependency 'CleverAdsSolutions-SDK/BlueSea', '4.8.5-beta1'
   end
 
   s.subspec 'Publishing' do |b|
@@ -235,7 +237,6 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/YsoNetwork', '4.8.5-beta1'
     b.dependency 'CleverAdsSolutions-SDK/CASExchange', '4.8.5-beta1'
     b.dependency 'CleverAdsSolutions-SDK/Ogury', '4.8.5-beta1'
-    b.dependency 'CleverAdsSolutions-SDK/Maticoo', '4.8.5-beta1'
     b.dependency 'CleverAdsSolutions-SDK/Monetrix', '4.8.5-beta1'
     b.dependency 'CleverAdsSolutions-SDK/Moloco', '4.8.5-beta1'
   end

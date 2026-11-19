@@ -1,7 +1,11 @@
 ## Maticoo iOS Mediation Adapter Changelog
 ```ruby
-pod 'CASMediationMaticoo', '2.3.2.0'
+pod 'CASMediationMaticoo', '2.3.3.0'
 ```
+
+### 2.3.3.0
+- Certified with Maticoo - 2.3.3
+- Fixed the `isExpired` check for native ads
 
 ### 2.3.2.0
 - Certified with Maticoo - 2.3.2

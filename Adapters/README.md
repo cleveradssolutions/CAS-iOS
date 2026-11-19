@@ -7,9 +7,9 @@ The adapters in the table are listed in alphabetical order.
 | AppLovin | 13.7.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](AppLovin/CHANGELOG.md) | [link](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases) |
 | AudienceNetwork | 6.22.1.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](AudienceNetwork/CHANGELOG.md) | [link](https://developers.facebook.com/docs/audience-network/setting-up/platform-setup/ios/changelog?locale=en_US) |
 | BidMachine 🧪 | 3.8.2.1 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](BidMachine/CHANGELOG.md) | [link](https://developers.bidmachine.io/sdk/general/ios/ios-changelog) |
-| Bidease 🧪 | 3.0.3.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](Bidease/CHANGELOG.md) | [link](https://devs.bidease.com/docs/changelogs/ios) |
+| Bidease 🧪 | 3.0.3.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✓** | [view](Bidease/CHANGELOG.md) | [link](https://devs.bidease.com/docs/changelogs/ios) |
 | Bigo | 6.2.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✓** | [view](Bigo/CHANGELOG.md) | [link](https://www.bigossp.com/guide/sdk/ios/version) |
-| BlueSea 🧪 | 1.9.1.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](BlueSea/CHANGELOG.md) | [link](https://docs.blueseasx.com/changelog/ios) |
+| BlueSea 🧪 | 1.9.1.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✓** | [view](BlueSea/CHANGELOG.md) | [link](https://docs.blueseasx.com/changelog/ios) |
 | CASExchange | 4.6.3.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](CASExchange/CHANGELOG.md) | [link]() |
 | Chartboost | 9.14.2.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✓** | **✗** | [view](Chartboost/CHANGELOG.md) | [link](https://docs.chartboost.com/en/monetization/integrate/ios/changelog/) |
 | CrossPromo | 4.8.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](CrossPromo/CHANGELOG.md) | [link]() |
@@ -21,9 +21,9 @@ The adapters in the table are listed in alphabetical order.
 | IronSource | 9.8.0.0 | Banner, Interstitial, Rewarded | **✓** | **✓** | **✓** | **✓** | [view](IronSource/CHANGELOG.md) | [link](https://docs.unity.com/en-us/grow/levelplay/sdk/ios/changelog) |
 | Kidoz | 10.1.5.1 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✓** | **✗** | [view](Kidoz/CHANGELOG.md) | [link](https://github.com/Kidoz-SDK/kidoz-mobile-sdk/tree/main/Direct/iOS) |
 | LiftoffMonetize | 7.8.0.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | **✓** | [view](LiftoffMonetize/CHANGELOG.md) | [link](https://support.vungle.com/hc/en-us/articles/15718672681883) |
-| Maticoo | 2.3.3.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✓** | **✗** | **✗** | [view](Maticoo/CHANGELOG.md) | [link](https://doc.zmaticoo.com/#/help/en/1802/) |
+| Maticoo | 2.3.3.0 | Banner, Interstitial, Rewarded, Native | **✓** | **✗** | **✗** | **✗** | [view](Maticoo/CHANGELOG.md) | [link](https://doc.zmaticoo.com/#/help/en/1802/) |
 | Mintegral | 8.1.9.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✓** | **✓** | [view](Mintegral/CHANGELOG.md) | [link](https://dev.mintegral.com/doc/index.html?file=sdk-m_sdk-ios&lang=en) |
-| Moloco 🧪 | 4.12.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](Moloco/CHANGELOG.md) | [link](https://moloco.github.io/ios-sdk-docs/) |
+| Moloco 🧪 | 4.12.0.0 | Banner, Interstitial, Rewarded | **✓** | **✓** | **✗** | **✗** | [view](Moloco/CHANGELOG.md) | [link](https://moloco.github.io/ios-sdk-docs/) |
 | Monetrix 🧪 | 1.3.0.1 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✓** | [view](Monetrix/CHANGELOG.md) | [link]() |
 | Ogury | 5.4.0.0 | Banner, Interstitial, Rewarded | **✓** | **✗** | **✗** | **✗** | [view](Ogury/CHANGELOG.md) | [link](https://support.ogury.com/inapp/release-notes/ogury-sdk/ios) |
 | Pangle | 8.4.0.8.0 | Banner, Interstitial, Rewarded, AppOpen, Native | **✓** | **✓** | **✗** | **✗** | [view](Pangle/CHANGELOG.md) | [link](https://github.com/bytedance/Bytedance-UnionAD) |

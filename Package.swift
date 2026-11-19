@@ -57,7 +57,7 @@ enum CAS: String, CaseIterable {
                 .AudienceNetwork,
                 .YsoNetwork,
                 .Exchange,
-                .Maticoo,
+                .Moloco,
             ]),
             ("AdsFamiliesSolutions", [
                 .IronSource,
@@ -86,7 +86,6 @@ enum CAS: String, CaseIterable {
                 .YsoNetwork,
                 .Exchange,
                 .Ogury,
-                .Maticoo,
                 .Monetrix,
                 .Moloco,
             ]),
@@ -101,6 +100,8 @@ enum CAS: String, CaseIterable {
                 .YangoAds,
                 .YsoNetwork,
                 .Monetrix,
+                .Bidease,
+                .BlueSea,
             ]),
         ]
     }
@@ -148,7 +149,7 @@ let package = Package(
         .package(url: "https://github.com/Kidoz-SDK/kidoz-sdk-swift-package.git", exact: "10.1.5"),
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package.git", exact: "8.1.9"),
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.7.0"),
-        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.3.0-release.9"),
+        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.4.0-release.8"),
         .package(url: "https://github.com/bigo-ads/BigoADS-Swift-Package.git", exact: "6.2.0"),
         .package(url: "https://github.com/yandexmobile/yandex-ads-sdk-ios.git", exact: "8.7.0"),
         .package(url: "https://github.com/facebook/FBAudienceNetwork.git", exact: "6.22.1"),
@@ -160,7 +161,6 @@ let package = Package(
         .package(url: "https://github.com/vervegroup/Smaato-ios-sdk-standalone.git", exact: "23.2.3"),
         .package(url: "https://github.com/cloudadrd/zMaticooPodSpec.git", exact: "2.3.3"),
         .package(url: "https://github.com/vervegroup/hybid-ios-spm-sdk.git", exact: "3.9.3"),
-        .package(url: "https://gitee.com/monetrix/monetrix_sdk_ios.git", exact: "1.3.1"),
         .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package.git", exact: "5.6.0"),
         .package(url: "https://github.com/displayio/DIOSDK.git", exact: "4.8.2"),
         .package(url: "https://github.com/bidease/BideaseSDK-iOS.git", exact: "3.0.3"),
@@ -391,8 +391,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.DTExchange.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.4-beta1/CASMediationDTExchange-8.5.1.0.zip",
-            checksum: "5dd084ccb171dabc87dc109e3488cf9449c758e43c07d86d8b853b454a33d2b8"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta.4/CASMediationDTExchange-8.5.2.0.zip",
+            checksum: "f14158590bf9ca16063f543a327e33aeb6710c55d3a1181467e197b88cb623f8"
         ),
 
         // MARK: - CASExchange
@@ -537,8 +537,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Maticoo.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.4-beta1/CASMediationMaticoo-2.3.2.0.zip",
-            checksum: "45df821b34fc492586dc819487c708bb1d11938e9a1774125f0de99397a52a97"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta.4/CASMediationMaticoo-2.3.3.0.zip",
+            checksum: "8ba71534574c14fdba9ef0bea649a449a6f7dd2fcaa0a2e81b675e120b8e664f"
         ),
         
         // MARK: - PubMatic
@@ -605,8 +605,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Verve.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.4-beta1/CASMediationVerve-3.9.3.0.zip",
-            checksum: "0d798636d3ee87c0d1a933cb6d61e31237fcbabafd003e503b9ea111b44cbf9d"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta.4/CASMediationVerve-3.9.3.1.zip",
+            checksum: "e0c1e97b97854acc8d722112a24d0548e013cd44730a3e4f5ec5cc44695fb182"
         ),
 
         // MARK: - Bigo Ads
@@ -673,8 +673,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Moloco.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.4-beta1/CASMediationMoloco-4.11.1.0.zip",
-            checksum: "4c723e6b9b4b68dcfa2d36360a11d7d35dc6d13b4b901b8926d73905cb97dff9"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta3/CASMediationMoloco-4.12.0.0.zip",
+            checksum: "bca185c301b623c9ee5711b9428ec1adb18d769a2606246bd14cf54fc35ddc54"
         ),
         
         // MARK: - BlueSea
@@ -707,8 +707,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.Bidease.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.4-beta1/CASMediationBidease-3.0.2.0.zip",
-            checksum: "3a2fef97a8fabcb6b83dabe485d09aec6c9fd1ced2a29eb3a9aae956f37b74b2"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta3/CASMediationBidease-3.0.3.0.zip",
+            checksum: "2e38d9af2e4c927af93c3649dfaec65e82737b5afe96184de0c7754074a772fb"
         ),
 
         // MARK: - BidMachine
@@ -724,8 +724,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: CAS.BidMachine.binaryAdapter,
-            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.4-beta1/CASMediationBidMachine-3.8.2.0.zip",
-            checksum: "0d0f369965ba7a76f91d44b4ad64599ca1a1553de0af4543a17e5b938fbacb7d"
+            url: "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta.4/CASMediationBidMachine-3.8.2.1.zip",
+            checksum: "c68034e79b62ffad1f6bc0cf4b2c7b1568c0d01763ffabf89f62f5ca0a75896f"
         ),
 
         // MARK: - Monetrix

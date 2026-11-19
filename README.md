@@ -8,7 +8,7 @@ The CAS.AI Mobile Ads Framework (by CleverAdsSolutions) offers advanced mobile a
 This repository contains the official CAS.AI iOS Framework, enabling iOS developers to easily integrate and monetize their apps.
 
 ## Documentation
-For setup instructions, usage examples, and API details, refer to the [Developer Guide](https://docs.page/cleveradssolutions/docs/iOS).
+For setup instructions, usage examples, and API details, refer to the [Developer Guide](https://cleveradssolutions.docs.page/docs/ios).
 
 ## Demo application
 Each iOS example app on this repository takes the CAS.AI Framework from this repository as a Swift Package, and adds the `CleverAdsSolutionsSPM` product alone. Mediation adapters are products of the same package: add the `CASMediation*` ones your app needs to the application target.
